@@ -1,0 +1,12 @@
+{
+    "name": "cnsdose/salesforce-php",
+    "description": "Salesforce RESTful client",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Frederick Zhang",
+            "email": "frederick888@tsundere.moe"
+        }
+    ],
+    "require": {}
+}
