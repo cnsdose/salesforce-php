@@ -410,7 +410,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * === === === === ===
-     * Write operators
+     * Write operations
      * === === === === ===
      */
     /**
