@@ -181,7 +181,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $value = $operator;
             $operator = '=';
         }
-        $this->query['where']['AND'][] = sprintf('%s %s \'%s\'', $field, $operator, str_replace('\'', '\\\'', $value));
+        $this->query['where']['AND'][] = sprintf('%s %s %s', $field, $operator, $value);
         return $this;
     }
 
@@ -204,7 +204,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $value = $operator;
             $operator = '=';
         }
-        $this->query['where']['OR'][] = sprintf('%s %s \'%s\'', $field, $operator, str_replace('\'', '\\\'', $value));
+        $this->query['where']['OR'][] = sprintf('%s %s %s', $field, $operator, $value);
         return $this;
     }
 
