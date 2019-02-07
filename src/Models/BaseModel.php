@@ -92,21 +92,21 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             'http_errors' => false,
         ], $options));
         $json = json_decode($response->getBody()->getContents(), true);
-        switch ($response->getStatusCode()) {
-            case 200:
-                break;
-            case 400:
-                throw new MalformedRequestException($json[0]['message'], $json[0]['errorCode']);
-            case 401:
-                throw new AuthorisationException($json[0]['message'], $json[0]['errorCode']);
-            default:
-                $exception = new StandardException(500, 'Unknown Salesforce query error');
-                foreach ($json as $error) {
-                    $exception->addError($error['errorCode'], $error['$message']);
-                }
-                throw $exception;
+        $status = $response->getStatusCode();
+        if ($status >= 200 && $status < 300) {
+            return $json;
         }
-        return $json;
+        if ($status === 400) {
+            throw new MalformedRequestException($json[0]['message'], $json[0]['errorCode']);
+        }
+        if ($status === 401) {
+            throw new AuthorisationException($json[0]['message'], $json[0]['errorCode']);
+        }
+        $exception = new StandardException(500, 'Unknown Salesforce query error');
+        foreach ($json as $error) {
+            $exception->addError($error['errorCode'], $error['message']);
+        }
+        throw $exception;
     }
 
     /**
