@@ -25,6 +25,8 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
      */
     protected static $objectApiName = 'BaseModel';
     protected $defaultFields = [];
+    private $recording = false;
+    protected $changedFields = [];
 
     public function __construct(array $data = null, $decode = false)
     {
@@ -36,6 +38,23 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             parent::__construct($this->decode([$data])[0]);
         } else {
             parent::__construct($data);
+        }
+        $this->recording = true;
+    }
+
+    public function __set($name, $value)
+    {
+        parent::__set($name, $value);
+        if ($this->recording) {
+            $this->changedFields[] = $name;
+        }
+    }
+
+    public function __unset($name)
+    {
+        parent::__unset($name);
+        if ($this->recording) {
+            $this->changedFields[] = $name;
         }
     }
 
@@ -74,12 +93,12 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
      * @param $method
      * @param $url
      * @param array $options
-     * @return array
+     * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
      */
-    protected static function guzzleRequest($method, $url, array $options = []): array
+    protected static function guzzleRequest($method, $url, array $options = [])
     {
         $guzzleClient = new GuzzleClient();
         /**
@@ -430,6 +449,38 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
         );
         $record = $this->encode([$this->raw()])[0];
         $response = self::guzzleRequest('post', $url, [
+            'json' => $record,
+        ]);
+        if ($response['success']) {
+            $this->Id = $response['id'];
+        }
+        return $response;
+    }
+
+    /**
+     * @param string $externalId
+     * @return mixed
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\ConversionException
+     */
+    public function upsert(string $externalId = 'Id')
+    {
+        if (empty($this->$externalId)) {
+            throw new MalformedRequestException("Field $externalId is missing", 'MISSING_ID');
+        }
+        $url = sprintf(
+            '%s%s/sobjects/%s/%s/%s',
+            self::$API_PREFIX,
+            config('salesforce.api_version'),
+            static::$objectApiName,
+            $externalId,
+            $this->$externalId
+        );
+
+        $record = array_intersect_key($this->encode([$this->raw()])[0], array_flip(array_unique($this->changedFields)));
+        $response = self::guzzleRequest('patch', $url, [
             'json' => $record,
         ]);
         if ($response['success']) {
