@@ -194,15 +194,13 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
         if (is_string($field) && $operator === null && $value === null) {
             $this->query['where']['AND'][] = $field;
         }
-        if ($value === null && is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)) {
+        if ($value === null && ($operator === null
+                || (is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
+        ) {
             $value = $operator;
             $operator = '=';
         }
-        if (is_object($value)) {
-            $this->query['where']['AND'][] = [$field, $operator, $value];
-        } else {
-            $this->query['where']['AND'][] = sprintf('%s %s %s', $field, $operator, $value);
-        }
+        $this->query['where']['AND'][] = [$field, $operator, $value];
         return $this;
     }
 
@@ -217,35 +215,13 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
         if (is_string($field) && $operator === null && $value === null) {
             $this->query['where']['OR'][] = $field;
         }
-        if ($value === null && is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)) {
+        if ($value === null && ($operator === null
+                || (is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
+        ) {
             $value = $operator;
             $operator = '=';
         }
-        if (is_object($value)) {
-            $this->query['where']['OR'][] = [$field, $operator, $value];
-        } else {
-            $this->query['where']['OR'][] = sprintf('%s %s %s', $field, $operator, $value);
-        }
-        return $this;
-    }
-
-    /**
-     * @param $field
-     * @return $this
-     */
-    public function whereNull($field): self
-    {
-        $this->query['where']['AND'][] = sprintf('%s = null', $field);
-        return $this;
-    }
-
-    /**
-     * @param $field
-     * @return $this
-     */
-    public function orWhereNull($field): self
-    {
-        $this->query['where']['OR'][] = sprintf('%s = null', $field);
+        $this->query['where']['OR'][] = [$field, $operator, $value];
         return $this;
     }
 
@@ -319,15 +295,12 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $soql .= 'WHERE ';
             if (!empty($this->query['where']['AND'])) {
                 $soql .= '(';
-                $soql .= implode(' AND ', array_map(function ($clause) {
-                    /**
-                     * @var string|array $clause
-                     */
-                    if (is_array($clause)) {
-                        list($field, $operator, $clause) = $clause;
-                        $clause = sprintf('%s %s (%s)', $field, $operator, $clause->toSoql());
+                $soql .= implode(' AND ', array_map(function (array $clause) {
+                    list($field, $operator, $value) = $clause;
+                    if (is_object($value)) {
+                        return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
                     }
-                    return $clause;
+                    return sprintf('%s %s %s', $field, $operator, $value ?? 'NULL');
                 }, $this->query['where']['AND']));
                 $soql .= ')';
             }
@@ -335,15 +308,12 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
                 if (!empty($this->query['where']['AND'])) {
                     $soql .= ' OR ';
                 }
-                $soql .= implode(' OR ', array_map(function ($clause) {
-                    /**
-                     * @var string|array $clause
-                     */
-                    if (is_array($clause)) {
-                        list($field, $operator, $clause) = $clause;
-                        $clause = sprintf('%s %s (%s)', $field, $operator, $clause->toSoql());
+                $soql .= implode(' OR ', array_map(function (array $clause) {
+                    list($field, $operator, $value) = $clause;
+                    if (is_object($value)) {
+                        return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
                     }
-                    return $clause;
+                    return sprintf('%s %s %s', $field, $operator, $value ?? 'NULL');
                 }, $this->query['where']['OR']));
             }
         }
