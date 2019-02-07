@@ -38,7 +38,7 @@
 
 See `config/salesforce.php`.
 
-## Query
+## Query Records
 
 *The query builder only supports a small subset of SOQL clauses currently.*
 
@@ -80,6 +80,45 @@ $result = Account::build()
 This method retrieves all defined fields in Salesforce, even if they are not specified in the corresponding class or `config/salesfore.php`.
 ```php
 $result = Account::queryById('0010o00002Cn41XXXX');
+```
+
+## Create/Update Records
+
+### Create a record
+
+```php
+$contact = new Contact();
+$contact->FirstName = 'Sheep';
+$contact->LastName = 'Shaun';
+$contact->Email = 'shaun@example.com';
+$contact->create();
+```
+
+### Upsert a record
+
+```php
+/**
+ * @var Contact $contact
+ */
+$contact = Contact::build()
+    ->where('LastName', "'Shaun'")
+    ->query()[0];
+$contact->FirstName = 'Lamb';       // changes after object instantiation are recorded
+$contact->upsert();
+
+$contact = new Contact([            // we do not need to query first
+    'Id' => $contact->Id,
+]);
+$contact->FirstName = 'Mince';
+$contact->upsert();
+
+// Upsert by external ID
+$contact = new Contact([
+    'Email' => 'bitzer@example.com',
+]);
+$contact->FirstName = 'Bitzer';
+$contact->LastName = 'Woof';
+$contact->upsert('Email');
 ```
 
 ## Conversion Rules
