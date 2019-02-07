@@ -51,7 +51,7 @@ $result = Account::build()
     ->where('Type', 'LIKE', "'Customer%'")
     ->where('CurrencyIsoCode', "'USD'")
     ->where('CreatedDate', '>=', '2019-01-23T01:01:01.000Z')
-    ->whereNull('Site')
+    ->where('Site', '=', null)
     ->query();
 ```
 
