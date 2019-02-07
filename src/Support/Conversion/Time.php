@@ -42,6 +42,6 @@ class Time extends BaseConversion
      */
     public function doEncode($value)
     {
-        return $value->format(self::$format);
+        return $value->setTimezone('UTC')->format(self::$format);
     }
 }
