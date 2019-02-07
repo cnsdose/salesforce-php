@@ -377,7 +377,10 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     public function queryRaw(string $soql): array
     {
         $this->rawQuery = $soql;
-        return $this->queryFromBuilder();
+        if (static::class === self::class) {
+            return $this->queryFromBuilder();
+        }
+        return $this->query();
     }
 
     /**
