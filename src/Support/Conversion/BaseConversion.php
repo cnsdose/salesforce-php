@@ -45,6 +45,11 @@ abstract class BaseConversion
         ];
     }
 
+    public static function registerRule(string $name, string $class)
+    {
+        self::$conversions[$name] = $class;
+    }
+
     /**
      * @param string $rule
      * @param $value
