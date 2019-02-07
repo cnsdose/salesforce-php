@@ -64,6 +64,30 @@ $result = Account::build()
     ->query();
 ```
 
+### Nested Query
+
+```php
+$contact = Contact::build()
+    ->where(
+        'AccountId',
+        'IN',
+        Account::build()
+            ->select('Id')
+            ->where('Name', "'AccountExample1'")
+            ->orWhere('Name', "'AccountExample2'")
+    )
+    ->query();
+$result = BaseModel::build()
+    ->select('Id')
+    ->select(
+        BaseModel::build()
+            ->select('Id')
+            ->from('Account.Contacts')
+    )
+    ->from('Account')
+    ->query();
+```
+
 ### Raw Query
 ```php
 // $result: original JSON
