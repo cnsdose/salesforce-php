@@ -387,13 +387,16 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
      * Fetches single object, populates all fields regardless of whether they're pre-defined in class/configuration or not
      *
      * @param string $id
-     * @return array
+     * @return BaseModel|mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
      */
-    public static function queryById(string $id): array
+    public static function queryById(string $id)
     {
+        if (static::class === self::class) {
+            throw new StandardException(500, 'Do not useBaseModel::queryById()');
+        }
         $url = sprintf(
             '%s%s/sobjects/%s/%s',
             self::$API_PREFIX,
@@ -401,7 +404,8 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             static::$objectApiName,
             $id
         );
-        return self::guzzleRequest('get', $url);
+        $json = self::guzzleRequest('get', $url);
+        return new static($json, true);
     }
 
     /**
