@@ -209,6 +209,26 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @param $field
+     * @return $this
+     */
+    public function whereNull($field): self
+    {
+        $this->query['where']['AND'][] = sprintf('%s = null', $field);
+        return $this;
+    }
+
+    /**
+     * @param $field
+     * @return $this
+     */
+    public function orWhereNull($field): self
+    {
+        $this->query['where']['OR'][] = sprintf('%s = null', $field);
+        return $this;
+    }
+
+    /**
      * @param int $limit
      * @return $this
      */
