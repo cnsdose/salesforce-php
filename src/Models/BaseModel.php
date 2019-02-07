@@ -421,7 +421,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             config('salesforce.api_version'),
             static::$objectApiName
         );
-        $record = $this->decode($this->toArray());
+        $record = $this->encode([$this->raw()])[0];
         $response = self::guzzleRequest('post', $url, [
             'json' => $record,
         ]);
