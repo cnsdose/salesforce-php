@@ -163,6 +163,8 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $this->query['select'] = array_merge($this->query['select'], explode(',', $fields));
         } elseif (is_array($fields)) {
             $this->query['select'] = array_merge($this->query['select'], $fields);
+        } else {
+            $this->query['select'][] = $fields;
         }
         return $this;
     }
@@ -182,17 +184,13 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
-     * @param string|BaseModel|mixed $field
-     * @param null|string $operator
-     * @param null|string $value
+     * @param string $field
+     * @param null|string|BaseModel|mixed $operator
+     * @param null|string|BaseModel|mixed $value
      * @return $this
      */
-    public function where($field, $operator = null, $value = null)
+    public function where(string $field, $operator = null, $value = null): self
     {
-        if (is_object($field)) {
-            $this->query['where']['AND'][] = $field;
-            return $this;
-        }
         if (is_string($field) && $operator === null && $value === null) {
             $this->query['where']['AND'][] = $field;
         }
@@ -200,22 +198,22 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $value = $operator;
             $operator = '=';
         }
-        $this->query['where']['AND'][] = sprintf('%s %s %s', $field, $operator, $value);
+        if (is_object($value)) {
+            $this->query['where']['AND'][] = [$field, $operator, $value];
+        } else {
+            $this->query['where']['AND'][] = sprintf('%s %s %s', $field, $operator, $value);
+        }
         return $this;
     }
 
     /**
-     * @param string|BaseModel|mixed $field
-     * @param null|string $operator
-     * @param null|string $value
+     * @param string $field
+     * @param null|string|BaseModel|mixed $operator
+     * @param null|string|BaseModel|mixed $value
      * @return $this
      */
-    public function orWhere($field, $operator, $value = null)
+    public function orWhere(string $field, $operator, $value = null): self
     {
-        if (is_object($field)) {
-            $this->query['where']['OR'][] = $field;
-            return $this;
-        }
         if (is_string($field) && $operator === null && $value === null) {
             $this->query['where']['OR'][] = $field;
         }
@@ -223,7 +221,11 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $value = $operator;
             $operator = '=';
         }
-        $this->query['where']['OR'][] = sprintf('%s %s %s', $field, $operator, $value);
+        if (is_object($value)) {
+            $this->query['where']['OR'][] = [$field, $operator, $value];
+        } else {
+            $this->query['where']['OR'][] = sprintf('%s %s %s', $field, $operator, $value);
+        }
         return $this;
     }
 
@@ -298,10 +300,10 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             /**
              * @var string|BaseModel $select
              */
-            if (is_string($select)) {
-                return $select;
+            if (is_object($select)) {
+                return sprintf('(%s)', $select->toSoql());
             }
-            return sprintf('(%s)', $select->toSoql());
+            return $select;
         }, $this->query['select']));
         $soql .= ' ';
 
@@ -319,10 +321,11 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
                 $soql .= '(';
                 $soql .= implode(' AND ', array_map(function ($clause) {
                     /**
-                     * @var string|BaseModel|mixed $clause
+                     * @var string|array $clause
                      */
-                    if (is_object($clause)) {
-                        $clause = sprintf('(%s)', $clause->toSoql());
+                    if (is_array($clause)) {
+                        list($field, $operator, $clause) = $clause;
+                        $clause = sprintf('%s %s (%s)', $field, $operator, $clause->toSoql());
                     }
                     return $clause;
                 }, $this->query['where']['AND']));
@@ -334,10 +337,11 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
                 }
                 $soql .= implode(' OR ', array_map(function ($clause) {
                     /**
-                     * @var string|BaseModel|mixed $clause
+                     * @var string|array $clause
                      */
-                    if (is_object($clause)) {
-                        $clause = sprintf('(%s)', $clause->toSoql());
+                    if (is_array($clause)) {
+                        list($field, $operator, $clause) = $clause;
+                        $clause = sprintf('%s %s (%s)', $field, $operator, $clause->toSoql());
                     }
                     return $clause;
                 }, $this->query['where']['OR']));
