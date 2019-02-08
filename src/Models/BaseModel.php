@@ -69,7 +69,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     /**
      * @return string
      */
-    protected static function getAccessToken(): string
+    public static function getAccessToken(): string
     {
         if (isset(self::$ACCESS_TOKEN)) {
             return self::$ACCESS_TOKEN;
