@@ -9,11 +9,11 @@ return [
     'authentication_url' => 'https://login.salesforce.com/services/oauth2/token',
     'api_version' => 'v44.0',
 
-    'username' => null,
-    'password' => null,
-    'security_token' => null,
-    'client_id' => null,
-    'client_secret' => null,
+    'username' => env('SALESFORCE_USERNAME'),
+    'password' => env('SALESFORCE_PASSWORD'),
+    'security_token' => env('SALESFORCE_SECURITY_TOKEN'),
+    'client_id' => env('SALESFORCE_CLIENT_ID'),
+    'client_secret' => env('SALESFORCE_CLIENT_SECRET'),
 
     'custom_fields' => [
         /*
