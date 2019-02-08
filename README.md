@@ -182,3 +182,101 @@ Adding 3 custom fields, with conversion rules where applicable, to object `Custo
     ],
 ]
 ```
+
+## Custom Objects
+
+Models can be automatically generated for custom objects that have been defined in Salesforce via Artisan command `salesforce:generate-model`.
+
+```
+$ php artisan help salesforce:generate-model
+  Description:
+    Generate Salesforce model dynamically from API
+  
+  Usage:
+    salesforce:generate-model [options] [--] <object>
+  
+  Arguments:
+    object
+  
+  Options:
+    -N, --namespace[=NAMESPACE]
+    -P, --package[=PACKAGE]
+    -C, --class[=CLASS]
+    -A, --all-fields
+```
+
+### Example
+
+```
+$ php artisan salesforce:generate-model -N 'MyProject\Models' -C Custom -A Custom__c
+<?php
+/**
+ * Created automatically by salesforce-sdk.
+ */
+
+namespace MyProject\Models;
+
+use CNSDose\Salesforce\Models\BaseModel;
+
+/**
+ * Class Custom
+ * @package MyProject\Models
+ *
+ * @method Custom[] query()
+ *
+ * @property string Id
+ * @property string OwnerId
+ * @property bool IsDeleted
+ * @property string Name
+ * @property mixed CurrencyIsoCode
+ * @property \Carbon\Carbon CreatedDate
+ * @property string CreatedById
+ * @property \Carbon\Carbon LastModifiedDate
+ * @property string LastModifiedById
+ * @property \Carbon\Carbon SystemModstamp
+ * @property bool Checkbox__c
+ * @property float Currency__c
+ * @property \Carbon\Carbon Date__c
+ * @property \Carbon\Carbon DateTime__c
+ * @property float Integer__c
+ * @property float Float__c
+ * @property \Carbon\Carbon Time__c
+ */
+class Custom extends BaseModel
+{
+    protected static $objectApiName = 'Custom__c';
+    protected $defaultFields = [
+        'Id' => null,
+        'OwnerId' => null,
+        'IsDeleted' => 'bool',
+        'Name' => null,
+        'CurrencyIsoCode' => null,
+        'CreatedDate' => 'datetime',
+        'CreatedById' => null,
+        'LastModifiedDate' => 'datetime',
+        'LastModifiedById' => null,
+        'SystemModstamp' => 'datetime',
+        'Checkbox__c' => 'bool',
+        'Currency__c' => 'number:16,2',
+        'Date__c' => 'date',
+        'DateTime__c' => 'datetime',
+        'Integer__c' => 'number:18,0',
+        'Float__c' => 'number:16,2',
+        'Time__c' => 'time',
+    ];
+}
+```
+
+### Custom Type-Rule Mapping
+
+One could use `\CNSDose\Salesforce\Console\GenerateModel::addTypeRule` to map a Salesforce type to a PHP type/conversion rule for convenience.
+
+Common mappings are already defined in `GenerateModel`.
+
+```php
+GenerateModel::addTypeRule('type1', 'string', null);
+GenerateModel::addTypeRule('type2', '\\Carbon\\Carbon', 'date');
+GenerateModel::addTypeRule('type3', 'float', function ($field) {
+    return sprintf('number:%s,%s', $field['precision'] - $field['scale'], $field['scale']);
+});
+```
