@@ -5,7 +5,6 @@ namespace CNSDose\Salesforce\Console;
 use CNSDose\Salesforce\Models\BaseModel;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
-use Symfony\Component\Console\Output\ConsoleOutputInterface;
 
 class GenerateModel extends Command
 {
@@ -31,7 +30,7 @@ class GenerateModel extends Command
      */
     protected $signature = 'salesforce:generate-model {--N|namespace=} {--P|package=} {--C|class=} {--A|all-fields} {object}';
 
-    protected $typeRules = [
+    protected static $typeRules = [
         'id' => ['string', null],
         'reference' => ['string', null],
         'boolean' => ['bool', 'bool'],
@@ -40,9 +39,29 @@ class GenerateModel extends Command
         'date' => ['\\Carbon\\Carbon', 'date'],
         'datetime' => ['\\Carbon\\Carbon', 'datetime'],
         'time' => ['\\Carbon\\Carbon', 'time'],
-        'double' => ['float', 'number:%s,%s'],
-        'currency' => ['float', 'number:%s,%s'],
     ];
+
+    protected static function loadLambdaRules()
+    {
+        self::$typeRules['double'] = ['float', function ($field) {
+            return sprintf(
+                "\n        '%s' => '%s',",
+                $field['name'],
+                sprintf('number:%s,%s', $field['precision'] - $field['scale'], $field['scale'])
+            );
+        }];
+        self::$typeRules['currency'] = self::$typeRules['double'];
+    }
+
+    /**
+     * @param string $fieldType
+     * @param string $phpType
+     * @param null|string|object $rule
+     */
+    public static function addTypeRule(string $fieldType, string $phpType, $rule)
+    {
+        self::$typeRules[$fieldType] = [$phpType, $rule];
+    }
 
     /**
      * Execute the console command.
@@ -51,6 +70,8 @@ class GenerateModel extends Command
      */
     public function handle()
     {
+        self::loadLambdaRules();
+
         $namespace = $this->option('namespace');
         $package = $this->option('package') ?: $namespace;
         $object = $this->argument('object');
@@ -84,18 +105,14 @@ class GenerateModel extends Command
             if (!$this->option('all-fields') && substr($fieldName, strlen($fieldName) - 3) === '__c') {
                 continue;
             }
-            list($phpType, $rule) = $this->typeRules[$fieldType] ?? ['mixed', null];
+            list($phpType, $rule) = self::$typeRules[$fieldType] ?? ['mixed', null];
             $properties .= sprintf(
                 "\n * @property %s %s",
                 $phpType,
                 $fieldName
             );
-            if ($fieldType === 'double' || $fieldType === 'currency') {
-                $defaultFields .= sprintf(
-                    "\n        '%s' => '%s',",
-                    $fieldName,
-                    sprintf($rule, $field['precision'] - $field['scale'], $field['scale'])
-                );
+            if (is_object($rule)) {
+                $defaultFields .= $rule($field);
             } else {
                 $defaultFields .= sprintf(
                     "\n        '%s' => %s,",
