@@ -191,20 +191,21 @@ Models can be automatically generated for custom objects that have been defined 
 
 ```
 $ php artisan help salesforce:generate-model
-  Description:
-    Generate Salesforce model dynamically from API
-  
-  Usage:
-    salesforce:generate-model [options] [--] <object>
-  
-  Arguments:
-    object
-  
-  Options:
-    -N, --namespace[=NAMESPACE]
-    -P, --package[=PACKAGE]
-    -C, --class[=CLASS]
-    -A, --all-fields
+Description:
+  Generate Salesforce model dynamically from API
+
+Usage:
+  salesforce:generate-model [options] [--] <object>
+
+Arguments:
+  object
+
+Options:
+  -N, --namespace[=NAMESPACE]
+  -P, --package[=PACKAGE]
+  -C, --class[=CLASS]
+  -T, --token[=TOKEN]
+  -A, --all-fields
 ```
 
 ### Example

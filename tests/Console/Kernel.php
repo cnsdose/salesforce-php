@@ -14,6 +14,7 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         \CNSDose\Salesforce\Console\GenerateModel::class,
+        \CNSDose\Salesforce\Console\RetrieveAccessToken::class,
     ];
 
     /**

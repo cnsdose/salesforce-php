@@ -9,6 +9,7 @@
 namespace CNSDose\Salesforce\Providers;
 
 use CNSDose\Salesforce\Console\GenerateModel;
+use CNSDose\Salesforce\Console\RetrieveAccessToken;
 use Illuminate\Support\ServiceProvider;
 
 class SalesforceProvider extends ServiceProvider
@@ -26,6 +27,7 @@ class SalesforceProvider extends ServiceProvider
         if ($this->app->runningInConsole()) {
             $this->commands([
                 GenerateModel::class,
+                RetrieveAccessToken::class,
             ]);
         }
     }

@@ -23,13 +23,14 @@ if [[ "$1" == "sales" ]]; then
     )
     model_dir="./src/Models/Sales"
 
+    token=`php ./artisan salesforce:retrieve-access-token`
     for object_api_name in "${!salesforce_objects[@]}"; do
         object_class_name="${salesforce_objects[$object_api_name]}"
         if [[ -z "$object_class_name" ]]; then
             object_class_name="$object_api_name"
         fi
         printf 'Generating model %s for object %s\n' "$object_class_name" "$object_api_name"
-        php ./artisan salesforce:generate-model -N 'CNSDose\Salesforce\Models\Sales' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
+        php ./artisan salesforce:generate-model -T "$token" -N 'CNSDose\Salesforce\Models\Sales' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
         if [[ $? -ne 0 ]]; then
             rm "$model_dir/$object_class_name.php"
         fi
@@ -68,13 +69,14 @@ if [[ "$1" == "support" ]]; then
     )
     model_dir="./src/Models/Support"
 
+    token=`php ./artisan salesforce:retrieve-access-token`
     for object_api_name in "${!salesforce_objects[@]}"; do
         object_class_name="${salesforce_objects[$object_api_name]}"
         if [[ -z "$object_class_name" ]]; then
             object_class_name="$object_api_name"
         fi
         printf 'Generating model %s for object %s\n' "$object_class_name" "$object_api_name"
-        php ./artisan salesforce:generate-model -N 'CNSDose\Salesforce\Models\Support' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
+        php ./artisan salesforce:generate-model -T "$token" -N 'CNSDose\Salesforce\Models\Support' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
         if [[ $? -ne 0 ]]; then
             rm "$model_dir/$object_class_name.php"
         fi

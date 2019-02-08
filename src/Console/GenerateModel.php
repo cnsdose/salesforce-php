@@ -28,7 +28,7 @@ class GenerateModel extends Command
      *
      * @var string
      */
-    protected $signature = 'salesforce:generate-model {--N|namespace=} {--P|package=} {--C|class=} {--A|all-fields} {object}';
+    protected $signature = 'salesforce:generate-model {--N|namespace=} {--P|package=} {--C|class=} {--T|token=} {--A|all-fields} {object}';
 
     protected static $typeRules = [
         'id' => ['string', null],
@@ -77,7 +77,7 @@ class GenerateModel extends Command
         $object = $this->argument('object');
         $class = $this->option('class') ?: $object;
 
-        $accessToken = BaseModel::getAccessToken();
+        $accessToken = $this->option('token') ?: BaseModel::getAccessToken();
         $client = new Client();
         $response = $client->get(
             sprintf(
