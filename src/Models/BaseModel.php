@@ -464,6 +464,27 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @return mixed|null
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     */
+    public function delete()
+    {
+        if (empty($this->Id)) {
+            throw new MalformedRequestException('Field Id is missing', 'MISSING_ID');
+        }
+        $url = sprintf(
+            '%s%s/sobjects/%s/%s',
+            self::$API_PREFIX,
+            config('salesforce.api_version'),
+            static::$objectApiName,
+            $this->Id
+        );
+        return self::guzzleRequest('delete', $url);
+    }
+
+    /**
      * === === === === ===
      * Type conversion
      * === === === === ===
