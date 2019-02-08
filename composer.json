@@ -11,6 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
+            "CNSDose\\Salesforce\\Console\\": "src/Console",
             "CNSDose\\Salesforce\\Exceptions\\": "src/Exceptions",
             "CNSDose\\Salesforce\\Models\\": "src/Models",
             "CNSDose\\Salesforce\\Providers\\": "src/Providers",
