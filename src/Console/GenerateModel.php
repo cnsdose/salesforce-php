@@ -5,6 +5,7 @@ namespace CNSDose\Salesforce\Console;
 use CNSDose\Salesforce\Models\BaseModel;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
+use Symfony\Component\Console\Output\ConsoleOutputInterface;
 
 class GenerateModel extends Command
 {
@@ -46,7 +47,7 @@ class GenerateModel extends Command
     /**
      * Execute the console command.
      *
-     * @return void
+     * @return int
      */
     public function handle()
     {
@@ -69,6 +70,10 @@ class GenerateModel extends Command
                 'http_errors' => false,
             ]
         );
+        if ($response->getStatusCode() !== 200) {
+            fwrite(STDERR, sprintf("Object %s not found!\n", $object));
+            return 1;
+        }
         $metas = json_decode($response->getBody()->getContents(), true);
 
         $properties = '';
@@ -127,6 +132,6 @@ EOF
             , $namespace, $class, $package, $class, $properties, $class, $object, $defaultFields);
 
         $this->line($result);
-
+        return 0;
     }
 }
