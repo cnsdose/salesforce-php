@@ -35,7 +35,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $this->defaultFields = array_merge($this->defaultFields, $customFields);
         }
         if ($decode) {
-            parent::__construct($this->decode([$data])[0]);
+            parent::__construct($this->decode($data));
         } else {
             parent::__construct($data);
         }
@@ -354,7 +354,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
     public function query(): array
     {
         $json = $this->queryFromBuilder();
-        $decoded = $this->decode($json['records']);
+        $decoded = array_map([$this, 'decode'], $json['records']);
         return array_map(function ($data) {
             return new static($data);
         }, $decoded);
@@ -421,7 +421,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             config('salesforce.api_version'),
             static::$objectApiName
         );
-        $record = $this->encode([$this->raw()])[0];
+        $record = $this->encode($this->raw());
         $response = self::guzzleRequest('post', $url, [
             'json' => $record,
         ]);
@@ -453,7 +453,7 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
             $this->$externalId
         );
 
-        $record = array_intersect_key($this->encode([$this->raw()])[0], array_flip(array_unique($this->changedFields)));
+        $record = array_intersect_key($this->encode($this->raw()), array_flip(array_unique($this->changedFields)));
         $response = self::guzzleRequest('patch', $url, [
             'json' => $record,
         ]);
@@ -469,46 +469,39 @@ class BaseModel extends \CNSDose\Standards\Models\BaseModel
      * === === === === ===
      */
     /**
-     * @param array $records
+     * @param array $record
      * @return array
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
-    protected function decode(array $records): array
+    protected function decode(array $record): array
     {
-        foreach ($records as &$record) {
-            unset($record['attributes']);
-        }
-        unset($record);
-        foreach ($records as &$record) {
-            foreach ($record as $key => &$value) {
-                if ($value !== null && !empty($this->defaultFields[$key])) {
-                    $value = BaseConversion::decode($this->defaultFields[$key], $value);
-                }
-                if (!empty($value) && array_key_exists($key, $this->query['resolve'])) {
-                    $class = $this->query['resolve'][$key];
-                    $value = array_map(function ($item) use ($class) {
-                        return new $class($item, true);
-                    }, $value['records']);
-                }
+        unset($record['attributes']);
+        foreach ($record as $key => &$value) {
+            if ($value !== null && !empty($this->defaultFields[$key])) {
+                $value = BaseConversion::decode($this->defaultFields[$key], $value);
+            }
+            if (!empty($value) && array_key_exists($key, $this->query['resolve'])) {
+                $class = $this->query['resolve'][$key];
+                $value = array_map(function ($item) use ($class) {
+                    return new $class($item, true);
+                }, $value['records']);
             }
         }
-        return $records;
+        return $record;
     }
 
     /**
-     * @param array $records
+     * @param array $record
      * @return array
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
-    protected function encode(array $records): array
+    protected function encode(array $record): array
     {
-        foreach ($records as &$record) {
-            foreach ($record as $key => &$value) {
-                if ($value !== null && !empty($this->defaultFields[$key])) {
-                    $value = BaseConversion::encode($this->defaultFields[$key], $value);
-                }
+        foreach ($record as $key => &$value) {
+            if ($value !== null && !empty($this->defaultFields[$key])) {
+                $value = BaseConversion::encode($this->defaultFields[$key], $value);
             }
         }
-        return $records;
+        return $record;
     }
 }
