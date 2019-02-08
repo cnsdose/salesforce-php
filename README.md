@@ -106,7 +106,7 @@ This method retrieves all defined fields in Salesforce, even if they are not spe
 $result = Account::queryById('0010o00002Cn41XXXX');
 ```
 
-## Create/Update Records
+## Create/Update/Delete Records
 
 ### Create a record
 
@@ -118,7 +118,7 @@ $contact->Email = 'shaun@example.com';
 $contact->create();
 ```
 
-### Upsert a record
+### Upsert/Delete a record
 
 ```php
 /**
@@ -135,6 +135,8 @@ $contact = new Contact([            // we do not need to query first
 ]);
 $contact->FirstName = 'Mince';
 $contact->upsert();
+
+$contact->delete();                 // Id is required to delete a record
 
 // Upsert by external ID
 $contact = new Contact([
