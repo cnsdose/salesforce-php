@@ -1,0 +1,31 @@
+#!/usr/bin/env php
+<?php
+
+use Symfony\Component\Console\Input\ArgvInput;
+use Symfony\Component\Console\Output\ConsoleOutput;
+
+require_once __DIR__ . '/vendor/autoload.php';
+
+if (file_exists(__DIR__ . '/.env')) {
+    (new Dotenv\Dotenv(__DIR__))->load();
+}
+
+$app = new \Illuminate\Foundation\Application(
+    realpath(__DIR__)
+);
+
+$app->singleton(
+    Illuminate\Contracts\Console\Kernel::class,
+    \CNSDose\Salesforce\Tests\Console\Kernel::class
+);
+
+$app->singleton('config', function () {
+    return new Illuminate\Config\Repository;
+});
+$app['config']->set('salesforce', include __DIR__ . '/config/salesforce.php');
+
+$kernel = $app->make(
+    Illuminate\Contracts\Console\Kernel::class
+);
+
+exit($kernel->handle(new ArgvInput, new ConsoleOutput));

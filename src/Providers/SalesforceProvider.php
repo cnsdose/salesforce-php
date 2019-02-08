@@ -8,6 +8,7 @@
 
 namespace CNSDose\Salesforce\Providers;
 
+use CNSDose\Salesforce\Console\GenerateModel;
 use Illuminate\Support\ServiceProvider;
 
 class SalesforceProvider extends ServiceProvider
@@ -22,6 +23,11 @@ class SalesforceProvider extends ServiceProvider
         $this->publishes([
             __DIR__ . '../../config/salesforce.php' => config_path('salesforce.php'),
         ]);
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                GenerateModel::class,
+            ]);
+        }
     }
 
     /**
