@@ -30,6 +30,9 @@ if [[ "$1" == "sales" ]]; then
         fi
         printf 'Generating model %s for object %s\n' "$object_class_name" "$object_api_name"
         php ./artisan salesforce:generate-model -N 'CNSDose\Salesforce\Models\Sales' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
+        if [[ $? -ne 0 ]]; then
+            rm "$model_dir/$object_class_name.php"
+        fi
     done
 fi
 
@@ -72,5 +75,8 @@ if [[ "$1" == "support" ]]; then
         fi
         printf 'Generating model %s for object %s\n' "$object_class_name" "$object_api_name"
         php ./artisan salesforce:generate-model -N 'CNSDose\Salesforce\Models\Support' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
+        if [[ $? -ne 0 ]]; then
+            rm "$model_dir/$object_class_name.php"
+        fi
     done
 fi
