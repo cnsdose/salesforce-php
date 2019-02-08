@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 7/02/19
- * Time: 6:48 PM
+ * Created automatically by salesforce-sdk.
  */
 
 namespace CNSDose\Salesforce\Models\Support;
@@ -16,40 +13,40 @@ use CNSDose\Salesforce\Models\BaseModel;
  *
  * @method SupportCase[] query()
  *
- * @property mixed Id
- * @property mixed IsDeleted
- * @property mixed CaseNumber
- * @property mixed ContactId
- * @property mixed AccountId
- * @property mixed AssetId
- * @property mixed SourceId
- * @property mixed ParentId
- * @property mixed SuppliedName
+ * @property string Id
+ * @property bool IsDeleted
+ * @property string CaseNumber
+ * @property string ContactId
+ * @property string AccountId
+ * @property string AssetId
+ * @property string SourceId
+ * @property string ParentId
+ * @property string SuppliedName
  * @property mixed SuppliedEmail
- * @property mixed SuppliedPhone
- * @property mixed SuppliedCompany
+ * @property string SuppliedPhone
+ * @property string SuppliedCompany
  * @property mixed Type
  * @property mixed Status
  * @property mixed Reason
  * @property mixed Origin
- * @property mixed Subject
+ * @property string Subject
  * @property mixed Priority
- * @property mixed Description
- * @property mixed IsClosed
+ * @property string Description
+ * @property bool IsClosed
  * @property \Carbon\Carbon ClosedDate
- * @property mixed IsEscalated
+ * @property bool IsEscalated
  * @property mixed CurrencyIsoCode
- * @property mixed OwnerId
+ * @property string OwnerId
  * @property \Carbon\Carbon CreatedDate
- * @property mixed CreatedById
+ * @property string CreatedById
  * @property \Carbon\Carbon LastModifiedDate
- * @property mixed LastModifiedById
+ * @property string LastModifiedById
  * @property \Carbon\Carbon SystemModstamp
  * @property mixed ContactPhone
  * @property mixed ContactMobile
  * @property mixed ContactEmail
  * @property mixed ContactFax
- * @property mixed Comments
+ * @property string Comments
  * @property \Carbon\Carbon LastViewedDate
  * @property \Carbon\Carbon LastReferencedDate
  */
@@ -58,7 +55,7 @@ class SupportCase extends BaseModel
     protected static $objectApiName = 'Case';
     protected $defaultFields = [
         'Id' => null,
-        'IsDeleted' => null,
+        'IsDeleted' => 'bool',
         'CaseNumber' => null,
         'ContactId' => null,
         'AccountId' => null,
@@ -76,9 +73,9 @@ class SupportCase extends BaseModel
         'Subject' => null,
         'Priority' => null,
         'Description' => null,
-        'IsClosed' => null,
+        'IsClosed' => 'bool',
         'ClosedDate' => 'datetime',
-        'IsEscalated' => null,
+        'IsEscalated' => 'bool',
         'CurrencyIsoCode' => null,
         'OwnerId' => null,
         'CreatedDate' => 'datetime',

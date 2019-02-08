@@ -8,17 +8,28 @@ namespace CNSDose\Salesforce\Models\Sales;
 use CNSDose\Salesforce\Models\BaseModel;
 
 /**
- * Class Account
+ * Class Order
  * @package CNSDose\Salesforce\Models\Sales
  *
- * @method Account[] query()
+ * @method Order[] query()
  *
  * @property string Id
- * @property bool IsDeleted
- * @property string MasterRecordId
- * @property string Name
+ * @property string OwnerId
+ * @property string ContractId
+ * @property string AccountId
+ * @property string Pricebook2Id
+ * @property string OriginalOrderId
+ * @property string RecordTypeId
+ * @property \Carbon\Carbon EffectiveDate
+ * @property \Carbon\Carbon EndDate
+ * @property bool IsReductionOrder
+ * @property mixed Status
+ * @property string Description
+ * @property string CustomerAuthorizedById
+ * @property \Carbon\Carbon CustomerAuthorizedDate
+ * @property string CompanyAuthorizedById
+ * @property \Carbon\Carbon CompanyAuthorizedDate
  * @property mixed Type
- * @property string ParentId
  * @property string BillingStreet
  * @property string BillingCity
  * @property string BillingState
@@ -37,53 +48,48 @@ use CNSDose\Salesforce\Models\BaseModel;
  * @property float ShippingLongitude
  * @property mixed ShippingGeocodeAccuracy
  * @property mixed ShippingAddress
- * @property mixed Phone
- * @property mixed Fax
- * @property string AccountNumber
- * @property mixed Website
- * @property mixed PhotoUrl
- * @property string Sic
- * @property mixed Industry
- * @property float AnnualRevenue
- * @property mixed NumberOfEmployees
- * @property mixed Ownership
- * @property string TickerSymbol
- * @property string Description
- * @property mixed Rating
- * @property string Site
+ * @property string Name
+ * @property \Carbon\Carbon PoDate
+ * @property string PoNumber
+ * @property string OrderReferenceNumber
+ * @property string BillToContactId
+ * @property string ShipToContactId
+ * @property \Carbon\Carbon ActivatedDate
+ * @property string ActivatedById
+ * @property mixed StatusCode
  * @property mixed CurrencyIsoCode
- * @property string OwnerId
+ * @property string OrderNumber
+ * @property float TotalAmount
  * @property \Carbon\Carbon CreatedDate
  * @property string CreatedById
  * @property \Carbon\Carbon LastModifiedDate
  * @property string LastModifiedById
+ * @property bool IsDeleted
  * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastActivityDate
  * @property \Carbon\Carbon LastViewedDate
  * @property \Carbon\Carbon LastReferencedDate
- * @property string Jigsaw
- * @property string JigsawCompanyId
- * @property mixed CleanStatus
- * @property mixed AccountSource
- * @property string DunsNumber
- * @property string Tradestyle
- * @property string NaicsCode
- * @property string NaicsDesc
- * @property string YearStarted
- * @property string SicDesc
- * @property string DandbCompanyId
- * @property string OperatingHoursId
  */
-class Account extends BaseModel
+class Order extends BaseModel
 {
-    protected static $objectApiName = 'Account';
+    protected static $objectApiName = 'Order';
     protected $defaultFields = [
         'Id' => null,
-        'IsDeleted' => 'bool',
-        'MasterRecordId' => null,
-        'Name' => null,
+        'OwnerId' => null,
+        'ContractId' => null,
+        'AccountId' => null,
+        'Pricebook2Id' => null,
+        'OriginalOrderId' => null,
+        'RecordTypeId' => null,
+        'EffectiveDate' => 'date',
+        'EndDate' => 'date',
+        'IsReductionOrder' => 'bool',
+        'Status' => null,
+        'Description' => null,
+        'CustomerAuthorizedById' => null,
+        'CustomerAuthorizedDate' => 'date',
+        'CompanyAuthorizedById' => null,
+        'CompanyAuthorizedDate' => 'date',
         'Type' => null,
-        'ParentId' => null,
         'BillingStreet' => null,
         'BillingCity' => null,
         'BillingState' => null,
@@ -102,41 +108,25 @@ class Account extends BaseModel
         'ShippingLongitude' => 'number:3,15',
         'ShippingGeocodeAccuracy' => null,
         'ShippingAddress' => null,
-        'Phone' => null,
-        'Fax' => null,
-        'AccountNumber' => null,
-        'Website' => null,
-        'PhotoUrl' => null,
-        'Sic' => null,
-        'Industry' => null,
-        'AnnualRevenue' => 'number:18,0',
-        'NumberOfEmployees' => null,
-        'Ownership' => null,
-        'TickerSymbol' => null,
-        'Description' => null,
-        'Rating' => null,
-        'Site' => null,
+        'Name' => null,
+        'PoDate' => 'date',
+        'PoNumber' => null,
+        'OrderReferenceNumber' => null,
+        'BillToContactId' => null,
+        'ShipToContactId' => null,
+        'ActivatedDate' => 'datetime',
+        'ActivatedById' => null,
+        'StatusCode' => null,
         'CurrencyIsoCode' => null,
-        'OwnerId' => null,
+        'OrderNumber' => null,
+        'TotalAmount' => 'number:16,2',
         'CreatedDate' => 'datetime',
         'CreatedById' => null,
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
+        'IsDeleted' => 'bool',
         'SystemModstamp' => 'datetime',
-        'LastActivityDate' => 'date',
         'LastViewedDate' => 'datetime',
         'LastReferencedDate' => 'datetime',
-        'Jigsaw' => null,
-        'JigsawCompanyId' => null,
-        'CleanStatus' => null,
-        'AccountSource' => null,
-        'DunsNumber' => null,
-        'Tradestyle' => null,
-        'NaicsCode' => null,
-        'NaicsDesc' => null,
-        'YearStarted' => null,
-        'SicDesc' => null,
-        'DandbCompanyId' => null,
-        'OperatingHoursId' => null,
     ];
 }

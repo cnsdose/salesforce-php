@@ -3,13 +3,13 @@
  * Created automatically by salesforce-sdk.
  */
 
-namespace CNSDose\Salesforce\Models\Sales;
+namespace CNSDose\Salesforce\Models\Support;
 
 use CNSDose\Salesforce\Models\BaseModel;
 
 /**
  * Class Contact
- * @package CNSDose\Salesforce\Models\Sales
+ * @package CNSDose\Salesforce\Models\Support
  *
  * @method Contact[] query()
  *
