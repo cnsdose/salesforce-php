@@ -20,7 +20,8 @@ use CNSDose\Salesforce\Exceptions\ConversionException;
  */
 class DateTime extends BaseConversion
 {
-    private static $format = 'Y-m-d\\TH:i:s.vO';
+    private static $formatDecode = 'Y-m-d\TH:i:s.uO';
+    private static $formatEncode = 'Y-m-d\TH:i:s.vO';
 
     /**
      * @param string $value
@@ -30,7 +31,7 @@ class DateTime extends BaseConversion
     public function doDecode($value)
     {
         try {
-            return Carbon::createFromFormat(self::$format, $value);
+            return Carbon::createFromFormat(self::$formatDecode, $value);
         } catch (\Exception $e) {
             throw new ConversionException(500, sprintf('Failed to decode %s.', $value), 0, $e);
         }
@@ -42,6 +43,6 @@ class DateTime extends BaseConversion
      */
     public function doEncode($value)
     {
-        return $value->setTimezone('UTC')->format(self::$format);
+        return $value->setTimezone('UTC')->format(self::$formatEncode);
     }
 }
