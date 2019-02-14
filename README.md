@@ -77,10 +77,10 @@ $contact = Contact::build()
             ->orWhere('Name', "'AccountExample2'")
     )
     ->query();
-$result = BaseModel::build()
+$result = BaseRecordModel::build()
     ->select('Id')
     ->select(
-        BaseModel::build()
+        BaseRecordModel::build()
             ->select('Id')
             ->from('Account.Contacts')
     )
@@ -91,7 +91,7 @@ $result = BaseModel::build()
 ### Raw Query
 ```php
 // $result: original JSON
-$result = BaseModel::build()
+$result = BaseRecordModel::build()
     ->queryRaw('SELECT Id FROM Account');
 
 // $result: Account[]
@@ -219,7 +219,7 @@ $ php artisan salesforce:generate-model -N 'MyProject\Models' -C Custom -A Custo
 
 namespace MyProject\Models;
 
-use CNSDose\Salesforce\Models\BaseModel;
+use CNSDose\Salesforce\Models\BaseRecordModel;
 
 /**
  * Class Custom
@@ -245,7 +245,7 @@ use CNSDose\Salesforce\Models\BaseModel;
  * @property float Float__c
  * @property \Carbon\Carbon Time__c
  */
-class Custom extends BaseModel
+class Custom extends BaseRecordModel
 {
     protected static $objectApiName = 'Custom__c';
     protected $defaultFields = [
