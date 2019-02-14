@@ -2,7 +2,7 @@
 
 namespace CNSDose\Salesforce\Console;
 
-use CNSDose\Salesforce\Models\BaseModel;
+use CNSDose\Salesforce\Models\BaseRecordModel;
 use Illuminate\Console\Command;
 
 class RetrieveAccessToken extends Command
@@ -36,6 +36,6 @@ class RetrieveAccessToken extends Command
      */
     public function handle()
     {
-        $this->line(BaseModel::getAccessToken());
+        $this->line(BaseRecordModel::getAccessToken());
     }
 }

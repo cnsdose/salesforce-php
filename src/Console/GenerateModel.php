@@ -2,7 +2,7 @@
 
 namespace CNSDose\Salesforce\Console;
 
-use CNSDose\Salesforce\Models\BaseModel;
+use CNSDose\Salesforce\Models\BaseRecordModel;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 
@@ -77,7 +77,7 @@ class GenerateModel extends Command
         $object = $this->argument('object');
         $class = $this->option('class') ?: $object;
 
-        $accessToken = $this->option('token') ?: BaseModel::getAccessToken();
+        $accessToken = $this->option('token') ?: BaseRecordModel::getAccessToken();
         $client = new Client();
         $response = $client->get(
             sprintf(
@@ -130,7 +130,7 @@ class GenerateModel extends Command
 
 namespace %s;
 
-use CNSDose\Salesforce\Models\BaseModel;
+use CNSDose\Salesforce\Models\BaseRecordModel;
 
 /**
  * Class %s
@@ -139,7 +139,7 @@ use CNSDose\Salesforce\Models\BaseModel;
  * @method %s[] query()
  *%s
  */
-class %s extends BaseModel
+class %s extends BaseRecordModel
 {
     protected static \$objectApiName = '%s';
     protected \$defaultFields = [%s
