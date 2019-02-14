@@ -24,7 +24,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * Object configurations
      * === === === === ===
      */
-    protected static $objectApiName = 'BaseModel';
+    protected static $objectApiName = 'BaseRecordModel';
     protected $defaultFields = [];
     private $recording = false;
     protected $changedFields = [];
@@ -421,7 +421,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     public static function queryById(string $id)
     {
         if (static::class === self::class) {
-            throw new StandardException(500, 'Do not useBaseModel::queryById()');
+            throw new StandardException(500, 'Do not use BaseRecordModel::queryById()');
         }
         $url = sprintf(
             '%s%s/sobjects/%s/%s',
