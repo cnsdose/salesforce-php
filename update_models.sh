@@ -857,7 +857,7 @@ for object_api_name in "${!salesforce_objects[@]}"; do
             object_class_name="$object_api_name"
         fi
         printf 'Generating model %s for object %s\n' "$object_class_name" "$object_api_name"
-        php ./artisan salesforce:generate-model -T "`get_token`" -N 'CNSDose\Salesforce\Models\Records' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
+        php ./artisan salesforce:generate-record-model -T "`get_token`" -N 'CNSDose\Salesforce\Models\Records' -C "$object_class_name" "$object_api_name" > "$model_dir/$object_class_name.php"
         if [[ $? -ne 0 ]]; then
             rm "$model_dir/$object_class_name.php"
         fi

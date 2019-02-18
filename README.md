@@ -187,15 +187,15 @@ Adding 3 custom fields, with conversion rules where applicable, to object `Custo
 
 ## Custom Objects
 
-Models can be automatically generated for custom objects that have been defined in Salesforce via Artisan command `salesforce:generate-model`.
+Models can be automatically generated for custom objects that have been defined in Salesforce via Artisan command `salesforce:generate-record-model`.
 
 ```
-$ php artisan help salesforce:generate-model
+$ php artisan help salesforce:generate-record-model
 Description:
   Generate Salesforce model dynamically from API
 
 Usage:
-  salesforce:generate-model [options] [--] <object>
+  salesforce:generate-record-model [options] [--] <object>
 
 Arguments:
   object
@@ -211,7 +211,7 @@ Options:
 ### Example
 
 ```
-$ php artisan salesforce:generate-model -N 'MyProject\Models' -C Custom -A Custom__c
+$ php artisan salesforce:generate-record-model -N 'MyProject\Models' -C Custom -A Custom__c
 <?php
 /**
  * Created automatically by salesforce-sdk.
@@ -272,14 +272,14 @@ class Custom extends BaseRecordModel
 
 ### Custom Type-Rule Mapping
 
-One could use `\CNSDose\Salesforce\Console\GenerateModel::addTypeRule` to map a Salesforce type to a PHP type/conversion rule for convenience.
+One could use `\CNSDose\Salesforce\Console\GenerateRecordModel::addTypeRule` to map a Salesforce type to a PHP type/conversion rule for convenience.
 
-Common mappings are already defined in `GenerateModel`.
+Common mappings are already defined in `GenerateRecordModel`.
 
 ```php
-GenerateModel::addTypeRule('type1', 'string', null);
-GenerateModel::addTypeRule('type2', '\\Carbon\\Carbon', 'date');
-GenerateModel::addTypeRule('type3', 'float', function ($field) {
+GenerateRecordModel::addTypeRule('type1', 'string', null);
+GenerateRecordModel::addTypeRule('type2', '\\Carbon\\Carbon', 'date');
+GenerateRecordModel::addTypeRule('type3', 'float', function ($field) {
     return sprintf('number:%s,%s', $field['precision'] - $field['scale'], $field['scale']);
 });
 ```

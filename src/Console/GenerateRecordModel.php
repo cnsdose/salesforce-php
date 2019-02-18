@@ -6,7 +6,7 @@ use CNSDose\Salesforce\Support\Authentication;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 
-class GenerateModel extends Command
+class GenerateRecordModel extends Command
 {
 
     /**
@@ -14,21 +14,21 @@ class GenerateModel extends Command
      *
      * @var string
      */
-    protected $name = 'salesforce:generate-model';
+    protected $name = 'salesforce:generate-record-model';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Generate Salesforce model dynamically from API';
+    protected $description = 'Generate Salesforce record model dynamically from API';
 
     /**
      * The name and signature of the console command.
      *
      * @var string
      */
-    protected $signature = 'salesforce:generate-model {--N|namespace=} {--P|package=} {--C|class=} {--T|token=} {--A|all-fields} {object}';
+    protected $signature = 'salesforce:generate-record-model {--N|namespace=} {--P|package=} {--C|class=} {--T|token=} {--A|all-fields} {object}';
 
     protected static $typeRules = [
         'id' => ['string', null],
