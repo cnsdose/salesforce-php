@@ -8,6 +8,7 @@
 
 namespace CNSDose\Salesforce\Console;
 
+use CNSDose\Salesforce\Models\BaseMetadataModel;
 use Illuminate\Console\Command;
 
 class GenerateMetadataModel extends Command
@@ -135,7 +136,7 @@ class GenerateMetadataModel extends Command
     {
         $modelPath = sprintf(__DIR__ . '/../Models/Metadata/%s.php', $name);
         $fields = $this->complexTypes[$name]['fields'];
-        $base = $this->complexTypes[$name]['base'];
+        $base = $name === 'Metadata' ? '\\' . BaseMetadataModel::class : $this->complexTypes[$name]['base'];
         $contents = sprintf(<<<EOF
 <?php
 

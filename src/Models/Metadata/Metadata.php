@@ -8,7 +8,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property string|null $fullName
  */
-class Metadata
+class Metadata extends \CNSDose\Salesforce\Models\BaseMetadataModel
 {
     public function setFullName(string $fullName)
     {
