@@ -64,6 +64,11 @@ abstract class BaseMetadataModel
         return substr(static::class, strrpos(static::class, '\\') + 1);
     }
 
+    /**
+     * @return mixed
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public function create()
     {
         $payload = new \stdClass();
@@ -75,6 +80,12 @@ abstract class BaseMetadataModel
         return self::getSoapClient()->createMetadata($payload);
     }
 
+    /**
+     * @param $fullName
+     * @return static|null
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public static function read($fullName)
     {
         $payload = (object)[
@@ -88,6 +99,12 @@ abstract class BaseMetadataModel
         return static::coerceObject($response->result->records);
     }
 
+    /**
+     * @param $newFullName
+     * @return mixed
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public function rename($newFullName)
     {
         $payload = (object)[
@@ -103,6 +120,11 @@ abstract class BaseMetadataModel
         return $response;
     }
 
+    /**
+     * @return mixed
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public function update()
     {
         $payload = new \stdClass();
@@ -114,6 +136,11 @@ abstract class BaseMetadataModel
         return self::getSoapClient()->updateMetadata($payload);
     }
 
+    /**
+     * @return mixed
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public function upsert()
     {
         $payload = new \stdClass();
@@ -125,6 +152,11 @@ abstract class BaseMetadataModel
         return self::getSoapClient()->upsertMetadata($payload);
     }
 
+    /**
+     * @return mixed
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
     public function delete()
     {
         $payload = (object)[
