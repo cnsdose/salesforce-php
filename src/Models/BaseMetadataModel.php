@@ -19,6 +19,14 @@ use CNSDose\Salesforce\Support\Authentication;
 class BaseMetadataModel
 {
     /**
+     * === === === === ===
+     * SOAP client
+     * === === === === ===
+     */
+    protected static $METADATA_SERVER_URL = 'https://ap8.salesforce.com/services/Soap/m/%s/%s';
+    protected static $METADATA_SOAP_NAMESPACE = 'http://soap.sforce.com/2006/04/metadata';
+
+    /**
      * @return \SoapClient
      * @throws \CNSDose\Standards\Exceptions\StandardException
      */
@@ -32,7 +40,7 @@ class BaseMetadataModel
             'sessionId' => Authentication::getAccessToken(),
         ]);
         $sessionHeader = new \SoapHeader(
-            'http://soap.sforce.com/2006/04/metadata',
+            self::$METADATA_SOAP_NAMESPACE,
             'SessionHeader',
             new \SoapVar([
                 'sessionId' => new \SoapVar(Authentication::getAccessToken(), XSD_STRING),
@@ -42,7 +50,7 @@ class BaseMetadataModel
 
         $soapClient->__setSoapHeaders($sessionHeader);
         $soapClient->__setLocation(sprintf(
-            'https://ap8.salesforce.com/services/Soap/m/%s/%s',
+            self::$METADATA_SERVER_URL,
             substr(config('salesforce.api_version'), 1),
             Authentication::getOrganisationId()
         ));
@@ -61,7 +69,7 @@ class BaseMetadataModel
             $this,
             SOAP_ENC_OBJECT,
             $this->getModelName(),
-            'http://soap.sforce.com/2006/04/metadata');
+            self::$METADATA_SOAP_NAMESPACE);
         return self::getSoapClient()->createMetadata($payload);
     }
 
@@ -87,7 +95,7 @@ class BaseMetadataModel
             $this,
             SOAP_ENC_OBJECT,
             $this->getModelName(),
-            'http://soap.sforce.com/2006/04/metadata');
+            self::$METADATA_SOAP_NAMESPACE);
         return self::getSoapClient()->updateMetadata($payload);
     }
 
