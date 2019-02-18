@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:13 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -14,5 +8,5 @@ class WebLinkDisplayType extends Enum
 {
     const LINK = 'link';
     const BUTTON = 'button';
-    const MASSACTIONBUTTON = 'massActionButton';
+    const MASS_ACTION_BUTTON = 'massActionButton';
 }

@@ -1,15 +1,9 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:06 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class SharingReason
+ * Class SharingRecalculation
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $className

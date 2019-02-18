@@ -13,6 +13,7 @@ class Kernel extends ConsoleKernel
      * @var array
      */
     protected $commands = [
+        \CNSDose\Salesforce\Console\GenerateMetadataModel::class,
         \CNSDose\Salesforce\Console\GenerateRecordModel::class,
         \CNSDose\Salesforce\Console\RetrieveAccessToken::class,
     ];

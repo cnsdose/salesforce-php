@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:16 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,7 +6,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class WebLink
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property string|null $availability
  * @property string|null $description
  * @property string|null $displayType
@@ -35,13 +28,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $url
  * @property int|null $width
  */
-class WebLink
+class WebLink extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setAvailability(WebLinkAvailability $availability)
     {
         $this->availability = $availability->getValue();

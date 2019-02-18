@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:49 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,7 +6,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class ListView
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property string|null $booleanFilter
  * @property string[]|null $columns
  * @property string|null $division
@@ -23,13 +16,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $queue
  * @property SharedTo|null $sharedTo
  */
-class ListView
+class ListView extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setBooleanFilter(string $booleanFilter)
     {
         $this->booleanFilter = $booleanFilter;

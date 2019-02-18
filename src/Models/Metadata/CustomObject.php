@@ -1,20 +1,11 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 1:42 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
-
-use CNSDose\Salesforce\Models\BaseMetadataModel;
 
 /**
  * Class CustomObject
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property ActionOverride[]|null $actionOverrides
  * @property bool|null $allowInChatterGroups
  * @property ArticleTypeChannelDisplay|null $articleTypeChannelDisplay
@@ -23,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseMetadataModel;
  * @property CompactLayout[]|null $compactLayouts
  * @property string|null $customHelp
  * @property string|null $customHelpPage
- * @property CustomSettingsType|null $customSettingsType
+ * @property string|null $customSettingsType
  * @property string|null $dataStewardGroup
  * @property string|null $dataStewardUser
  * @property string|null $deploymentStatus
@@ -69,13 +60,8 @@ use CNSDose\Salesforce\Models\BaseMetadataModel;
  * @property string|null $visibility
  * @property WebLink[]|null $webLinks
  */
-class CustomObject extends BaseMetadataModel
+class CustomObject extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setActionOverrides(array $actionOverrides)
     {
         $this->actionOverrides = $actionOverrides;

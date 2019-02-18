@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:28 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -16,7 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $restricted
  * @property ValueSetValuesDefinition|null $valueSetDefinition
  * @property string|null $valueSetName
- * @property ValueSettings|null $valueSettings
+ * @property ValueSettings[]|null $valueSettings
  */
 class ValueSet
 {
@@ -40,7 +34,7 @@ class ValueSet
         $this->valueSetName = $valueSetName;
     }
 
-    public function setValueSettings(ValueSettings $valueSettings)
+    public function setValueSettings(array $valueSettings)
     {
         $this->valueSettings = $valueSettings;
     }

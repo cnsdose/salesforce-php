@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:54 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -15,7 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $allCustomerPortalUsers
  * @property string|null $allInternalUsers
  * @property string|null $allPartnerUsers
- * @property string|null $channelProgramGroup
+ * @property string[]|null $channelProgramGroup
  * @property string[]|null $channelProgramGroups
  * @property string[]|null $group
  * @property string[]|null $groups
@@ -51,7 +45,7 @@ class SharedTo
         $this->allPartnerUsers = $allPartnerUsers;
     }
 
-    public function setChannelProgramGroup(string $channelProgramGroup)
+    public function setChannelProgramGroup(array $channelProgramGroup)
     {
         $this->channelProgramGroup = $channelProgramGroup;
     }

@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:01 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,7 +6,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class RecordType
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property bool|null $active
  * @property string|null $businessProcess
  * @property string|null $compactLayoutAssignment
@@ -20,13 +13,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $label
  * @property RecordTypePicklistValue[]|null $picklistValues
  */
-class RecordType
+class RecordType extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setActive(bool $active)
     {
         $this->active = $active;

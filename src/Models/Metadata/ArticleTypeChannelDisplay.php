@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 2:37 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,7 +6,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class ArticleTypeChannelDisplay
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ArticleTypeTemplate[] articleTypeTemplates
+ * @property ArticleTypeTemplate[]|null $articleTypeTemplates
  */
 class ArticleTypeChannelDisplay
 {

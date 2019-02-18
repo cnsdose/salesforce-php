@@ -23,6 +23,7 @@
         "php": "^7.0.0",
         "ext-json": "*",
         "ext-soap": "*",
+        "ext-xmlreader": "*",
         "cnsdose/cnsdose-standards": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
         "firebase/php-jwt": "^5.0",

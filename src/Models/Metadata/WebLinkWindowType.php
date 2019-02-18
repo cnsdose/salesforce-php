@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:14 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -16,5 +10,5 @@ class WebLinkWindowType extends Enum
     const SIDEBAR = 'sidebar';
     const NO_SIDEBAR = 'noSidebar';
     const REPLACE = 'replace';
-    const ON_CLICK_JAVASCRIPT = 'onClickJavaScript';
+    const ON_CLICK_JAVA_SCRIPT = 'onClickJavaScript';
 }

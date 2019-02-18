@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 2:51 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,11 +6,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class PicklistValue
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
- * @property string|null $color
- * @property bool|null $default
- * @property string|null $description
- * @property bool|null $isActive
  * @property bool|null $allowEmail
  * @property bool|null $closed
  * @property string[]|null $controllingFieldValues
@@ -29,33 +18,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $reviewed
  * @property bool|null $won
  */
-class PicklistValue
+class PicklistValue extends GlobalPicklistValue
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
-    public function setColor(string $color)
-    {
-        $this->color = $color;
-    }
-
-    public function setDefault(bool $default)
-    {
-        $this->default = $default;
-    }
-
-    public function setDescription(string $description)
-    {
-        $this->description = $description;
-    }
-
-    public function setIsActive(bool $isActive)
-    {
-        $this->isActive = $isActive;
-    }
-
     public function setAllowEmail(bool $allowEmail)
     {
         $this->allowEmail = $allowEmail;

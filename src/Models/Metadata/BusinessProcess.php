@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 2:57 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,18 +6,12 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class BusinessProcess
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property string|null $description
  * @property bool|null $isActive
  * @property PicklistValue[]|null $values
  */
-class BusinessProcess
+class BusinessProcess extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setDescription(string $description)
     {
         $this->description = $description;

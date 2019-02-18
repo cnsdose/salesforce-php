@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:44 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -18,7 +12,7 @@ class FieldType extends Enum
     const CHECKBOX = 'Checkbox';
     const CURRENCY = 'Currency';
     const DATE = 'Date';
-    const DATETIME = 'DateTime';
+    const DATE_TIME = 'DateTime';
     const EMAIL = 'Email';
     const NUMBER = 'Number';
     const PERCENT = 'Percent';
@@ -26,7 +20,7 @@ class FieldType extends Enum
     const PICKLIST = 'Picklist';
     const MULTISELECT_PICKLIST = 'MultiselectPicklist';
     const TEXT = 'Text';
-    const TEXTAREA = 'TextArea';
+    const TEXT_AREA = 'TextArea';
     const LONG_TEXT_AREA = 'LongTextArea';
     const HTML = 'Html';
     const URL = 'Url';

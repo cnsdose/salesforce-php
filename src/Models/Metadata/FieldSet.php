@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:07 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,19 +6,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class FieldSet
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property FieldSetItem[]|null $availableFields
  * @property string|null $description
  * @property FieldSetItem[]|null $displayedFields
  * @property string|null $label
  */
-class FieldSet
+class FieldSet extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setAvailableFields(array $availableFields)
     {
         $this->availableFields = $availableFields;

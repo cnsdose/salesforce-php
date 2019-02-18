@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 3:10 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
@@ -12,7 +6,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class CustomField
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $fullName
  * @property string|null $businessOwnerGroup
  * @property string|null $businessOwnerUser
  * @property string|null $businessStatus
@@ -70,13 +63,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property int|null $visibleLines
  * @property bool|null $writeRequiresMasterRead
  */
-class CustomField
+class CustomField extends Metadata
 {
-    public function setFullName(string $fullName)
-    {
-        $this->fullName = $fullName;
-    }
-
     public function setBusinessOwnerGroup(string $businessOwnerGroup)
     {
         $this->businessOwnerGroup = $businessOwnerGroup;

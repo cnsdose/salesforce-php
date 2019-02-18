@@ -1,10 +1,4 @@
 <?php
-/**
- * Created by IntelliJ IDEA.
- * User: frederick
- * Date: 15/02/19
- * Time: 4:00 PM
- */
 
 namespace CNSDose\Salesforce\Models\Metadata;
 
