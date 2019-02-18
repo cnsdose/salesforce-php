@@ -15,6 +15,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ActionOverride
 {
+    public static $classMap = [
+    ];
+
     public function setActionName(string $actionName)
     {
         $this->actionName = $actionName;

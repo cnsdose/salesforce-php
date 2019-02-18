@@ -13,6 +13,17 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class FieldSet extends Metadata
 {
+    public static $classMap = [
+        'availableFields' => [
+            'multiple' => true,
+            'type' => FieldSetItem::class,
+        ],
+        'displayedFields' => [
+            'multiple' => true,
+            'type' => FieldSetItem::class,
+        ],
+    ];
+
     public function setAvailableFields(array $availableFields)
     {
         $this->availableFields = $availableFields;

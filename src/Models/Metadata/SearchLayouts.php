@@ -19,6 +19,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class SearchLayouts
 {
+    public static $classMap = [
+    ];
+
     public function setCustomTabListAdditionalFields(array $customTabListAdditionalFields)
     {
         $this->customTabListAdditionalFields = $customTabListAdditionalFields;

@@ -12,6 +12,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ArticleTypeTemplate
 {
+    public static $classMap = [
+    ];
+
     public function setChannel(Channel $channel)
     {
         $this->channel = $channel->getValue();

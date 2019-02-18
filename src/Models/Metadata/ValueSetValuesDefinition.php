@@ -11,6 +11,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ValueSetValuesDefinition
 {
+    public static $classMap = [
+        'value' => [
+            'multiple' => true,
+            'type' => CustomValue::class,
+        ],
+    ];
+
     public function setSorted(bool $sorted)
     {
         $this->sorted = $sorted;

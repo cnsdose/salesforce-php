@@ -12,6 +12,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class HistoryRetentionPolicy
 {
+    public static $classMap = [
+    ];
+
     public function setArchiveAfterMonths(int $archiveAfterMonths)
     {
         $this->archiveAfterMonths = $archiveAfterMonths;

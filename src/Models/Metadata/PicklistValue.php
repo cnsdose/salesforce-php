@@ -20,6 +20,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class PicklistValue extends GlobalPicklistValue
 {
+    public static $classMap = [
+    ];
+
     public function setAllowEmail(bool $allowEmail)
     {
         $this->allowEmail = $allowEmail;

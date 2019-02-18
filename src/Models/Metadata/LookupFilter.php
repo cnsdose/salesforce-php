@@ -16,6 +16,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class LookupFilter
 {
+    public static $classMap = [
+        'filterItems' => [
+            'multiple' => true,
+            'type' => FilterItem::class,
+        ],
+    ];
+
     public function setActive(bool $active)
     {
         $this->active = $active;

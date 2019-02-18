@@ -11,6 +11,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class RecordTypePicklistValue
 {
+    public static $classMap = [
+        'values' => [
+            'multiple' => true,
+            'type' => PicklistValue::class,
+        ],
+    ];
+
     public function setPicklist(string $picklist)
     {
         $this->picklist = $picklist;

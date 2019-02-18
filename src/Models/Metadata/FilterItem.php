@@ -13,6 +13,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class FilterItem
 {
+    public static $classMap = [
+    ];
+
     public function setField(string $field)
     {
         $this->field = $field;

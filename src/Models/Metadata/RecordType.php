@@ -15,6 +15,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class RecordType extends Metadata
 {
+    public static $classMap = [
+        'picklistValues' => [
+            'multiple' => true,
+            'type' => RecordTypePicklistValue::class,
+        ],
+    ];
+
     public function setActive(bool $active)
     {
         $this->active = $active;

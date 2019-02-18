@@ -65,6 +65,21 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class CustomField extends Metadata
 {
+    public static $classMap = [
+        'lookupFilter' => [
+            'multiple' => false,
+            'type' => LookupFilter::class,
+        ],
+        'summaryFilterItems' => [
+            'multiple' => true,
+            'type' => FilterItem::class,
+        ],
+        'valueSet' => [
+            'multiple' => false,
+            'type' => ValueSet::class,
+        ],
+    ];
+
     public function setBusinessOwnerGroup(string $businessOwnerGroup)
     {
         $this->businessOwnerGroup = $businessOwnerGroup;

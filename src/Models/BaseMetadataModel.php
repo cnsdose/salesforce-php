@@ -16,8 +16,10 @@ use CNSDose\Salesforce\Support\Authentication;
  *
  * @property string|null $fullName
  */
-class BaseMetadataModel
+abstract class BaseMetadataModel
 {
+    public static $classMap = [];
+
     /**
      * === === === === ===
      * SOAP client
@@ -57,7 +59,7 @@ class BaseMetadataModel
         return $soapClient;
     }
 
-    private function getModelName()
+    private static function getModelName()
     {
         return substr(static::class, strrpos(static::class, '\\') + 1);
     }
@@ -68,15 +70,28 @@ class BaseMetadataModel
         $payload->metadata = new \SoapVar(
             $this,
             SOAP_ENC_OBJECT,
-            $this->getModelName(),
+            static::getModelName(),
             self::$METADATA_SOAP_NAMESPACE);
         return self::getSoapClient()->createMetadata($payload);
+    }
+
+    public static function read($fullName)
+    {
+        $payload = (object)[
+            'type' => static::getModelName(),
+            'fullNames' => [$fullName],
+        ];
+        $response = self::getSoapClient()->readMetadata($payload);
+        if (empty($response->result->records)) {
+            return null;
+        }
+        return static::coerceObject($response->result->records);
     }
 
     public function rename($newFullName)
     {
         $payload = (object)[
-            'type' => $this->getModelName(),
+            'type' => static::getModelName(),
             'oldFullName' => $this->fullName,
             'newFullName' => $newFullName,
         ];
@@ -94,7 +109,7 @@ class BaseMetadataModel
         $payload->metadata = new \SoapVar(
             $this,
             SOAP_ENC_OBJECT,
-            $this->getModelName(),
+            static::getModelName(),
             self::$METADATA_SOAP_NAMESPACE);
         return self::getSoapClient()->updateMetadata($payload);
     }
@@ -102,9 +117,48 @@ class BaseMetadataModel
     public function delete()
     {
         $payload = (object)[
-            'type' => $this->getModelName(),
+            'type' => static::getModelName(),
             'fullNames' => [$this->fullName],
         ];
         return self::getSoapClient()->deleteMetadata($payload);
+    }
+
+    public static function getClassMap(): array
+    {
+        if (!empty(get_parent_class(static::class))) {
+            return array_merge(call_user_func([get_parent_class(static::class), 'getClassMap']), static::$classMap);
+        }
+        return static::$classMap;
+    }
+
+    public static function coerceObject($object, $class = null)
+    {
+        if ($class === null) {
+            $class = static::class;
+        }
+        $result = new $class;
+
+        if (method_exists($class, 'getClassMap')) {
+            $map = $class::getClassMap();
+        } else {
+            $map = $class::$classMap;
+        }
+        foreach ($object as $field => $value) {
+            if (array_key_exists($field, $map)) {
+                $multiple = $map[$field]['multiple'];
+                $type = $map[$field]['type'];
+                if ($multiple && is_array($value)) {
+                    $result->$field = array_map(function ($value) use ($type) {
+                        return self::coerceObject($value, $type);
+                    }, $value);
+                } else {
+                    $result->$field = self::coerceObject($value, $type);
+                }
+            } else {
+                $result->$field = $value;
+            }
+        }
+
+        return $result;
     }
 }

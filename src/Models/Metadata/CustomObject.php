@@ -62,6 +62,73 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class CustomObject extends Metadata
 {
+    public static $classMap = [
+        'actionOverrides' => [
+            'multiple' => true,
+            'type' => ActionOverride::class,
+        ],
+        'articleTypeChannelDisplay' => [
+            'multiple' => false,
+            'type' => ArticleTypeChannelDisplay::class,
+        ],
+        'businessProcesses' => [
+            'multiple' => true,
+            'type' => BusinessProcess::class,
+        ],
+        'compactLayouts' => [
+            'multiple' => true,
+            'type' => CompactLayout::class,
+        ],
+        'fieldSets' => [
+            'multiple' => true,
+            'type' => FieldSet::class,
+        ],
+        'fields' => [
+            'multiple' => true,
+            'type' => CustomField::class,
+        ],
+        'historyRetentionPolicy' => [
+            'multiple' => false,
+            'type' => HistoryRetentionPolicy::class,
+        ],
+        'indexes' => [
+            'multiple' => true,
+            'type' => Index::class,
+        ],
+        'listViews' => [
+            'multiple' => true,
+            'type' => ListView::class,
+        ],
+        'nameField' => [
+            'multiple' => false,
+            'type' => CustomField::class,
+        ],
+        'recordTypes' => [
+            'multiple' => true,
+            'type' => RecordType::class,
+        ],
+        'searchLayouts' => [
+            'multiple' => false,
+            'type' => SearchLayouts::class,
+        ],
+        'sharingReasons' => [
+            'multiple' => true,
+            'type' => SharingReason::class,
+        ],
+        'sharingRecalculations' => [
+            'multiple' => true,
+            'type' => SharingRecalculation::class,
+        ],
+        'validationRules' => [
+            'multiple' => true,
+            'type' => ValidationRule::class,
+        ],
+        'webLinks' => [
+            'multiple' => true,
+            'type' => WebLink::class,
+        ],
+    ];
+
     public function setActionOverrides(array $actionOverrides)
     {
         $this->actionOverrides = $actionOverrides;

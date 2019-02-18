@@ -14,6 +14,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class CustomValue extends Metadata
 {
+    public static $classMap = [
+    ];
+
     public function setColor(string $color)
     {
         $this->color = $color;

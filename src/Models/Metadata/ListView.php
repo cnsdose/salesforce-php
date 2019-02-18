@@ -18,6 +18,17 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ListView extends Metadata
 {
+    public static $classMap = [
+        'filters' => [
+            'multiple' => true,
+            'type' => ListViewFilter::class,
+        ],
+        'sharedTo' => [
+            'multiple' => false,
+            'type' => SharedTo::class,
+        ],
+    ];
+
     public function setBooleanFilter(string $booleanFilter)
     {
         $this->booleanFilter = $booleanFilter;

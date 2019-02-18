@@ -10,6 +10,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class Metadata extends \CNSDose\Salesforce\Models\BaseMetadataModel
 {
+    public static $classMap = [
+    ];
+
     public function setFullName(string $fullName)
     {
         $this->fullName = $fullName;

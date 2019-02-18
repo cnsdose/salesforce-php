@@ -30,6 +30,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class SharedTo
 {
+    public static $classMap = [
+    ];
+
     public function setAllCustomerPortalUsers(string $allCustomerPortalUsers)
     {
         $this->allCustomerPortalUsers = $allCustomerPortalUsers;

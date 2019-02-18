@@ -12,6 +12,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class FieldSetItem
 {
+    public static $classMap = [
+    ];
+
     public function setField(string $field)
     {
         $this->field = $field;

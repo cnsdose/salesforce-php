@@ -10,6 +10,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ArticleTypeChannelDisplay
 {
+    public static $classMap = [
+        'articleTypeTemplates' => [
+            'multiple' => true,
+            'type' => ArticleTypeTemplate::class,
+        ],
+    ];
+
     public function setArticleTypeTemplates(array $articleTypeTemplates)
     {
         $this->articleTypeTemplates = $articleTypeTemplates;

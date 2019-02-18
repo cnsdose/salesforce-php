@@ -14,6 +14,17 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ValueSet
 {
+    public static $classMap = [
+        'valueSetDefinition' => [
+            'multiple' => false,
+            'type' => ValueSetValuesDefinition::class,
+        ],
+        'valueSettings' => [
+            'multiple' => true,
+            'type' => ValueSettings::class,
+        ],
+    ];
+
     public function setControllingField(string $controllingField)
     {
         $this->controllingField = $controllingField;

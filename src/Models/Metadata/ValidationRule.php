@@ -14,6 +14,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ValidationRule extends Metadata
 {
+    public static $classMap = [
+    ];
+
     public function setActive(bool $active)
     {
         $this->active = $active;

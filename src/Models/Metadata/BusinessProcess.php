@@ -12,6 +12,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class BusinessProcess extends Metadata
 {
+    public static $classMap = [
+        'values' => [
+            'multiple' => true,
+            'type' => PicklistValue::class,
+        ],
+    ];
+
     public function setDescription(string $description)
     {
         $this->description = $description;

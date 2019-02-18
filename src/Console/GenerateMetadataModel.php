@@ -164,6 +164,24 @@ class %s%s
 
 EOF
             , $name, empty($base) ? '' : sprintf(' extends %s', $base));
+        $contents .= "    public static \$classMap = [\n";
+        foreach ($fields as $field) {
+            if (array_key_exists($field['type'], $this->complexTypes)) {
+                $contents .= sprintf(<<<EOF
+        '%s' => [
+            'multiple' => %s,
+            'type' => %s::class,
+        ],
+
+EOF
+                    , $field['name'], $field['multiple'] ? 'true' : 'false', $field['type']);
+            }
+        }
+        $contents .= <<<EOF
+    ];
+
+
+EOF;
         $firstFunction = true;
         foreach ($fields as $field) {
             if (!$firstFunction) {

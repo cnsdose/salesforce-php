@@ -11,6 +11,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class ValueSettings
 {
+    public static $classMap = [
+    ];
+
     public function setControllingFieldValue(array $controllingFieldValue)
     {
         $this->controllingFieldValue = $controllingFieldValue;

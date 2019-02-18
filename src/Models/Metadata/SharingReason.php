@@ -10,6 +10,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class SharingReason extends Metadata
 {
+    public static $classMap = [
+    ];
+
     public function setLabel(string $label)
     {
         $this->label = $label;

@@ -11,6 +11,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class Index extends Metadata
 {
+    public static $classMap = [
+        'fields' => [
+            'multiple' => true,
+            'type' => IndexField::class,
+        ],
+    ];
+
     public function setFields(array $fields)
     {
         $this->fields = $fields;

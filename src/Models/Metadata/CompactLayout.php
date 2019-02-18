@@ -11,6 +11,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class CompactLayout extends Metadata
 {
+    public static $classMap = [
+    ];
+
     public function setFields(array $fields)
     {
         $this->fields = $fields;

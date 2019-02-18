@@ -10,6 +10,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class SharingRecalculation
 {
+    public static $classMap = [
+    ];
+
     public function setClassName(string $className)
     {
         $this->className = $className;

@@ -30,6 +30,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class WebLink extends Metadata
 {
+    public static $classMap = [
+    ];
+
     public function setAvailability(WebLinkAvailability $availability)
     {
         $this->availability = $availability->getValue();

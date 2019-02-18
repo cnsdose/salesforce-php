@@ -11,6 +11,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  */
 class IndexField
 {
+    public static $classMap = [
+    ];
+
     public function setName(string $name)
     {
         $this->name = $name;
