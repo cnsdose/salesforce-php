@@ -1,0 +1,143 @@
+<?php
+/**
+ * Created by IntelliJ IDEA.
+ * User: frederick
+ * Date: 15/02/19
+ * Time: 3:53 PM
+ */
+
+namespace CNSDose\Salesforce\Models\Metadata;
+
+use MyCLabs\Enum\Enum;
+
+class Language extends Enum
+{
+    const EN_US = 'en_US';
+    const DE = 'de';
+    const ES = 'es';
+    const FR = 'fr';
+    const IT = 'it';
+    const JA = 'ja';
+    const SV = 'sv';
+    const KO = 'ko';
+    const ZH_TW = 'zh_TW';
+    const ZH_CN = 'zh_CN';
+    const PT_BR = 'pt_BR';
+    const NL_NL = 'nl_NL';
+    const DA = 'da';
+    const TH = 'th';
+    const FI = 'fi';
+    const RU = 'ru';
+    const ES_MX = 'es_MX';
+    const NO = 'no';
+    const HU = 'hu';
+    const PL = 'pl';
+    const CS = 'cs';
+    const TR = 'tr';
+    const IN = 'in';
+    const RO = 'ro';
+    const VI = 'vi';
+    const UK = 'uk';
+    const IW = 'iw';
+    const EL = 'el';
+    const BG = 'bg';
+    const EN_GB = 'en_GB';
+    const AR = 'ar';
+    const SK = 'sk';
+    const PT_PT = 'pt_PT';
+    const HR = 'hr';
+    const SL = 'sl';
+    const FR_CA = 'fr_CA';
+    const KA = 'ka';
+    const SR = 'sr';
+    const SH = 'sh';
+    const EN_AU = 'en_AU';
+    const EN_MY = 'en_MY';
+    const EN_IN = 'en_IN';
+    const EN_PH = 'en_PH';
+    const EN_CA = 'en_CA';
+    const RO_MD = 'ro_MD';
+    const BS = 'bs';
+    const MK = 'mk';
+    const LV = 'lv';
+    const LT = 'lt';
+    const ET = 'et';
+    const SQ = 'sq';
+    const SH_ME = 'sh_ME';
+    const MT = 'mt';
+    const GA = 'ga';
+    const EU = 'eu';
+    const CY = 'cy';
+    const IS = 'is';
+    const MS = 'ms';
+    const TL = 'tl';
+    const LB = 'lb';
+    const RM = 'rm';
+    const HY = 'hy';
+    const HI = 'hi';
+    const UR = 'ur';
+    const BN = 'bn';
+    const DE_AT = 'de_AT';
+    const DE_CH = 'de_CH';
+    const TA = 'ta';
+    const AR_DZ = 'ar_DZ';
+    const AR_BH = 'ar_BH';
+    const AR_EG = 'ar_EG';
+    const AR_IQ = 'ar_IQ';
+    const AR_JO = 'ar_JO';
+    const AR_KW = 'ar_KW';
+    const AR_LB = 'ar_LB';
+    const AR_LY = 'ar_LY';
+    const AR_MA = 'ar_MA';
+    const AR_OM = 'ar_OM';
+    const AR_QA = 'ar_QA';
+    const AR_SA = 'ar_SA';
+    const AR_SD = 'ar_SD';
+    const AR_SY = 'ar_SY';
+    const AR_TN = 'ar_TN';
+    const AR_AE = 'ar_AE';
+    const AR_YE = 'ar_YE';
+    const ZH_SG = 'zh_SG';
+    const ZH_HK = 'zh_HK';
+    const EN_HK = 'en_HK';
+    const EN_IE = 'en_IE';
+    const EN_SG = 'en_SG';
+    const EN_ZA = 'en_ZA';
+    const FR_BE = 'fr_BE';
+    const FR_LU = 'fr_LU';
+    const FR_CH = 'fr_CH';
+    const DE_BE = 'de_BE';
+    const DE_LU = 'de_LU';
+    const IT_CH = 'it_CH';
+    const NL_BE = 'nl_BE';
+    const ES_AR = 'es_AR';
+    const ES_BO = 'es_BO';
+    const ES_CL = 'es_CL';
+    const ES_CO = 'es_CO';
+    const ES_CR = 'es_CR';
+    const ES_DO = 'es_DO';
+    const ES_EC = 'es_EC';
+    const ES_SV = 'es_SV';
+    const ES_GT = 'es_GT';
+    const ES_HN = 'es_HN';
+    const ES_NI = 'es_NI';
+    const ES_PA = 'es_PA';
+    const ES_PY = 'es_PY';
+    const ES_PE = 'es_PE';
+    const ES_PR = 'es_PR';
+    const ES_US = 'es_US';
+    const ES_UY = 'es_UY';
+    const ES_VE = 'es_VE';
+    const CA = 'ca';
+    const AF = 'af';
+    const SW = 'sw';
+    const ZU = 'zu';
+    const XH = 'xh';
+    const TE = 'te';
+    const ML = 'ml';
+    const KN = 'kn';
+    const MR = 'mr';
+    const GU = 'gu';
+    const EO = 'eo';
+    const IW_EO = 'iw_EO';
+}

@@ -2,7 +2,7 @@
 
 namespace CNSDose\Salesforce\Console;
 
-use CNSDose\Salesforce\Models\BaseRecordModel;
+use CNSDose\Salesforce\Support\Authentication;
 use Illuminate\Console\Command;
 
 class RetrieveAccessToken extends Command
@@ -33,9 +33,10 @@ class RetrieveAccessToken extends Command
      * Execute the console command.
      *
      * @return void
+     * @throws CNSDose\Standards\Exceptions\StandardException
      */
     public function handle()
     {
-        $this->line(BaseRecordModel::getAccessToken());
+        $this->line(Authentication::getAccessToken());
     }
 }

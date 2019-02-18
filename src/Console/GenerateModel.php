@@ -2,7 +2,7 @@
 
 namespace CNSDose\Salesforce\Console;
 
-use CNSDose\Salesforce\Models\BaseRecordModel;
+use CNSDose\Salesforce\Support\Authentication;
 use GuzzleHttp\Client;
 use Illuminate\Console\Command;
 
@@ -67,6 +67,7 @@ class GenerateModel extends Command
      * Execute the console command.
      *
      * @return int
+     * @throws \CNSDose\Standards\Exceptions\StandardException
      */
     public function handle()
     {
@@ -77,7 +78,7 @@ class GenerateModel extends Command
         $object = $this->argument('object');
         $class = $this->option('class') ?: $object;
 
-        $accessToken = $this->option('token') ?: BaseRecordModel::getAccessToken();
+        $accessToken = $this->option('token') ?: Authentication::getAccessToken();
         $client = new Client();
         $response = $client->get(
             sprintf(

@@ -1,4 +1,5 @@
 /vendor/
+/x509/
 
 /composer.lock
 /lumen_ide_helper.php
