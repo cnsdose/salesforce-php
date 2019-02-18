@@ -7,7 +7,7 @@
  */
 return [
     'authentication_url' => 'https://login.salesforce.com/services/oauth2/token',
-    'api_version' => 'v44.0',
+    'api_version' => 'v45.0',
 
     'auth_flow' => 'jwt',                                        // jwt or username_password
 
