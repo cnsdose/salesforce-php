@@ -26,7 +26,7 @@ class BaseMetadataModel
      */
     public static function getSoapClient(): \SoapClient
     {
-        $soapClient = new \SoapClient(__DIR__ . '/../../wsdl/metadata.wsdl.xml', [
+        $soapClient = new \SoapClient(config('salesforce.metadata_wsdl') ?: __DIR__ . '/../../wsdl/metadata.wsdl.xml', [
             'user_agent' => 'salesforce-php/' . config('salesforce.api_version'),
             'encoding' => 'utf-8',
             'trace' => 1,
