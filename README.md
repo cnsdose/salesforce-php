@@ -38,11 +38,13 @@
 
 See `config/salesforce.php`.
 
-## Query Records
+## Records API (REST API)
+
+### Query Records
 
 *The query builder only supports a small subset of SOQL clauses currently.*
 
-### Basic Usage
+#### Basic Usage
 
 **NOTE**: `salesforce-php` does not support automatic quoting/escaping yet.
 
@@ -55,7 +57,7 @@ $result = Account::build()
     ->query();
 ```
 
-### Resolving Relationships
+#### Resolving Relationships
 
 ```php
 $result = Account::build()
@@ -64,7 +66,7 @@ $result = Account::build()
     ->query();
 ```
 
-### Nested Query
+#### Nested Query
 
 ```php
 $contact = Contact::build()
@@ -88,7 +90,7 @@ $result = BaseRecordModel::build()
     ->query();
 ```
 
-### Raw Query
+#### Raw Query
 ```php
 // $result: original JSON
 $result = BaseRecordModel::build()
@@ -99,16 +101,16 @@ $result = Account::build()
     ->queryRaw('SELECT Id FROM Account');
 ```
 
-### Query by ID
+#### Query by ID
 
 This method retrieves all defined fields in Salesforce, even if they are not specified in the corresponding class or `config/salesfore.php`.
 ```php
 $result = Account::queryById('0010o00002Cn41XXXX');
 ```
 
-## Create/Update/Delete Records
+### Create/Update/Delete Records
 
-### Create a record
+#### Create a record
 
 ```php
 $contact = new Contact();
@@ -118,7 +120,7 @@ $contact->Email = 'shaun@example.com';
 $contact->create();
 ```
 
-### Upsert/Delete a record
+#### Upsert/Delete a record
 
 ```php
 /**
@@ -147,17 +149,17 @@ $contact->LastName = 'Woof';
 $contact->upsert('Email');
 ```
 
-## Conversion Rules
+### Conversion Rules
 
 Conversion rules allows attributes to be automatically converted/formatted.
 
-### Built-In Rules
+#### Built-In Rules
 
 Built-in rules are registered at `\CNSDose\Salesforce\Support\Conversion\BaseConversion::$conversions`.
 
 Some rules allow parameters, e.g. `number:16,2` mean 16 digits to the left of decimal point and 2 to the right.
 
-### Custom Rules
+#### Custom Rules
 
 1. Create a class which is derived from `\CNSDose\Salesforce\Support\Conversion\BaseConversion`
 0. Implement required methods
@@ -166,11 +168,11 @@ Some rules allow parameters, e.g. `number:16,2` mean 16 digits to the left of de
 0. Register rule via `\CNSDose\Salesforce\Support\Conversion\BaseConversion::registerRule`
 0. Rule parameters: format `rule_name:arg1,arg2` can be used to pass arguments to the corresponding class constructor, an example could be `\CNSDose\Salesforce\Support\Conversion\Number`
 
-## Custom Fields
+### Custom Fields
 
 Custom fields can be defined in `config/salesforce.php`. Custom fields take precedence over default fields in case of conflicts between names.
 
-### Example
+#### Example
 
 Adding 3 custom fields, with conversion rules where applicable, to object `Custom`
 ```php
@@ -185,7 +187,7 @@ Adding 3 custom fields, with conversion rules where applicable, to object `Custo
 ]
 ```
 
-## Custom Objects
+### Custom Objects
 
 Models can be automatically generated for custom objects that have been defined in Salesforce via Artisan command `salesforce:generate-record-model`.
 
@@ -208,7 +210,7 @@ Options:
   -A, --all-fields
 ```
 
-### Example
+#### Example
 
 ```
 $ php artisan salesforce:generate-record-model -N 'MyProject\Models' -C Custom -A Custom__c
@@ -270,7 +272,7 @@ class Custom extends BaseRecordModel
 }
 ```
 
-### Custom Type-Rule Mapping
+#### Custom Type-Rule Mapping
 
 One could use `\CNSDose\Salesforce\Console\GenerateRecordModel::addTypeRule` to map a Salesforce type to a PHP type/conversion rule for convenience.
 
@@ -282,4 +284,45 @@ GenerateRecordModel::addTypeRule('type2', '\\Carbon\\Carbon', 'date');
 GenerateRecordModel::addTypeRule('type3', 'float', function ($field) {
     return sprintf('number:%s,%s', $field['precision'] - $field['scale'], $field['scale']);
 });
+```
+
+## Metadata API (SOAP API)
+
+#### Create/Read/Rename/Update/Upsert/Delete
+```php
+// Create
+// Same as Java example in https://developer.salesforce.com/docs/atlas.en-us.216.0.api_meta.meta/api_meta/meta_createMetadata.htm
+$customObject = new CustomObject();
+$customObject->setFullName('MyCustomObject1__c');
+$customObject->setDeploymentStatus(DeploymentStatus::DEPLOYED());
+$customObject->setDescription('Created by the Metadata API');
+$customObject->setEnableActivities(true);
+$customObject->setLabel('MyCustomObject1 Object');
+$customObject->setPluralLabel('MyCustomObject1 Objects');
+$customObject->setSharingModel(SharingModel::READ_WRITE());
+
+$nameField = new CustomField();
+$nameField->setType(FieldType::TEXT());
+$nameField->setLabel('MyCustomObject1__c Name');
+$nameField->setIsNameField(true);
+
+$customObject->setNameField($nameField);
+
+$customObject->create();
+
+// Read & Update
+$customObject = CustomObject::read('MyCustomObject1__c');
+$customObject->setDescription('Updated description!');
+$customObject->update();
+
+// Rename
+$customObject->rename('MyCustomObject2__c');
+
+// Upsert
+$customObject->setLabel('MyCustomObject1 Object');
+$customObject->setPluralLabel('MyCustomObject1 Objects');
+$customObject->upsert();
+
+// Delete
+$customObject->delete();
 ```
