@@ -114,6 +114,17 @@ abstract class BaseMetadataModel
         return self::getSoapClient()->updateMetadata($payload);
     }
 
+    public function upsert()
+    {
+        $payload = new \stdClass();
+        $payload->metadata = new \SoapVar(
+            $this,
+            SOAP_ENC_OBJECT,
+            static::getModelName(),
+            self::$METADATA_SOAP_NAMESPACE);
+        return self::getSoapClient()->upsertMetadata($payload);
+    }
+
     public function delete()
     {
         $payload = (object)[
