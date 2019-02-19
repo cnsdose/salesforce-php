@@ -142,6 +142,9 @@ class GenerateMetadataModel extends Command
         $base = $name === 'Metadata' ? '\\' . BaseMetadataModel::class : $this->complexTypes[$name]['base'];
         $contents = sprintf(<<<EOF
 <?php
+/**
+ * Created automatically by salesforce-sdk.
+ */
 
 namespace %s;
 
@@ -217,6 +220,9 @@ EOF
 
         $contents = sprintf(<<<EOF
 <?php
+/**
+ * Created automatically by salesforce-sdk.
+ */
 
 namespace %s;
 
