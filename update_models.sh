@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+
+printf 'Generating metadata models\n'
+php ./artisan salesforce:generate-metadata-model -N 'CNSDose\Salesforce\Models\Metadata'
+
 declare -A salesforce_objects=(
     ["AcceptedEventRelation"]=""
     ["Account"]=""
