@@ -28,7 +28,7 @@ class GenerateRecordModel extends Command
      *
      * @var string
      */
-    protected $signature = 'salesforce:generate-record-model {--N|namespace=} {--P|package=} {--C|class=} {--T|token=} {--A|all-fields} {object}';
+    protected $signature = 'salesforce:generate-record-model {--N|namespace=} {--package=} {--C|class=} {--T|token=} {--A|all-fields} {object}';
 
     protected static $typeRules = [
         'id' => ['string', null],

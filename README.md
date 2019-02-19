@@ -194,7 +194,7 @@ Models can be automatically generated for custom objects that have been defined 
 ```
 $ php artisan help salesforce:generate-record-model
 Description:
-  Generate Salesforce model dynamically from API
+  Generate Salesforce record model dynamically from API
 
 Usage:
   salesforce:generate-record-model [options] [--] <object>
@@ -204,7 +204,7 @@ Arguments:
 
 Options:
   -N, --namespace[=NAMESPACE]
-  -P, --package[=PACKAGE]
+      --package[=PACKAGE]
   -C, --class[=CLASS]
   -T, --token[=TOKEN]
   -A, --all-fields
