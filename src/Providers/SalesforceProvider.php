@@ -8,6 +8,7 @@
 
 namespace CNSDose\Salesforce\Providers;
 
+use CNSDose\Salesforce\Console\GenerateMetadataModel;
 use CNSDose\Salesforce\Console\GenerateRecordModel;
 use CNSDose\Salesforce\Console\RetrieveAccessToken;
 use Illuminate\Support\ServiceProvider;
@@ -26,6 +27,7 @@ class SalesforceProvider extends ServiceProvider
         ]);
         if ($this->app->runningInConsole()) {
             $this->commands([
+                GenerateMetadataModel::class,
                 GenerateRecordModel::class,
                 RetrieveAccessToken::class,
             ]);
