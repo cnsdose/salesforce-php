@@ -32,13 +32,25 @@ class GenerateMetadataModel extends Command
      *
      * @var string
      */
-    protected $signature = 'salesforce:generate-metadata-model';
+    protected $signature = 'salesforce:generate-metadata-model {--N|namespace=} {--package=} {--path=} {--wsdl-path=}';
 
     private $complexTypes = [];
     private $enums = [];
 
+    private $namespace, $package, $path, $wsdlPath;
+
     public function handle()
     {
+        $this->namespace = $this->option('namespace');
+        $this->package = $this->option('package') ?: $this->namespace;
+        if (empty($this->namespace) || empty($this->package)) {
+            empty($this->namespace) && $this->error('Namespace is not given!');
+            empty($this->package) && $this->error('Package is not given!');
+            return 1;
+        }
+        $this->path = $this->option('path') ?: __DIR__ . '/../Models/Metadata';
+        $this->wsdlPath = $this->option('wsdl-path') ?: __DIR__ . '/../../wsdl/metadata.wsdl.xml';
+
         $this->parseWsdl();
         foreach (array_keys($this->complexTypes) as $type) {
             $this->generateComplexModel($type);
@@ -46,14 +58,11 @@ class GenerateMetadataModel extends Command
         foreach (array_keys($this->enums) as $type) {
             $this->generateEnumModel($type);
         }
+        return 0;
     }
 
     private function parseWsdl()
     {
-        $wsdl = __DIR__ . '/../../wsdl/metadata.wsdl.xml';
-        // parse only CustomObject related models
-        $toParse = ['CustomObject'];
-
         $typeMapping = [
             'xsd:anyType' => 'mixed',
             'xsd:string' => 'string',
@@ -67,46 +76,40 @@ class GenerateMetadataModel extends Command
             'xsd:base64Binary' => 'string',
         ];
         $reader = new \XMLReader();
-        while (!empty($toParse)) {
-            $modelName = array_shift($toParse);
-            $reader->open($wsdl);
-            while ($reader->read() && $reader->name !== 'xsd:simpleType' && $reader->name !== 'xsd:complexType') ;
-            while ($reader->getAttribute('name') !== $modelName && $reader->next()) ;
-
+        $reader->open($this->wsdlPath);
+        while ($reader->read() && $reader->name !== 'types') ;
+        while ($reader->read() && $reader->name !== 'types') {
+            if ($reader->name === 'xsd:element') $lastElementName = $reader->getAttribute('name');
+            if ($reader->name !== 'xsd:simpleType' && $reader->name !== 'xsd:complexType') continue;
+            $modelName = $reader->getAttribute('name') ?: $lastElementName;
+            if (array_key_exists($modelName, $this->complexTypes) || array_key_exists($modelName, $this->enums)) continue;
             $type = $reader->name;
+
             if ($type === 'xsd:simpleType') {
                 // enum
                 $variants = [];
-                while ($reader->read() && $reader->name !== 'xsd:simpleType') {
+                while ($reader->read() && $reader->name !== $type) {
                     if ($reader->name === 'xsd:enumeration') {
                         $variants[] = $reader->getAttribute('value');
                     }
                 }
-                $this->enums[$modelName] = $variants;
+                if (!empty($variants)) {
+                    $this->enums[$modelName] = $variants;
+                }
             } elseif ($type === 'xsd:complexType') {
                 $fields = [];
-                $reader->read();
                 $base = null;
-                $reader->name;
-                while ($reader->read() && $reader->name !== 'xsd:element') {
+                while ($reader->read() && $reader->name !== 'xsd:element' && $reader->name !== $type) {
                     if ($reader->name === 'xsd:extension') {
                         $base = substr($reader->getAttribute('base'), 4);
-                        if (!array_key_exists($base, $this->complexTypes) && !in_array($base, $toParse, true)) {
-                            $toParse[] = $base;
-                        }
                     }
                 }
-                while ($reader->name === 'xsd:element') {
+                while ($reader->name === 'xsd:element' && $reader->name !== $type) {
                     $attrName = $reader->getAttribute('name');
                     $attrMultiple = $reader->getAttribute('maxOccurs') !== null;
                     $attrType = $reader->getAttribute('type');
                     if (strpos($attrType, 'tns:') === 0) {
                         $attrType = substr($attrType, 4);
-                        if (!array_key_exists($attrType, $this->complexTypes)
-                            && !array_key_exists($attrType, $this->enums)
-                            && !in_array($attrType, $toParse, true)) {
-                            $toParse[] = $attrType;
-                        }
                         $fields[$attrName] = [
                             'multiple' => $attrMultiple,
                             'name' => $attrName,
@@ -127,28 +130,28 @@ class GenerateMetadataModel extends Command
                     'fields' => $fields,
                 ];
             }
-
-            $reader->close();
         }
+
+        $reader->close();
     }
 
     private function generateComplexModel(string $name)
     {
-        $modelPath = sprintf(__DIR__ . '/../Models/Metadata/%s.php', $name);
+        $modelPath = sprintf('%s/%s.php', $this->path, $name);
         $fields = $this->complexTypes[$name]['fields'];
         $base = $name === 'Metadata' ? '\\' . BaseMetadataModel::class : $this->complexTypes[$name]['base'];
         $contents = sprintf(<<<EOF
 <?php
 
-namespace CNSDose\Salesforce\Models\Metadata;
+namespace %s;
 
 /**
  * Class %s
- * @package CNSDose\Salesforce\Models\Metadata
+ * @package %s
  *
 
 EOF
-            , $name);
+            , $this->namespace, $name, $this->package);
         foreach ($fields as $field) {
             $contents .= sprintf(
                 " * @property %s%s|null $%s\n",
@@ -215,7 +218,7 @@ EOF
         $contents = sprintf(<<<EOF
 <?php
 
-namespace CNSDose\Salesforce\Models\Metadata;
+namespace %s;
 
 use MyCLabs\Enum\Enum;
 
@@ -223,7 +226,7 @@ class %s extends Enum
 {
 
 EOF
-            , $name);
+            , $this->namespace, $name);
         foreach ($this->enums[$name] as $variant) {
             $contents .= sprintf(
                 "    const %s = '%s';\n",
