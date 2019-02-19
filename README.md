@@ -326,3 +326,9 @@ $customObject->upsert();
 // Delete
 $customObject->delete();
 ```
+
+## How to use a different version of Salesforce APIs
+
+1. In Salesforce Lightning Experience, download Metadata WSDL from Setup | Integrations | API and save it in your project
+0. Update `api_version` and `metadata_wsdl` in configuration file
+0. Use commands `salesforce:generate-metadata-model` and `salesforce:generate-record-model` to generate models (`update_models.sh` in this library could be a good start)
