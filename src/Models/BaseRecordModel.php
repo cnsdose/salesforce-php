@@ -308,29 +308,47 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @param bool $depagination
+     * @param string $nextRecordsUrl
      * @return array
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
      */
-    protected function queryFromBuilder(): array
+    protected function queryFromBuilder(bool $depagination = false, string &$nextRecordsUrl = null): array
     {
         $url = sprintf('%s%s/query/', self::$API_PREFIX, config('salesforce.api_version'));
-        return self::guzzleRequest('get', $url, [
+        $response = self::guzzleRequest('get', $url, [
             'query' => ['q' => $this->toSoql()],
         ]);
+        $result = [
+            'totalSize' => $response['totalSize'] ?? null,
+            'records' => [$response['records'] ?? []],
+        ];
+        while ($depagination && !empty($response['nextRecordsUrl'])) {
+            $url = self::$API_PREFIX
+                . config('salesforce.api_version')
+                . substr($response['nextRecordsUrl'], strpos($response['nextRecordsUrl'], '/query'));
+            $response = self::guzzleRequest('get', $url);
+            $result['records'][] = $response['records'] ?? [];
+        }
+        $result['records'] = array_merge(...$result['records']);
+        $nextRecordsUrl = $response['nextRecordsUrl'] ?? null;
+        return $result;
     }
 
     /**
+     * @param bool $depagination
+     * @param string $nextRecordsUrl
      * @return mixed
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
      * @throws \CNSDose\Standards\Exceptions\StandardException
      */
-    public function query(): array
+    public function query(bool $depagination = true, string &$nextRecordsUrl = null): array
     {
-        $json = $this->queryFromBuilder();
+        $json = $this->queryFromBuilder($depagination, $nextRecordsUrl);
         $decoded = array_map([$this, 'decode'], $json['records']);
         return array_map(function ($data) {
             return new static($data);
@@ -339,18 +357,20 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param string $soql
+     * @param bool $depagination
+     * @param string $nextRecordsUrl
      * @return array
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
      */
-    public function queryRaw(string $soql): array
+    public function queryRaw(string $soql, bool $depagination = false, string &$nextRecordsUrl = null): array
     {
         $this->rawQuery = $soql;
         if (static::class === self::class) {
             return $this->queryFromBuilder();
         }
-        return $this->query();
+        return $this->query($depagination, $nextRecordsUrl);
     }
 
     /**
