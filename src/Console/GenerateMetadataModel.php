@@ -94,7 +94,7 @@ class GenerateMetadataModel extends Command
                     }
                 }
                 if (!empty($variants)) {
-                    $this->enums[$modelName] = $variants;
+                    $this->enums[$modelName] = array_values(array_unique($variants));
                 }
             } elseif ($type === 'xsd:complexType') {
                 $fields = [];
