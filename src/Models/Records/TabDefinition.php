@@ -22,6 +22,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string Url
  * @property bool IsAvailableInAloha
  * @property bool IsAvailableInLightning
+ * @property bool IsAvailableInMobile
+ * @property bool IsAvailableInDesktop
+ * @property string MobileUrl
  */
 class TabDefinition extends BaseRecordModel
 {
@@ -36,5 +39,8 @@ class TabDefinition extends BaseRecordModel
         'Url' => null,
         'IsAvailableInAloha' => 'bool',
         'IsAvailableInLightning' => 'bool',
+        'IsAvailableInMobile' => 'bool',
+        'IsAvailableInDesktop' => 'bool',
+        'MobileUrl' => null,
     ];
 }

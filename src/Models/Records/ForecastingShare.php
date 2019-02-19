@@ -23,6 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string UserOrGroupId
  * @property string SharedForecastManagerRoleId
  * @property mixed AccessLevel
+ * @property mixed RoleType
  */
 class ForecastingShare extends BaseRecordModel
 {
@@ -38,5 +39,6 @@ class ForecastingShare extends BaseRecordModel
         'UserOrGroupId' => null,
         'SharedForecastManagerRoleId' => null,
         'AccessLevel' => null,
+        'RoleType' => null,
     ];
 }

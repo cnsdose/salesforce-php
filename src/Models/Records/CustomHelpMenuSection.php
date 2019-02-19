@@ -8,10 +8,10 @@ namespace CNSDose\Salesforce\Models\Records;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 
 /**
- * Class AuthConfig
+ * Class CustomHelpMenuSection
  * @package CNSDose\Salesforce\Models\Records
  *
- * @method AuthConfig[] query()
+ * @method CustomHelpMenuSection[] query()
  *
  * @property string Id
  * @property bool IsDeleted
@@ -24,17 +24,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon LastModifiedDate
  * @property string LastModifiedById
  * @property \Carbon\Carbon SystemModstamp
- * @property string Url
- * @property bool AuthOptionsUsernamePassword
- * @property bool AuthOptionsSaml
- * @property bool AuthOptionsAuthProvider
- * @property bool AuthOptionsCertificate
- * @property bool IsActive
- * @property mixed Type
  */
-class AuthConfig extends BaseRecordModel
+class CustomHelpMenuSection extends BaseRecordModel
 {
-    protected static $objectApiName = 'AuthConfig';
+    protected static $objectApiName = 'CustomHelpMenuSection';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',
@@ -47,12 +40,5 @@ class AuthConfig extends BaseRecordModel
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
-        'Url' => null,
-        'AuthOptionsUsernamePassword' => 'bool',
-        'AuthOptionsSaml' => 'bool',
-        'AuthOptionsAuthProvider' => 'bool',
-        'AuthOptionsCertificate' => 'bool',
-        'IsActive' => 'bool',
-        'Type' => null,
     ];
 }

@@ -52,6 +52,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed RecurrenceMonthOfYear
  * @property mixed RecurrenceRegeneratedType
  * @property mixed TaskSubtype
+ * @property \Carbon\Carbon CompletedDateTime
  */
 class Task extends BaseRecordModel
 {
@@ -96,5 +97,6 @@ class Task extends BaseRecordModel
         'RecurrenceMonthOfYear' => null,
         'RecurrenceRegeneratedType' => null,
         'TaskSubtype' => null,
+        'CompletedDateTime' => 'datetime',
     ];
 }

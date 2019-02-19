@@ -22,6 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string Name
  * @property mixed CurrencyIsoCode
  * @property float Quantity
+ * @property mixed Discount
  * @property float TotalPrice
  * @property float UnitPrice
  * @property float ListPrice
@@ -47,6 +48,7 @@ class OpportunityLineItem extends BaseRecordModel
         'Name' => null,
         'CurrencyIsoCode' => null,
         'Quantity' => 'number:10,2',
+        'Discount' => null,
         'TotalPrice' => 'number:16,2',
         'UnitPrice' => 'number:16,2',
         'ListPrice' => 'number:16,2',

@@ -47,6 +47,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon FirstOpenedDate
  * @property \Carbon\Carbon LastOpenedDate
  * @property bool IsBounced
+ * @property string EmailTemplateId
  */
 class EmailMessage extends BaseRecordModel
 {
@@ -86,5 +87,6 @@ class EmailMessage extends BaseRecordModel
         'FirstOpenedDate' => 'datetime',
         'LastOpenedDate' => 'datetime',
         'IsBounced' => 'bool',
+        'EmailTemplateId' => null,
     ];
 }

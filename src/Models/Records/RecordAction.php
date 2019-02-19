@@ -29,6 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed Pinned
  * @property mixed ActionDefinition
  * @property bool IsMandatory
+ * @property bool IsUiRemoveHidden
  */
 class RecordAction extends BaseRecordModel
 {
@@ -50,5 +51,6 @@ class RecordAction extends BaseRecordModel
         'Pinned' => null,
         'ActionDefinition' => null,
         'IsMandatory' => 'bool',
+        'IsUiRemoveHidden' => 'bool',
     ];
 }

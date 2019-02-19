@@ -39,9 +39,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool IsQueuePositionEnabled
  * @property bool ShouldShowNewAppointment
  * @property bool ShouldShowExistingAppointment
- * @property string FlowDeveloperName
- * @property string ModifyApptBookingFlowName
- * @property string CancelApptBookingFlowName
  * @property string FieldServiceHomeImg
  * @property string FieldServiceLogoImg
  * @property string FieldServiceConfirmCardImg
@@ -78,9 +75,6 @@ class EmbeddedServiceDetail extends BaseRecordModel
         'IsQueuePositionEnabled' => 'bool',
         'ShouldShowNewAppointment' => 'bool',
         'ShouldShowExistingAppointment' => 'bool',
-        'FlowDeveloperName' => null,
-        'ModifyApptBookingFlowName' => null,
-        'CancelApptBookingFlowName' => null,
         'FieldServiceHomeImg' => null,
         'FieldServiceLogoImg' => null,
         'FieldServiceConfirmCardImg' => null,

@@ -217,7 +217,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool PermissionsManageRecommendationStrategies
  * @property bool PermissionsManagePropositions
  * @property bool PermissionsCloseConversations
+ * @property bool PermissionsSubscribeReportRolesGrps
+ * @property bool PermissionsSubscribeDashboardRolesGrps
  * @property bool PermissionsUseWebLink
+ * @property bool PermissionsHasUnlimitedNBAExecutions
  * @property bool PermissionsViewOnlyEmbeddedAppUser
  * @property bool PermissionsSendExternalEmailAvailable
  * @property bool PermissionsViewAllActivities
@@ -227,6 +230,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool PermissionsSubscribeToLightningDashboards
  * @property bool PermissionsSubscribeDashboardToOtherUsers
  * @property bool PermissionsCreateLtngTempInPub
+ * @property bool PermissionsTransactionalEmailSend
+ * @property bool PermissionsCreateLtngTempFolder
  * @property bool PermissionsApexRestServices
  * @property bool PermissionsEnableCommunityAppLauncher
  * @property bool PermissionsGiveRecognitionBadge
@@ -235,8 +240,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool PermissionsAddAnalyticsRemoteConnections
  * @property bool PermissionsManageSurveys
  * @property bool PermissionsViewRoles
+ * @property bool PermissionsEinsteinAssistantUser
  * @property bool PermissionsCanManageMaps
+ * @property bool PermissionsModifyDataClassification
  * @property bool PermissionsPrivacyDataAccess
+ * @property bool PermissionsQueryAllFiles
  * @property bool PermissionsModifyMetadata
  * @property string Description
  * @property \Carbon\Carbon CreatedDate
@@ -455,7 +463,10 @@ class PermissionSet extends BaseRecordModel
         'PermissionsManageRecommendationStrategies' => 'bool',
         'PermissionsManagePropositions' => 'bool',
         'PermissionsCloseConversations' => 'bool',
+        'PermissionsSubscribeReportRolesGrps' => 'bool',
+        'PermissionsSubscribeDashboardRolesGrps' => 'bool',
         'PermissionsUseWebLink' => 'bool',
+        'PermissionsHasUnlimitedNBAExecutions' => 'bool',
         'PermissionsViewOnlyEmbeddedAppUser' => 'bool',
         'PermissionsSendExternalEmailAvailable' => 'bool',
         'PermissionsViewAllActivities' => 'bool',
@@ -465,6 +476,8 @@ class PermissionSet extends BaseRecordModel
         'PermissionsSubscribeToLightningDashboards' => 'bool',
         'PermissionsSubscribeDashboardToOtherUsers' => 'bool',
         'PermissionsCreateLtngTempInPub' => 'bool',
+        'PermissionsTransactionalEmailSend' => 'bool',
+        'PermissionsCreateLtngTempFolder' => 'bool',
         'PermissionsApexRestServices' => 'bool',
         'PermissionsEnableCommunityAppLauncher' => 'bool',
         'PermissionsGiveRecognitionBadge' => 'bool',
@@ -473,8 +486,11 @@ class PermissionSet extends BaseRecordModel
         'PermissionsAddAnalyticsRemoteConnections' => 'bool',
         'PermissionsManageSurveys' => 'bool',
         'PermissionsViewRoles' => 'bool',
+        'PermissionsEinsteinAssistantUser' => 'bool',
         'PermissionsCanManageMaps' => 'bool',
+        'PermissionsModifyDataClassification' => 'bool',
         'PermissionsPrivacyDataAccess' => 'bool',
+        'PermissionsQueryAllFiles' => 'bool',
         'PermissionsModifyMetadata' => 'bool',
         'Description' => null,
         'CreatedDate' => 'datetime',

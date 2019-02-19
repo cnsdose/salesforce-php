@@ -19,6 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon CreatedDate
  * @property string CreatedById
  * @property mixed TalkingAbout
+ * @property string ManagedTopicType
  * @property \Carbon\Carbon SystemModstamp
  */
 class Topic extends BaseRecordModel
@@ -31,6 +32,7 @@ class Topic extends BaseRecordModel
         'CreatedDate' => 'datetime',
         'CreatedById' => null,
         'TalkingAbout' => null,
+        'ManagedTopicType' => null,
         'SystemModstamp' => 'datetime',
     ];
 }

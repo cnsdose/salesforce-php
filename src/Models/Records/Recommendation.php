@@ -8,47 +8,49 @@ namespace CNSDose\Salesforce\Models\Records;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 
 /**
- * Class PricebookEntry
+ * Class Recommendation
  * @package CNSDose\Salesforce\Models\Records
  *
- * @method PricebookEntry[] query()
+ * @method Recommendation[] query()
  *
  * @property string Id
+ * @property bool IsDeleted
  * @property string Name
- * @property string Pricebook2Id
- * @property string Product2Id
  * @property mixed CurrencyIsoCode
- * @property float UnitPrice
- * @property bool IsActive
- * @property bool UseStandardPrice
  * @property \Carbon\Carbon CreatedDate
  * @property string CreatedById
  * @property \Carbon\Carbon LastModifiedDate
  * @property string LastModifiedById
  * @property \Carbon\Carbon SystemModstamp
- * @property string ProductCode
- * @property bool IsDeleted
- * @property bool IsArchived
+ * @property \Carbon\Carbon LastViewedDate
+ * @property \Carbon\Carbon LastReferencedDate
+ * @property string ActionReference
+ * @property string Description
+ * @property string ImageId
+ * @property string AcceptanceLabel
+ * @property string RejectionLabel
+ * @property bool IsActionActive
  */
-class PricebookEntry extends BaseRecordModel
+class Recommendation extends BaseRecordModel
 {
-    protected static $objectApiName = 'PricebookEntry';
+    protected static $objectApiName = 'Recommendation';
     protected $defaultFields = [
         'Id' => null,
+        'IsDeleted' => 'bool',
         'Name' => null,
-        'Pricebook2Id' => null,
-        'Product2Id' => null,
         'CurrencyIsoCode' => null,
-        'UnitPrice' => 'number:16,2',
-        'IsActive' => 'bool',
-        'UseStandardPrice' => 'bool',
         'CreatedDate' => 'datetime',
         'CreatedById' => null,
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
-        'ProductCode' => null,
-        'IsDeleted' => 'bool',
-        'IsArchived' => 'bool',
+        'LastViewedDate' => 'datetime',
+        'LastReferencedDate' => 'datetime',
+        'ActionReference' => null,
+        'Description' => null,
+        'ImageId' => null,
+        'AcceptanceLabel' => null,
+        'RejectionLabel' => null,
+        'IsActionActive' => 'bool',
     ];
 }

@@ -8,10 +8,10 @@ namespace CNSDose\Salesforce\Models\Records;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 
 /**
- * Class EmailDomainKey
+ * Class CustomHelpMenuItem
  * @package CNSDose\Salesforce\Models\Records
  *
- * @method EmailDomainKey[] query()
+ * @method CustomHelpMenuItem[] query()
  *
  * @property string Id
  * @property bool IsDeleted
@@ -20,18 +20,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon LastModifiedDate
  * @property string LastModifiedById
  * @property \Carbon\Carbon SystemModstamp
- * @property string Selector
- * @property string Domain
- * @property mixed DomainMatch
- * @property bool IsActive
- * @property mixed TxtRecordsPublishState
- * @property mixed KeySize
- * @property string PublicKey
- * @property string PrivateKey
+ * @property string ParentId
+ * @property string MasterLabel
+ * @property mixed LinkUrl
+ * @property mixed SortOrder
  */
-class EmailDomainKey extends BaseRecordModel
+class CustomHelpMenuItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailDomainKey';
+    protected static $objectApiName = 'CustomHelpMenuItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',
@@ -40,13 +36,9 @@ class EmailDomainKey extends BaseRecordModel
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
-        'Selector' => null,
-        'Domain' => null,
-        'DomainMatch' => null,
-        'IsActive' => 'bool',
-        'TxtRecordsPublishState' => null,
-        'KeySize' => null,
-        'PublicKey' => null,
-        'PrivateKey' => null,
+        'ParentId' => null,
+        'MasterLabel' => null,
+        'LinkUrl' => null,
+        'SortOrder' => null,
     ];
 }

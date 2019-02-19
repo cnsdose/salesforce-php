@@ -224,7 +224,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool MaximumPermissionsManageRecommendationStrategies
  * @property bool MaximumPermissionsManagePropositions
  * @property bool MaximumPermissionsCloseConversations
+ * @property bool MaximumPermissionsSubscribeReportRolesGrps
+ * @property bool MaximumPermissionsSubscribeDashboardRolesGrps
  * @property bool MaximumPermissionsUseWebLink
+ * @property bool MaximumPermissionsHasUnlimitedNBAExecutions
  * @property bool MaximumPermissionsViewOnlyEmbeddedAppUser
  * @property bool MaximumPermissionsSendExternalEmailAvailable
  * @property bool MaximumPermissionsViewAllActivities
@@ -234,6 +237,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool MaximumPermissionsSubscribeToLightningDashboards
  * @property bool MaximumPermissionsSubscribeDashboardToOtherUsers
  * @property bool MaximumPermissionsCreateLtngTempInPub
+ * @property bool MaximumPermissionsTransactionalEmailSend
+ * @property bool MaximumPermissionsCreateLtngTempFolder
  * @property bool MaximumPermissionsApexRestServices
  * @property bool MaximumPermissionsEnableCommunityAppLauncher
  * @property bool MaximumPermissionsGiveRecognitionBadge
@@ -242,8 +247,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool MaximumPermissionsAddAnalyticsRemoteConnections
  * @property bool MaximumPermissionsManageSurveys
  * @property bool MaximumPermissionsViewRoles
+ * @property bool MaximumPermissionsEinsteinAssistantUser
  * @property bool MaximumPermissionsCanManageMaps
+ * @property bool MaximumPermissionsModifyDataClassification
  * @property bool MaximumPermissionsPrivacyDataAccess
+ * @property bool MaximumPermissionsQueryAllFiles
  * @property bool MaximumPermissionsModifyMetadata
  * @property mixed UsedLicenses
  */
@@ -462,7 +470,10 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsManageRecommendationStrategies' => 'bool',
         'MaximumPermissionsManagePropositions' => 'bool',
         'MaximumPermissionsCloseConversations' => 'bool',
+        'MaximumPermissionsSubscribeReportRolesGrps' => 'bool',
+        'MaximumPermissionsSubscribeDashboardRolesGrps' => 'bool',
         'MaximumPermissionsUseWebLink' => 'bool',
+        'MaximumPermissionsHasUnlimitedNBAExecutions' => 'bool',
         'MaximumPermissionsViewOnlyEmbeddedAppUser' => 'bool',
         'MaximumPermissionsSendExternalEmailAvailable' => 'bool',
         'MaximumPermissionsViewAllActivities' => 'bool',
@@ -472,6 +483,8 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsSubscribeToLightningDashboards' => 'bool',
         'MaximumPermissionsSubscribeDashboardToOtherUsers' => 'bool',
         'MaximumPermissionsCreateLtngTempInPub' => 'bool',
+        'MaximumPermissionsTransactionalEmailSend' => 'bool',
+        'MaximumPermissionsCreateLtngTempFolder' => 'bool',
         'MaximumPermissionsApexRestServices' => 'bool',
         'MaximumPermissionsEnableCommunityAppLauncher' => 'bool',
         'MaximumPermissionsGiveRecognitionBadge' => 'bool',
@@ -480,8 +493,11 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsAddAnalyticsRemoteConnections' => 'bool',
         'MaximumPermissionsManageSurveys' => 'bool',
         'MaximumPermissionsViewRoles' => 'bool',
+        'MaximumPermissionsEinsteinAssistantUser' => 'bool',
         'MaximumPermissionsCanManageMaps' => 'bool',
+        'MaximumPermissionsModifyDataClassification' => 'bool',
         'MaximumPermissionsPrivacyDataAccess' => 'bool',
+        'MaximumPermissionsQueryAllFiles' => 'bool',
         'MaximumPermissionsModifyMetadata' => 'bool',
         'UsedLicenses' => null,
     ];

@@ -19,6 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string NamespacePrefix
  * @property string OwnerId
  * @property string FolderId
+ * @property string FolderName
  * @property string BrandTemplateId
  * @property mixed TemplateStyle
  * @property bool IsActive
@@ -50,6 +51,7 @@ class EmailTemplate extends BaseRecordModel
         'NamespacePrefix' => null,
         'OwnerId' => null,
         'FolderId' => null,
+        'FolderName' => null,
         'BrandTemplateId' => null,
         'TemplateStyle' => null,
         'IsActive' => 'bool',

@@ -23,6 +23,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string LoginGeoId
  * @property mixed TlsProtocol
  * @property mixed CipherSuite
+ * @property bool OptionsIsGet
+ * @property bool OptionsIsPost
  * @property string Browser
  * @property string Platform
  * @property string Status
@@ -46,6 +48,8 @@ class LoginHistory extends BaseRecordModel
         'LoginGeoId' => null,
         'TlsProtocol' => null,
         'CipherSuite' => null,
+        'OptionsIsGet' => 'bool',
+        'OptionsIsPost' => 'bool',
         'Browser' => null,
         'Platform' => null,
         'Status' => null,
