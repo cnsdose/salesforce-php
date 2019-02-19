@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CurrencyType[] query()
  *
- * @property string Id
- * @property mixed IsoCode
- * @property float ConversionRate
- * @property mixed DecimalPlaces
- * @property bool IsActive
- * @property bool IsCorporate
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property mixed $IsoCode
+ * @property float $ConversionRate
+ * @property mixed $DecimalPlaces
+ * @property bool $IsActive
+ * @property bool $IsCorporate
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CurrencyType extends BaseRecordModel
 {

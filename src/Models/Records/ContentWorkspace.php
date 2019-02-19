@@ -13,25 +13,25 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentWorkspace[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Description
- * @property mixed TagModel
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastModifiedDate
- * @property string DefaultRecordTypeId
- * @property bool IsRestrictContentTypes
- * @property bool IsRestrictLinkedContentTypes
- * @property mixed WorkspaceType
- * @property bool ShouldAddCreatorMembership
- * @property \Carbon\Carbon LastWorkspaceActivityDate
- * @property string RootContentFolderId
- * @property string NamespacePrefix
- * @property string DeveloperName
- * @property string WorkspaceImageId
+ * @property string $Id
+ * @property string $Name
+ * @property string $Description
+ * @property mixed $TagModel
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $DefaultRecordTypeId
+ * @property bool $IsRestrictContentTypes
+ * @property bool $IsRestrictLinkedContentTypes
+ * @property mixed $WorkspaceType
+ * @property bool $ShouldAddCreatorMembership
+ * @property \Carbon\Carbon $LastWorkspaceActivityDate
+ * @property string $RootContentFolderId
+ * @property string $NamespacePrefix
+ * @property string $DeveloperName
+ * @property string $WorkspaceImageId
  */
 class ContentWorkspace extends BaseRecordModel
 {

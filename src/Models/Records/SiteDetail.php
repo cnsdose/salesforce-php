@@ -13,10 +13,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SiteDetail[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property bool IsRegistrationEnabled
- * @property mixed SecureUrl
+ * @property string $Id
+ * @property string $DurableId
+ * @property bool $IsRegistrationEnabled
+ * @property mixed $SecureUrl
  */
 class SiteDetail extends BaseRecordModel
 {

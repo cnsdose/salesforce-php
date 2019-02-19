@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ObjectPermissions[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property mixed SobjectType
- * @property bool PermissionsCreate
- * @property bool PermissionsRead
- * @property bool PermissionsEdit
- * @property bool PermissionsDelete
- * @property bool PermissionsViewAllRecords
- * @property bool PermissionsModifyAllRecords
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property mixed $SobjectType
+ * @property bool $PermissionsCreate
+ * @property bool $PermissionsRead
+ * @property bool $PermissionsEdit
+ * @property bool $PermissionsDelete
+ * @property bool $PermissionsViewAllRecords
+ * @property bool $PermissionsModifyAllRecords
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ObjectPermissions extends BaseRecordModel
 {

@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UndecidedEventRelation[] query()
  *
- * @property string Id
- * @property string RelationId
- * @property string EventId
- * @property \Carbon\Carbon RespondedDate
- * @property string Response
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property string Type
+ * @property string $Id
+ * @property string $RelationId
+ * @property string $EventId
+ * @property \Carbon\Carbon $RespondedDate
+ * @property string $Response
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property string $Type
  */
 class UndecidedEventRelation extends BaseRecordModel
 {

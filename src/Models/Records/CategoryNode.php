@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CategoryNode[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string MasterLabel
- * @property mixed SortOrder
- * @property mixed SortStyle
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $MasterLabel
+ * @property mixed $SortOrder
+ * @property mixed $SortStyle
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CategoryNode extends BaseRecordModel
 {

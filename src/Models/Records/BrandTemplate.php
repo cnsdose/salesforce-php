@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method BrandTemplate[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property bool IsActive
- * @property string Description
- * @property string Value
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property bool $IsActive
+ * @property string $Description
+ * @property string $Value
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class BrandTemplate extends BaseRecordModel
 {

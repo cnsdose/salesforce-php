@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OpportunityPartner[] query()
  *
- * @property string Id
- * @property string OpportunityId
- * @property string AccountToId
- * @property mixed Role
- * @property bool IsPrimary
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property string ReversePartnerId
+ * @property string $Id
+ * @property string $OpportunityId
+ * @property string $AccountToId
+ * @property mixed $Role
+ * @property bool $IsPrimary
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property string $ReversePartnerId
  */
 class OpportunityPartner extends BaseRecordModel
 {

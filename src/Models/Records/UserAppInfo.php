@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserAppInfo[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string UserId
- * @property mixed FormFactor
- * @property string AppDefinitionId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $UserId
+ * @property mixed $FormFactor
+ * @property string $AppDefinitionId
  */
 class UserAppInfo extends BaseRecordModel
 {

@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method KnowledgeArticleVoteStat[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property float NormalizedScore
- * @property mixed Channel
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property float $NormalizedScore
+ * @property mixed $Channel
  */
 class KnowledgeArticleVoteStat extends BaseRecordModel
 {

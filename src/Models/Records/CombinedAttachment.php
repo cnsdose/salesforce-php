@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CombinedAttachment[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property string RecordType
- * @property string Title
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property string FileType
- * @property mixed ContentSize
- * @property string FileExtension
- * @property mixed ContentUrl
- * @property string ExternalDataSourceName
- * @property mixed ExternalDataSourceType
- * @property mixed SharingOption
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property string $RecordType
+ * @property string $Title
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property string $FileType
+ * @property mixed $ContentSize
+ * @property string $FileExtension
+ * @property mixed $ContentUrl
+ * @property string $ExternalDataSourceName
+ * @property mixed $ExternalDataSourceType
+ * @property mixed $SharingOption
  */
 class CombinedAttachment extends BaseRecordModel
 {

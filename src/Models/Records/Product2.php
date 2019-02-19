@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Product2[] query()
  *
- * @property string Id
- * @property string Name
- * @property string ProductCode
- * @property string Description
- * @property bool IsActive
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Family
- * @property mixed CurrencyIsoCode
- * @property string ExternalDataSourceId
- * @property string ExternalId
- * @property mixed DisplayUrl
- * @property mixed QuantityUnitOfMeasure
- * @property bool IsDeleted
- * @property bool IsArchived
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string StockKeepingUnit
+ * @property string $Id
+ * @property string $Name
+ * @property string $ProductCode
+ * @property string $Description
+ * @property bool $IsActive
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Family
+ * @property mixed $CurrencyIsoCode
+ * @property string $ExternalDataSourceId
+ * @property string $ExternalId
+ * @property mixed $DisplayUrl
+ * @property mixed $QuantityUnitOfMeasure
+ * @property bool $IsDeleted
+ * @property bool $IsArchived
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $StockKeepingUnit
  */
 class Product2 extends BaseRecordModel
 {

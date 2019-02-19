@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentFolderLink[] query()
  *
- * @property string Id
- * @property string ParentEntityId
- * @property string ContentFolderId
- * @property bool IsDeleted
- * @property mixed EnableFolderStatus
+ * @property string $Id
+ * @property string $ParentEntityId
+ * @property string $ContentFolderId
+ * @property bool $IsDeleted
+ * @property mixed $EnableFolderStatus
  */
 class ContentFolderLink extends BaseRecordModel
 {

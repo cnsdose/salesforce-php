@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OauthToken[] query()
  *
- * @property string Id
- * @property string AccessToken
- * @property string UserId
- * @property string RequestToken
- * @property \Carbon\Carbon CreatedDate
- * @property string AppName
- * @property \Carbon\Carbon LastUsedDate
- * @property mixed UseCount
- * @property string DeleteToken
- * @property string AppMenuItemId
+ * @property string $Id
+ * @property string $AccessToken
+ * @property string $UserId
+ * @property string $RequestToken
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $AppName
+ * @property \Carbon\Carbon $LastUsedDate
+ * @property mixed $UseCount
+ * @property string $DeleteToken
+ * @property string $AppMenuItemId
  */
 class OauthToken extends BaseRecordModel
 {

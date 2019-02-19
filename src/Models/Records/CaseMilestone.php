@@ -13,29 +13,29 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseMilestone[] query()
  *
- * @property string Id
- * @property string CaseId
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon TargetDate
- * @property \Carbon\Carbon CompletionDate
- * @property string MilestoneTypeId
- * @property bool IsCompleted
- * @property bool IsViolated
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
- * @property mixed TargetResponseInMins
- * @property float TargetResponseInHrs
- * @property float TargetResponseInDays
- * @property string TimeRemainingInMins
- * @property mixed ElapsedTimeInMins
- * @property float ElapsedTimeInHrs
- * @property float ElapsedTimeInDays
- * @property string TimeSinceTargetInMins
- * @property string BusinessHoursId
+ * @property string $Id
+ * @property string $CaseId
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $TargetDate
+ * @property \Carbon\Carbon $CompletionDate
+ * @property string $MilestoneTypeId
+ * @property bool $IsCompleted
+ * @property bool $IsViolated
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
+ * @property mixed $TargetResponseInMins
+ * @property float $TargetResponseInHrs
+ * @property float $TargetResponseInDays
+ * @property string $TimeRemainingInMins
+ * @property mixed $ElapsedTimeInMins
+ * @property float $ElapsedTimeInHrs
+ * @property float $ElapsedTimeInDays
+ * @property string $TimeSinceTargetInMins
+ * @property string $BusinessHoursId
  */
 class CaseMilestone extends BaseRecordModel
 {

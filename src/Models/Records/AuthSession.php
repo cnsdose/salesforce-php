@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AuthSession[] query()
  *
- * @property string Id
- * @property string UsersId
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property mixed NumSecondsValid
- * @property mixed UserType
- * @property string SourceIp
- * @property mixed LoginType
- * @property mixed SessionType
- * @property mixed SessionSecurityLevel
- * @property string LogoutUrl
- * @property string ParentId
- * @property string LoginHistoryId
- * @property string LoginGeoId
- * @property bool IsCurrent
+ * @property string $Id
+ * @property string $UsersId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property mixed $NumSecondsValid
+ * @property mixed $UserType
+ * @property string $SourceIp
+ * @property mixed $LoginType
+ * @property mixed $SessionType
+ * @property mixed $SessionSecurityLevel
+ * @property string $LogoutUrl
+ * @property string $ParentId
+ * @property string $LoginHistoryId
+ * @property string $LoginGeoId
+ * @property bool $IsCurrent
  */
 class AuthSession extends BaseRecordModel
 {

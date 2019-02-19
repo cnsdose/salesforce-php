@@ -13,24 +13,24 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductItem[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string ProductItemNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string LocationId
- * @property string Product2Id
- * @property string ProductName
- * @property string SerialNumber
- * @property float QuantityOnHand
- * @property mixed QuantityUnitOfMeasure
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $ProductItemNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $LocationId
+ * @property string $Product2Id
+ * @property string $ProductName
+ * @property string $SerialNumber
+ * @property float $QuantityOnHand
+ * @property mixed $QuantityUnitOfMeasure
  */
 class ProductItem extends BaseRecordModel
 {

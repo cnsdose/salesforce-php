@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatasetExportPart[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string DatasetExportId
- * @property mixed DataFileLength
- * @property mixed CompressedDataFileLength
- * @property mixed PartNumber
- * @property string Owner
- * @property mixed DataFile
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $DatasetExportId
+ * @property mixed $DataFileLength
+ * @property mixed $CompressedDataFileLength
+ * @property mixed $PartNumber
+ * @property string $Owner
+ * @property mixed $DataFile
  */
 class DatasetExportPart extends BaseRecordModel
 {

@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedRevision[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property string FeedEntityId
- * @property mixed Revision
- * @property mixed Action
- * @property mixed EditedAttribute
- * @property string Value
- * @property bool IsValueRichText
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property string $FeedEntityId
+ * @property mixed $Revision
+ * @property mixed $Action
+ * @property mixed $EditedAttribute
+ * @property string $Value
+ * @property bool $IsValueRichText
  */
 class FeedRevision extends BaseRecordModel
 {

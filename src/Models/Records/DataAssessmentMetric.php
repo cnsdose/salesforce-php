@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DataAssessmentMetric[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed NumTotal
- * @property mixed NumProcessed
- * @property mixed NumMatched
- * @property mixed NumMatchedDifferent
- * @property mixed NumUnmatched
- * @property mixed NumDuplicates
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $NumTotal
+ * @property mixed $NumProcessed
+ * @property mixed $NumMatched
+ * @property mixed $NumMatchedDifferent
+ * @property mixed $NumUnmatched
+ * @property mixed $NumDuplicates
  */
 class DataAssessmentMetric extends BaseRecordModel
 {

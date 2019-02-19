@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentNotification[] query()
  *
- * @property string Id
- * @property string Nature
- * @property string UsersId
- * @property \Carbon\Carbon CreatedDate
- * @property string EntityType
- * @property string EntityIdentifierId
- * @property string Subject
- * @property string Text
+ * @property string $Id
+ * @property string $Nature
+ * @property string $UsersId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $EntityType
+ * @property string $EntityIdentifierId
+ * @property string $Subject
+ * @property string $Text
  */
 class ContentNotification extends BaseRecordModel
 {

@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexTestResult[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon TestTimestamp
- * @property mixed Outcome
- * @property string ApexClassId
- * @property string MethodName
- * @property string Message
- * @property string StackTrace
- * @property string AsyncApexJobId
- * @property string QueueItemId
- * @property string ApexLogId
- * @property string ApexTestRunResultId
- * @property mixed RunTime
+ * @property string $Id
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $TestTimestamp
+ * @property mixed $Outcome
+ * @property string $ApexClassId
+ * @property string $MethodName
+ * @property string $Message
+ * @property string $StackTrace
+ * @property string $AsyncApexJobId
+ * @property string $QueueItemId
+ * @property string $ApexLogId
+ * @property string $ApexTestRunResultId
+ * @property mixed $RunTime
  */
 class ApexTestResult extends BaseRecordModel
 {

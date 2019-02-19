@@ -13,40 +13,40 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductRequestLineItem[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ProductRequestLineItemNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ParentId
- * @property string Product2Id
- * @property float QuantityRequested
- * @property mixed QuantityUnitOfMeasure
- * @property string WorkOrderId
- * @property string WorkOrderLineItemId
- * @property \Carbon\Carbon NeedByDate
- * @property mixed Status
- * @property mixed ShipmentType
- * @property string ShipToStreet
- * @property string ShipToCity
- * @property string ShipToState
- * @property string ShipToPostalCode
- * @property string ShipToCountry
- * @property float ShipToLatitude
- * @property float ShipToLongitude
- * @property mixed ShipToGeocodeAccuracy
- * @property mixed ShipToAddress
- * @property string Description
- * @property string DestinationLocationId
- * @property string SourceLocationId
- * @property string CaseId
- * @property string AccountId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ProductRequestLineItemNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ParentId
+ * @property string $Product2Id
+ * @property float $QuantityRequested
+ * @property mixed $QuantityUnitOfMeasure
+ * @property string $WorkOrderId
+ * @property string $WorkOrderLineItemId
+ * @property \Carbon\Carbon $NeedByDate
+ * @property mixed $Status
+ * @property mixed $ShipmentType
+ * @property string $ShipToStreet
+ * @property string $ShipToCity
+ * @property string $ShipToState
+ * @property string $ShipToPostalCode
+ * @property string $ShipToCountry
+ * @property float $ShipToLatitude
+ * @property float $ShipToLongitude
+ * @property mixed $ShipToGeocodeAccuracy
+ * @property mixed $ShipToAddress
+ * @property string $Description
+ * @property string $DestinationLocationId
+ * @property string $SourceLocationId
+ * @property string $CaseId
+ * @property string $AccountId
  */
 class ProductRequestLineItem extends BaseRecordModel
 {

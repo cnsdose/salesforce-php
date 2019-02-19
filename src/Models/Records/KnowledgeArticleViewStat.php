@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method KnowledgeArticleViewStat[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property float NormalizedScore
- * @property mixed Channel
- * @property mixed ViewCount
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property float $NormalizedScore
+ * @property mixed $Channel
+ * @property mixed $ViewCount
  */
 class KnowledgeArticleViewStat extends BaseRecordModel
 {

@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ExternalDataSource[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Type
- * @property string Endpoint
- * @property string Repository
- * @property bool IsWritable
- * @property mixed PrincipalType
- * @property mixed Protocol
- * @property string AuthProviderId
- * @property string LargeIconId
- * @property string SmallIconId
- * @property string CustomConfiguration
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Type
+ * @property string $Endpoint
+ * @property string $Repository
+ * @property bool $IsWritable
+ * @property mixed $PrincipalType
+ * @property mixed $Protocol
+ * @property string $AuthProviderId
+ * @property string $LargeIconId
+ * @property string $SmallIconId
+ * @property string $CustomConfiguration
  */
 class ExternalDataSource extends BaseRecordModel
 {

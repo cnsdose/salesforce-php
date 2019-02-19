@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EventLogFile[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed EventType
- * @property \Carbon\Carbon LogDate
- * @property float LogFileLength
- * @property string LogFileContentType
- * @property float ApiVersion
- * @property mixed Sequence
- * @property mixed Interval
- * @property string LogFileFieldNames
- * @property string LogFileFieldTypes
- * @property mixed LogFile
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $EventType
+ * @property \Carbon\Carbon $LogDate
+ * @property float $LogFileLength
+ * @property string $LogFileContentType
+ * @property float $ApiVersion
+ * @property mixed $Sequence
+ * @property mixed $Interval
+ * @property string $LogFileFieldNames
+ * @property string $LogFileFieldTypes
+ * @property mixed $LogFile
  */
 class EventLogFile extends BaseRecordModel
 {

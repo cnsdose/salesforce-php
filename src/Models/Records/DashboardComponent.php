@@ -13,10 +13,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DashboardComponent[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DashboardId
- * @property string CustomReportId
+ * @property string $Id
+ * @property string $Name
+ * @property string $DashboardId
+ * @property string $CustomReportId
  */
 class DashboardComponent extends BaseRecordModel
 {

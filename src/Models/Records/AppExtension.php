@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AppExtension[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string FieldServiceMobileSettingsId
- * @property string AppExtensionName
- * @property mixed Type
- * @property string LaunchValue
- * @property string ScopedToObjectTypes
- * @property string InstallationUrl
- * @property string AppExtensionLabel
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $FieldServiceMobileSettingsId
+ * @property string $AppExtensionName
+ * @property mixed $Type
+ * @property string $LaunchValue
+ * @property string $ScopedToObjectTypes
+ * @property string $InstallationUrl
+ * @property string $AppExtensionLabel
  */
 class AppExtension extends BaseRecordModel
 {

@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ThirdPartyAccountLink[] query()
  *
- * @property string Id
- * @property string ThirdPartyAccountLinkKey
- * @property string UserId
- * @property string SsoProviderId
- * @property string Handle
- * @property string RemoteIdentifier
- * @property string Provider
- * @property string SsoProviderName
- * @property bool IsNotSsoUsable
+ * @property string $Id
+ * @property string $ThirdPartyAccountLinkKey
+ * @property string $UserId
+ * @property string $SsoProviderId
+ * @property string $Handle
+ * @property string $RemoteIdentifier
+ * @property string $Provider
+ * @property string $SsoProviderName
+ * @property bool $IsNotSsoUsable
  */
 class ThirdPartyAccountLink extends BaseRecordModel
 {

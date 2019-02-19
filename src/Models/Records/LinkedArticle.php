@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LinkedArticle[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string KnowledgeArticleVersionId
- * @property string LinkedEntityId
- * @property string KnowledgeArticleId
- * @property string Type
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $KnowledgeArticleVersionId
+ * @property string $LinkedEntityId
+ * @property string $KnowledgeArticleId
+ * @property string $Type
  */
 class LinkedArticle extends BaseRecordModel
 {

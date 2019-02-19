@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MailmergeTemplate[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property string Description
- * @property string Filename
- * @property mixed BodyLength
- * @property mixed Body
- * @property \Carbon\Carbon LastUsedDate
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool SecurityOptionsAttachmentScannedForXSS
- * @property bool SecurityOptionsAttachmentHasXSSThreat
- * @property bool SecurityOptionsAttachmentScannedforFlash
- * @property bool SecurityOptionsAttachmentHasFlash
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property string $Description
+ * @property string $Filename
+ * @property mixed $BodyLength
+ * @property mixed $Body
+ * @property \Carbon\Carbon $LastUsedDate
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $SecurityOptionsAttachmentScannedForXSS
+ * @property bool $SecurityOptionsAttachmentHasXSSThreat
+ * @property bool $SecurityOptionsAttachmentScannedforFlash
+ * @property bool $SecurityOptionsAttachmentHasFlash
  */
 class MailmergeTemplate extends BaseRecordModel
 {

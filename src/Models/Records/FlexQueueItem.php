@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FlexQueueItem[] query()
  *
- * @property string Id
- * @property string FlexQueueItemId
- * @property mixed JobType
- * @property string AsyncApexJobId
- * @property mixed JobPosition
+ * @property string $Id
+ * @property string $FlexQueueItemId
+ * @property mixed $JobType
+ * @property string $AsyncApexJobId
+ * @property mixed $JobPosition
  */
 class FlexQueueItem extends BaseRecordModel
 {

@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AssetRelationship[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string AssetRelationshipNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string AssetId
- * @property string RelatedAssetId
- * @property \Carbon\Carbon FromDate
- * @property \Carbon\Carbon ToDate
- * @property mixed RelationshipType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $AssetRelationshipNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $AssetId
+ * @property string $RelatedAssetId
+ * @property \Carbon\Carbon $FromDate
+ * @property \Carbon\Carbon $ToDate
+ * @property mixed $RelationshipType
  */
 class AssetRelationship extends BaseRecordModel
 {

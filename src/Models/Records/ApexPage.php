@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexPage[] query()
  *
- * @property string Id
- * @property string NamespacePrefix
- * @property string Name
- * @property float ApiVersion
- * @property string MasterLabel
- * @property string Description
- * @property mixed ControllerType
- * @property string ControllerKey
- * @property bool IsAvailableInTouch
- * @property bool IsConfirmationTokenRequired
- * @property string Markup
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $NamespacePrefix
+ * @property string $Name
+ * @property float $ApiVersion
+ * @property string $MasterLabel
+ * @property string $Description
+ * @property mixed $ControllerType
+ * @property string $ControllerKey
+ * @property bool $IsAvailableInTouch
+ * @property bool $IsConfirmationTokenRequired
+ * @property string $Markup
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ApexPage extends BaseRecordModel
 {

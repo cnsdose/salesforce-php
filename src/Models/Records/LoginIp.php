@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LoginIp[] query()
  *
- * @property string Id
- * @property string UsersId
- * @property string SourceIp
- * @property \Carbon\Carbon CreatedDate
- * @property bool IsAuthenticated
- * @property \Carbon\Carbon ChallengeSentDate
- * @property mixed ChallengeMethod
+ * @property string $Id
+ * @property string $UsersId
+ * @property string $SourceIp
+ * @property \Carbon\Carbon $CreatedDate
+ * @property bool $IsAuthenticated
+ * @property \Carbon\Carbon $ChallengeSentDate
+ * @property mixed $ChallengeMethod
  */
 class LoginIp extends BaseRecordModel
 {

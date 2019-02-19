@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method NoteAndAttachment[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property bool IsNote
- * @property string ParentId
- * @property string Title
- * @property bool IsPrivate
- * @property string OwnerId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property bool $IsNote
+ * @property string $ParentId
+ * @property string $Title
+ * @property bool $IsPrivate
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class NoteAndAttachment extends BaseRecordModel
 {

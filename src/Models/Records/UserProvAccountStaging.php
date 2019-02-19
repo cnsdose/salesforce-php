@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserProvAccountStaging[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ConnectedAppId
- * @property string SalesforceUserId
- * @property string ExternalUserId
- * @property string ExternalUsername
- * @property string ExternalEmail
- * @property string ExternalFirstName
- * @property string ExternalLastName
- * @property mixed LinkState
- * @property mixed Status
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ConnectedAppId
+ * @property string $SalesforceUserId
+ * @property string $ExternalUserId
+ * @property string $ExternalUsername
+ * @property string $ExternalEmail
+ * @property string $ExternalFirstName
+ * @property string $ExternalLastName
+ * @property mixed $LinkState
+ * @property mixed $Status
  */
 class UserProvAccountStaging extends BaseRecordModel
 {

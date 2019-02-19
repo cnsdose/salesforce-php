@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Attachment[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property string Name
- * @property bool IsPrivate
- * @property string ContentType
- * @property mixed BodyLength
- * @property mixed Body
- * @property string OwnerId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string Description
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property string $Name
+ * @property bool $IsPrivate
+ * @property string $ContentType
+ * @property mixed $BodyLength
+ * @property mixed $Body
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Description
  */
 class Attachment extends BaseRecordModel
 {

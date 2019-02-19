@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OpportunityCompetitor[] query()
  *
- * @property string Id
- * @property string OpportunityId
- * @property mixed CompetitorName
- * @property string Strengths
- * @property string Weaknesses
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $OpportunityId
+ * @property mixed $CompetitorName
+ * @property string $Strengths
+ * @property string $Weaknesses
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
  */
 class OpportunityCompetitor extends BaseRecordModel
 {

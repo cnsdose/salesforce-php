@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LeadShare[] query()
  *
- * @property string Id
- * @property string LeadId
- * @property string UserOrGroupId
- * @property mixed LeadAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $LeadId
+ * @property string $UserOrGroupId
+ * @property mixed $LeadAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class LeadShare extends BaseRecordModel
 {

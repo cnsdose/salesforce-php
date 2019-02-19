@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AssociatedLocation[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string AssociatedLocationNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ParentRecordId
- * @property string LocationId
- * @property mixed Type
- * @property \Carbon\Carbon ActiveFrom
- * @property \Carbon\Carbon ActiveTo
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $AssociatedLocationNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ParentRecordId
+ * @property string $LocationId
+ * @property mixed $Type
+ * @property \Carbon\Carbon $ActiveFrom
+ * @property \Carbon\Carbon $ActiveTo
  */
 class AssociatedLocation extends BaseRecordModel
 {

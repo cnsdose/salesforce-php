@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductEntitlementTemplate[] query()
  *
- * @property string Id
- * @property string Product2Id
- * @property string EntitlementTemplateId
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
+ * @property string $Id
+ * @property string $Product2Id
+ * @property string $EntitlementTemplateId
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
  */
 class ProductEntitlementTemplate extends BaseRecordModel
 {

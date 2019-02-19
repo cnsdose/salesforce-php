@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Announcement[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string FeedItemId
- * @property \Carbon\Carbon ExpirationDate
- * @property bool SendEmails
- * @property bool IsArchived
- * @property string ParentId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $FeedItemId
+ * @property \Carbon\Carbon $ExpirationDate
+ * @property bool $SendEmails
+ * @property bool $IsArchived
+ * @property string $ParentId
  */
 class Announcement extends BaseRecordModel
 {

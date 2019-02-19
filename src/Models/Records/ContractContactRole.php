@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContractContactRole[] query()
  *
- * @property string Id
- * @property string ContractId
- * @property string ContactId
- * @property mixed Role
- * @property bool IsPrimary
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ContractId
+ * @property string $ContactId
+ * @property mixed $Role
+ * @property bool $IsPrimary
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
  */
 class ContractContactRole extends BaseRecordModel
 {

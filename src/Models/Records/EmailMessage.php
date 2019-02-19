@@ -13,41 +13,41 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailMessage[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string ActivityId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string TextBody
- * @property string HtmlBody
- * @property string Headers
- * @property string Subject
- * @property string FromName
- * @property mixed FromAddress
- * @property mixed ValidatedFromAddress
- * @property string ToAddress
- * @property string CcAddress
- * @property string BccAddress
- * @property bool Incoming
- * @property bool HasAttachment
- * @property mixed Status
- * @property \Carbon\Carbon MessageDate
- * @property bool IsDeleted
- * @property string ReplyToEmailMessageId
- * @property bool IsExternallyVisible
- * @property string MessageIdentifier
- * @property string ThreadIdentifier
- * @property bool IsClientManaged
- * @property string RelatedToId
- * @property bool IsTracked
- * @property bool IsOpened
- * @property \Carbon\Carbon FirstOpenedDate
- * @property \Carbon\Carbon LastOpenedDate
- * @property bool IsBounced
- * @property string EmailTemplateId
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $ActivityId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $TextBody
+ * @property string $HtmlBody
+ * @property string $Headers
+ * @property string $Subject
+ * @property string $FromName
+ * @property mixed $FromAddress
+ * @property mixed $ValidatedFromAddress
+ * @property string $ToAddress
+ * @property string $CcAddress
+ * @property string $BccAddress
+ * @property bool $Incoming
+ * @property bool $HasAttachment
+ * @property mixed $Status
+ * @property \Carbon\Carbon $MessageDate
+ * @property bool $IsDeleted
+ * @property string $ReplyToEmailMessageId
+ * @property bool $IsExternallyVisible
+ * @property string $MessageIdentifier
+ * @property string $ThreadIdentifier
+ * @property bool $IsClientManaged
+ * @property string $RelatedToId
+ * @property bool $IsTracked
+ * @property bool $IsOpened
+ * @property \Carbon\Carbon $FirstOpenedDate
+ * @property \Carbon\Carbon $LastOpenedDate
+ * @property bool $IsBounced
+ * @property string $EmailTemplateId
  */
 class EmailMessage extends BaseRecordModel
 {

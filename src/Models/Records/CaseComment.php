@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseComment[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property bool IsPublished
- * @property string CommentBody
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ParentId
+ * @property bool $IsPublished
+ * @property string $CommentBody
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class CaseComment extends BaseRecordModel
 {

@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceResourceHistory[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ServiceResourceId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property mixed Field
- * @property mixed OldValue
- * @property mixed NewValue
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ServiceResourceId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property mixed $Field
+ * @property mixed $OldValue
+ * @property mixed $NewValue
  */
 class ServiceResourceHistory extends BaseRecordModel
 {

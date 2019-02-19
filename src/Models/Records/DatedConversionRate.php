@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatedConversionRate[] query()
  *
- * @property string Id
- * @property mixed IsoCode
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon NextStartDate
- * @property float ConversionRate
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property mixed $IsoCode
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $NextStartDate
+ * @property float $ConversionRate
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class DatedConversionRate extends BaseRecordModel
 {

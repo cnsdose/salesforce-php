@@ -13,41 +13,41 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Site[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Subdomain
- * @property string UrlPathPrefix
- * @property string GuestUserId
- * @property mixed Status
- * @property string AdminId
- * @property bool OptionsEnableFeeds
- * @property bool OptionsRequireHttps
- * @property bool OptionsAllowHomePage
- * @property bool OptionsAllowStandardIdeasPages
- * @property bool OptionsAllowStandardSearch
- * @property bool OptionsAllowStandardLookups
- * @property bool OptionsAllowStandardAnswersPages
- * @property bool OptionsAllowGuestSupportApi
- * @property bool OptionsAllowStandardPortalPages
- * @property bool OptionsCspUpgradeInsecureRequests
- * @property bool OptionsContentSniffingProtection
- * @property bool OptionsBrowserXssProtection
- * @property bool OptionsReferrerPolicyOriginWhenCrossOrigin
- * @property string Description
- * @property string MasterLabel
- * @property string AnalyticsTrackingCode
- * @property mixed SiteType
- * @property mixed ClickjackProtectionLevel
- * @property mixed DailyBandwidthLimit
- * @property mixed DailyBandwidthUsed
- * @property mixed DailyRequestTimeLimit
- * @property mixed DailyRequestTimeUsed
- * @property mixed MonthlyPageViewsEntitlement
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $Subdomain
+ * @property string $UrlPathPrefix
+ * @property string $GuestUserId
+ * @property mixed $Status
+ * @property string $AdminId
+ * @property bool $OptionsEnableFeeds
+ * @property bool $OptionsRequireHttps
+ * @property bool $OptionsAllowHomePage
+ * @property bool $OptionsAllowStandardIdeasPages
+ * @property bool $OptionsAllowStandardSearch
+ * @property bool $OptionsAllowStandardLookups
+ * @property bool $OptionsAllowStandardAnswersPages
+ * @property bool $OptionsAllowGuestSupportApi
+ * @property bool $OptionsAllowStandardPortalPages
+ * @property bool $OptionsCspUpgradeInsecureRequests
+ * @property bool $OptionsContentSniffingProtection
+ * @property bool $OptionsBrowserXssProtection
+ * @property bool $OptionsReferrerPolicyOriginWhenCrossOrigin
+ * @property string $Description
+ * @property string $MasterLabel
+ * @property string $AnalyticsTrackingCode
+ * @property mixed $SiteType
+ * @property mixed $ClickjackProtectionLevel
+ * @property mixed $DailyBandwidthLimit
+ * @property mixed $DailyBandwidthUsed
+ * @property mixed $DailyRequestTimeLimit
+ * @property mixed $DailyRequestTimeUsed
+ * @property mixed $MonthlyPageViewsEntitlement
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class Site extends BaseRecordModel
 {

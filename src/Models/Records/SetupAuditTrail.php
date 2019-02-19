@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SetupAuditTrail[] query()
  *
- * @property string Id
- * @property string Action
- * @property string Section
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string Display
- * @property string DelegateUser
- * @property string ResponsibleNamespacePrefix
+ * @property string $Id
+ * @property string $Action
+ * @property string $Section
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $Display
+ * @property string $DelegateUser
+ * @property string $ResponsibleNamespacePrefix
  */
 class SetupAuditTrail extends BaseRecordModel
 {

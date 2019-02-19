@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LightningUsageByAppTypeMetrics[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon MetricsDate
- * @property string UserId
- * @property string AppExperience
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property \Carbon\Carbon $MetricsDate
+ * @property string $UserId
+ * @property string $AppExperience
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class LightningUsageByAppTypeMetrics extends BaseRecordModel
 {

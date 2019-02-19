@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserShare[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string UserOrGroupId
- * @property mixed UserAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsActive
+ * @property string $Id
+ * @property string $UserId
+ * @property string $UserOrGroupId
+ * @property mixed $UserAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsActive
  */
 class UserShare extends BaseRecordModel
 {

@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SecureAgent[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string AgentKey
- * @property string ProxyUserId
- * @property string SecureAgentsClusterId
- * @property mixed Priority
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $AgentKey
+ * @property string $ProxyUserId
+ * @property string $SecureAgentsClusterId
+ * @property mixed $Priority
  */
 class SecureAgent extends BaseRecordModel
 {

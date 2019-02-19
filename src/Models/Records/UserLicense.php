@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserLicense[] query()
  *
- * @property string Id
- * @property string LicenseDefinitionKey
- * @property mixed TotalLicenses
- * @property mixed Status
- * @property mixed UsedLicenses
- * @property \Carbon\Carbon UsedLicensesLastUpdated
- * @property string Name
- * @property string MasterLabel
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $LicenseDefinitionKey
+ * @property mixed $TotalLicenses
+ * @property mixed $Status
+ * @property mixed $UsedLicenses
+ * @property \Carbon\Carbon $UsedLicensesLastUpdated
+ * @property string $Name
+ * @property string $MasterLabel
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class UserLicense extends BaseRecordModel
 {

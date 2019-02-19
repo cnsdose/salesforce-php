@@ -13,41 +13,41 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ActivityHistory[] query()
  *
- * @property string Id
- * @property string AccountId
- * @property string WhoId
- * @property string WhatId
- * @property mixed Subject
- * @property bool IsTask
- * @property \Carbon\Carbon ActivityDate
- * @property string OwnerId
- * @property mixed Status
- * @property mixed Priority
- * @property bool IsHighPriority
- * @property mixed ActivityType
- * @property bool IsClosed
- * @property bool IsAllDayEvent
- * @property bool IsVisibleInSelfService
- * @property mixed DurationInMinutes
- * @property string Location
- * @property string Description
- * @property mixed CurrencyIsoCode
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed CallDurationInSeconds
- * @property mixed CallType
- * @property string CallDisposition
- * @property string CallObject
- * @property \Carbon\Carbon ReminderDateTime
- * @property bool IsReminderSet
- * @property \Carbon\Carbon EndDateTime
- * @property \Carbon\Carbon StartDateTime
- * @property mixed ActivitySubtype
- * @property string AlternateDetailId
+ * @property string $Id
+ * @property string $AccountId
+ * @property string $WhoId
+ * @property string $WhatId
+ * @property mixed $Subject
+ * @property bool $IsTask
+ * @property \Carbon\Carbon $ActivityDate
+ * @property string $OwnerId
+ * @property mixed $Status
+ * @property mixed $Priority
+ * @property bool $IsHighPriority
+ * @property mixed $ActivityType
+ * @property bool $IsClosed
+ * @property bool $IsAllDayEvent
+ * @property bool $IsVisibleInSelfService
+ * @property mixed $DurationInMinutes
+ * @property string $Location
+ * @property string $Description
+ * @property mixed $CurrencyIsoCode
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $CallDurationInSeconds
+ * @property mixed $CallType
+ * @property string $CallDisposition
+ * @property string $CallObject
+ * @property \Carbon\Carbon $ReminderDateTime
+ * @property bool $IsReminderSet
+ * @property \Carbon\Carbon $EndDateTime
+ * @property \Carbon\Carbon $StartDateTime
+ * @property mixed $ActivitySubtype
+ * @property string $AlternateDetailId
  */
 class ActivityHistory extends BaseRecordModel
 {

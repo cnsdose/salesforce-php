@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method BusinessProcess[] query()
  *
- * @property string Id
- * @property string Name
- * @property string NamespacePrefix
- * @property string Description
- * @property mixed TableEnumOrId
- * @property bool IsActive
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $NamespacePrefix
+ * @property string $Description
+ * @property mixed $TableEnumOrId
+ * @property bool $IsActive
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class BusinessProcess extends BaseRecordModel
 {

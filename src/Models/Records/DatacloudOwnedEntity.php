@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatacloudOwnedEntity[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string DataDotComKey
- * @property mixed DatacloudEntityType
- * @property string UserId
- * @property string PurchaseUsageId
- * @property mixed PurchaseType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $DataDotComKey
+ * @property mixed $DatacloudEntityType
+ * @property string $UserId
+ * @property string $PurchaseUsageId
+ * @property mixed $PurchaseType
  */
 class DatacloudOwnedEntity extends BaseRecordModel
 {

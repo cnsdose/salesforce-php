@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AuthConfigProviders[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string AuthConfigId
- * @property string AuthProviderId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $AuthConfigId
+ * @property string $AuthProviderId
  */
 class AuthConfigProviders extends BaseRecordModel
 {

@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MaintenanceAsset[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string MaintenanceAssetNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string MaintenancePlanId
- * @property string AssetId
- * @property string WorkTypeId
- * @property string ContractLineItemId
- * @property \Carbon\Carbon NextSuggestedMaintenanceDate
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $MaintenanceAssetNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $MaintenancePlanId
+ * @property string $AssetId
+ * @property string $WorkTypeId
+ * @property string $ContractLineItemId
+ * @property \Carbon\Carbon $NextSuggestedMaintenanceDate
  */
 class MaintenanceAsset extends BaseRecordModel
 {

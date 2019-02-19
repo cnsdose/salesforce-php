@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method IdeaComment[] query()
  *
- * @property string Id
- * @property string IdeaId
- * @property string CommunityId
- * @property string CommentBody
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property bool IsHtml
- * @property string CreatorFullPhotoUrl
- * @property string CreatorSmallPhotoUrl
- * @property string CreatorName
- * @property mixed UpVotes
+ * @property string $Id
+ * @property string $IdeaId
+ * @property string $CommunityId
+ * @property string $CommentBody
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property bool $IsHtml
+ * @property string $CreatorFullPhotoUrl
+ * @property string $CreatorSmallPhotoUrl
+ * @property string $CreatorName
+ * @property mixed $UpVotes
  */
 class IdeaComment extends BaseRecordModel
 {

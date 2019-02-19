@@ -13,31 +13,31 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Entitlement[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string AccountId
- * @property mixed Type
- * @property string ServiceContractId
- * @property string ContractLineItemId
- * @property string AssetId
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property string SlaProcessId
- * @property string BusinessHoursId
- * @property bool IsPerIncident
- * @property mixed CasesPerEntitlement
- * @property mixed RemainingCases
- * @property mixed Status
- * @property string SvcApptBookingWindowsId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $AccountId
+ * @property mixed $Type
+ * @property string $ServiceContractId
+ * @property string $ContractLineItemId
+ * @property string $AssetId
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property string $SlaProcessId
+ * @property string $BusinessHoursId
+ * @property bool $IsPerIncident
+ * @property mixed $CasesPerEntitlement
+ * @property mixed $RemainingCases
+ * @property mixed $Status
+ * @property string $SvcApptBookingWindowsId
  */
 class Entitlement extends BaseRecordModel
 {

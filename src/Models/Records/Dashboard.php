@@ -13,36 +13,36 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Dashboard[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string FolderId
- * @property string FolderName
- * @property string Title
- * @property string DeveloperName
- * @property string NamespacePrefix
- * @property string Description
- * @property mixed LeftSize
- * @property mixed MiddleSize
- * @property mixed RightSize
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string RunningUserId
- * @property mixed TitleColor
- * @property mixed TitleSize
- * @property mixed TextColor
- * @property mixed BackgroundStart
- * @property mixed BackgroundEnd
- * @property mixed BackgroundDirection
- * @property mixed Type
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string DashboardResultRefreshedDate
- * @property string DashboardResultRunningUser
- * @property mixed ColorPalette
- * @property mixed ChartTheme
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $FolderId
+ * @property string $FolderName
+ * @property string $Title
+ * @property string $DeveloperName
+ * @property string $NamespacePrefix
+ * @property string $Description
+ * @property mixed $LeftSize
+ * @property mixed $MiddleSize
+ * @property mixed $RightSize
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $RunningUserId
+ * @property mixed $TitleColor
+ * @property mixed $TitleSize
+ * @property mixed $TextColor
+ * @property mixed $BackgroundStart
+ * @property mixed $BackgroundEnd
+ * @property mixed $BackgroundDirection
+ * @property mixed $Type
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $DashboardResultRefreshedDate
+ * @property string $DashboardResultRunningUser
+ * @property mixed $ColorPalette
+ * @property mixed $ChartTheme
  */
 class Dashboard extends BaseRecordModel
 {

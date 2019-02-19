@@ -13,33 +13,33 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContractLineItem[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string LineItemNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceContractId
- * @property string Product2Id
- * @property string AssetId
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property string Description
- * @property string PricebookEntryId
- * @property float Quantity
- * @property float UnitPrice
- * @property mixed Discount
- * @property float ListPrice
- * @property float Subtotal
- * @property float TotalPrice
- * @property mixed Status
- * @property string ParentContractLineItemId
- * @property string RootContractLineItemId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $LineItemNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceContractId
+ * @property string $Product2Id
+ * @property string $AssetId
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property string $Description
+ * @property string $PricebookEntryId
+ * @property float $Quantity
+ * @property float $UnitPrice
+ * @property mixed $Discount
+ * @property float $ListPrice
+ * @property float $Subtotal
+ * @property float $TotalPrice
+ * @property mixed $Status
+ * @property string $ParentContractLineItemId
+ * @property string $RootContractLineItemId
  */
 class ContractLineItem extends BaseRecordModel
 {

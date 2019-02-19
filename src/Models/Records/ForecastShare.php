@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ForecastShare[] query()
  *
- * @property string Id
- * @property string UserRoleId
- * @property string UserOrGroupId
- * @property mixed AccessLevel
- * @property bool CanSubmit
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
+ * @property string $Id
+ * @property string $UserRoleId
+ * @property string $UserOrGroupId
+ * @property mixed $AccessLevel
+ * @property bool $CanSubmit
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
  */
 class ForecastShare extends BaseRecordModel
 {

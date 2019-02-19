@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PermissionSetTabSetting[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property mixed Visibility
- * @property string Name
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property mixed $Visibility
+ * @property string $Name
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class PermissionSetTabSetting extends BaseRecordModel
 {

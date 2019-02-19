@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceCrewMember[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ServiceCrewMemberNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceCrewId
- * @property string ServiceResourceId
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property bool IsLeader
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ServiceCrewMemberNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceCrewId
+ * @property string $ServiceResourceId
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property bool $IsLeader
  */
 class ServiceCrewMember extends BaseRecordModel
 {

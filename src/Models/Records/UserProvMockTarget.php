@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserProvMockTarget[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ExternalUserId
- * @property string ExternalUsername
- * @property string ExternalEmail
- * @property string ExternalFirstName
- * @property string ExternalLastName
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ExternalUserId
+ * @property string $ExternalUsername
+ * @property string $ExternalEmail
+ * @property string $ExternalFirstName
+ * @property string $ExternalLastName
  */
 class UserProvMockTarget extends BaseRecordModel
 {

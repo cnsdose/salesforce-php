@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AppTabMember[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string AppDefinitionId
- * @property string TabDefinitionId
- * @property mixed SortOrder
- * @property string WorkspaceDriverField
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $AppDefinitionId
+ * @property string $TabDefinitionId
+ * @property mixed $SortOrder
+ * @property string $WorkspaceDriverField
  */
 class AppTabMember extends BaseRecordModel
 {

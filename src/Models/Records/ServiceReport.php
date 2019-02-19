@@ -13,24 +13,24 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceReport[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ServiceReportNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentId
- * @property string ContentVersionDocumentId
- * @property string DocumentName
- * @property mixed DocumentContentType
- * @property mixed DocumentLength
- * @property mixed DocumentBody
- * @property string Template
- * @property mixed ServiceReportLanguage
- * @property bool IsSigned
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ServiceReportNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentId
+ * @property string $ContentVersionDocumentId
+ * @property string $DocumentName
+ * @property mixed $DocumentContentType
+ * @property mixed $DocumentLength
+ * @property mixed $DocumentBody
+ * @property string $Template
+ * @property mixed $ServiceReportLanguage
+ * @property bool $IsSigned
  */
 class ServiceReport extends BaseRecordModel
 {

@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MilestoneType[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Description
- * @property mixed RecurrenceType
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
+ * @property string $Id
+ * @property string $Name
+ * @property string $Description
+ * @property mixed $RecurrenceType
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
  */
 class MilestoneType extends BaseRecordModel
 {

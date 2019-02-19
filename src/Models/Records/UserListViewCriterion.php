@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserListViewCriterion[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string UserListViewId
- * @property mixed SortOrder
- * @property string ColumnName
- * @property mixed Operation
- * @property string Value
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $UserListViewId
+ * @property mixed $SortOrder
+ * @property string $ColumnName
+ * @property mixed $Operation
+ * @property string $Value
  */
 class UserListViewCriterion extends BaseRecordModel
 {

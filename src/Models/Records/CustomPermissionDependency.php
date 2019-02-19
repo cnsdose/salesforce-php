@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CustomPermissionDependency[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string CustomPermissionId
- * @property string RequiredCustomPermissionId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $CustomPermissionId
+ * @property string $RequiredCustomPermissionId
  */
 class CustomPermissionDependency extends BaseRecordModel
 {

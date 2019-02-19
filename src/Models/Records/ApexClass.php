@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexClass[] query()
  *
- * @property string Id
- * @property string NamespacePrefix
- * @property string Name
- * @property float ApiVersion
- * @property mixed Status
- * @property bool IsValid
- * @property float BodyCrc
- * @property string Body
- * @property mixed LengthWithoutComments
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $NamespacePrefix
+ * @property string $Name
+ * @property float $ApiVersion
+ * @property mixed $Status
+ * @property bool $IsValid
+ * @property float $BodyCrc
+ * @property string $Body
+ * @property mixed $LengthWithoutComments
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ApexClass extends BaseRecordModel
 {

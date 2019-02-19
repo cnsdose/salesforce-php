@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessNode[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property string ProcessDefinitionId
- * @property string Description
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property string $ProcessDefinitionId
+ * @property string $Description
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessNode extends BaseRecordModel
 {

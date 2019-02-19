@@ -108,7 +108,7 @@ class GenerateRecordModel extends Command
             }
             list($phpType, $rule) = self::$typeRules[$fieldType] ?? ['mixed', null];
             $properties .= sprintf(
-                "\n * @property %s %s",
+                "\n * @property %s \$%s",
                 $phpType,
                 $fieldName
             );

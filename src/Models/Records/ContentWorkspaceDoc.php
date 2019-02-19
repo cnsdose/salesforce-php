@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentWorkspaceDoc[] query()
  *
- * @property string Id
- * @property string ContentWorkspaceId
- * @property string ContentDocumentId
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsOwner
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ContentWorkspaceId
+ * @property string $ContentDocumentId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsOwner
+ * @property bool $IsDeleted
  */
 class ContentWorkspaceDoc extends BaseRecordModel
 {

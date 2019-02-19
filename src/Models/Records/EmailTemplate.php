@@ -13,33 +13,33 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailTemplate[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property string NamespacePrefix
- * @property string OwnerId
- * @property string FolderId
- * @property string FolderName
- * @property string BrandTemplateId
- * @property mixed TemplateStyle
- * @property bool IsActive
- * @property mixed TemplateType
- * @property mixed Encoding
- * @property string Description
- * @property string Subject
- * @property string HtmlValue
- * @property string Body
- * @property mixed TimesUsed
- * @property \Carbon\Carbon LastUsedDate
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property float ApiVersion
- * @property string Markup
- * @property mixed UiType
- * @property mixed RelatedEntityType
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property string $NamespacePrefix
+ * @property string $OwnerId
+ * @property string $FolderId
+ * @property string $FolderName
+ * @property string $BrandTemplateId
+ * @property mixed $TemplateStyle
+ * @property bool $IsActive
+ * @property mixed $TemplateType
+ * @property mixed $Encoding
+ * @property string $Description
+ * @property string $Subject
+ * @property string $HtmlValue
+ * @property string $Body
+ * @property mixed $TimesUsed
+ * @property \Carbon\Carbon $LastUsedDate
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property float $ApiVersion
+ * @property string $Markup
+ * @property mixed $UiType
+ * @property mixed $RelatedEntityType
  */
 class EmailTemplate extends BaseRecordModel
 {

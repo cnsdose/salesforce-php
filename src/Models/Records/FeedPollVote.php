@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedPollVote[] query()
  *
- * @property string Id
- * @property string FeedItemId
- * @property string ChoiceId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $FeedItemId
+ * @property string $ChoiceId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property bool $IsDeleted
  */
 class FeedPollVote extends BaseRecordModel
 {

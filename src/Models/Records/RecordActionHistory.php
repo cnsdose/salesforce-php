@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method RecordActionHistory[] query()
  *
- * @property string Id
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentRecordId
- * @property string ActionDefinitionApiName
- * @property string ActionDefinitionLabel
- * @property mixed ActionType
- * @property mixed State
- * @property string UserId
- * @property string RecordActionId
- * @property \Carbon\Carbon LoggedTime
- * @property mixed Pinned
- * @property bool IsMandatory
+ * @property string $Id
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentRecordId
+ * @property string $ActionDefinitionApiName
+ * @property string $ActionDefinitionLabel
+ * @property mixed $ActionType
+ * @property mixed $State
+ * @property string $UserId
+ * @property string $RecordActionId
+ * @property \Carbon\Carbon $LoggedTime
+ * @property mixed $Pinned
+ * @property bool $IsMandatory
  */
 class RecordActionHistory extends BaseRecordModel
 {

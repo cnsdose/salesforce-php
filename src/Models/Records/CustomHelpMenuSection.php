@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CustomHelpMenuSection[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CustomHelpMenuSection extends BaseRecordModel
 {

@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OwnedContentDocument[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string OwnerId
- * @property string ContentDocumentId
- * @property string Title
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string FileType
- * @property mixed ContentSize
- * @property string FileExtension
- * @property mixed ContentUrl
- * @property string ExternalDataSourceName
- * @property mixed ExternalDataSourceType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $OwnerId
+ * @property string $ContentDocumentId
+ * @property string $Title
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $FileType
+ * @property mixed $ContentSize
+ * @property string $FileExtension
+ * @property mixed $ContentUrl
+ * @property string $ExternalDataSourceName
+ * @property mixed $ExternalDataSourceType
  */
 class OwnedContentDocument extends BaseRecordModel
 {

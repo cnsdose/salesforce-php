@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ClientBrowser[] query()
  *
- * @property string Id
- * @property string UsersId
- * @property string FullUserAgent
- * @property string ProxyInfo
- * @property \Carbon\Carbon LastUpdate
- * @property \Carbon\Carbon CreatedDate
+ * @property string $Id
+ * @property string $UsersId
+ * @property string $FullUserAgent
+ * @property string $ProxyInfo
+ * @property \Carbon\Carbon $LastUpdate
+ * @property \Carbon\Carbon $CreatedDate
  */
 class ClientBrowser extends BaseRecordModel
 {

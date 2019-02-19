@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Topic[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Description
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property mixed TalkingAbout
- * @property string ManagedTopicType
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $Description
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property mixed $TalkingAbout
+ * @property string $ManagedTopicType
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class Topic extends BaseRecordModel
 {

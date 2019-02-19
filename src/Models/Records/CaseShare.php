@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseShare[] query()
  *
- * @property string Id
- * @property string CaseId
- * @property string UserOrGroupId
- * @property mixed CaseAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $CaseId
+ * @property string $UserOrGroupId
+ * @property mixed $CaseAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class CaseShare extends BaseRecordModel
 {

@@ -13,40 +13,40 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Campaign[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property string ParentId
- * @property mixed Type
- * @property mixed Status
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property mixed CurrencyIsoCode
- * @property float ExpectedRevenue
- * @property float BudgetedCost
- * @property float ActualCost
- * @property mixed ExpectedResponse
- * @property float NumberSent
- * @property bool IsActive
- * @property string Description
- * @property mixed NumberOfLeads
- * @property mixed NumberOfConvertedLeads
- * @property mixed NumberOfContacts
- * @property mixed NumberOfResponses
- * @property mixed NumberOfOpportunities
- * @property mixed NumberOfWonOpportunities
- * @property float AmountAllOpportunities
- * @property float AmountWonOpportunities
- * @property string OwnerId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastActivityDate
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string CampaignMemberRecordTypeId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property string $ParentId
+ * @property mixed $Type
+ * @property mixed $Status
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property mixed $CurrencyIsoCode
+ * @property float $ExpectedRevenue
+ * @property float $BudgetedCost
+ * @property float $ActualCost
+ * @property mixed $ExpectedResponse
+ * @property float $NumberSent
+ * @property bool $IsActive
+ * @property string $Description
+ * @property mixed $NumberOfLeads
+ * @property mixed $NumberOfConvertedLeads
+ * @property mixed $NumberOfContacts
+ * @property mixed $NumberOfResponses
+ * @property mixed $NumberOfOpportunities
+ * @property mixed $NumberOfWonOpportunities
+ * @property float $AmountAllOpportunities
+ * @property float $AmountWonOpportunities
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastActivityDate
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $CampaignMemberRecordTypeId
  */
 class Campaign extends BaseRecordModel
 {

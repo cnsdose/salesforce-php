@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Holiday[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Description
- * @property bool IsAllDay
- * @property \Carbon\Carbon ActivityDate
- * @property mixed StartTimeInMinutes
- * @property mixed EndTimeInMinutes
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsRecurrence
- * @property \Carbon\Carbon RecurrenceStartDate
- * @property \Carbon\Carbon RecurrenceEndDateOnly
- * @property mixed RecurrenceType
- * @property mixed RecurrenceInterval
- * @property mixed RecurrenceDayOfWeekMask
- * @property mixed RecurrenceDayOfMonth
- * @property mixed RecurrenceInstance
- * @property mixed RecurrenceMonthOfYear
+ * @property string $Id
+ * @property string $Name
+ * @property string $Description
+ * @property bool $IsAllDay
+ * @property \Carbon\Carbon $ActivityDate
+ * @property mixed $StartTimeInMinutes
+ * @property mixed $EndTimeInMinutes
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsRecurrence
+ * @property \Carbon\Carbon $RecurrenceStartDate
+ * @property \Carbon\Carbon $RecurrenceEndDateOnly
+ * @property mixed $RecurrenceType
+ * @property mixed $RecurrenceInterval
+ * @property mixed $RecurrenceDayOfWeekMask
+ * @property mixed $RecurrenceDayOfMonth
+ * @property mixed $RecurrenceInstance
+ * @property mixed $RecurrenceMonthOfYear
  */
 class Holiday extends BaseRecordModel
 {

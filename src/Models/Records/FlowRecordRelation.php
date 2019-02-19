@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FlowRecordRelation[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentId
- * @property string RelatedRecordId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentId
+ * @property string $RelatedRecordId
  */
 class FlowRecordRelation extends BaseRecordModel
 {

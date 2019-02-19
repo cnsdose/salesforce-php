@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PlatformStatusAlertEvent[] query()
  *
- * @property string ReplayId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string EventIdentifier
- * @property string UserId
- * @property string Username
- * @property \Carbon\Carbon EventDate
- * @property string RelatedEventIdentifier
- * @property string RequestId
- * @property string ServiceName
- * @property string ServiceJobId
- * @property string StatusType
- * @property string ComponentName
- * @property string SubComponentName
- * @property string Subject
- * @property string ApiErrorCode
- * @property string ExtendedErrorCode
+ * @property string $ReplayId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $EventIdentifier
+ * @property string $UserId
+ * @property string $Username
+ * @property \Carbon\Carbon $EventDate
+ * @property string $RelatedEventIdentifier
+ * @property string $RequestId
+ * @property string $ServiceName
+ * @property string $ServiceJobId
+ * @property string $StatusType
+ * @property string $ComponentName
+ * @property string $SubComponentName
+ * @property string $Subject
+ * @property string $ApiErrorCode
+ * @property string $ExtendedErrorCode
  */
 class PlatformStatusAlertEvent extends BaseRecordModel
 {

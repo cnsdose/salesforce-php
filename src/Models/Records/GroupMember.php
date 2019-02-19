@@ -13,10 +13,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method GroupMember[] query()
  *
- * @property string Id
- * @property string GroupId
- * @property string UserOrGroupId
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $GroupId
+ * @property string $UserOrGroupId
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class GroupMember extends BaseRecordModel
 {

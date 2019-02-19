@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatacloudPurchaseUsage[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string UserId
- * @property mixed UserType
- * @property mixed PurchaseType
- * @property mixed DatacloudEntityType
- * @property float Usage
- * @property string Description
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $UserId
+ * @property mixed $UserType
+ * @property mixed $PurchaseType
+ * @property mixed $DatacloudEntityType
+ * @property float $Usage
+ * @property string $Description
  */
 class DatacloudPurchaseUsage extends BaseRecordModel
 {

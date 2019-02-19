@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessDefinition[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property mixed Type
- * @property string Description
- * @property mixed TableEnumOrId
- * @property mixed LockType
- * @property mixed State
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property mixed $Type
+ * @property string $Description
+ * @property mixed $TableEnumOrId
+ * @property mixed $LockType
+ * @property mixed $State
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessDefinition extends BaseRecordModel
 {

@@ -13,9 +13,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentWorkspaceSubscription[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string ContentWorkspaceId
+ * @property string $Id
+ * @property string $UserId
+ * @property string $ContentWorkspaceId
  */
 class ContentWorkspaceSubscription extends BaseRecordModel
 {

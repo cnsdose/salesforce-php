@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceTerritoryLocation[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ServiceTerritoryLocationNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ServiceTerritoryId
- * @property string LocationId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ServiceTerritoryLocationNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ServiceTerritoryId
+ * @property string $LocationId
  */
 class ServiceTerritoryLocation extends BaseRecordModel
 {

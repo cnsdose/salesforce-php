@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexTestQueueItem[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ApexClassId
- * @property mixed Status
- * @property string ExtendedStatus
- * @property string ParentJobId
- * @property string TestRunResultId
- * @property bool ShouldSkipCodeCoverage
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ApexClassId
+ * @property mixed $Status
+ * @property string $ExtendedStatus
+ * @property string $ParentJobId
+ * @property string $TestRunResultId
+ * @property bool $ShouldSkipCodeCoverage
  */
 class ApexTestQueueItem extends BaseRecordModel
 {

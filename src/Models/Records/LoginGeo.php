@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LoginGeo[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property bool IsDeleted
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LoginTime
- * @property string CountryIso
- * @property string Country
- * @property float Latitude
- * @property float Longitude
- * @property string City
- * @property string PostalCode
- * @property string Subdivision
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LoginTime
+ * @property string $CountryIso
+ * @property string $Country
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property string $City
+ * @property string $PostalCode
+ * @property string $Subdivision
  */
 class LoginGeo extends BaseRecordModel
 {

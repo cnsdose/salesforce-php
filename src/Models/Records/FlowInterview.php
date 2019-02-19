@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FlowInterview[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string CurrentElement
- * @property string InterviewLabel
- * @property string PauseLabel
- * @property string Guid
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $CurrentElement
+ * @property string $InterviewLabel
+ * @property string $PauseLabel
+ * @property string $Guid
  */
 class FlowInterview extends BaseRecordModel
 {

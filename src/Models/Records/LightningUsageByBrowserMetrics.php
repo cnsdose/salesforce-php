@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LightningUsageByBrowserMetrics[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon MetricsDate
- * @property string PageName
- * @property string Browser
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed RecordCountEPT
- * @property mixed TotalCount
- * @property mixed SumEPT
- * @property mixed EptBinUnder3
- * @property mixed EptBin3To5
- * @property mixed EptBin5To8
- * @property mixed EptBin8To10
- * @property mixed EptBinOver10
+ * @property string $Id
+ * @property \Carbon\Carbon $MetricsDate
+ * @property string $PageName
+ * @property string $Browser
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $RecordCountEPT
+ * @property mixed $TotalCount
+ * @property mixed $SumEPT
+ * @property mixed $EptBinUnder3
+ * @property mixed $EptBin3To5
+ * @property mixed $EptBin5To8
+ * @property mixed $EptBin8To10
+ * @property mixed $EptBinOver10
  */
 class LightningUsageByBrowserMetrics extends BaseRecordModel
 {

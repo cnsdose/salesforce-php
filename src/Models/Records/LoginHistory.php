@@ -13,26 +13,26 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LoginHistory[] query()
  *
- * @property string Id
- * @property string UserId
- * @property \Carbon\Carbon LoginTime
- * @property mixed LoginType
- * @property string SourceIp
- * @property string LoginUrl
- * @property string AuthenticationServiceId
- * @property string LoginGeoId
- * @property mixed TlsProtocol
- * @property mixed CipherSuite
- * @property bool OptionsIsGet
- * @property bool OptionsIsPost
- * @property string Browser
- * @property string Platform
- * @property string Status
- * @property string Application
- * @property string ClientVersion
- * @property string ApiType
- * @property string ApiVersion
- * @property string CountryIso
+ * @property string $Id
+ * @property string $UserId
+ * @property \Carbon\Carbon $LoginTime
+ * @property mixed $LoginType
+ * @property string $SourceIp
+ * @property string $LoginUrl
+ * @property string $AuthenticationServiceId
+ * @property string $LoginGeoId
+ * @property mixed $TlsProtocol
+ * @property mixed $CipherSuite
+ * @property bool $OptionsIsGet
+ * @property bool $OptionsIsPost
+ * @property string $Browser
+ * @property string $Platform
+ * @property string $Status
+ * @property string $Application
+ * @property string $ClientVersion
+ * @property string $ApiType
+ * @property string $ApiVersion
+ * @property string $CountryIso
  */
 class LoginHistory extends BaseRecordModel
 {

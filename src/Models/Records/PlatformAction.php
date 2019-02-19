@@ -13,35 +13,35 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PlatformAction[] query()
  *
- * @property string Id
- * @property string ExternalId
- * @property \Carbon\Carbon LastModifiedDate
- * @property string Label
- * @property mixed Type
- * @property string Subtype
- * @property string ApiName
- * @property string ActionTarget
- * @property mixed ActionTargetType
- * @property string ConfirmationMessage
- * @property string GroupId
- * @property bool IsGroupDefault
- * @property mixed Category
- * @property mixed InvocationStatus
- * @property string InvokedByUserId
- * @property string SourceEntity
- * @property mixed ActionListContext
- * @property mixed DeviceFormat
- * @property string IconContentType
- * @property mixed IconHeight
- * @property mixed IconWidth
- * @property mixed IconUrl
- * @property bool IsMassAction
- * @property string PrimaryColor
- * @property string RelatedSourceEntity
- * @property mixed Section
- * @property string RelatedListRecordId
- * @property string TargetUrl
- * @property string TargetObject
+ * @property string $Id
+ * @property string $ExternalId
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $Label
+ * @property mixed $Type
+ * @property string $Subtype
+ * @property string $ApiName
+ * @property string $ActionTarget
+ * @property mixed $ActionTargetType
+ * @property string $ConfirmationMessage
+ * @property string $GroupId
+ * @property bool $IsGroupDefault
+ * @property mixed $Category
+ * @property mixed $InvocationStatus
+ * @property string $InvokedByUserId
+ * @property string $SourceEntity
+ * @property mixed $ActionListContext
+ * @property mixed $DeviceFormat
+ * @property string $IconContentType
+ * @property mixed $IconHeight
+ * @property mixed $IconWidth
+ * @property mixed $IconUrl
+ * @property bool $IsMassAction
+ * @property string $PrimaryColor
+ * @property string $RelatedSourceEntity
+ * @property mixed $Section
+ * @property string $RelatedListRecordId
+ * @property string $TargetUrl
+ * @property string $TargetObject
  */
 class PlatformAction extends BaseRecordModel
 {

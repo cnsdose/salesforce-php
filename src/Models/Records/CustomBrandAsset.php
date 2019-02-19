@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CustomBrandAsset[] query()
  *
- * @property string Id
- * @property string CustomBrandId
- * @property mixed AssetCategory
- * @property string TextAsset
- * @property string AssetSourceId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
+ * @property string $Id
+ * @property string $CustomBrandId
+ * @property mixed $AssetCategory
+ * @property string $TextAsset
+ * @property string $AssetSourceId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
  */
 class CustomBrandAsset extends BaseRecordModel
 {

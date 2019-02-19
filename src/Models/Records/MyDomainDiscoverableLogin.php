@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MyDomainDiscoverableLogin[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ApexHandlerId
- * @property string ExecuteApexHandlerAsId
- * @property string UsernameLabel
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ApexHandlerId
+ * @property string $ExecuteApexHandlerAsId
+ * @property string $UsernameLabel
  */
 class MyDomainDiscoverableLogin extends BaseRecordModel
 {

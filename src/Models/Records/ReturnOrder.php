@@ -13,39 +13,39 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ReturnOrder[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string ReturnOrderNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string AccountId
- * @property string ContactId
- * @property string ProductRequestId
- * @property string CaseId
- * @property string OrderId
- * @property string SourceLocationId
- * @property string DestinationLocationId
- * @property mixed ShipmentType
- * @property string ShipFromStreet
- * @property string ShipFromCity
- * @property string ShipFromState
- * @property string ShipFromPostalCode
- * @property string ShipFromCountry
- * @property float ShipFromLatitude
- * @property float ShipFromLongitude
- * @property mixed ShipFromGeocodeAccuracy
- * @property mixed ShipFromAddress
- * @property string ReturnedById
- * @property string Description
- * @property \Carbon\Carbon ExpectedArrivalDate
- * @property mixed Status
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $ReturnOrderNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $AccountId
+ * @property string $ContactId
+ * @property string $ProductRequestId
+ * @property string $CaseId
+ * @property string $OrderId
+ * @property string $SourceLocationId
+ * @property string $DestinationLocationId
+ * @property mixed $ShipmentType
+ * @property string $ShipFromStreet
+ * @property string $ShipFromCity
+ * @property string $ShipFromState
+ * @property string $ShipFromPostalCode
+ * @property string $ShipFromCountry
+ * @property float $ShipFromLatitude
+ * @property float $ShipFromLongitude
+ * @property mixed $ShipFromGeocodeAccuracy
+ * @property mixed $ShipFromAddress
+ * @property string $ReturnedById
+ * @property string $Description
+ * @property \Carbon\Carbon $ExpectedArrivalDate
+ * @property mixed $Status
  */
 class ReturnOrder extends BaseRecordModel
 {

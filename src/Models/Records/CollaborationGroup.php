@@ -13,33 +13,33 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CollaborationGroup[] query()
  *
- * @property string Id
- * @property string Name
- * @property mixed MemberCount
- * @property string OwnerId
- * @property mixed CollaborationType
- * @property string Description
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed FullPhotoUrl
- * @property mixed MediumPhotoUrl
- * @property mixed SmallPhotoUrl
- * @property \Carbon\Carbon LastFeedModifiedDate
- * @property string InformationTitle
- * @property string InformationBody
- * @property bool HasPrivateFieldsAccess
- * @property bool CanHaveGuests
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property bool IsArchived
- * @property bool IsAutoArchiveDisabled
- * @property string AnnouncementId
- * @property mixed GroupEmail
- * @property mixed BannerPhotoUrl
- * @property bool IsBroadcast
+ * @property string $Id
+ * @property string $Name
+ * @property mixed $MemberCount
+ * @property string $OwnerId
+ * @property mixed $CollaborationType
+ * @property string $Description
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $FullPhotoUrl
+ * @property mixed $MediumPhotoUrl
+ * @property mixed $SmallPhotoUrl
+ * @property \Carbon\Carbon $LastFeedModifiedDate
+ * @property string $InformationTitle
+ * @property string $InformationBody
+ * @property bool $HasPrivateFieldsAccess
+ * @property bool $CanHaveGuests
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property bool $IsArchived
+ * @property bool $IsAutoArchiveDisabled
+ * @property string $AnnouncementId
+ * @property mixed $GroupEmail
+ * @property mixed $BannerPhotoUrl
+ * @property bool $IsBroadcast
  */
 class CollaborationGroup extends BaseRecordModel
 {

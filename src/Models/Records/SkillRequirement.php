@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SkillRequirement[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string SkillNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string RelatedRecordId
- * @property string SkillId
- * @property float SkillLevel
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $SkillNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $RelatedRecordId
+ * @property string $SkillId
+ * @property float $SkillLevel
  */
 class SkillRequirement extends BaseRecordModel
 {

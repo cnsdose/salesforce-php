@@ -13,25 +13,25 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserProvAccount[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string SalesforceUserId
- * @property string ConnectedAppId
- * @property string ExternalUserId
- * @property string ExternalUsername
- * @property string ExternalEmail
- * @property string ExternalFirstName
- * @property string ExternalLastName
- * @property mixed LinkState
- * @property mixed Status
- * @property \Carbon\Carbon DeletedDate
- * @property bool IsKnownLink
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $SalesforceUserId
+ * @property string $ConnectedAppId
+ * @property string $ExternalUserId
+ * @property string $ExternalUsername
+ * @property string $ExternalEmail
+ * @property string $ExternalFirstName
+ * @property string $ExternalLastName
+ * @property mixed $LinkState
+ * @property mixed $Status
+ * @property \Carbon\Carbon $DeletedDate
+ * @property bool $IsKnownLink
  */
 class UserProvAccount extends BaseRecordModel
 {

@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductRequired[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ProductRequiredNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ParentRecordId
- * @property string ParentRecordType
- * @property string Product2Id
- * @property string ProductName
- * @property float QuantityRequired
- * @property mixed QuantityUnitOfMeasure
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ProductRequiredNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ParentRecordId
+ * @property string $ParentRecordType
+ * @property string $Product2Id
+ * @property string $ProductName
+ * @property float $QuantityRequired
+ * @property mixed $QuantityUnitOfMeasure
  */
 class ProductRequired extends BaseRecordModel
 {

@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentDistributionView[] query()
  *
- * @property string Id
- * @property string DistributionId
- * @property string ParentViewId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property bool IsInternal
- * @property bool IsDownload
+ * @property string $Id
+ * @property string $DistributionId
+ * @property string $ParentViewId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property bool $IsInternal
+ * @property bool $IsDownload
  */
 class ContentDistributionView extends BaseRecordModel
 {

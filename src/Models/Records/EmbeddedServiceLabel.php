@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmbeddedServiceLabel[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string EmbeddedServiceConfigDeveloperName
- * @property mixed LabelKey
- * @property string CustomLabelName
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $EmbeddedServiceConfigDeveloperName
+ * @property mixed $LabelKey
+ * @property string $CustomLabelName
  */
 class EmbeddedServiceLabel extends BaseRecordModel
 {

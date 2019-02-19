@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Period[] query()
  *
- * @property string Id
- * @property string FiscalYearSettingsId
- * @property mixed Type
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsForecastPeriod
- * @property mixed QuarterLabel
- * @property mixed PeriodLabel
- * @property mixed Number
- * @property string FullyQualifiedLabel
+ * @property string $Id
+ * @property string $FiscalYearSettingsId
+ * @property mixed $Type
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsForecastPeriod
+ * @property mixed $QuarterLabel
+ * @property mixed $PeriodLabel
+ * @property mixed $Number
+ * @property string $FullyQualifiedLabel
  */
 class Period extends BaseRecordModel
 {

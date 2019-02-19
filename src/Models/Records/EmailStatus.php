@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailStatus[] query()
  *
- * @property string Id
- * @property string TaskId
- * @property string WhoId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property mixed TimesOpened
- * @property \Carbon\Carbon FirstOpenDate
- * @property \Carbon\Carbon LastOpenDate
- * @property string EmailTemplateName
+ * @property string $Id
+ * @property string $TaskId
+ * @property string $WhoId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property mixed $TimesOpened
+ * @property \Carbon\Carbon $FirstOpenDate
+ * @property \Carbon\Carbon $LastOpenDate
+ * @property string $EmailTemplateName
  */
 class EmailStatus extends BaseRecordModel
 {

@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Domain[] query()
  *
- * @property string Id
- * @property mixed DomainType
- * @property string Domain
- * @property bool OptionsExternalHttps
- * @property string CnameTarget
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property mixed $DomainType
+ * @property string $Domain
+ * @property bool $OptionsExternalHttps
+ * @property string $CnameTarget
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class Domain extends BaseRecordModel
 {

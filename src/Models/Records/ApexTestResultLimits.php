@@ -13,26 +13,26 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexTestResultLimits[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ApexTestResultId
- * @property mixed Soql
- * @property mixed QueryRows
- * @property mixed Sosl
- * @property mixed Dml
- * @property mixed DmlRows
- * @property mixed Cpu
- * @property mixed Callouts
- * @property mixed Email
- * @property mixed AsyncCalls
- * @property mixed MobilePush
- * @property string LimitContext
- * @property string LimitExceptions
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ApexTestResultId
+ * @property mixed $Soql
+ * @property mixed $QueryRows
+ * @property mixed $Sosl
+ * @property mixed $Dml
+ * @property mixed $DmlRows
+ * @property mixed $Cpu
+ * @property mixed $Callouts
+ * @property mixed $Email
+ * @property mixed $AsyncCalls
+ * @property mixed $MobilePush
+ * @property string $LimitContext
+ * @property string $LimitExceptions
  */
 class ApexTestResultLimits extends BaseRecordModel
 {

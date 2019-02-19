@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AdditionalNumber[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string CallCenterId
- * @property string Name
- * @property string Description
- * @property mixed Phone
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $CallCenterId
+ * @property string $Name
+ * @property string $Description
+ * @property mixed $Phone
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class AdditionalNumber extends BaseRecordModel
 {

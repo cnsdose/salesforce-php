@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method QueueSobject[] query()
  *
- * @property string Id
- * @property string QueueId
- * @property mixed SobjectType
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $QueueId
+ * @property mixed $SobjectType
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class QueueSobject extends BaseRecordModel
 {

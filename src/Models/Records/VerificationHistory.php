@@ -13,25 +13,25 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method VerificationHistory[] query()
  *
- * @property string Id
- * @property mixed EventGroup
- * @property \Carbon\Carbon VerificationTime
- * @property mixed VerificationMethod
- * @property string UserId
- * @property mixed Activity
- * @property mixed Status
- * @property string LoginHistoryId
- * @property string SourceIp
- * @property string LoginGeoId
- * @property string Remarks
- * @property string ResourceId
- * @property mixed Policy
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property bool IsDeleted
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property mixed $EventGroup
+ * @property \Carbon\Carbon $VerificationTime
+ * @property mixed $VerificationMethod
+ * @property string $UserId
+ * @property mixed $Activity
+ * @property mixed $Status
+ * @property string $LoginHistoryId
+ * @property string $SourceIp
+ * @property string $LoginGeoId
+ * @property string $Remarks
+ * @property string $ResourceId
+ * @property mixed $Policy
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class VerificationHistory extends BaseRecordModel
 {

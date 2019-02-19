@@ -13,28 +13,28 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserProvisioningRequest[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string SalesforceUserId
- * @property string ExternalUserId
- * @property string AppName
- * @property mixed State
- * @property mixed Operation
- * @property \Carbon\Carbon ScheduleDate
- * @property string ConnectedAppId
- * @property string UserProvConfigId
- * @property string UserProvAccountId
- * @property mixed ApprovalStatus
- * @property string ManagerId
- * @property mixed RetryCount
- * @property string ParentId
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $SalesforceUserId
+ * @property string $ExternalUserId
+ * @property string $AppName
+ * @property mixed $State
+ * @property mixed $Operation
+ * @property \Carbon\Carbon $ScheduleDate
+ * @property string $ConnectedAppId
+ * @property string $UserProvConfigId
+ * @property string $UserProvAccountId
+ * @property mixed $ApprovalStatus
+ * @property string $ManagerId
+ * @property mixed $RetryCount
+ * @property string $ParentId
  */
 class UserProvisioningRequest extends BaseRecordModel
 {

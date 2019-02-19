@@ -13,29 +13,29 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexTrigger[] query()
  *
- * @property string Id
- * @property string NamespacePrefix
- * @property string Name
- * @property mixed TableEnumOrId
- * @property bool UsageBeforeInsert
- * @property bool UsageAfterInsert
- * @property bool UsageBeforeUpdate
- * @property bool UsageAfterUpdate
- * @property bool UsageBeforeDelete
- * @property bool UsageAfterDelete
- * @property bool UsageIsBulk
- * @property bool UsageAfterUndelete
- * @property float ApiVersion
- * @property mixed Status
- * @property bool IsValid
- * @property float BodyCrc
- * @property string Body
- * @property mixed LengthWithoutComments
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $NamespacePrefix
+ * @property string $Name
+ * @property mixed $TableEnumOrId
+ * @property bool $UsageBeforeInsert
+ * @property bool $UsageAfterInsert
+ * @property bool $UsageBeforeUpdate
+ * @property bool $UsageAfterUpdate
+ * @property bool $UsageBeforeDelete
+ * @property bool $UsageAfterDelete
+ * @property bool $UsageIsBulk
+ * @property bool $UsageAfterUndelete
+ * @property float $ApiVersion
+ * @property mixed $Status
+ * @property bool $IsValid
+ * @property float $BodyCrc
+ * @property string $Body
+ * @property mixed $LengthWithoutComments
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ApexTrigger extends BaseRecordModel
 {

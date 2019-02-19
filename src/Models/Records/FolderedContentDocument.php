@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FolderedContentDocument[] query()
  *
- * @property string Id
- * @property bool IsFolder
- * @property string ContentDocumentId
- * @property string ParentContentFolderId
- * @property bool IsDeleted
- * @property string Title
- * @property string FileType
- * @property mixed ContentSize
- * @property string FileExtension
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsFolder
+ * @property string $ContentDocumentId
+ * @property string $ParentContentFolderId
+ * @property bool $IsDeleted
+ * @property string $Title
+ * @property string $FileType
+ * @property mixed $ContentSize
+ * @property string $FileExtension
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class FolderedContentDocument extends BaseRecordModel
 {

@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CollaborationInvitation[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string SharedEntityId
- * @property string InviterId
- * @property string InvitedUserEmail
- * @property mixed InvitedUserEmailNormalized
- * @property mixed Status
- * @property string OptionalMessage
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $SharedEntityId
+ * @property string $InviterId
+ * @property string $InvitedUserEmail
+ * @property mixed $InvitedUserEmailNormalized
+ * @property mixed $Status
+ * @property string $OptionalMessage
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CollaborationInvitation extends BaseRecordModel
 {

@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserPreference[] query()
  *
- * @property string Id
- * @property string UserId
- * @property mixed Preference
- * @property string Value
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $UserId
+ * @property mixed $Preference
+ * @property string $Value
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class UserPreference extends BaseRecordModel
 {

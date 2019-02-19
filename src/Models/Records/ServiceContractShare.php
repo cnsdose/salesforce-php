@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceContractShare[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string UserOrGroupId
- * @property mixed AccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $UserOrGroupId
+ * @property mixed $AccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class ServiceContractShare extends BaseRecordModel
 {

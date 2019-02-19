@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceResourceSkill[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string SkillNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceResourceId
- * @property string SkillId
- * @property float SkillLevel
- * @property \Carbon\Carbon EffectiveStartDate
- * @property \Carbon\Carbon EffectiveEndDate
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $SkillNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceResourceId
+ * @property string $SkillId
+ * @property float $SkillLevel
+ * @property \Carbon\Carbon $EffectiveStartDate
+ * @property \Carbon\Carbon $EffectiveEndDate
  */
 class ServiceResourceSkill extends BaseRecordModel
 {

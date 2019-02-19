@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ChatterActivity[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property mixed PostCount
- * @property mixed CommentCount
- * @property mixed CommentReceivedCount
- * @property mixed LikeReceivedCount
- * @property mixed InfluenceRawRank
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property mixed $PostCount
+ * @property mixed $CommentCount
+ * @property mixed $CommentReceivedCount
+ * @property mixed $LikeReceivedCount
+ * @property mixed $InfluenceRawRank
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ChatterActivity extends BaseRecordModel
 {

@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TimeSheet[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string TimeSheetNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceResourceId
- * @property \Carbon\Carbon StartDate
- * @property mixed Status
- * @property \Carbon\Carbon EndDate
- * @property mixed TimeSheetEntryCount
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $TimeSheetNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceResourceId
+ * @property \Carbon\Carbon $StartDate
+ * @property mixed $Status
+ * @property \Carbon\Carbon $EndDate
+ * @property mixed $TimeSheetEntryCount
  */
 class TimeSheet extends BaseRecordModel
 {

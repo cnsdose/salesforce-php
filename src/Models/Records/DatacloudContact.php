@@ -13,28 +13,28 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatacloudContact[] query()
  *
- * @property string Id
- * @property mixed CurrencyIsoCode
- * @property string ExternalId
- * @property string CompanyId
- * @property string ContactId
- * @property string CompanyName
- * @property string Title
- * @property bool IsInactive
- * @property string FirstName
- * @property string LastName
- * @property mixed Phone
- * @property mixed Email
- * @property string Street
- * @property string City
- * @property string State
- * @property string Country
- * @property string Zip
- * @property mixed Department
- * @property mixed Level
- * @property bool IsOwned
- * @property \Carbon\Carbon UpdatedDate
- * @property bool IsInCrm
+ * @property string $Id
+ * @property mixed $CurrencyIsoCode
+ * @property string $ExternalId
+ * @property string $CompanyId
+ * @property string $ContactId
+ * @property string $CompanyName
+ * @property string $Title
+ * @property bool $IsInactive
+ * @property string $FirstName
+ * @property string $LastName
+ * @property mixed $Phone
+ * @property mixed $Email
+ * @property string $Street
+ * @property string $City
+ * @property string $State
+ * @property string $Country
+ * @property string $Zip
+ * @property mixed $Department
+ * @property mixed $Level
+ * @property bool $IsOwned
+ * @property \Carbon\Carbon $UpdatedDate
+ * @property bool $IsInCrm
  */
 class DatacloudContact extends BaseRecordModel
 {

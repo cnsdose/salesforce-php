@@ -13,32 +13,32 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedItem[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property mixed Type
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property bool IsDeleted
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Revision
- * @property string LastEditById
- * @property \Carbon\Carbon LastEditDate
- * @property mixed CommentCount
- * @property mixed LikeCount
- * @property string Title
- * @property string Body
- * @property mixed LinkUrl
- * @property bool IsRichText
- * @property string RelatedRecordId
- * @property string InsertedById
- * @property string BestCommentId
- * @property bool HasContent
- * @property bool HasLink
- * @property bool HasFeedEntity
- * @property bool HasVerifiedComment
- * @property bool IsClosed
- * @property mixed Status
+ * @property string $Id
+ * @property string $ParentId
+ * @property mixed $Type
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Revision
+ * @property string $LastEditById
+ * @property \Carbon\Carbon $LastEditDate
+ * @property mixed $CommentCount
+ * @property mixed $LikeCount
+ * @property string $Title
+ * @property string $Body
+ * @property mixed $LinkUrl
+ * @property bool $IsRichText
+ * @property string $RelatedRecordId
+ * @property string $InsertedById
+ * @property string $BestCommentId
+ * @property bool $HasContent
+ * @property bool $HasLink
+ * @property bool $HasFeedEntity
+ * @property bool $HasVerifiedComment
+ * @property bool $IsClosed
+ * @property mixed $Status
  */
 class FeedItem extends BaseRecordModel
 {

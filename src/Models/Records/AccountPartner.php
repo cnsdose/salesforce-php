@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AccountPartner[] query()
  *
- * @property string Id
- * @property string AccountFromId
- * @property string AccountToId
- * @property string OpportunityId
- * @property mixed Role
- * @property bool IsPrimary
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property string ReversePartnerId
+ * @property string $Id
+ * @property string $AccountFromId
+ * @property string $AccountToId
+ * @property string $OpportunityId
+ * @property mixed $Role
+ * @property bool $IsPrimary
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property string $ReversePartnerId
  */
 class AccountPartner extends BaseRecordModel
 {

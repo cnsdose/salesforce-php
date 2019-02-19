@@ -13,28 +13,28 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method QuoteLineItem[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string LineNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string QuoteId
- * @property string PricebookEntryId
- * @property string OpportunityLineItemId
- * @property float Quantity
- * @property float UnitPrice
- * @property mixed Discount
- * @property string Description
- * @property \Carbon\Carbon ServiceDate
- * @property string Product2Id
- * @property mixed SortOrder
- * @property float ListPrice
- * @property float Subtotal
- * @property float TotalPrice
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $LineNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $QuoteId
+ * @property string $PricebookEntryId
+ * @property string $OpportunityLineItemId
+ * @property float $Quantity
+ * @property float $UnitPrice
+ * @property mixed $Discount
+ * @property string $Description
+ * @property \Carbon\Carbon $ServiceDate
+ * @property string $Product2Id
+ * @property mixed $SortOrder
+ * @property float $ListPrice
+ * @property float $Subtotal
+ * @property float $TotalPrice
  */
 class QuoteLineItem extends BaseRecordModel
 {

@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OpportunityLineItem[] query()
  *
- * @property string Id
- * @property string OpportunityId
- * @property mixed SortOrder
- * @property string PricebookEntryId
- * @property string Product2Id
- * @property string ProductCode
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property float Quantity
- * @property mixed Discount
- * @property float TotalPrice
- * @property float UnitPrice
- * @property float ListPrice
- * @property \Carbon\Carbon ServiceDate
- * @property string Description
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $OpportunityId
+ * @property mixed $SortOrder
+ * @property string $PricebookEntryId
+ * @property string $Product2Id
+ * @property string $ProductCode
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property float $Quantity
+ * @property mixed $Discount
+ * @property float $TotalPrice
+ * @property float $UnitPrice
+ * @property float $ListPrice
+ * @property \Carbon\Carbon $ServiceDate
+ * @property string $Description
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
  */
 class OpportunityLineItem extends BaseRecordModel
 {

@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedLike[] query()
  *
- * @property string Id
- * @property string FeedItemId
- * @property string FeedEntityId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property bool IsDeleted
- * @property string InsertedById
+ * @property string $Id
+ * @property string $FeedItemId
+ * @property string $FeedEntityId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property bool $IsDeleted
+ * @property string $InsertedById
  */
 class FeedLike extends BaseRecordModel
 {

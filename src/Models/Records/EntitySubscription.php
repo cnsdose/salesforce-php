@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EntitySubscription[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string SubscriberId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $SubscriberId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property bool $IsDeleted
  */
 class EntitySubscription extends BaseRecordModel
 {

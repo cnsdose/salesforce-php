@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailServicesAddress[] query()
  *
- * @property string Id
- * @property bool IsActive
- * @property string LocalPart
- * @property string EmailDomainName
- * @property string AuthorizedSenders
- * @property string RunAsUserId
- * @property string FunctionId
- * @property string DeveloperName
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsActive
+ * @property string $LocalPart
+ * @property string $EmailDomainName
+ * @property string $AuthorizedSenders
+ * @property string $RunAsUserId
+ * @property string $FunctionId
+ * @property string $DeveloperName
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class EmailServicesAddress extends BaseRecordModel
 {

@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MatchingRuleItem[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string MatchingRuleId
- * @property mixed SortOrder
- * @property mixed Field
- * @property mixed MatchingMethod
- * @property mixed BlankValueBehavior
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $MatchingRuleId
+ * @property mixed $SortOrder
+ * @property mixed $Field
+ * @property mixed $MatchingMethod
+ * @property mixed $BlankValueBehavior
  */
 class MatchingRuleItem extends BaseRecordModel
 {

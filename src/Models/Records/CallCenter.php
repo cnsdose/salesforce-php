@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CallCenter[] query()
  *
- * @property string Id
- * @property string Name
- * @property string InternalName
- * @property float Version
- * @property string AdapterUrl
- * @property string CustomSettings
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
+ * @property string $Id
+ * @property string $Name
+ * @property string $InternalName
+ * @property float $Version
+ * @property string $AdapterUrl
+ * @property string $CustomSettings
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
  */
 class CallCenter extends BaseRecordModel
 {

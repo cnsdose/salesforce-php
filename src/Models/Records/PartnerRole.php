@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PartnerRole[] query()
  *
- * @property string Id
- * @property string MasterLabel
- * @property string ApiName
- * @property mixed SortOrder
- * @property mixed ReverseRole
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $MasterLabel
+ * @property string $ApiName
+ * @property mixed $SortOrder
+ * @property mixed $ReverseRole
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class PartnerRole extends BaseRecordModel
 {

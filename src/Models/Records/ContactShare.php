@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContactShare[] query()
  *
- * @property string Id
- * @property string ContactId
- * @property string UserOrGroupId
- * @property mixed ContactAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $ContactId
+ * @property string $UserOrGroupId
+ * @property mixed $ContactAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class ContactShare extends BaseRecordModel
 {

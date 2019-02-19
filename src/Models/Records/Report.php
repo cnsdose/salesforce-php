@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Report[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property string FolderName
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
- * @property string Name
- * @property string Description
- * @property string DeveloperName
- * @property string NamespacePrefix
- * @property \Carbon\Carbon LastRunDate
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Format
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
+ * @property string $Id
+ * @property string $OwnerId
+ * @property string $FolderName
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property string $Description
+ * @property string $DeveloperName
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $LastRunDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Format
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
  */
 class Report extends BaseRecordModel
 {

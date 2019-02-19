@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method IconDefinition[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string TabDefinitionId
- * @property string Url
- * @property string ContentType
- * @property string Theme
- * @property mixed Height
- * @property mixed Width
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $TabDefinitionId
+ * @property string $Url
+ * @property string $ContentType
+ * @property string $Theme
+ * @property mixed $Height
+ * @property mixed $Width
  */
 class IconDefinition extends BaseRecordModel
 {

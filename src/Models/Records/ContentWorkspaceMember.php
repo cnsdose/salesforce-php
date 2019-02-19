@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentWorkspaceMember[] query()
  *
- * @property string Id
- * @property string ContentWorkspaceId
- * @property string ContentWorkspacePermissionId
- * @property string MemberId
- * @property mixed MemberType
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
+ * @property string $Id
+ * @property string $ContentWorkspaceId
+ * @property string $ContentWorkspacePermissionId
+ * @property string $MemberId
+ * @property mixed $MemberType
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
  */
 class ContentWorkspaceMember extends BaseRecordModel
 {

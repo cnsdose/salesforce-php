@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CronTrigger[] query()
  *
- * @property string Id
- * @property string CronJobDetailId
- * @property \Carbon\Carbon NextFireTime
- * @property \Carbon\Carbon PreviousFireTime
- * @property string State
- * @property \Carbon\Carbon StartTime
- * @property \Carbon\Carbon EndTime
- * @property string CronExpression
- * @property mixed TimeZoneSidKey
- * @property string OwnerId
- * @property string LastModifiedById
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property mixed TimesTriggered
+ * @property string $Id
+ * @property string $CronJobDetailId
+ * @property \Carbon\Carbon $NextFireTime
+ * @property \Carbon\Carbon $PreviousFireTime
+ * @property string $State
+ * @property \Carbon\Carbon $StartTime
+ * @property \Carbon\Carbon $EndTime
+ * @property string $CronExpression
+ * @property mixed $TimeZoneSidKey
+ * @property string $OwnerId
+ * @property string $LastModifiedById
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property mixed $TimesTriggered
  */
 class CronTrigger extends BaseRecordModel
 {

@@ -13,25 +13,25 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContactRequest[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string WhatId
- * @property string WhoId
- * @property mixed PreferredPhone
- * @property mixed PreferredChannel
- * @property mixed Status
- * @property mixed RequestReason
- * @property string RequestDescription
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $WhatId
+ * @property string $WhoId
+ * @property mixed $PreferredPhone
+ * @property mixed $PreferredChannel
+ * @property mixed $Status
+ * @property mixed $RequestReason
+ * @property string $RequestDescription
  */
 class ContactRequest extends BaseRecordModel
 {

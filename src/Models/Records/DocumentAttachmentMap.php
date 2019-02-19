@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DocumentAttachmentMap[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string DocumentId
- * @property mixed DocumentSequence
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $DocumentId
+ * @property mixed $DocumentSequence
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
  */
 class DocumentAttachmentMap extends BaseRecordModel
 {

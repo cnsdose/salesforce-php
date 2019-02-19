@@ -13,31 +13,31 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentDocument[] query()
  *
- * @property string Id
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property bool IsArchived
- * @property string ArchivedById
- * @property \Carbon\Carbon ArchivedDate
- * @property bool IsDeleted
- * @property string OwnerId
- * @property \Carbon\Carbon SystemModstamp
- * @property string Title
- * @property mixed PublishStatus
- * @property string LatestPublishedVersionId
- * @property string ParentId
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string Description
- * @property mixed ContentSize
- * @property string FileType
- * @property string FileExtension
- * @property mixed SharingOption
- * @property mixed SharingPrivacy
- * @property \Carbon\Carbon ContentModifiedDate
- * @property string ContentAssetId
+ * @property string $Id
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property bool $IsArchived
+ * @property string $ArchivedById
+ * @property \Carbon\Carbon $ArchivedDate
+ * @property bool $IsDeleted
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Title
+ * @property mixed $PublishStatus
+ * @property string $LatestPublishedVersionId
+ * @property string $ParentId
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $Description
+ * @property mixed $ContentSize
+ * @property string $FileType
+ * @property string $FileExtension
+ * @property mixed $SharingOption
+ * @property mixed $SharingPrivacy
+ * @property \Carbon\Carbon $ContentModifiedDate
+ * @property string $ContentAssetId
  */
 class ContentDocument extends BaseRecordModel
 {

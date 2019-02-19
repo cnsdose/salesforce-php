@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserProvisioningConfig[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ConnectedAppId
- * @property string Notes
- * @property bool Enabled
- * @property string ApprovalRequired
- * @property string UserAccountMapping
- * @property string EnabledOperations
- * @property string OnUpdateAttributes
- * @property \Carbon\Carbon LastReconDateTime
- * @property string NamedCredentialId
- * @property string ReconFilter
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ConnectedAppId
+ * @property string $Notes
+ * @property bool $Enabled
+ * @property string $ApprovalRequired
+ * @property string $UserAccountMapping
+ * @property string $EnabledOperations
+ * @property string $OnUpdateAttributes
+ * @property \Carbon\Carbon $LastReconDateTime
+ * @property string $NamedCredentialId
+ * @property string $ReconFilter
  */
 class UserProvisioningConfig extends BaseRecordModel
 {

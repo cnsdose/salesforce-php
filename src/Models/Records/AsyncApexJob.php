@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AsyncApexJob[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property mixed JobType
- * @property string ApexClassId
- * @property mixed Status
- * @property mixed JobItemsProcessed
- * @property mixed TotalJobItems
- * @property mixed NumberOfErrors
- * @property \Carbon\Carbon CompletedDate
- * @property string MethodName
- * @property string ExtendedStatus
- * @property string ParentJobId
- * @property string LastProcessed
- * @property mixed LastProcessedOffset
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property mixed $JobType
+ * @property string $ApexClassId
+ * @property mixed $Status
+ * @property mixed $JobItemsProcessed
+ * @property mixed $TotalJobItems
+ * @property mixed $NumberOfErrors
+ * @property \Carbon\Carbon $CompletedDate
+ * @property string $MethodName
+ * @property string $ExtendedStatus
+ * @property string $ParentJobId
+ * @property string $LastProcessed
+ * @property mixed $LastProcessedOffset
  */
 class AsyncApexJob extends BaseRecordModel
 {

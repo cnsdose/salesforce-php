@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ResourcePreference[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ResourcePreferenceNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceResourceId
- * @property string RelatedRecordId
- * @property mixed PreferenceType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ResourcePreferenceNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceResourceId
+ * @property string $RelatedRecordId
+ * @property mixed $PreferenceType
  */
 class ResourcePreference extends BaseRecordModel
 {

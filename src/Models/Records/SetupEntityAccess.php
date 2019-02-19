@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SetupEntityAccess[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string SetupEntityId
- * @property mixed SetupEntityType
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $SetupEntityId
+ * @property mixed $SetupEntityType
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class SetupEntityAccess extends BaseRecordModel
 {

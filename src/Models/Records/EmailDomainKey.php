@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailDomainKey[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string Selector
- * @property string Domain
- * @property mixed DomainMatch
- * @property bool IsActive
- * @property mixed TxtRecordsPublishState
- * @property mixed KeySize
- * @property string PublicKey
- * @property string PrivateKey
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Selector
+ * @property string $Domain
+ * @property mixed $DomainMatch
+ * @property bool $IsActive
+ * @property mixed $TxtRecordsPublishState
+ * @property mixed $KeySize
+ * @property string $PublicKey
+ * @property string $PrivateKey
  */
 class EmailDomainKey extends BaseRecordModel
 {

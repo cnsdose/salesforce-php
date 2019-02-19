@@ -13,10 +13,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PermissionSetAssignment[] query()
  *
- * @property string Id
- * @property string PermissionSetId
- * @property string AssigneeId
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $PermissionSetId
+ * @property string $AssigneeId
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class PermissionSetAssignment extends BaseRecordModel
 {

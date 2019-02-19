@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessInstanceStep[] query()
  *
- * @property string Id
- * @property string ProcessInstanceId
- * @property mixed StepStatus
- * @property string OriginalActorId
- * @property string ActorId
- * @property string Comments
- * @property string StepNodeId
- * @property float ElapsedTimeInDays
- * @property float ElapsedTimeInHours
- * @property float ElapsedTimeInMinutes
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ProcessInstanceId
+ * @property mixed $StepStatus
+ * @property string $OriginalActorId
+ * @property string $ActorId
+ * @property string $Comments
+ * @property string $StepNodeId
+ * @property float $ElapsedTimeInDays
+ * @property float $ElapsedTimeInHours
+ * @property float $ElapsedTimeInMinutes
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessInstanceStep extends BaseRecordModel
 {

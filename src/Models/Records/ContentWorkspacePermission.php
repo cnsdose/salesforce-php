@@ -13,28 +13,28 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentWorkspacePermission[] query()
  *
- * @property string Id
- * @property string Name
- * @property mixed Type
- * @property bool PermissionsManageWorkspace
- * @property bool PermissionsAddContent
- * @property bool PermissionsAddContentOBO
- * @property bool PermissionsArchiveContent
- * @property bool PermissionsDeleteContent
- * @property bool PermissionsFeatureContent
- * @property bool PermissionsViewComments
- * @property bool PermissionsAddComment
- * @property bool PermissionsModifyComments
- * @property bool PermissionsTagContent
- * @property bool PermissionsDeliverContent
- * @property bool PermissionsChatterSharing
- * @property bool PermissionsOrganizeFileAndFolder
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property string LastModifiedById
- * @property string Description
+ * @property string $Id
+ * @property string $Name
+ * @property mixed $Type
+ * @property bool $PermissionsManageWorkspace
+ * @property bool $PermissionsAddContent
+ * @property bool $PermissionsAddContentOBO
+ * @property bool $PermissionsArchiveContent
+ * @property bool $PermissionsDeleteContent
+ * @property bool $PermissionsFeatureContent
+ * @property bool $PermissionsViewComments
+ * @property bool $PermissionsAddComment
+ * @property bool $PermissionsModifyComments
+ * @property bool $PermissionsTagContent
+ * @property bool $PermissionsDeliverContent
+ * @property bool $PermissionsChatterSharing
+ * @property bool $PermissionsOrganizeFileAndFolder
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $LastModifiedById
+ * @property string $Description
  */
 class ContentWorkspacePermission extends BaseRecordModel
 {

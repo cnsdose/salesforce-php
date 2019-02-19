@@ -13,30 +13,30 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceResource[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string RelatedRecordId
- * @property mixed ResourceType
- * @property string Description
- * @property bool IsActive
- * @property bool IsCapacityBased
- * @property bool IsOptimizationCapable
- * @property float LastKnownLatitude
- * @property float LastKnownLongitude
- * @property mixed LastKnownLocation
- * @property \Carbon\Carbon LastKnownLocationDate
- * @property string LocationId
- * @property string ServiceCrewId
- * @property string AccountId
+ * @property string $Id
+ * @property string $OwnerId
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $RelatedRecordId
+ * @property mixed $ResourceType
+ * @property string $Description
+ * @property bool $IsActive
+ * @property bool $IsCapacityBased
+ * @property bool $IsOptimizationCapable
+ * @property float $LastKnownLatitude
+ * @property float $LastKnownLongitude
+ * @property mixed $LastKnownLocation
+ * @property \Carbon\Carbon $LastKnownLocationDate
+ * @property string $LocationId
+ * @property string $ServiceCrewId
+ * @property string $AccountId
  */
 class ServiceResource extends BaseRecordModel
 {

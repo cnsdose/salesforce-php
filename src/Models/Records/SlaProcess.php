@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method SlaProcess[] query()
  *
- * @property string Id
- * @property string Name
- * @property string NameNorm
- * @property string Description
- * @property bool IsActive
- * @property mixed StartDateField
- * @property mixed SobjectType
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property string BusinessHoursId
- * @property \Carbon\Carbon LastViewedDate
+ * @property string $Id
+ * @property string $Name
+ * @property string $NameNorm
+ * @property string $Description
+ * @property bool $IsActive
+ * @property mixed $StartDateField
+ * @property mixed $SobjectType
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property string $BusinessHoursId
+ * @property \Carbon\Carbon $LastViewedDate
  */
 class SlaProcess extends BaseRecordModel
 {

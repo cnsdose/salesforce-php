@@ -13,24 +13,24 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DigitalSignature[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DigitalSignatureNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentId
- * @property string DocumentName
- * @property mixed DocumentContentType
- * @property mixed DocumentLength
- * @property mixed DocumentBody
- * @property string SignedBy
- * @property string Place
- * @property \Carbon\Carbon SignedDate
- * @property mixed SignatureType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DigitalSignatureNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentId
+ * @property string $DocumentName
+ * @property mixed $DocumentContentType
+ * @property mixed $DocumentLength
+ * @property mixed $DocumentBody
+ * @property string $SignedBy
+ * @property string $Place
+ * @property \Carbon\Carbon $SignedDate
+ * @property mixed $SignatureType
  */
 class DigitalSignature extends BaseRecordModel
 {

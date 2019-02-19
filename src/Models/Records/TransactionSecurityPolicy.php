@@ -13,25 +13,25 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TransactionSecurityPolicy[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Type
- * @property mixed State
- * @property string ActionConfig
- * @property string ApexPolicyId
- * @property mixed EventType
- * @property string ResourceName
- * @property string ExecutionUserId
- * @property string Description
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Type
+ * @property mixed $State
+ * @property string $ActionConfig
+ * @property string $ApexPolicyId
+ * @property mixed $EventType
+ * @property string $ResourceName
+ * @property string $ExecutionUserId
+ * @property string $Description
  */
 class TransactionSecurityPolicy extends BaseRecordModel
 {

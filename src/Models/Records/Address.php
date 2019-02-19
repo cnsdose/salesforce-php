@@ -13,30 +13,30 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Address[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentId
- * @property mixed LocationType
- * @property mixed AddressType
- * @property string Street
- * @property string City
- * @property string State
- * @property string PostalCode
- * @property string Country
- * @property float Latitude
- * @property float Longitude
- * @property mixed GeocodeAccuracy
- * @property mixed Address
- * @property string Description
- * @property string DrivingDirections
- * @property mixed TimeZone
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentId
+ * @property mixed $LocationType
+ * @property mixed $AddressType
+ * @property string $Street
+ * @property string $City
+ * @property string $State
+ * @property string $PostalCode
+ * @property string $Country
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property mixed $GeocodeAccuracy
+ * @property mixed $Address
+ * @property string $Description
+ * @property string $DrivingDirections
+ * @property mixed $TimeZone
  */
 class Address extends BaseRecordModel
 {

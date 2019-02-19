@@ -13,31 +13,31 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ResourceAbsence[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string AbsenceNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ResourceId
- * @property mixed Type
- * @property string Description
- * @property \Carbon\Carbon Start
- * @property \Carbon\Carbon End
- * @property string Street
- * @property string City
- * @property string State
- * @property string PostalCode
- * @property string Country
- * @property float Latitude
- * @property float Longitude
- * @property mixed GeocodeAccuracy
- * @property mixed Address
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $AbsenceNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ResourceId
+ * @property mixed $Type
+ * @property string $Description
+ * @property \Carbon\Carbon $Start
+ * @property \Carbon\Carbon $End
+ * @property string $Street
+ * @property string $City
+ * @property string $State
+ * @property string $PostalCode
+ * @property string $Country
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property mixed $GeocodeAccuracy
+ * @property mixed $Address
  */
 class ResourceAbsence extends BaseRecordModel
 {

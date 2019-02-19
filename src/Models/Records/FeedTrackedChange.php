@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedTrackedChange[] query()
  *
- * @property string Id
- * @property string FeedItemId
- * @property string FieldName
- * @property mixed OldValue
- * @property mixed NewValue
- * @property mixed CurrencyIsoCode
- * @property string OldCurrencyIsoCode
+ * @property string $Id
+ * @property string $FeedItemId
+ * @property string $FieldName
+ * @property mixed $OldValue
+ * @property mixed $NewValue
+ * @property mixed $CurrencyIsoCode
+ * @property string $OldCurrencyIsoCode
  */
 class FeedTrackedChange extends BaseRecordModel
 {

@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AssetShare[] query()
  *
- * @property string Id
- * @property string AssetId
- * @property string UserOrGroupId
- * @property mixed AssetAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $AssetId
+ * @property string $UserOrGroupId
+ * @property mixed $AssetAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class AssetShare extends BaseRecordModel
 {

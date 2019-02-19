@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Folder[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string Name
- * @property string DeveloperName
- * @property mixed AccessType
- * @property bool IsReadonly
- * @property mixed Type
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property mixed $AccessType
+ * @property bool $IsReadonly
+ * @property mixed $Type
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class Folder extends BaseRecordModel
 {

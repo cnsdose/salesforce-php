@@ -13,33 +13,33 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method BackgroundOperation[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon SubmittedAt
- * @property mixed Status
- * @property string ExecutionGroup
- * @property string SequenceGroup
- * @property mixed SequenceNumber
- * @property string GroupLeaderId
- * @property \Carbon\Carbon StartedAt
- * @property \Carbon\Carbon FinishedAt
- * @property string WorkerUri
- * @property mixed Timeout
- * @property \Carbon\Carbon ExpiresAt
- * @property mixed NumFollowers
- * @property \Carbon\Carbon ProcessAfter
- * @property string ParentKey
- * @property mixed RetryLimit
- * @property mixed RetryCount
- * @property mixed RetryBackoff
- * @property string Error
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $SubmittedAt
+ * @property mixed $Status
+ * @property string $ExecutionGroup
+ * @property string $SequenceGroup
+ * @property mixed $SequenceNumber
+ * @property string $GroupLeaderId
+ * @property \Carbon\Carbon $StartedAt
+ * @property \Carbon\Carbon $FinishedAt
+ * @property string $WorkerUri
+ * @property mixed $Timeout
+ * @property \Carbon\Carbon $ExpiresAt
+ * @property mixed $NumFollowers
+ * @property \Carbon\Carbon $ProcessAfter
+ * @property string $ParentKey
+ * @property mixed $RetryLimit
+ * @property mixed $RetryCount
+ * @property mixed $RetryBackoff
+ * @property string $Error
  */
 class BackgroundOperation extends BaseRecordModel
 {

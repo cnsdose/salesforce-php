@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductConsumed[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ProductConsumedNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string WorkOrderId
- * @property string WorkOrderLineItemId
- * @property string ProductItemId
- * @property string PricebookEntryId
- * @property string Product2Id
- * @property string ProductName
- * @property mixed QuantityUnitOfMeasure
- * @property float QuantityConsumed
- * @property float UnitPrice
- * @property string Description
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ProductConsumedNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $WorkOrderId
+ * @property string $WorkOrderLineItemId
+ * @property string $ProductItemId
+ * @property string $PricebookEntryId
+ * @property string $Product2Id
+ * @property string $ProductName
+ * @property mixed $QuantityUnitOfMeasure
+ * @property float $QuantityConsumed
+ * @property float $UnitPrice
+ * @property string $Description
  */
 class ProductConsumed extends BaseRecordModel
 {

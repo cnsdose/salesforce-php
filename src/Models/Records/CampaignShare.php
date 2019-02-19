@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CampaignShare[] query()
  *
- * @property string Id
- * @property string CampaignId
- * @property string UserOrGroupId
- * @property mixed CampaignAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $CampaignId
+ * @property string $UserOrGroupId
+ * @property mixed $CampaignAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class CampaignShare extends BaseRecordModel
 {

@@ -13,26 +13,26 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Solution[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string SolutionNumber
- * @property string SolutionName
- * @property bool IsPublished
- * @property bool IsPublishedInPublicKb
- * @property mixed Status
- * @property bool IsReviewed
- * @property string SolutionNote
- * @property string OwnerId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed TimesUsed
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property bool IsHtml
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $SolutionNumber
+ * @property string $SolutionName
+ * @property bool $IsPublished
+ * @property bool $IsPublishedInPublicKb
+ * @property mixed $Status
+ * @property bool $IsReviewed
+ * @property string $SolutionNote
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $TimesUsed
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property bool $IsHtml
  */
 class Solution extends BaseRecordModel
 {

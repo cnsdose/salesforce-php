@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AssignedResource[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string AssignedResourceNumber
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ServiceAppointmentId
- * @property string ServiceResourceId
- * @property float EstimatedTravelTime
- * @property float ActualTravelTime
- * @property string ServiceCrewId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $AssignedResourceNumber
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ServiceAppointmentId
+ * @property string $ServiceResourceId
+ * @property float $EstimatedTravelTime
+ * @property float $ActualTravelTime
+ * @property string $ServiceCrewId
  */
 class AssignedResource extends BaseRecordModel
 {

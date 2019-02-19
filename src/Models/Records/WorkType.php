@@ -13,26 +13,26 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method WorkType[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string Description
- * @property float EstimatedDuration
- * @property mixed DurationType
- * @property float DurationInMinutes
- * @property bool ShouldAutoCreateSvcAppt
- * @property string ServiceReportTemplateId
- * @property mixed MinimumCrewSize
- * @property mixed RecommendedCrewSize
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $Description
+ * @property float $EstimatedDuration
+ * @property mixed $DurationType
+ * @property float $DurationInMinutes
+ * @property bool $ShouldAutoCreateSvcAppt
+ * @property string $ServiceReportTemplateId
+ * @property mixed $MinimumCrewSize
+ * @property mixed $RecommendedCrewSize
  */
 class WorkType extends BaseRecordModel
 {

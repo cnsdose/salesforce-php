@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessInstanceHistory[] query()
  *
- * @property string Id
- * @property bool IsPending
- * @property string ProcessInstanceId
- * @property string TargetObjectId
- * @property mixed StepStatus
- * @property string ProcessNodeId
- * @property string OriginalActorId
- * @property string ActorId
- * @property mixed RemindersSent
- * @property float ElapsedTimeInDays
- * @property float ElapsedTimeInHours
- * @property float ElapsedTimeInMinutes
- * @property string Comments
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsPending
+ * @property string $ProcessInstanceId
+ * @property string $TargetObjectId
+ * @property mixed $StepStatus
+ * @property string $ProcessNodeId
+ * @property string $OriginalActorId
+ * @property string $ActorId
+ * @property mixed $RemindersSent
+ * @property float $ElapsedTimeInDays
+ * @property float $ElapsedTimeInHours
+ * @property float $ElapsedTimeInMinutes
+ * @property string $Comments
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessInstanceHistory extends BaseRecordModel
 {

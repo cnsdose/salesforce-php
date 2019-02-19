@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailServicesFunction[] query()
  *
- * @property string Id
- * @property bool IsActive
- * @property string FunctionName
- * @property string AuthorizedSenders
- * @property bool IsAuthenticationRequired
- * @property bool IsTlsRequired
- * @property mixed AttachmentOption
- * @property string ApexClassId
- * @property mixed OverLimitAction
- * @property mixed FunctionInactiveAction
- * @property mixed AddressInactiveAction
- * @property mixed AuthenticationFailureAction
- * @property mixed AuthorizationFailureAction
- * @property bool IsErrorRoutingEnabled
- * @property mixed ErrorRoutingAddress
- * @property bool IsTextAttachmentsAsBinary
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property bool $IsActive
+ * @property string $FunctionName
+ * @property string $AuthorizedSenders
+ * @property bool $IsAuthenticationRequired
+ * @property bool $IsTlsRequired
+ * @property mixed $AttachmentOption
+ * @property string $ApexClassId
+ * @property mixed $OverLimitAction
+ * @property mixed $FunctionInactiveAction
+ * @property mixed $AddressInactiveAction
+ * @property mixed $AuthenticationFailureAction
+ * @property mixed $AuthorizationFailureAction
+ * @property bool $IsErrorRoutingEnabled
+ * @property mixed $ErrorRoutingAddress
+ * @property bool $IsTextAttachmentsAsBinary
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class EmailServicesFunction extends BaseRecordModel
 {

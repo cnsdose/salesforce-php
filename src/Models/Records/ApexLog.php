@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ApexLog[] query()
  *
- * @property string Id
- * @property string LogUserId
- * @property mixed LogLength
- * @property \Carbon\Carbon LastModifiedDate
- * @property string Request
- * @property string Operation
- * @property string Application
- * @property string Status
- * @property mixed DurationMilliseconds
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon StartTime
- * @property mixed Location
+ * @property string $Id
+ * @property string $LogUserId
+ * @property mixed $LogLength
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $Request
+ * @property string $Operation
+ * @property string $Application
+ * @property string $Status
+ * @property mixed $DurationMilliseconds
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $StartTime
+ * @property mixed $Location
  */
 class ApexLog extends BaseRecordModel
 {

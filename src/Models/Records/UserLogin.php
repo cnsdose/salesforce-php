@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserLogin[] query()
  *
- * @property string Id
- * @property string UserId
- * @property bool IsFrozen
- * @property bool IsPasswordLocked
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
+ * @property string $Id
+ * @property string $UserId
+ * @property bool $IsFrozen
+ * @property bool $IsPasswordLocked
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
  */
 class UserLogin extends BaseRecordModel
 {

@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessInstanceWorkitem[] query()
  *
- * @property string Id
- * @property string ProcessInstanceId
- * @property string OriginalActorId
- * @property string ActorId
- * @property float ElapsedTimeInDays
- * @property float ElapsedTimeInHours
- * @property float ElapsedTimeInMinutes
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ProcessInstanceId
+ * @property string $OriginalActorId
+ * @property string $ActorId
+ * @property float $ElapsedTimeInDays
+ * @property float $ElapsedTimeInHours
+ * @property float $ElapsedTimeInMinutes
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessInstanceWorkitem extends BaseRecordModel
 {

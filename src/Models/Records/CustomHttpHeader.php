@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CustomHttpHeader[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ParentId
- * @property string HeaderFieldName
- * @property string HeaderFieldValue
- * @property bool IsActive
- * @property string Description
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ParentId
+ * @property string $HeaderFieldName
+ * @property string $HeaderFieldValue
+ * @property bool $IsActive
+ * @property string $Description
  */
 class CustomHttpHeader extends BaseRecordModel
 {

@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailRelay[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string Host
- * @property mixed Port
- * @property mixed TlsSetting
- * @property bool IsRequireAuth
- * @property string Username
- * @property mixed Password
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Host
+ * @property mixed $Port
+ * @property mixed $TlsSetting
+ * @property bool $IsRequireAuth
+ * @property string $Username
+ * @property mixed $Password
  */
 class EmailRelay extends BaseRecordModel
 {

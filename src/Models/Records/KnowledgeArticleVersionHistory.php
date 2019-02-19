@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method KnowledgeArticleVersionHistory[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property mixed Language
- * @property mixed VersionNumber
- * @property mixed ParentSobjectType
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property mixed EventType
- * @property mixed FieldName
- * @property mixed OldValue
- * @property mixed NewValue
- * @property string VersionId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property mixed $Language
+ * @property mixed $VersionNumber
+ * @property mixed $ParentSobjectType
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property mixed $EventType
+ * @property mixed $FieldName
+ * @property mixed $OldValue
+ * @property mixed $NewValue
+ * @property string $VersionId
  */
 class KnowledgeArticleVersionHistory extends BaseRecordModel
 {

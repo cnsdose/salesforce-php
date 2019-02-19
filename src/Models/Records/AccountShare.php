@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AccountShare[] query()
  *
- * @property string Id
- * @property string AccountId
- * @property string UserOrGroupId
- * @property mixed AccountAccessLevel
- * @property mixed OpportunityAccessLevel
- * @property mixed CaseAccessLevel
- * @property mixed ContactAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $AccountId
+ * @property string $UserOrGroupId
+ * @property mixed $AccountAccessLevel
+ * @property mixed $OpportunityAccessLevel
+ * @property mixed $CaseAccessLevel
+ * @property mixed $ContactAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class AccountShare extends BaseRecordModel
 {

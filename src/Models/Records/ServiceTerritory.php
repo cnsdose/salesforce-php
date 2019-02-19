@@ -13,32 +13,32 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceTerritory[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ParentTerritoryId
- * @property string TopLevelTerritoryId
- * @property string Description
- * @property string OperatingHoursId
- * @property string Street
- * @property string City
- * @property string State
- * @property string PostalCode
- * @property string Country
- * @property float Latitude
- * @property float Longitude
- * @property mixed GeocodeAccuracy
- * @property mixed Address
- * @property bool IsActive
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ParentTerritoryId
+ * @property string $TopLevelTerritoryId
+ * @property string $Description
+ * @property string $OperatingHoursId
+ * @property string $Street
+ * @property string $City
+ * @property string $State
+ * @property string $PostalCode
+ * @property string $Country
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property mixed $GeocodeAccuracy
+ * @property mixed $Address
+ * @property bool $IsActive
  */
 class ServiceTerritory extends BaseRecordModel
 {

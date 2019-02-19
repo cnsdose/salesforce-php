@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseTeamRole[] query()
  *
- * @property string Id
- * @property string Name
- * @property mixed AccessLevel
- * @property bool PreferencesVisibleInCSP
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property mixed $AccessLevel
+ * @property bool $PreferencesVisibleInCSP
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CaseTeamRole extends BaseRecordModel
 {

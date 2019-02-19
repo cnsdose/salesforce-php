@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method VisualforceAccessMetrics[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon MetricsDate
- * @property string ApexPageId
- * @property string ProfileId
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed DailyPageViewCount
- * @property \Carbon\Carbon LogDate
+ * @property string $Id
+ * @property \Carbon\Carbon $MetricsDate
+ * @property string $ApexPageId
+ * @property string $ProfileId
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $DailyPageViewCount
+ * @property \Carbon\Carbon $LogDate
  */
 class VisualforceAccessMetrics extends BaseRecordModel
 {

@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OpportunityStage[] query()
  *
- * @property string Id
- * @property string MasterLabel
- * @property string ApiName
- * @property bool IsActive
- * @property mixed SortOrder
- * @property bool IsClosed
- * @property bool IsWon
- * @property mixed ForecastCategory
- * @property mixed ForecastCategoryName
- * @property mixed DefaultProbability
- * @property string Description
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $MasterLabel
+ * @property string $ApiName
+ * @property bool $IsActive
+ * @property mixed $SortOrder
+ * @property bool $IsClosed
+ * @property bool $IsWon
+ * @property mixed $ForecastCategory
+ * @property mixed $ForecastCategoryName
+ * @property mixed $DefaultProbability
+ * @property string $Description
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class OpportunityStage extends BaseRecordModel
 {

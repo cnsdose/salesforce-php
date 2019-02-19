@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LightningUsageByFlexiPageMetrics[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon MetricsDate
- * @property string FlexiPageType
- * @property string FlexiPageNameOrId
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed RecordCountEPT
- * @property mixed TotalCount
- * @property mixed SumEPT
+ * @property string $Id
+ * @property \Carbon\Carbon $MetricsDate
+ * @property string $FlexiPageType
+ * @property string $FlexiPageNameOrId
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $RecordCountEPT
+ * @property mixed $TotalCount
+ * @property mixed $SumEPT
  */
 class LightningUsageByFlexiPageMetrics extends BaseRecordModel
 {

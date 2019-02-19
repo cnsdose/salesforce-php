@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TabDefinition[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string Name
- * @property string Label
- * @property bool IsCustom
- * @property string SobjectName
- * @property string Url
- * @property bool IsAvailableInAloha
- * @property bool IsAvailableInLightning
- * @property bool IsAvailableInMobile
- * @property bool IsAvailableInDesktop
- * @property string MobileUrl
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $Name
+ * @property string $Label
+ * @property bool $IsCustom
+ * @property string $SobjectName
+ * @property string $Url
+ * @property bool $IsAvailableInAloha
+ * @property bool $IsAvailableInLightning
+ * @property bool $IsAvailableInMobile
+ * @property bool $IsAvailableInDesktop
+ * @property string $MobileUrl
  */
 class TabDefinition extends BaseRecordModel
 {

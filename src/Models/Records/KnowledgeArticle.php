@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method KnowledgeArticle[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ArticleNumber
- * @property \Carbon\Carbon ArchivedDate
- * @property string ArchivedById
- * @property \Carbon\Carbon FirstPublishedDate
- * @property \Carbon\Carbon LastPublishedDate
- * @property mixed CaseAssociationCount
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string MigratedToFromArticle
- * @property mixed TotalViewCount
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ArticleNumber
+ * @property \Carbon\Carbon $ArchivedDate
+ * @property string $ArchivedById
+ * @property \Carbon\Carbon $FirstPublishedDate
+ * @property \Carbon\Carbon $LastPublishedDate
+ * @property mixed $CaseAssociationCount
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $MigratedToFromArticle
+ * @property mixed $TotalViewCount
  */
 class KnowledgeArticle extends BaseRecordModel
 {

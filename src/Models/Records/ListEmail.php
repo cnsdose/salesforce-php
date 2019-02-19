@@ -13,29 +13,29 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ListEmail[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string Subject
- * @property string HtmlBody
- * @property string TextBody
- * @property string FromName
- * @property string FromAddress
- * @property mixed Status
- * @property bool HasAttachment
- * @property \Carbon\Carbon ScheduledDate
- * @property mixed TotalSent
- * @property string CampaignId
- * @property bool IsTracked
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $Subject
+ * @property string $HtmlBody
+ * @property string $TextBody
+ * @property string $FromName
+ * @property string $FromAddress
+ * @property mixed $Status
+ * @property bool $HasAttachment
+ * @property \Carbon\Carbon $ScheduledDate
+ * @property mixed $TotalSent
+ * @property string $CampaignId
+ * @property bool $IsTracked
  */
 class ListEmail extends BaseRecordModel
 {

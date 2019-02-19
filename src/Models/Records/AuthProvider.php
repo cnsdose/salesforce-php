@@ -13,31 +13,31 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AuthProvider[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property mixed ProviderType
- * @property string FriendlyName
- * @property string DeveloperName
- * @property string RegistrationHandlerId
- * @property string ExecutionUserId
- * @property string ConsumerKey
- * @property string ConsumerSecret
- * @property string ErrorUrl
- * @property mixed AuthorizeUrl
- * @property mixed TokenUrl
- * @property mixed UserInfoUrl
- * @property string DefaultScopes
- * @property string IdTokenIssuer
- * @property bool OptionsSendAccessTokenInHeader
- * @property bool OptionsSendClientCredentialsInHeader
- * @property bool OptionsIncludeOrgIdInId
- * @property mixed IconUrl
- * @property mixed LogoutUrl
- * @property string PluginId
- * @property string CustomMetadataTypeRecord
- * @property mixed SsoKickoffUrl
- * @property mixed LinkKickoffUrl
- * @property mixed OauthKickoffUrl
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property mixed $ProviderType
+ * @property string $FriendlyName
+ * @property string $DeveloperName
+ * @property string $RegistrationHandlerId
+ * @property string $ExecutionUserId
+ * @property string $ConsumerKey
+ * @property string $ConsumerSecret
+ * @property string $ErrorUrl
+ * @property mixed $AuthorizeUrl
+ * @property mixed $TokenUrl
+ * @property mixed $UserInfoUrl
+ * @property string $DefaultScopes
+ * @property string $IdTokenIssuer
+ * @property bool $OptionsSendAccessTokenInHeader
+ * @property bool $OptionsSendClientCredentialsInHeader
+ * @property bool $OptionsIncludeOrgIdInId
+ * @property mixed $IconUrl
+ * @property mixed $LogoutUrl
+ * @property string $PluginId
+ * @property string $CustomMetadataTypeRecord
+ * @property mixed $SsoKickoffUrl
+ * @property mixed $LinkKickoffUrl
+ * @property mixed $OauthKickoffUrl
  */
 class AuthProvider extends BaseRecordModel
 {

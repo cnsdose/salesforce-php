@@ -13,34 +13,34 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method WebLink[] query()
  *
- * @property string Id
- * @property mixed PageOrSobjectType
- * @property string Name
- * @property bool IsProtected
- * @property string Url
- * @property mixed EncodingKey
- * @property mixed LinkType
- * @property mixed OpenType
- * @property mixed Height
- * @property mixed Width
- * @property bool ShowsLocation
- * @property bool HasScrollbars
- * @property bool HasToolbar
- * @property bool HasMenubar
- * @property bool ShowsStatus
- * @property bool IsResizable
- * @property mixed Position
- * @property string ScontrolId
- * @property string MasterLabel
- * @property string Description
- * @property mixed DisplayType
- * @property bool RequireRowSelection
- * @property string NamespacePrefix
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property mixed $PageOrSobjectType
+ * @property string $Name
+ * @property bool $IsProtected
+ * @property string $Url
+ * @property mixed $EncodingKey
+ * @property mixed $LinkType
+ * @property mixed $OpenType
+ * @property mixed $Height
+ * @property mixed $Width
+ * @property bool $ShowsLocation
+ * @property bool $HasScrollbars
+ * @property bool $HasToolbar
+ * @property bool $HasMenubar
+ * @property bool $ShowsStatus
+ * @property bool $IsResizable
+ * @property mixed $Position
+ * @property string $ScontrolId
+ * @property string $MasterLabel
+ * @property string $Description
+ * @property mixed $DisplayType
+ * @property bool $RequireRowSelection
+ * @property string $NamespacePrefix
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class WebLink extends BaseRecordModel
 {

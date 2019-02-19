@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TaskStatus[] query()
  *
- * @property string Id
- * @property string MasterLabel
- * @property string ApiName
- * @property mixed SortOrder
- * @property bool IsDefault
- * @property bool IsClosed
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $MasterLabel
+ * @property string $ApiName
+ * @property mixed $SortOrder
+ * @property bool $IsDefault
+ * @property bool $IsClosed
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class TaskStatus extends BaseRecordModel
 {

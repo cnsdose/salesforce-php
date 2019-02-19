@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserAppMenuItem[] query()
  *
- * @property string Id
- * @property string AppMenuItemId
- * @property string ApplicationId
- * @property string Label
- * @property string Description
- * @property string Name
- * @property mixed UserSortOrder
- * @property mixed SortOrder
- * @property mixed Type
- * @property mixed LogoUrl
- * @property mixed IconUrl
- * @property mixed InfoUrl
- * @property mixed StartUrl
- * @property mixed MobileStartUrl
- * @property bool IsVisible
- * @property bool IsUsingAdminAuthorization
+ * @property string $Id
+ * @property string $AppMenuItemId
+ * @property string $ApplicationId
+ * @property string $Label
+ * @property string $Description
+ * @property string $Name
+ * @property mixed $UserSortOrder
+ * @property mixed $SortOrder
+ * @property mixed $Type
+ * @property mixed $LogoUrl
+ * @property mixed $IconUrl
+ * @property mixed $InfoUrl
+ * @property mixed $StartUrl
+ * @property mixed $MobileStartUrl
+ * @property bool $IsVisible
+ * @property bool $IsUsingAdminAuthorization
  */
 class UserAppMenuItem extends BaseRecordModel
 {

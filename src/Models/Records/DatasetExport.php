@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method DatasetExport[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed PublisherType
- * @property mixed MetadataLength
- * @property mixed CompressedMetadataLength
- * @property mixed Status
- * @property string Owner
- * @property string PublisherInfo
- * @property mixed Metadata
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $PublisherType
+ * @property mixed $MetadataLength
+ * @property mixed $CompressedMetadataLength
+ * @property mixed $Status
+ * @property string $Owner
+ * @property string $PublisherInfo
+ * @property mixed $Metadata
  */
 class DatasetExport extends BaseRecordModel
 {

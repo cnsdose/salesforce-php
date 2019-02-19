@@ -13,38 +13,38 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Location[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string Name
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property mixed LocationType
- * @property float Latitude
- * @property float Longitude
- * @property mixed Location
- * @property string Description
- * @property string DrivingDirections
- * @property mixed TimeZone
- * @property string ParentLocationId
- * @property \Carbon\Carbon PossessionDate
- * @property \Carbon\Carbon ConstructionStartDate
- * @property \Carbon\Carbon ConstructionEndDate
- * @property \Carbon\Carbon OpenDate
- * @property \Carbon\Carbon CloseDate
- * @property \Carbon\Carbon RemodelStartDate
- * @property \Carbon\Carbon RemodelEndDate
- * @property bool IsMobile
- * @property bool IsInventoryLocation
- * @property string VisitorAddressId
- * @property string RootLocationId
- * @property mixed LocationLevel
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $Name
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property mixed $LocationType
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property mixed $Location
+ * @property string $Description
+ * @property string $DrivingDirections
+ * @property mixed $TimeZone
+ * @property string $ParentLocationId
+ * @property \Carbon\Carbon $PossessionDate
+ * @property \Carbon\Carbon $ConstructionStartDate
+ * @property \Carbon\Carbon $ConstructionEndDate
+ * @property \Carbon\Carbon $OpenDate
+ * @property \Carbon\Carbon $CloseDate
+ * @property \Carbon\Carbon $RemodelStartDate
+ * @property \Carbon\Carbon $RemodelEndDate
+ * @property bool $IsMobile
+ * @property bool $IsInventoryLocation
+ * @property string $VisitorAddressId
+ * @property string $RootLocationId
+ * @property mixed $LocationLevel
  */
 class Location extends BaseRecordModel
 {

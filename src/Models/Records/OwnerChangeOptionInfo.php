@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OwnerChangeOptionInfo[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string EntityDefinitionId
- * @property string Name
- * @property string Label
- * @property bool IsEditable
- * @property bool DefaultValue
- * @property string ParentId
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $EntityDefinitionId
+ * @property string $Name
+ * @property string $Label
+ * @property bool $IsEditable
+ * @property bool $DefaultValue
+ * @property string $ParentId
  */
 class OwnerChangeOptionInfo extends BaseRecordModel
 {

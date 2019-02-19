@@ -13,27 +13,27 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OrderItem[] query()
  *
- * @property string Id
- * @property string Product2Id
- * @property bool IsDeleted
- * @property string OrderId
- * @property string PricebookEntryId
- * @property string OriginalOrderItemId
- * @property float AvailableQuantity
- * @property float Quantity
- * @property mixed CurrencyIsoCode
- * @property float UnitPrice
- * @property float ListPrice
- * @property float TotalPrice
- * @property \Carbon\Carbon ServiceDate
- * @property \Carbon\Carbon EndDate
- * @property string Description
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string OrderItemNumber
+ * @property string $Id
+ * @property string $Product2Id
+ * @property bool $IsDeleted
+ * @property string $OrderId
+ * @property string $PricebookEntryId
+ * @property string $OriginalOrderItemId
+ * @property float $AvailableQuantity
+ * @property float $Quantity
+ * @property mixed $CurrencyIsoCode
+ * @property float $UnitPrice
+ * @property float $ListPrice
+ * @property float $TotalPrice
+ * @property \Carbon\Carbon $ServiceDate
+ * @property \Carbon\Carbon $EndDate
+ * @property string $Description
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $OrderItemNumber
  */
 class OrderItem extends BaseRecordModel
 {

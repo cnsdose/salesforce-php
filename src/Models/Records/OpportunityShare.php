@@ -13,14 +13,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OpportunityShare[] query()
  *
- * @property string Id
- * @property string OpportunityId
- * @property string UserOrGroupId
- * @property mixed OpportunityAccessLevel
- * @property mixed RowCause
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $OpportunityId
+ * @property string $UserOrGroupId
+ * @property mixed $OpportunityAccessLevel
+ * @property mixed $RowCause
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property bool $IsDeleted
  */
 class OpportunityShare extends BaseRecordModel
 {

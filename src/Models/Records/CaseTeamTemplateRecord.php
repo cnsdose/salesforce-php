@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseTeamTemplateRecord[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string TeamTemplateId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $TeamTemplateId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CaseTeamTemplateRecord extends BaseRecordModel
 {

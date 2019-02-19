@@ -13,37 +13,37 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmbeddedServiceDetail[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string Site
- * @property string PrimaryColor
- * @property string SecondaryColor
- * @property string ContrastPrimaryColor
- * @property string ContrastInvertedColor
- * @property string NavBarColor
- * @property string Font
- * @property bool IsLiveAgentEnabled
- * @property bool IsFieldServiceEnabled
- * @property mixed Width
- * @property mixed Height
- * @property bool IsPrechatEnabled
- * @property string CustomPrechatComponent
- * @property string AvatarImg
- * @property string SmallCompanyLogoImg
- * @property string PrechatBackgroundImg
- * @property string WaitingStateBackgroundImg
- * @property string HeaderBackgroundImg
- * @property mixed FontSize
- * @property string OfflineCaseBackgroundImg
- * @property bool IsOfflineCaseEnabled
- * @property bool IsQueuePositionEnabled
- * @property bool ShouldShowNewAppointment
- * @property bool ShouldShowExistingAppointment
- * @property string FieldServiceHomeImg
- * @property string FieldServiceLogoImg
- * @property string FieldServiceConfirmCardImg
- * @property bool ShouldHideAuthDialog
- * @property string CustomMinimizedComponent
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $Site
+ * @property string $PrimaryColor
+ * @property string $SecondaryColor
+ * @property string $ContrastPrimaryColor
+ * @property string $ContrastInvertedColor
+ * @property string $NavBarColor
+ * @property string $Font
+ * @property bool $IsLiveAgentEnabled
+ * @property bool $IsFieldServiceEnabled
+ * @property mixed $Width
+ * @property mixed $Height
+ * @property bool $IsPrechatEnabled
+ * @property string $CustomPrechatComponent
+ * @property string $AvatarImg
+ * @property string $SmallCompanyLogoImg
+ * @property string $PrechatBackgroundImg
+ * @property string $WaitingStateBackgroundImg
+ * @property string $HeaderBackgroundImg
+ * @property mixed $FontSize
+ * @property string $OfflineCaseBackgroundImg
+ * @property bool $IsOfflineCaseEnabled
+ * @property bool $IsQueuePositionEnabled
+ * @property bool $ShouldShowNewAppointment
+ * @property bool $ShouldShowExistingAppointment
+ * @property string $FieldServiceHomeImg
+ * @property string $FieldServiceLogoImg
+ * @property string $FieldServiceConfirmCardImg
+ * @property bool $ShouldHideAuthDialog
+ * @property string $CustomMinimizedComponent
  */
 class EmbeddedServiceDetail extends BaseRecordModel
 {

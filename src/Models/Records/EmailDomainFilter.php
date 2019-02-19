@@ -13,18 +13,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailDomainFilter[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed PriorityNumber
- * @property string EmailRelayId
- * @property string ToDomain
- * @property string FromDomain
- * @property bool IsActive
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $PriorityNumber
+ * @property string $EmailRelayId
+ * @property string $ToDomain
+ * @property string $FromDomain
+ * @property bool $IsActive
  */
 class EmailDomainFilter extends BaseRecordModel
 {

@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FeedAttachment[] query()
  *
- * @property string Id
- * @property string FeedEntityId
- * @property mixed Type
- * @property string RecordId
- * @property string Title
- * @property string Value
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $FeedEntityId
+ * @property mixed $Type
+ * @property string $RecordId
+ * @property string $Title
+ * @property string $Value
+ * @property bool $IsDeleted
  */
 class FeedAttachment extends BaseRecordModel
 {

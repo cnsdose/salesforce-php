@@ -13,20 +13,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Group[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property string RelatedId
- * @property mixed Type
- * @property mixed Email
- * @property string OwnerId
- * @property bool DoesSendEmailToMembers
- * @property bool DoesIncludeBosses
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property string $RelatedId
+ * @property mixed $Type
+ * @property mixed $Email
+ * @property string $OwnerId
+ * @property bool $DoesSendEmailToMembers
+ * @property bool $DoesIncludeBosses
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class Group extends BaseRecordModel
 {

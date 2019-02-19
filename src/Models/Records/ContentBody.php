@@ -13,7 +13,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentBody[] query()
  *
- * @property string Id
+ * @property string $Id
  */
 class ContentBody extends BaseRecordModel
 {

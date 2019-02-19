@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Name[] query()
  *
- * @property string Id
- * @property string Name
- * @property string LastName
- * @property string FirstName
- * @property mixed Type
- * @property string Alias
- * @property string UserRoleId
- * @property string RecordTypeId
- * @property bool IsActive
- * @property string ProfileId
- * @property string Title
- * @property mixed Email
- * @property mixed Phone
- * @property string NameOrAlias
- * @property string Username
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
+ * @property string $Id
+ * @property string $Name
+ * @property string $LastName
+ * @property string $FirstName
+ * @property mixed $Type
+ * @property string $Alias
+ * @property string $UserRoleId
+ * @property string $RecordTypeId
+ * @property bool $IsActive
+ * @property string $ProfileId
+ * @property string $Title
+ * @property mixed $Email
+ * @property mixed $Phone
+ * @property string $NameOrAlias
+ * @property string $Username
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
  */
 class Name extends BaseRecordModel
 {

@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PricebookEntry[] query()
  *
- * @property string Id
- * @property string Name
- * @property string Pricebook2Id
- * @property string Product2Id
- * @property mixed CurrencyIsoCode
- * @property float UnitPrice
- * @property bool IsActive
- * @property bool UseStandardPrice
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ProductCode
- * @property bool IsDeleted
- * @property bool IsArchived
+ * @property string $Id
+ * @property string $Name
+ * @property string $Pricebook2Id
+ * @property string $Product2Id
+ * @property mixed $CurrencyIsoCode
+ * @property float $UnitPrice
+ * @property bool $IsActive
+ * @property bool $UseStandardPrice
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ProductCode
+ * @property bool $IsDeleted
+ * @property bool $IsArchived
  */
 class PricebookEntry extends BaseRecordModel
 {

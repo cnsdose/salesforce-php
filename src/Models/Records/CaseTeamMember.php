@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseTeamMember[] query()
  *
- * @property string Id
- * @property string ParentId
- * @property string MemberId
- * @property string TeamTemplateMemberId
- * @property string TeamRoleId
- * @property string TeamTemplateId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ParentId
+ * @property string $MemberId
+ * @property string $TeamTemplateMemberId
+ * @property string $TeamRoleId
+ * @property string $TeamTemplateId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CaseTeamMember extends BaseRecordModel
 {

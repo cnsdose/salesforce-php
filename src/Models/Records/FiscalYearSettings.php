@@ -13,21 +13,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method FiscalYearSettings[] query()
  *
- * @property string Id
- * @property string PeriodId
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property string Name
- * @property bool IsStandardYear
- * @property mixed YearType
- * @property mixed QuarterLabelScheme
- * @property mixed PeriodLabelScheme
- * @property mixed WeekLabelScheme
- * @property mixed QuarterPrefix
- * @property mixed PeriodPrefix
- * @property mixed WeekStartDay
- * @property string Description
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $PeriodId
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property string $Name
+ * @property bool $IsStandardYear
+ * @property mixed $YearType
+ * @property mixed $QuarterLabelScheme
+ * @property mixed $PeriodLabelScheme
+ * @property mixed $WeekLabelScheme
+ * @property mixed $QuarterPrefix
+ * @property mixed $PeriodPrefix
+ * @property mixed $WeekStartDay
+ * @property string $Description
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class FiscalYearSettings extends BaseRecordModel
 {

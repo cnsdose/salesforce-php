@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AssetTokenEvent[] query()
  *
- * @property string ReplayId
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string ConnectedAppId
- * @property string UserId
- * @property string AssetId
- * @property string Name
- * @property string DeviceId
- * @property string DeviceKey
- * @property \Carbon\Carbon Expiration
- * @property string AssetSerialNumber
- * @property string AssetName
- * @property string ActorTokenPayload
+ * @property string $ReplayId
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $ConnectedAppId
+ * @property string $UserId
+ * @property string $AssetId
+ * @property string $Name
+ * @property string $DeviceId
+ * @property string $DeviceKey
+ * @property \Carbon\Carbon $Expiration
+ * @property string $AssetSerialNumber
+ * @property string $AssetName
+ * @property string $ActorTokenPayload
  */
 class AssetTokenEvent extends BaseRecordModel
 {

@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method RecordAction[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string RecordId
- * @property mixed FlowDefinition
- * @property string FlowInterviewId
- * @property mixed Order
- * @property mixed Status
- * @property mixed Pinned
- * @property mixed ActionDefinition
- * @property bool IsMandatory
- * @property bool IsUiRemoveHidden
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $RecordId
+ * @property mixed $FlowDefinition
+ * @property string $FlowInterviewId
+ * @property mixed $Order
+ * @property mixed $Status
+ * @property mixed $Pinned
+ * @property mixed $ActionDefinition
+ * @property bool $IsMandatory
+ * @property bool $IsUiRemoveHidden
  */
 class RecordAction extends BaseRecordModel
 {

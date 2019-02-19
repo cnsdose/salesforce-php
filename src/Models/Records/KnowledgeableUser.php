@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method KnowledgeableUser[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string TopicId
- * @property mixed RawRank
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $UserId
+ * @property string $TopicId
+ * @property mixed $RawRank
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class KnowledgeableUser extends BaseRecordModel
 {

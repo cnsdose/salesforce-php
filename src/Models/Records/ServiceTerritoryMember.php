@@ -13,32 +13,32 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ServiceTerritoryMember[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string MemberNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ServiceTerritoryId
- * @property string ServiceResourceId
- * @property mixed TerritoryType
- * @property \Carbon\Carbon EffectiveStartDate
- * @property \Carbon\Carbon EffectiveEndDate
- * @property string Street
- * @property string City
- * @property string State
- * @property string PostalCode
- * @property string Country
- * @property float Latitude
- * @property float Longitude
- * @property mixed GeocodeAccuracy
- * @property mixed Address
- * @property string OperatingHoursId
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $MemberNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ServiceTerritoryId
+ * @property string $ServiceResourceId
+ * @property mixed $TerritoryType
+ * @property \Carbon\Carbon $EffectiveStartDate
+ * @property \Carbon\Carbon $EffectiveEndDate
+ * @property string $Street
+ * @property string $City
+ * @property string $State
+ * @property string $PostalCode
+ * @property string $Country
+ * @property float $Latitude
+ * @property float $Longitude
+ * @property mixed $GeocodeAccuracy
+ * @property mixed $Address
+ * @property string $OperatingHoursId
  */
 class ServiceTerritoryMember extends BaseRecordModel
 {

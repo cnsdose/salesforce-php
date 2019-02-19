@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EmailMessageRelation[] query()
  *
- * @property string Id
- * @property string EmailMessageId
- * @property string RelationId
- * @property mixed RelationType
- * @property string RelationAddress
- * @property string RelationObjectType
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
+ * @property string $Id
+ * @property string $EmailMessageId
+ * @property string $RelationId
+ * @property mixed $RelationType
+ * @property string $RelationAddress
+ * @property string $RelationObjectType
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
  */
 class EmailMessageRelation extends BaseRecordModel
 {

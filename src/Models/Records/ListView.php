@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ListView[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property string NamespacePrefix
- * @property mixed SobjectType
- * @property bool IsSoqlCompatible
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property string $NamespacePrefix
+ * @property mixed $SobjectType
+ * @property bool $IsSoqlCompatible
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
  */
 class ListView extends BaseRecordModel
 {

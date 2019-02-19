@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method Stamp[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ParentId
- * @property string MasterLabel
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string Description
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ParentId
+ * @property string $MasterLabel
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Description
  */
 class Stamp extends BaseRecordModel
 {

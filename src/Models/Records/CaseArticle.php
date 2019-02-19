@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CaseArticle[] query()
  *
- * @property string Id
- * @property string CaseId
- * @property string KnowledgeArticleId
- * @property string KnowledgeArticleVersionId
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property bool IsDeleted
- * @property mixed ArticleLanguage
- * @property mixed ArticleVersionNumber
- * @property bool IsSharedByEmail
+ * @property string $Id
+ * @property string $CaseId
+ * @property string $KnowledgeArticleId
+ * @property string $KnowledgeArticleVersionId
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $IsDeleted
+ * @property mixed $ArticleLanguage
+ * @property mixed $ArticleVersionNumber
+ * @property bool $IsSharedByEmail
  */
 class CaseArticle extends BaseRecordModel
 {

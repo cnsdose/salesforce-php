@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TimeSlot[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string TimeSlotNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string OperatingHoursId
- * @property \Carbon\Carbon StartTime
- * @property \Carbon\Carbon EndTime
- * @property mixed DayOfWeek
- * @property mixed Type
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $TimeSlotNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $OperatingHoursId
+ * @property \Carbon\Carbon $StartTime
+ * @property \Carbon\Carbon $EndTime
+ * @property mixed $DayOfWeek
+ * @property mixed $Type
  */
 class TimeSlot extends BaseRecordModel
 {

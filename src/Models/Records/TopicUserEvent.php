@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TopicUserEvent[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string TopicId
- * @property mixed ActionEnum
- * @property \Carbon\Carbon CreatedDate
+ * @property string $Id
+ * @property string $UserId
+ * @property string $TopicId
+ * @property mixed $ActionEnum
+ * @property \Carbon\Carbon $CreatedDate
  */
 class TopicUserEvent extends BaseRecordModel
 {

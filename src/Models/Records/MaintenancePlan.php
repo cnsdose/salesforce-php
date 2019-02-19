@@ -13,38 +13,38 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method MaintenancePlan[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property string MaintenancePlanNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string WorkTypeId
- * @property string AccountId
- * @property string ServiceContractId
- * @property mixed FrequencyType
- * @property mixed Frequency
- * @property \Carbon\Carbon StartDate
- * @property \Carbon\Carbon EndDate
- * @property \Carbon\Carbon NextSuggestedMaintenanceDate
- * @property mixed MaintenanceWindowStartDays
- * @property mixed MaintenanceWindowEndDays
- * @property mixed WorkOrderGenerationStatus
- * @property mixed GenerationTimeframeType
- * @property mixed GenerationTimeframe
- * @property string Description
- * @property string LocationId
- * @property string ContactId
- * @property string MaintenancePlanTitle
- * @property mixed GenerationHorizon
- * @property bool DoesGenerateUponCompletion
- * @property bool DoesAutoGenerateWorkOrders
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property string $MaintenancePlanNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $WorkTypeId
+ * @property string $AccountId
+ * @property string $ServiceContractId
+ * @property mixed $FrequencyType
+ * @property mixed $Frequency
+ * @property \Carbon\Carbon $StartDate
+ * @property \Carbon\Carbon $EndDate
+ * @property \Carbon\Carbon $NextSuggestedMaintenanceDate
+ * @property mixed $MaintenanceWindowStartDays
+ * @property mixed $MaintenanceWindowEndDays
+ * @property mixed $WorkOrderGenerationStatus
+ * @property mixed $GenerationTimeframeType
+ * @property mixed $GenerationTimeframe
+ * @property string $Description
+ * @property string $LocationId
+ * @property string $ContactId
+ * @property string $MaintenancePlanTitle
+ * @property mixed $GenerationHorizon
+ * @property bool $DoesGenerateUponCompletion
+ * @property bool $DoesAutoGenerateWorkOrders
  */
 class MaintenancePlan extends BaseRecordModel
 {

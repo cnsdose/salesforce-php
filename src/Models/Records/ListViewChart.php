@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ListViewChart[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property mixed SobjectType
- * @property string DeveloperName
- * @property mixed Language
- * @property string MasterLabel
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string OwnerId
- * @property mixed ChartType
- * @property mixed GroupingField
- * @property mixed AggregateField
- * @property mixed AggregateType
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property mixed $SobjectType
+ * @property string $DeveloperName
+ * @property mixed $Language
+ * @property string $MasterLabel
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $OwnerId
+ * @property mixed $ChartType
+ * @property mixed $GroupingField
+ * @property mixed $AggregateField
+ * @property mixed $AggregateType
  */
 class ListViewChart extends BaseRecordModel
 {

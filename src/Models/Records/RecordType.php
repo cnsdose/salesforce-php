@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method RecordType[] query()
  *
- * @property string Id
- * @property string Name
- * @property string DeveloperName
- * @property string NamespacePrefix
- * @property string Description
- * @property string BusinessProcessId
- * @property mixed SobjectType
- * @property bool IsActive
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $Name
+ * @property string $DeveloperName
+ * @property string $NamespacePrefix
+ * @property string $Description
+ * @property string $BusinessProcessId
+ * @property mixed $SobjectType
+ * @property bool $IsActive
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class RecordType extends BaseRecordModel
 {

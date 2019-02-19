@@ -13,31 +13,31 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ReturnOrderLineItem[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ReturnOrderLineItemNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ReturnOrderId
- * @property string ProductRequestLineItemId
- * @property string OrderItemId
- * @property string ProductItemId
- * @property string Product2Id
- * @property float QuantityReturned
- * @property mixed QuantityUnitOfMeasure
- * @property string SourceLocationId
- * @property string DestinationLocationId
- * @property string AssetId
- * @property string Description
- * @property mixed ReasonForReturn
- * @property mixed ProcessingPlan
- * @property mixed RepaymentMethod
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ReturnOrderLineItemNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ReturnOrderId
+ * @property string $ProductRequestLineItemId
+ * @property string $OrderItemId
+ * @property string $ProductItemId
+ * @property string $Product2Id
+ * @property float $QuantityReturned
+ * @property mixed $QuantityUnitOfMeasure
+ * @property string $SourceLocationId
+ * @property string $DestinationLocationId
+ * @property string $AssetId
+ * @property string $Description
+ * @property mixed $ReasonForReturn
+ * @property mixed $ProcessingPlan
+ * @property mixed $RepaymentMethod
  */
 class ReturnOrderLineItem extends BaseRecordModel
 {

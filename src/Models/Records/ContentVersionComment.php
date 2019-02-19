@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentVersionComment[] query()
  *
- * @property string Id
- * @property string ContentDocumentId
- * @property string ContentVersionId
- * @property string UserComment
- * @property \Carbon\Carbon CreatedDate
+ * @property string $Id
+ * @property string $ContentDocumentId
+ * @property string $ContentVersionId
+ * @property string $UserComment
+ * @property \Carbon\Carbon $CreatedDate
  */
 class ContentVersionComment extends BaseRecordModel
 {

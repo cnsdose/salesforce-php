@@ -13,19 +13,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method StaticResource[] query()
  *
- * @property string Id
- * @property string NamespacePrefix
- * @property string Name
- * @property string ContentType
- * @property mixed BodyLength
- * @property mixed Body
- * @property string Description
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed CacheControl
+ * @property string $Id
+ * @property string $NamespacePrefix
+ * @property string $Name
+ * @property string $ContentType
+ * @property mixed $BodyLength
+ * @property mixed $Body
+ * @property string $Description
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $CacheControl
  */
 class StaticResource extends BaseRecordModel
 {

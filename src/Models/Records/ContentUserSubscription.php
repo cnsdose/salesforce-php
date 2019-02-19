@@ -13,9 +13,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentUserSubscription[] query()
  *
- * @property string Id
- * @property string SubscriberUserId
- * @property string SubscribedToUserId
+ * @property string $Id
+ * @property string $SubscriberUserId
+ * @property string $SubscribedToUserId
  */
 class ContentUserSubscription extends BaseRecordModel
 {

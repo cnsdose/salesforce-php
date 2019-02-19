@@ -13,11 +13,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentDocumentSubscription[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string ContentDocumentId
- * @property bool IsCommentSub
- * @property bool IsDocumentSub
+ * @property string $Id
+ * @property string $UserId
+ * @property string $ContentDocumentId
+ * @property bool $IsCommentSub
+ * @property bool $IsDocumentSub
  */
 class ContentDocumentSubscription extends BaseRecordModel
 {

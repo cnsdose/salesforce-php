@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method OrgWideEmailAddress[] query()
  *
- * @property string Id
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed Address
- * @property string DisplayName
- * @property bool IsAllowAllProfiles
+ * @property string $Id
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $Address
+ * @property string $DisplayName
+ * @property bool $IsAllowAllProfiles
  */
 class OrgWideEmailAddress extends BaseRecordModel
 {

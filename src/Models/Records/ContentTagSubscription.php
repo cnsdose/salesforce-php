@@ -13,8 +13,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentTagSubscription[] query()
  *
- * @property string Id
- * @property string UserId
+ * @property string $Id
+ * @property string $UserId
  */
 class ContentTagSubscription extends BaseRecordModel
 {

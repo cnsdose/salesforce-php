@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method EventBusSubscriber[] query()
  *
- * @property string Id
- * @property mixed CurrencyIsoCode
- * @property string ExternalId
- * @property string Name
- * @property string Type
- * @property string Topic
- * @property mixed Position
- * @property mixed Tip
- * @property mixed Retries
- * @property string LastError
- * @property mixed Status
+ * @property string $Id
+ * @property mixed $CurrencyIsoCode
+ * @property string $ExternalId
+ * @property string $Name
+ * @property string $Type
+ * @property string $Topic
+ * @property mixed $Position
+ * @property mixed $Tip
+ * @property mixed $Retries
+ * @property string $LastError
+ * @property mixed $Status
  */
 class EventBusSubscriber extends BaseRecordModel
 {

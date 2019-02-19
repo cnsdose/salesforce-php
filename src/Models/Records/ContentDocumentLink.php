@@ -13,13 +13,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentDocumentLink[] query()
  *
- * @property string Id
- * @property string LinkedEntityId
- * @property string ContentDocumentId
- * @property bool IsDeleted
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed ShareType
- * @property mixed Visibility
+ * @property string $Id
+ * @property string $LinkedEntityId
+ * @property string $ContentDocumentId
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $ShareType
+ * @property mixed $Visibility
  */
 class ContentDocumentLink extends BaseRecordModel
 {

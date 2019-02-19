@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method LightningExitByPageMetrics[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon MetricsDate
- * @property string UserId
- * @property string PageName
- * @property \Carbon\Carbon SystemModstamp
- * @property mixed RecordCount
+ * @property string $Id
+ * @property \Carbon\Carbon $MetricsDate
+ * @property string $UserId
+ * @property string $PageName
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $RecordCount
  */
 class LightningExitByPageMetrics extends BaseRecordModel
 {

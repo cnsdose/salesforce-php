@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method CollaborationGroupMemberRequest[] query()
  *
- * @property string Id
- * @property string CollaborationGroupId
- * @property string RequesterId
- * @property string ResponseMessage
- * @property mixed Status
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $CollaborationGroupId
+ * @property string $RequesterId
+ * @property string $ResponseMessage
+ * @property mixed $Status
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class CollaborationGroupMemberRequest extends BaseRecordModel
 {

@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProductItemTransaction[] query()
  *
- * @property string Id
- * @property bool IsDeleted
- * @property string ProductItemTransactionNumber
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property \Carbon\Carbon LastViewedDate
- * @property \Carbon\Carbon LastReferencedDate
- * @property string ProductItemId
- * @property string RelatedRecordId
- * @property mixed TransactionType
- * @property string Description
- * @property float Quantity
+ * @property string $Id
+ * @property bool $IsDeleted
+ * @property string $ProductItemTransactionNumber
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
+ * @property string $ProductItemId
+ * @property string $RelatedRecordId
+ * @property mixed $TransactionType
+ * @property string $Description
+ * @property float $Quantity
  */
 class ProductItemTransaction extends BaseRecordModel
 {

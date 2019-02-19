@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentFolderMember[] query()
  *
- * @property string Id
- * @property string ParentContentFolderId
- * @property string ChildRecordId
- * @property bool IsDeleted
- * @property \Carbon\Carbon SystemModstamp
- * @property string CreatedById
- * @property \Carbon\Carbon CreatedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon LastModifiedDate
+ * @property string $Id
+ * @property string $ParentContentFolderId
+ * @property string $ChildRecordId
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $LastModifiedDate
  */
 class ContentFolderMember extends BaseRecordModel
 {

@@ -13,23 +13,23 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ConnectedApplication[] query()
  *
- * @property string Id
- * @property string Name
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property bool OptionsAllowAdminApprovedUsersOnly
- * @property bool OptionsRefreshTokenValidityMetric
- * @property bool OptionsHasSessionLevelPolicy
- * @property bool OptionsIsInternal
- * @property bool OptionsFullContentPushNotifications
- * @property mixed MobileSessionTimeout
- * @property mixed PinLength
- * @property mixed StartUrl
- * @property mixed MobileStartUrl
- * @property mixed RefreshTokenValidityPeriod
+ * @property string $Id
+ * @property string $Name
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property bool $OptionsAllowAdminApprovedUsersOnly
+ * @property bool $OptionsRefreshTokenValidityMetric
+ * @property bool $OptionsHasSessionLevelPolicy
+ * @property bool $OptionsIsInternal
+ * @property bool $OptionsFullContentPushNotifications
+ * @property mixed $MobileSessionTimeout
+ * @property mixed $PinLength
+ * @property mixed $StartUrl
+ * @property mixed $MobileStartUrl
+ * @property mixed $RefreshTokenValidityPeriod
  */
 class ConnectedApplication extends BaseRecordModel
 {

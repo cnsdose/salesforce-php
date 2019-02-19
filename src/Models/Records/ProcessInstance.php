@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ProcessInstance[] query()
  *
- * @property string Id
- * @property string ProcessDefinitionId
- * @property string TargetObjectId
- * @property mixed Status
- * @property \Carbon\Carbon CompletedDate
- * @property string LastActorId
- * @property float ElapsedTimeInDays
- * @property float ElapsedTimeInHours
- * @property float ElapsedTimeInMinutes
- * @property string SubmittedById
- * @property bool IsDeleted
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $ProcessDefinitionId
+ * @property string $TargetObjectId
+ * @property mixed $Status
+ * @property \Carbon\Carbon $CompletedDate
+ * @property string $LastActorId
+ * @property float $ElapsedTimeInDays
+ * @property float $ElapsedTimeInHours
+ * @property float $ElapsedTimeInMinutes
+ * @property string $SubmittedById
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class ProcessInstance extends BaseRecordModel
 {

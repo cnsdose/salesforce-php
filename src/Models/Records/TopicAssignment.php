@@ -13,15 +13,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method TopicAssignment[] query()
  *
- * @property string Id
- * @property string TopicId
- * @property string EntityId
- * @property string EntityKeyPrefix
- * @property string EntityType
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property bool IsDeleted
- * @property \Carbon\Carbon SystemModstamp
+ * @property string $Id
+ * @property string $TopicId
+ * @property string $EntityId
+ * @property string $EntityKeyPrefix
+ * @property string $EntityType
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property bool $IsDeleted
+ * @property \Carbon\Carbon $SystemModstamp
  */
 class TopicAssignment extends BaseRecordModel
 {

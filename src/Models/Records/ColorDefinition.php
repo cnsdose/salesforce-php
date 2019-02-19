@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ColorDefinition[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string TabDefinitionId
- * @property string Color
- * @property string Theme
- * @property string Context
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $TabDefinitionId
+ * @property string $Color
+ * @property string $Theme
+ * @property string $Context
  */
 class ColorDefinition extends BaseRecordModel
 {

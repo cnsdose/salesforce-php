@@ -13,34 +13,34 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentDistribution[] query()
  *
- * @property string Id
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property string OwnerId
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string Name
- * @property bool IsDeleted
- * @property string ContentVersionId
- * @property string ContentDocumentId
- * @property string RelatedRecordId
- * @property bool PreferencesAllowPDFDownload
- * @property bool PreferencesAllowOriginalDownload
- * @property bool PreferencesPasswordRequired
- * @property bool PreferencesNotifyOnVisit
- * @property bool PreferencesLinkLatestVersion
- * @property bool PreferencesAllowViewInBrowser
- * @property bool PreferencesExpires
- * @property bool PreferencesNotifyRndtnComplete
- * @property \Carbon\Carbon ExpiryDate
- * @property string Password
- * @property mixed ViewCount
- * @property \Carbon\Carbon FirstViewDate
- * @property \Carbon\Carbon LastViewDate
- * @property string DistributionPublicUrl
- * @property string ContentDownloadUrl
- * @property string PdfDownloadUrl
+ * @property string $Id
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property string $OwnerId
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $Name
+ * @property bool $IsDeleted
+ * @property string $ContentVersionId
+ * @property string $ContentDocumentId
+ * @property string $RelatedRecordId
+ * @property bool $PreferencesAllowPDFDownload
+ * @property bool $PreferencesAllowOriginalDownload
+ * @property bool $PreferencesPasswordRequired
+ * @property bool $PreferencesNotifyOnVisit
+ * @property bool $PreferencesLinkLatestVersion
+ * @property bool $PreferencesAllowViewInBrowser
+ * @property bool $PreferencesExpires
+ * @property bool $PreferencesNotifyRndtnComplete
+ * @property \Carbon\Carbon $ExpiryDate
+ * @property string $Password
+ * @property mixed $ViewCount
+ * @property \Carbon\Carbon $FirstViewDate
+ * @property \Carbon\Carbon $LastViewDate
+ * @property string $DistributionPublicUrl
+ * @property string $ContentDownloadUrl
+ * @property string $PdfDownloadUrl
  */
 class ContentDistribution extends BaseRecordModel
 {

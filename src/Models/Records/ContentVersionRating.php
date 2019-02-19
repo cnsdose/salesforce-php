@@ -13,12 +13,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method ContentVersionRating[] query()
  *
- * @property string Id
- * @property string UserId
- * @property string ContentVersionId
- * @property mixed Rating
- * @property string UserComment
- * @property \Carbon\Carbon LastModifiedDate
+ * @property string $Id
+ * @property string $UserId
+ * @property string $ContentVersionId
+ * @property mixed $Rating
+ * @property string $UserComment
+ * @property \Carbon\Carbon $LastModifiedDate
  */
 class ContentVersionRating extends BaseRecordModel
 {

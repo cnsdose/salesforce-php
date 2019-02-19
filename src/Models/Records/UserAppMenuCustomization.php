@@ -13,17 +13,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserAppMenuCustomization[] query()
  *
- * @property string Id
- * @property string OwnerId
- * @property bool IsDeleted
- * @property mixed CurrencyIsoCode
- * @property \Carbon\Carbon CreatedDate
- * @property string CreatedById
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string ApplicationId
- * @property mixed SortOrder
+ * @property string $Id
+ * @property string $OwnerId
+ * @property bool $IsDeleted
+ * @property mixed $CurrencyIsoCode
+ * @property \Carbon\Carbon $CreatedDate
+ * @property string $CreatedById
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $ApplicationId
+ * @property mixed $SortOrder
  */
 class UserAppMenuCustomization extends BaseRecordModel
 {

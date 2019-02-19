@@ -13,16 +13,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method PackageLicense[] query()
  *
- * @property string Id
- * @property mixed Status
- * @property bool IsProvisioned
- * @property mixed AllowedLicenses
- * @property mixed UsedLicenses
- * @property \Carbon\Carbon ExpirationDate
- * @property \Carbon\Carbon CreatedDate
- * @property \Carbon\Carbon LastModifiedDate
- * @property \Carbon\Carbon SystemModstamp
- * @property string NamespacePrefix
+ * @property string $Id
+ * @property mixed $Status
+ * @property bool $IsProvisioned
+ * @property mixed $AllowedLicenses
+ * @property mixed $UsedLicenses
+ * @property \Carbon\Carbon $ExpirationDate
+ * @property \Carbon\Carbon $CreatedDate
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $NamespacePrefix
  */
 class PackageLicense extends BaseRecordModel
 {

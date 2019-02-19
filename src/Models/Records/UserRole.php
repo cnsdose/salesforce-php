@@ -13,22 +13,22 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method UserRole[] query()
  *
- * @property string Id
- * @property string Name
- * @property string ParentRoleId
- * @property string RollupDescription
- * @property mixed OpportunityAccessForAccountOwner
- * @property mixed CaseAccessForAccountOwner
- * @property mixed ContactAccessForAccountOwner
- * @property string ForecastUserId
- * @property bool MayForecastManagerShare
- * @property \Carbon\Carbon LastModifiedDate
- * @property string LastModifiedById
- * @property \Carbon\Carbon SystemModstamp
- * @property string DeveloperName
- * @property string PortalAccountId
- * @property mixed PortalType
- * @property string PortalAccountOwnerId
+ * @property string $Id
+ * @property string $Name
+ * @property string $ParentRoleId
+ * @property string $RollupDescription
+ * @property mixed $OpportunityAccessForAccountOwner
+ * @property mixed $CaseAccessForAccountOwner
+ * @property mixed $ContactAccessForAccountOwner
+ * @property string $ForecastUserId
+ * @property bool $MayForecastManagerShare
+ * @property \Carbon\Carbon $LastModifiedDate
+ * @property string $LastModifiedById
+ * @property \Carbon\Carbon $SystemModstamp
+ * @property string $DeveloperName
+ * @property string $PortalAccountId
+ * @property mixed $PortalType
+ * @property string $PortalAccountOwnerId
  */
 class UserRole extends BaseRecordModel
 {

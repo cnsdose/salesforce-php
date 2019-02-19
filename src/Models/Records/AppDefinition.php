@@ -13,24 +13,24 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @method AppDefinition[] query()
  *
- * @property string Id
- * @property string DurableId
- * @property string Label
- * @property string MasterLabel
- * @property string NamespacePrefix
- * @property string DeveloperName
- * @property mixed LogoUrl
- * @property string Description
- * @property mixed UiType
- * @property mixed NavType
- * @property string UtilityBar
- * @property string HeaderColor
- * @property bool IsOverrideOrgTheme
- * @property bool IsSmallFormFactorSupported
- * @property bool IsMediumFormFactorSupported
- * @property bool IsLargeFormFactorSupported
- * @property bool IsNavPersonalizationDisabled
- * @property bool IsNavAutoTempTabsDisabled
+ * @property string $Id
+ * @property string $DurableId
+ * @property string $Label
+ * @property string $MasterLabel
+ * @property string $NamespacePrefix
+ * @property string $DeveloperName
+ * @property mixed $LogoUrl
+ * @property string $Description
+ * @property mixed $UiType
+ * @property mixed $NavType
+ * @property string $UtilityBar
+ * @property string $HeaderColor
+ * @property bool $IsOverrideOrgTheme
+ * @property bool $IsSmallFormFactorSupported
+ * @property bool $IsMediumFormFactorSupported
+ * @property bool $IsLargeFormFactorSupported
+ * @property bool $IsNavPersonalizationDisabled
+ * @property bool $IsNavAutoTempTabsDisabled
  */
 class AppDefinition extends BaseRecordModel
 {
