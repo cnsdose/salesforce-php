@@ -1,0 +1,24 @@
+definitions:
+  caches:
+    sonar: ~/.sonar/cache
+
+pipelines:
+  default:
+    - step:
+        image: frederickzh/cnsdose-docker-ci:latest
+        caches:
+          - composer
+          - sonar
+        script:
+          - mkdir x509
+          - echo "$SALESFORCE_PUBLIC_KEY_BASE64" | base64 -d > ./x509/cert.pem
+          - echo "$SALESFORCE_PRIVATE_KEY_BASE64" | base64 -d > ./x509/key.pem
+          - export SALESFORCE_PUBLIC_KEY="./x509/cert.pem"
+          - export SALESFORCE_PRIVATE_KEY="./x509/key.pem"
+          - git pull --unshallow
+          - composer install
+          - xdebug_enable
+          - echo "-Dsonar.projectKey=$SONAR_PROJECT" >> .sonar
+          - echo "-Dsonar.host.url=$SONAR_URL" >> .sonar
+          - echo "-Dsonar.login=$SONAR_LOGIN" >> .sonar
+          - make sonar
