@@ -49,7 +49,7 @@ class GenerateMetadataModel extends Command
             return 1;
         }
         $this->path = $this->option('path') ?: __DIR__ . '/../Models/Metadata';
-        $this->wsdlPath = config('salesforce.metadata_wsdl');
+        $this->wsdlPath = config('salesforce.metadata_wsdl') ?: __DIR__ . '/../../wsdl/metadata.wsdl.xml';
 
         $this->parseWsdl();
         foreach (array_keys($this->complexTypes) as $type) {
