@@ -8,7 +8,7 @@
 return [
     'authentication_url' => 'https://login.salesforce.com/services/oauth2/token',
     'api_version' => 'v45.0',
-    'metadata_wsdl' => null,
+    'metadata_wsdl' => __DIR__ . '/../wsdl/metadata.wsdl.xml',
 
     'auth_flow' => 'jwt',                                        // jwt or username_password
 

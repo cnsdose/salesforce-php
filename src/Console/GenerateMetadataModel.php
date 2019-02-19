@@ -32,7 +32,7 @@ class GenerateMetadataModel extends Command
      *
      * @var string
      */
-    protected $signature = 'salesforce:generate-metadata-model {--N|namespace=} {--package=} {--path=} {--wsdl-path=}';
+    protected $signature = 'salesforce:generate-metadata-model {--N|namespace=} {--package=} {--path=}';
 
     private $complexTypes = [];
     private $enums = [];
@@ -49,7 +49,7 @@ class GenerateMetadataModel extends Command
             return 1;
         }
         $this->path = $this->option('path') ?: __DIR__ . '/../Models/Metadata';
-        $this->wsdlPath = $this->option('wsdl-path') ?: __DIR__ . '/../../wsdl/metadata.wsdl.xml';
+        $this->wsdlPath = config('salesforce.metadata_wsdl');
 
         $this->parseWsdl();
         foreach (array_keys($this->complexTypes) as $type) {
