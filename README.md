@@ -32,6 +32,18 @@
         // bootstrap/app.php
         $app->register(\CNSDose\Salesforce\Providers\SalesforceProvider::class);
         ```
+    0. Others
+
+        Laravel/Lumen is optional, as long as you can provide a `config($key, $default)` function, e.g.
+        ```php
+        function config(string $key, $default = null)
+        {
+            $configs = [
+                'salesforce' => include __DIR__ . '/../config/salesforce.php',
+            ];
+            return array_get($configs, $key, $default);
+        }
+        ```
 0. `php artisan vendor:publish --provider='CNSDose\Salesforce\Providers\SalesforceProvider'`
 
 ## Configuration
