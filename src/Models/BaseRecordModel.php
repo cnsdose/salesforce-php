@@ -122,6 +122,9 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     protected $rawQuery;
     protected static $COMPARISON_OPERATORS = ['=', '!=', '<', '<=', '>', '>=', 'LIKE', 'IN', 'NOT IN', 'INCLUDES', 'EXCLUDES'];
 
+    /**
+     * @return static
+     */
     public static function build(): self
     {
         $model = static::class;
@@ -130,7 +133,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param string|string[]|BaseRecordModel|BaseRecordModel[]|mixed|mixed[] $fields
-     * @return $this
+     * @return static
      */
     public function select($fields = '*')
     {
@@ -148,7 +151,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param string|null $objectApiName
-     * @return $this
+     * @return static
      */
     public function from(string $objectApiName = null)
     {
@@ -164,7 +167,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * @param string $field
      * @param null|string|BaseRecordModel|mixed $operator
      * @param null|string|BaseRecordModel|mixed $value
-     * @return $this
+     * @return static
      */
     public function where(string $field, $operator = null, $value = null): self
     {
@@ -185,7 +188,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * @param string $field
      * @param null|string|BaseRecordModel|mixed $operator
      * @param null|string|BaseRecordModel|mixed $value
-     * @return $this
+     * @return static
      */
     public function orWhere(string $field, $operator, $value = null): self
     {
@@ -204,7 +207,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param int $limit
-     * @return $this
+     * @return static
      */
     public function limit(int $limit)
     {
@@ -214,7 +217,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param int $offset
-     * @return $this
+     * @return static
      */
     public function offset(int $offset)
     {
@@ -226,7 +229,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * Resolve relationship
      * @param string $foreignClass
      * @param string $foreignKey
-     * @return $this
+     * @return static
      */
     public function resolve(string $foreignClass, string $foreignKey): self
     {
@@ -340,7 +343,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     /**
      * @param bool $depagination
      * @param string $nextRecordsUrl
-     * @return mixed
+     * @return static[]|mixed
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
@@ -359,7 +362,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * @param string $soql
      * @param bool $depagination
      * @param string $nextRecordsUrl
-     * @return array
+     * @return static[]|mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
@@ -377,7 +380,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * Fetches single object, populates all fields regardless of whether they're pre-defined in class/configuration or not
      *
      * @param string $id
-     * @return BaseRecordModel|mixed
+     * @return static|mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
      * @throws StandardException
