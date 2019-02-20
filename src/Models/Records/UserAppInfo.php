@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserAppInfo extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserAppInfo';
+    public static $objectApiName = 'UserAppInfo';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

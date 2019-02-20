@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexTestResultLimits extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexTestResultLimits';
+    public static $objectApiName = 'ApexTestResultLimits';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

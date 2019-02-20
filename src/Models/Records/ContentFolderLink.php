@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentFolderLink extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentFolderLink';
+    public static $objectApiName = 'ContentFolderLink';
     protected $defaultFields = [
         'Id' => null,
         'ParentEntityId' => null,

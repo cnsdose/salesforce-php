@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FlexQueueItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'FlexQueueItem';
+    public static $objectApiName = 'FlexQueueItem';
     protected $defaultFields = [
         'Id' => null,
         'FlexQueueItemId' => null,

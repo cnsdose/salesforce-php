@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CorsWhitelistEntry extends BaseRecordModel
 {
-    protected static $objectApiName = 'CorsWhitelistEntry';
+    public static $objectApiName = 'CorsWhitelistEntry';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

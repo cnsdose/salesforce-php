@@ -55,7 +55,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Opportunity extends BaseRecordModel
 {
-    protected static $objectApiName = 'Opportunity';
+    public static $objectApiName = 'Opportunity';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -50,7 +50,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Campaign extends BaseRecordModel
 {
-    protected static $objectApiName = 'Campaign';
+    public static $objectApiName = 'Campaign';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

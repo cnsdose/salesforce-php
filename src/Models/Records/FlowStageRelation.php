@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FlowStageRelation extends BaseRecordModel
 {
-    protected static $objectApiName = 'FlowStageRelation';
+    public static $objectApiName = 'FlowStageRelation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

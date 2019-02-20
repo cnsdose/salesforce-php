@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Scontrol extends BaseRecordModel
 {
-    protected static $objectApiName = 'Scontrol';
+    public static $objectApiName = 'Scontrol';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvisioningRequestShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvisioningRequestShare';
+    public static $objectApiName = 'UserProvisioningRequestShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LoginGeo extends BaseRecordModel
 {
-    protected static $objectApiName = 'LoginGeo';
+    public static $objectApiName = 'LoginGeo';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

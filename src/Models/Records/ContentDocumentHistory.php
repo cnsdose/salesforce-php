@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentDocumentHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentDocumentHistory';
+    public static $objectApiName = 'ContentDocumentHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

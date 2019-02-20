@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserRecordAccess extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserRecordAccess';
+    public static $objectApiName = 'UserRecordAccess';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

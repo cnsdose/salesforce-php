@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeArticleVoteStat extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeArticleVoteStat';
+    public static $objectApiName = 'KnowledgeArticleVoteStat';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

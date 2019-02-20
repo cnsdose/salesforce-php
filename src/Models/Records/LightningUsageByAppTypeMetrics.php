@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningUsageByAppTypeMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningUsageByAppTypeMetrics';
+    public static $objectApiName = 'LightningUsageByAppTypeMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

@@ -49,7 +49,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Asset extends BaseRecordModel
 {
-    protected static $objectApiName = 'Asset';
+    public static $objectApiName = 'Asset';
     protected $defaultFields = [
         'Id' => null,
         'ContactId' => null,

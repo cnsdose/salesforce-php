@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Pricebook2 extends BaseRecordModel
 {
-    protected static $objectApiName = 'Pricebook2';
+    public static $objectApiName = 'Pricebook2';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

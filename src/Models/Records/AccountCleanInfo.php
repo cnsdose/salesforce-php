@@ -129,7 +129,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AccountCleanInfo extends BaseRecordModel
 {
-    protected static $objectApiName = 'AccountCleanInfo';
+    public static $objectApiName = 'AccountCleanInfo';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

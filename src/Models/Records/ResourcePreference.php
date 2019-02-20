@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ResourcePreference extends BaseRecordModel
 {
-    protected static $objectApiName = 'ResourcePreference';
+    public static $objectApiName = 'ResourcePreference';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

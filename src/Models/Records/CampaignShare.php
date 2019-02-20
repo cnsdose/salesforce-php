@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CampaignShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'CampaignShare';
+    public static $objectApiName = 'CampaignShare';
     protected $defaultFields = [
         'Id' => null,
         'CampaignId' => null,

@@ -44,7 +44,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentDistribution extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentDistribution';
+    public static $objectApiName = 'ContentDistribution';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

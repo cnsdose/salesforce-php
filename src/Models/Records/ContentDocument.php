@@ -41,7 +41,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentDocument extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentDocument';
+    public static $objectApiName = 'ContentDocument';
     protected $defaultFields = [
         'Id' => null,
         'CreatedById' => null,

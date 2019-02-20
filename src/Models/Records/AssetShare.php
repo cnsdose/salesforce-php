@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AssetShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'AssetShare';
+    public static $objectApiName = 'AssetShare';
     protected $defaultFields = [
         'Id' => null,
         'AssetId' => null,

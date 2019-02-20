@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class RecordType extends BaseRecordModel
 {
-    protected static $objectApiName = 'RecordType';
+    public static $objectApiName = 'RecordType';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

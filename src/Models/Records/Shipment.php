@@ -57,7 +57,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Shipment extends BaseRecordModel
 {
-    protected static $objectApiName = 'Shipment';
+    public static $objectApiName = 'Shipment';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

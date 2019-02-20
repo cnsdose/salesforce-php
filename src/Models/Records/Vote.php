@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Vote extends BaseRecordModel
 {
-    protected static $objectApiName = 'Vote';
+    public static $objectApiName = 'Vote';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

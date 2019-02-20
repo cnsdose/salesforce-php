@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvAccountStaging extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvAccountStaging';
+    public static $objectApiName = 'UserProvAccountStaging';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -244,7 +244,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserPermissionAccess extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserPermissionAccess';
+    public static $objectApiName = 'UserPermissionAccess';
     protected $defaultFields = [
         'Id' => null,
         'LastCacheUpdate' => 'datetime',

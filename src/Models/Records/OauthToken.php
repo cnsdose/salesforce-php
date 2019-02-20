@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OauthToken extends BaseRecordModel
 {
-    protected static $objectApiName = 'OauthToken';
+    public static $objectApiName = 'OauthToken';
     protected $defaultFields = [
         'Id' => null,
         'AccessToken' => null,

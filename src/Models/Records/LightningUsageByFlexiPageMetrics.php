@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningUsageByFlexiPageMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningUsageByFlexiPageMetrics';
+    public static $objectApiName = 'LightningUsageByFlexiPageMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

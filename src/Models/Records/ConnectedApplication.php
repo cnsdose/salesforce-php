@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ConnectedApplication extends BaseRecordModel
 {
-    protected static $objectApiName = 'ConnectedApplication';
+    public static $objectApiName = 'ConnectedApplication';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

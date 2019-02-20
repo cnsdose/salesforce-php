@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MacroInstruction extends BaseRecordModel
 {
-    protected static $objectApiName = 'MacroInstruction';
+    public static $objectApiName = 'MacroInstruction';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

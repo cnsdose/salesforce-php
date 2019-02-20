@@ -82,7 +82,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WorkOrder extends BaseRecordModel
 {
-    protected static $objectApiName = 'WorkOrder';
+    public static $objectApiName = 'WorkOrder';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

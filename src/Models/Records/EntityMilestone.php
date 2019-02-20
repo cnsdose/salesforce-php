@@ -46,7 +46,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EntityMilestone extends BaseRecordModel
 {
-    protected static $objectApiName = 'EntityMilestone';
+    public static $objectApiName = 'EntityMilestone';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

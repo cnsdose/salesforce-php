@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentNotification extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentNotification';
+    public static $objectApiName = 'ContentNotification';
     protected $defaultFields = [
         'Id' => null,
         'Nature' => null,

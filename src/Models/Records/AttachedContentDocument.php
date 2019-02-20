@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AttachedContentDocument extends BaseRecordModel
 {
-    protected static $objectApiName = 'AttachedContentDocument';
+    public static $objectApiName = 'AttachedContentDocument';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

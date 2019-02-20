@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SiteDetail extends BaseRecordModel
 {
-    protected static $objectApiName = 'SiteDetail';
+    public static $objectApiName = 'SiteDetail';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

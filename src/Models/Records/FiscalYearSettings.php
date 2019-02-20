@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FiscalYearSettings extends BaseRecordModel
 {
-    protected static $objectApiName = 'FiscalYearSettings';
+    public static $objectApiName = 'FiscalYearSettings';
     protected $defaultFields = [
         'Id' => null,
         'PeriodId' => null,

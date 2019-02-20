@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedComment extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedComment';
+    public static $objectApiName = 'FeedComment';
     protected $defaultFields = [
         'Id' => null,
         'FeedItemId' => null,

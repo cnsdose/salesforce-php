@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ExternalDataSource extends BaseRecordModel
 {
-    protected static $objectApiName = 'ExternalDataSource';
+    public static $objectApiName = 'ExternalDataSource';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

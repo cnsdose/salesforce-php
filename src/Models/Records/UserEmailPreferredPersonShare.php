@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserEmailPreferredPersonShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserEmailPreferredPersonShare';
+    public static $objectApiName = 'UserEmailPreferredPersonShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

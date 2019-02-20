@@ -61,7 +61,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatacloudCompany extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatacloudCompany';
+    public static $objectApiName = 'DatacloudCompany';
     protected $defaultFields = [
         'Id' => null,
         'CurrencyIsoCode' => null,

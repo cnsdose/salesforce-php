@@ -35,7 +35,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TransactionSecurityPolicy extends BaseRecordModel
 {
-    protected static $objectApiName = 'TransactionSecurityPolicy';
+    public static $objectApiName = 'TransactionSecurityPolicy';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

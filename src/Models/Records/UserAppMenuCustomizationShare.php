@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserAppMenuCustomizationShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserAppMenuCustomizationShare';
+    public static $objectApiName = 'UserAppMenuCustomizationShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

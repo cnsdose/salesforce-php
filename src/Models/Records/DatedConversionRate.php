@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatedConversionRate extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatedConversionRate';
+    public static $objectApiName = 'DatedConversionRate';
     protected $defaultFields = [
         'Id' => null,
         'IsoCode' => null,

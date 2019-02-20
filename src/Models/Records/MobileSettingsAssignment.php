@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MobileSettingsAssignment extends BaseRecordModel
 {
-    protected static $objectApiName = 'MobileSettingsAssignment';
+    public static $objectApiName = 'MobileSettingsAssignment';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

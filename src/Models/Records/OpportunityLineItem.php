@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityLineItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityLineItem';
+    public static $objectApiName = 'OpportunityLineItem';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

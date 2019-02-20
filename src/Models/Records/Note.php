@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Note extends BaseRecordModel
 {
-    protected static $objectApiName = 'Note';
+    public static $objectApiName = 'Note';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

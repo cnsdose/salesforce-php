@@ -50,7 +50,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductRequestLineItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductRequestLineItem';
+    public static $objectApiName = 'ProductRequestLineItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

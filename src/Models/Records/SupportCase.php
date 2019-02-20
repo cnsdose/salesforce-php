@@ -52,7 +52,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SupportCase extends BaseRecordModel
 {
-    protected static $objectApiName = 'Case';
+    public static $objectApiName = 'Case';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

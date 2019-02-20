@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailRelay extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailRelay';
+    public static $objectApiName = 'EmailRelay';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

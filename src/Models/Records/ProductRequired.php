@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductRequired extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductRequired';
+    public static $objectApiName = 'ProductRequired';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

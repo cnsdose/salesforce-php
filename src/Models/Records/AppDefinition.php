@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AppDefinition extends BaseRecordModel
 {
-    protected static $objectApiName = 'AppDefinition';
+    public static $objectApiName = 'AppDefinition';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

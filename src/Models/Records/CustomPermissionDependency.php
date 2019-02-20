@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CustomPermissionDependency extends BaseRecordModel
 {
-    protected static $objectApiName = 'CustomPermissionDependency';
+    public static $objectApiName = 'CustomPermissionDependency';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

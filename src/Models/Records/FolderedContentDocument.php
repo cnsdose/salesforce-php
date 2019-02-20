@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FolderedContentDocument extends BaseRecordModel
 {
-    protected static $objectApiName = 'FolderedContentDocument';
+    public static $objectApiName = 'FolderedContentDocument';
     protected $defaultFields = [
         'Id' => null,
         'IsFolder' => 'bool',

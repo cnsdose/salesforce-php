@@ -50,7 +50,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LookedUpFromActivity extends BaseRecordModel
 {
-    protected static $objectApiName = 'LookedUpFromActivity';
+    public static $objectApiName = 'LookedUpFromActivity';
     protected $defaultFields = [
         'Id' => null,
         'AccountId' => null,

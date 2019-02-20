@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Solution extends BaseRecordModel
 {
-    protected static $objectApiName = 'Solution';
+    public static $objectApiName = 'Solution';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

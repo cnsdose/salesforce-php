@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MaintenanceAsset extends BaseRecordModel
 {
-    protected static $objectApiName = 'MaintenanceAsset';
+    public static $objectApiName = 'MaintenanceAsset';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

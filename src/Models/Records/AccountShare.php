@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AccountShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'AccountShare';
+    public static $objectApiName = 'AccountShare';
     protected $defaultFields = [
         'Id' => null,
         'AccountId' => null,

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SessionPermSetActivation extends BaseRecordModel
 {
-    protected static $objectApiName = 'SessionPermSetActivation';
+    public static $objectApiName = 'SessionPermSetActivation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

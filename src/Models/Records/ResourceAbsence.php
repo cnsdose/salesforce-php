@@ -41,7 +41,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ResourceAbsence extends BaseRecordModel
 {
-    protected static $objectApiName = 'ResourceAbsence';
+    public static $objectApiName = 'ResourceAbsence';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

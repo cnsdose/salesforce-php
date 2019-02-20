@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserPreference extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserPreference';
+    public static $objectApiName = 'UserPreference';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

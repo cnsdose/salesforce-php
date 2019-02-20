@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Topic extends BaseRecordModel
 {
-    protected static $objectApiName = 'Topic';
+    public static $objectApiName = 'Topic';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EventRelation extends BaseRecordModel
 {
-    protected static $objectApiName = 'EventRelation';
+    public static $objectApiName = 'EventRelation';
     protected $defaultFields = [
         'Id' => null,
         'RelationId' => null,

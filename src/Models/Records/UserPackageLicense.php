@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserPackageLicense extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserPackageLicense';
+    public static $objectApiName = 'UserPackageLicense';
     protected $defaultFields = [
         'Id' => null,
         'PackageLicenseId' => null,

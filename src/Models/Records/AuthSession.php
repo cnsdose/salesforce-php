@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AuthSession extends BaseRecordModel
 {
-    protected static $objectApiName = 'AuthSession';
+    public static $objectApiName = 'AuthSession';
     protected $defaultFields = [
         'Id' => null,
         'UsersId' => null,

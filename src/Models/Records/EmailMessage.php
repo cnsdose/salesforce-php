@@ -51,7 +51,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailMessage extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailMessage';
+    public static $objectApiName = 'EmailMessage';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

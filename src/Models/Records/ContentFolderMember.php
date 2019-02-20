@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentFolderMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentFolderMember';
+    public static $objectApiName = 'ContentFolderMember';
     protected $defaultFields = [
         'Id' => null,
         'ParentContentFolderId' => null,

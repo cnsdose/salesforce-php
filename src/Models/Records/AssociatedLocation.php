@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AssociatedLocation extends BaseRecordModel
 {
-    protected static $objectApiName = 'AssociatedLocation';
+    public static $objectApiName = 'AssociatedLocation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

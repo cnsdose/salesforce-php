@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatacloudContact extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatacloudContact';
+    public static $objectApiName = 'DatacloudContact';
     protected $defaultFields = [
         'Id' => null,
         'CurrencyIsoCode' => null,

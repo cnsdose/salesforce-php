@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AppTabMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'AppTabMember';
+    public static $objectApiName = 'AppTabMember';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

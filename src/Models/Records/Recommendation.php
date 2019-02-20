@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Recommendation extends BaseRecordModel
 {
-    protected static $objectApiName = 'Recommendation';
+    public static $objectApiName = 'Recommendation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

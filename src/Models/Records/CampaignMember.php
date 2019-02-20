@@ -53,7 +53,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CampaignMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'CampaignMember';
+    public static $objectApiName = 'CampaignMember';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

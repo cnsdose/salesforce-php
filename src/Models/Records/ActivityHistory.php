@@ -51,7 +51,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ActivityHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ActivityHistory';
+    public static $objectApiName = 'ActivityHistory';
     protected $defaultFields = [
         'Id' => null,
         'AccountId' => null,

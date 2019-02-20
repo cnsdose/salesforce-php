@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TimeSheet extends BaseRecordModel
 {
-    protected static $objectApiName = 'TimeSheet';
+    public static $objectApiName = 'TimeSheet';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

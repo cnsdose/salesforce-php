@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvisioningLog extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvisioningLog';
+    public static $objectApiName = 'UserProvisioningLog';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

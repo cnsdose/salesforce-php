@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexPage extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexPage';
+    public static $objectApiName = 'ApexPage';
     protected $defaultFields = [
         'Id' => null,
         'NamespacePrefix' => null,

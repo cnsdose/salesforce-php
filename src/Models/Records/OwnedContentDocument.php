@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OwnedContentDocument extends BaseRecordModel
 {
-    protected static $objectApiName = 'OwnedContentDocument';
+    public static $objectApiName = 'OwnedContentDocument';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

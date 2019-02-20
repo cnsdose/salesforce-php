@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentVersionRating extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentVersionRating';
+    public static $objectApiName = 'ContentVersionRating';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

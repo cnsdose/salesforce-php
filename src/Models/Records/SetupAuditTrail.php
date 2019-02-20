@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SetupAuditTrail extends BaseRecordModel
 {
-    protected static $objectApiName = 'SetupAuditTrail';
+    public static $objectApiName = 'SetupAuditTrail';
     protected $defaultFields = [
         'Id' => null,
         'Action' => null,

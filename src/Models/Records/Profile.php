@@ -254,7 +254,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Profile extends BaseRecordModel
 {
-    protected static $objectApiName = 'Profile';
+    public static $objectApiName = 'Profile';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

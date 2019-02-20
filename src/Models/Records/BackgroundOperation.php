@@ -43,7 +43,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class BackgroundOperation extends BaseRecordModel
 {
-    protected static $objectApiName = 'BackgroundOperation';
+    public static $objectApiName = 'BackgroundOperation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

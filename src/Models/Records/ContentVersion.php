@@ -59,7 +59,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentVersion extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentVersion';
+    public static $objectApiName = 'ContentVersion';
     protected $defaultFields = [
         'Id' => null,
         'ContentDocumentId' => null,

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CurrencyType extends BaseRecordModel
 {
-    protected static $objectApiName = 'CurrencyType';
+    public static $objectApiName = 'CurrencyType';
     protected $defaultFields = [
         'Id' => null,
         'IsoCode' => null,

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceTerritoryLocation extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceTerritoryLocation';
+    public static $objectApiName = 'ServiceTerritoryLocation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

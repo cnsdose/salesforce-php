@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WorkType extends BaseRecordModel
 {
-    protected static $objectApiName = 'WorkType';
+    public static $objectApiName = 'WorkType';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

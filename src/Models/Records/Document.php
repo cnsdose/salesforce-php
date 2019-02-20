@@ -40,7 +40,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Document extends BaseRecordModel
 {
-    protected static $objectApiName = 'Document';
+    public static $objectApiName = 'Document';
     protected $defaultFields = [
         'Id' => null,
         'FolderId' => null,

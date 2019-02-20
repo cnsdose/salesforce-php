@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DocumentAttachmentMap extends BaseRecordModel
 {
-    protected static $objectApiName = 'DocumentAttachmentMap';
+    public static $objectApiName = 'DocumentAttachmentMap';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

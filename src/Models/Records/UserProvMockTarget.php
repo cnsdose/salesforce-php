@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvMockTarget extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvMockTarget';
+    public static $objectApiName = 'UserProvMockTarget';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

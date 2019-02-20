@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductTransferHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductTransferHistory';
+    public static $objectApiName = 'ProductTransferHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

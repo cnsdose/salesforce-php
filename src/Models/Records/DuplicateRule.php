@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DuplicateRule extends BaseRecordModel
 {
-    protected static $objectApiName = 'DuplicateRule';
+    public static $objectApiName = 'DuplicateRule';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

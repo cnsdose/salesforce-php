@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Period extends BaseRecordModel
 {
-    protected static $objectApiName = 'Period';
+    public static $objectApiName = 'Period';
     protected $defaultFields = [
         'Id' => null,
         'FiscalYearSettingsId' => null,

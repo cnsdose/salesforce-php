@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ChatterActivity extends BaseRecordModel
 {
-    protected static $objectApiName = 'ChatterActivity';
+    public static $objectApiName = 'ChatterActivity';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

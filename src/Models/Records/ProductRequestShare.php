@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductRequestShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductRequestShare';
+    public static $objectApiName = 'ProductRequestShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

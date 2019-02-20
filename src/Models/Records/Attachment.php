@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Attachment extends BaseRecordModel
 {
-    protected static $objectApiName = 'Attachment';
+    public static $objectApiName = 'Attachment';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

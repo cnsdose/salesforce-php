@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SetupEntityAccess extends BaseRecordModel
 {
-    protected static $objectApiName = 'SetupEntityAccess';
+    public static $objectApiName = 'SetupEntityAccess';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Report extends BaseRecordModel
 {
-    protected static $objectApiName = 'Report';
+    public static $objectApiName = 'Report';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

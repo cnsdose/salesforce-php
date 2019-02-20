@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentBody extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentBody';
+    public static $objectApiName = 'ContentBody';
     protected $defaultFields = [
         'Id' => null,
     ];

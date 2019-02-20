@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Skill extends BaseRecordModel
 {
-    protected static $objectApiName = 'Skill';
+    public static $objectApiName = 'Skill';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

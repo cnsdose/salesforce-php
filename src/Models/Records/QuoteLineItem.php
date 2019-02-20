@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuoteLineItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuoteLineItem';
+    public static $objectApiName = 'QuoteLineItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Partner extends BaseRecordModel
 {
-    protected static $objectApiName = 'Partner';
+    public static $objectApiName = 'Partner';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

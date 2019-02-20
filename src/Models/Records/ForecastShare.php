@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ForecastShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ForecastShare';
+    public static $objectApiName = 'ForecastShare';
     protected $defaultFields = [
         'Id' => null,
         'UserRoleId' => null,

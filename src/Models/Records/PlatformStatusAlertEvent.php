@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PlatformStatusAlertEvent extends BaseRecordModel
 {
-    protected static $objectApiName = 'PlatformStatusAlertEvent';
+    public static $objectApiName = 'PlatformStatusAlertEvent';
     protected $defaultFields = [
         'ReplayId' => null,
         'CreatedDate' => 'datetime',

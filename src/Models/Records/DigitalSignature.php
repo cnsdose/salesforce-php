@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DigitalSignature extends BaseRecordModel
 {
-    protected static $objectApiName = 'DigitalSignature';
+    public static $objectApiName = 'DigitalSignature';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

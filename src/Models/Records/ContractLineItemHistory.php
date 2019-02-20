@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContractLineItemHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContractLineItemHistory';
+    public static $objectApiName = 'ContractLineItemHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

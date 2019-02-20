@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ActionLinkGroupTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'ActionLinkGroupTemplate';
+    public static $objectApiName = 'ActionLinkGroupTemplate';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

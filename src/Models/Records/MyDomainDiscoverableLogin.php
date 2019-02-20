@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MyDomainDiscoverableLogin extends BaseRecordModel
 {
-    protected static $objectApiName = 'MyDomainDiscoverableLogin';
+    public static $objectApiName = 'MyDomainDiscoverableLogin';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

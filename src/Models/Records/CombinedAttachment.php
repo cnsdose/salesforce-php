@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CombinedAttachment extends BaseRecordModel
 {
-    protected static $objectApiName = 'CombinedAttachment';
+    public static $objectApiName = 'CombinedAttachment';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

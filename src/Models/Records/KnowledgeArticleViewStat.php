@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeArticleViewStat extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeArticleViewStat';
+    public static $objectApiName = 'KnowledgeArticleViewStat';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

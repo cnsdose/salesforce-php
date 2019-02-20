@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningToggleMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningToggleMetrics';
+    public static $objectApiName = 'LightningToggleMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

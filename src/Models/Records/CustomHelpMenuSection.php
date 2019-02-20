@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CustomHelpMenuSection extends BaseRecordModel
 {
-    protected static $objectApiName = 'CustomHelpMenuSection';
+    public static $objectApiName = 'CustomHelpMenuSection';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

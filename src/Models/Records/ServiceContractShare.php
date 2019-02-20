@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceContractShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceContractShare';
+    public static $objectApiName = 'ServiceContractShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

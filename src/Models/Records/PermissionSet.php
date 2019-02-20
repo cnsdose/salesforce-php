@@ -257,7 +257,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PermissionSet extends BaseRecordModel
 {
-    protected static $objectApiName = 'PermissionSet';
+    public static $objectApiName = 'PermissionSet';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

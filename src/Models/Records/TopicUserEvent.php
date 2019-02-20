@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TopicUserEvent extends BaseRecordModel
 {
-    protected static $objectApiName = 'TopicUserEvent';
+    public static $objectApiName = 'TopicUserEvent';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

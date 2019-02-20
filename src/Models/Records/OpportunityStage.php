@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityStage extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityStage';
+    public static $objectApiName = 'OpportunityStage';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

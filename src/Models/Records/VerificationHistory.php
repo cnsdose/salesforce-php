@@ -35,7 +35,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class VerificationHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'VerificationHistory';
+    public static $objectApiName = 'VerificationHistory';
     protected $defaultFields = [
         'Id' => null,
         'EventGroup' => null,

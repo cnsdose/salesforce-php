@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentDistributionView extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentDistributionView';
+    public static $objectApiName = 'ContentDistributionView';
     protected $defaultFields = [
         'Id' => null,
         'DistributionId' => null,

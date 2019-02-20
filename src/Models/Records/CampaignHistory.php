@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CampaignHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'CampaignHistory';
+    public static $objectApiName = 'CampaignHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

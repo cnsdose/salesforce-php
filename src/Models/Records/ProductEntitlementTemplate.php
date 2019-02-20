@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductEntitlementTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductEntitlementTemplate';
+    public static $objectApiName = 'ProductEntitlementTemplate';
     protected $defaultFields = [
         'Id' => null,
         'Product2Id' => null,

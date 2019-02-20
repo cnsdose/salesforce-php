@@ -39,7 +39,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CaseMilestone extends BaseRecordModel
 {
-    protected static $objectApiName = 'CaseMilestone';
+    public static $objectApiName = 'CaseMilestone';
     protected $defaultFields = [
         'Id' => null,
         'CaseId' => null,

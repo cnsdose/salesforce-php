@@ -48,7 +48,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Location extends BaseRecordModel
 {
-    protected static $objectApiName = 'Location';
+    public static $objectApiName = 'Location';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

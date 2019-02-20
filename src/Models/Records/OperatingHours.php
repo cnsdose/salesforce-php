@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OperatingHours extends BaseRecordModel
 {
-    protected static $objectApiName = 'OperatingHours';
+    public static $objectApiName = 'OperatingHours';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

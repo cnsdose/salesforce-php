@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Pricebook2History extends BaseRecordModel
 {
-    protected static $objectApiName = 'Pricebook2History';
+    public static $objectApiName = 'Pricebook2History';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

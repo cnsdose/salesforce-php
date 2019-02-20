@@ -67,7 +67,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceContract extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceContract';
+    public static $objectApiName = 'ServiceContract';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

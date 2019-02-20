@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityShare';
+    public static $objectApiName = 'OpportunityShare';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

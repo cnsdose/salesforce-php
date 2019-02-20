@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ClientBrowser extends BaseRecordModel
 {
-    protected static $objectApiName = 'ClientBrowser';
+    public static $objectApiName = 'ClientBrowser';
     protected $defaultFields = [
         'Id' => null,
         'UsersId' => null,

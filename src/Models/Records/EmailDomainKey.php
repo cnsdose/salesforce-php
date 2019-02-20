@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailDomainKey extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailDomainKey';
+    public static $objectApiName = 'EmailDomainKey';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -40,7 +40,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Address extends BaseRecordModel
 {
-    protected static $objectApiName = 'Address';
+    public static $objectApiName = 'Address';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

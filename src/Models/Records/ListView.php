@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ListView extends BaseRecordModel
 {
-    protected static $objectApiName = 'ListView';
+    public static $objectApiName = 'ListView';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

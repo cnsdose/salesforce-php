@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceCrewShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceCrewShare';
+    public static $objectApiName = 'ServiceCrewShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

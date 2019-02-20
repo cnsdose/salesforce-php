@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FlowRecordRelation extends BaseRecordModel
 {
-    protected static $objectApiName = 'FlowRecordRelation';
+    public static $objectApiName = 'FlowRecordRelation';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

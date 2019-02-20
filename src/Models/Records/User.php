@@ -185,7 +185,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class User extends BaseRecordModel
 {
-    protected static $objectApiName = 'User';
+    public static $objectApiName = 'User';
     protected $defaultFields = [
         'Id' => null,
         'Username' => null,

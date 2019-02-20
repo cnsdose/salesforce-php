@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeArticleVersionHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeArticleVersionHistory';
+    public static $objectApiName = 'KnowledgeArticleVersionHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

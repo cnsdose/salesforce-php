@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityFieldHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityFieldHistory';
+    public static $objectApiName = 'OpportunityFieldHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

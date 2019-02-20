@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedRevision extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedRevision';
+    public static $objectApiName = 'FeedRevision';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

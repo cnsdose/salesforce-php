@@ -76,7 +76,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Account extends BaseRecordModel
 {
-    protected static $objectApiName = 'Account';
+    public static $objectApiName = 'Account';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

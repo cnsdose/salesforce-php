@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SecureAgentsCluster extends BaseRecordModel
 {
-    protected static $objectApiName = 'SecureAgentsCluster';
+    public static $objectApiName = 'SecureAgentsCluster';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

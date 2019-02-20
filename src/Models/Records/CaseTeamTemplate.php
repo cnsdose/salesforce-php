@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CaseTeamTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'CaseTeamTemplate';
+    public static $objectApiName = 'CaseTeamTemplate';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

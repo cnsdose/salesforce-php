@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Stamp extends BaseRecordModel
 {
-    protected static $objectApiName = 'Stamp';
+    public static $objectApiName = 'Stamp';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

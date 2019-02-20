@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProcessInstanceStep extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProcessInstanceStep';
+    public static $objectApiName = 'ProcessInstanceStep';
     protected $defaultFields = [
         'Id' => null,
         'ProcessInstanceId' => null,

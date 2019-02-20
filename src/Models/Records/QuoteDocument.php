@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuoteDocument extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuoteDocument';
+    public static $objectApiName = 'QuoteDocument';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

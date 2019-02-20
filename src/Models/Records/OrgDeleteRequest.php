@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OrgDeleteRequest extends BaseRecordModel
 {
-    protected static $objectApiName = 'OrgDeleteRequest';
+    public static $objectApiName = 'OrgDeleteRequest';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

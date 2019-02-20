@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexLog extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexLog';
+    public static $objectApiName = 'ApexLog';
     protected $defaultFields = [
         'Id' => null,
         'LogUserId' => null,

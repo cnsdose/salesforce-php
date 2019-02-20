@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ListViewChartInstance extends BaseRecordModel
 {
-    protected static $objectApiName = 'ListViewChartInstance';
+    public static $objectApiName = 'ListViewChartInstance';
     protected $defaultFields = [
         'Id' => null,
         'ExternalId' => null,

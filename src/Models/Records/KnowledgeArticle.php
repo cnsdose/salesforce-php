@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeArticle extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeArticle';
+    public static $objectApiName = 'KnowledgeArticle';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

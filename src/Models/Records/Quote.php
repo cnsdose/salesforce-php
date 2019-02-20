@@ -89,7 +89,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Quote extends BaseRecordModel
 {
-    protected static $objectApiName = 'Quote';
+    public static $objectApiName = 'Quote';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

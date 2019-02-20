@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CustomPermission extends BaseRecordModel
 {
-    protected static $objectApiName = 'CustomPermission';
+    public static $objectApiName = 'CustomPermission';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

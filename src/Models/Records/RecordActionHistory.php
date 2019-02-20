@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class RecordActionHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'RecordActionHistory';
+    public static $objectApiName = 'RecordActionHistory';
     protected $defaultFields = [
         'Id' => null,
         'CreatedById' => null,

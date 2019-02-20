@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContractContactRole extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContractContactRole';
+    public static $objectApiName = 'ContractContactRole';
     protected $defaultFields = [
         'Id' => null,
         'ContractId' => null,

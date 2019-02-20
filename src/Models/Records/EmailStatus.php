@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailStatus extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailStatus';
+    public static $objectApiName = 'EmailStatus';
     protected $defaultFields = [
         'Id' => null,
         'TaskId' => null,

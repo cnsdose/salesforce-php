@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CategoryData extends BaseRecordModel
 {
-    protected static $objectApiName = 'CategoryData';
+    public static $objectApiName = 'CategoryData';
     protected $defaultFields = [
         'Id' => null,
         'CategoryNodeId' => null,

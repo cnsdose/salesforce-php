@@ -43,7 +43,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CollaborationGroup extends BaseRecordModel
 {
-    protected static $objectApiName = 'CollaborationGroup';
+    public static $objectApiName = 'CollaborationGroup';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

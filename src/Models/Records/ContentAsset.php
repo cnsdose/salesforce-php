@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentAsset extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentAsset';
+    public static $objectApiName = 'ContentAsset';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -43,7 +43,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailTemplate';
+    public static $objectApiName = 'EmailTemplate';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

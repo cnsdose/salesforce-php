@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceResourceSkillHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceResourceSkillHistory';
+    public static $objectApiName = 'ServiceResourceSkillHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EventBusSubscriber extends BaseRecordModel
 {
-    protected static $objectApiName = 'EventBusSubscriber';
+    public static $objectApiName = 'EventBusSubscriber';
     protected $defaultFields = [
         'Id' => null,
         'CurrencyIsoCode' => null,

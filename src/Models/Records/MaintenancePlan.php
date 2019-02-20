@@ -48,7 +48,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MaintenancePlan extends BaseRecordModel
 {
-    protected static $objectApiName = 'MaintenancePlan';
+    public static $objectApiName = 'MaintenancePlan';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

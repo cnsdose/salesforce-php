@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SearchPromotionRule extends BaseRecordModel
 {
-    protected static $objectApiName = 'SearchPromotionRule';
+    public static $objectApiName = 'SearchPromotionRule';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

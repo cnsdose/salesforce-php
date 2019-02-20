@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductConsumed extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductConsumed';
+    public static $objectApiName = 'ProductConsumed';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -42,7 +42,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedItem';
+    public static $objectApiName = 'FeedItem';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

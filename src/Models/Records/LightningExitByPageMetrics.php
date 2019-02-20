@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningExitByPageMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningExitByPageMetrics';
+    public static $objectApiName = 'LightningExitByPageMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

@@ -41,7 +41,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Entitlement extends BaseRecordModel
 {
-    protected static $objectApiName = 'Entitlement';
+    public static $objectApiName = 'Entitlement';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

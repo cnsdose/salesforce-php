@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentVersionHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentVersionHistory';
+    public static $objectApiName = 'ContentVersionHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AssetTokenEvent extends BaseRecordModel
 {
-    protected static $objectApiName = 'AssetTokenEvent';
+    public static $objectApiName = 'AssetTokenEvent';
     protected $defaultFields = [
         'ReplayId' => null,
         'CreatedDate' => 'datetime',

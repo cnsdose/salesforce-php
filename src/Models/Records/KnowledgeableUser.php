@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeableUser extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeableUser';
+    public static $objectApiName = 'KnowledgeableUser';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

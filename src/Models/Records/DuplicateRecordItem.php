@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DuplicateRecordItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'DuplicateRecordItem';
+    public static $objectApiName = 'DuplicateRecordItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

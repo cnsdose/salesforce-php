@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvisioningRequest extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvisioningRequest';
+    public static $objectApiName = 'UserProvisioningRequest';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

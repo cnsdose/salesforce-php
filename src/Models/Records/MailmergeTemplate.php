@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MailmergeTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'MailmergeTemplate';
+    public static $objectApiName = 'MailmergeTemplate';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

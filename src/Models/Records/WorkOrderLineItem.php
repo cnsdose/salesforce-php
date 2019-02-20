@@ -69,7 +69,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WorkOrderLineItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'WorkOrderLineItem';
+    public static $objectApiName = 'WorkOrderLineItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

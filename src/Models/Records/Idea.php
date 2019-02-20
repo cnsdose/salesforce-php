@@ -43,7 +43,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Idea extends BaseRecordModel
 {
-    protected static $objectApiName = 'Idea';
+    public static $objectApiName = 'Idea';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

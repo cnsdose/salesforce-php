@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EntitlementTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'EntitlementTemplate';
+    public static $objectApiName = 'EntitlementTemplate';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

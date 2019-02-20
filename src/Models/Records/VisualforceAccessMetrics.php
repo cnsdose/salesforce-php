@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class VisualforceAccessMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'VisualforceAccessMetrics';
+    public static $objectApiName = 'VisualforceAccessMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ExternalDataUserAuth extends BaseRecordModel
 {
-    protected static $objectApiName = 'ExternalDataUserAuth';
+    public static $objectApiName = 'ExternalDataUserAuth';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

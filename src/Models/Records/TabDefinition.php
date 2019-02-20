@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TabDefinition extends BaseRecordModel
 {
-    protected static $objectApiName = 'TabDefinition';
+    public static $objectApiName = 'TabDefinition';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

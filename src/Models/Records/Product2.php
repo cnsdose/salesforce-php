@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Product2 extends BaseRecordModel
 {
-    protected static $objectApiName = 'Product2';
+    public static $objectApiName = 'Product2';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

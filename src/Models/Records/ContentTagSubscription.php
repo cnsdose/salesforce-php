@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentTagSubscription extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentTagSubscription';
+    public static $objectApiName = 'ContentTagSubscription';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

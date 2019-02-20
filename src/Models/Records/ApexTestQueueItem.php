@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexTestQueueItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexTestQueueItem';
+    public static $objectApiName = 'ApexTestQueueItem';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

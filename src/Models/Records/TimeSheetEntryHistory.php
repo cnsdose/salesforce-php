@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TimeSheetEntryHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'TimeSheetEntryHistory';
+    public static $objectApiName = 'TimeSheetEntryHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

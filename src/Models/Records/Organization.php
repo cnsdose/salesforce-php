@@ -73,7 +73,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Organization extends BaseRecordModel
 {
-    protected static $objectApiName = 'Organization';
+    public static $objectApiName = 'Organization';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

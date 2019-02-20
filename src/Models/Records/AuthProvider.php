@@ -41,7 +41,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AuthProvider extends BaseRecordModel
 {
-    protected static $objectApiName = 'AuthProvider';
+    public static $objectApiName = 'AuthProvider';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

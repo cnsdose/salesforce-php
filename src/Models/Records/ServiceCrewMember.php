@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceCrewMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceCrewMember';
+    public static $objectApiName = 'ServiceCrewMember';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuickTextShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuickTextShare';
+    public static $objectApiName = 'QuickTextShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

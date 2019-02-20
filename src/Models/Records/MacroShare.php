@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MacroShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'MacroShare';
+    public static $objectApiName = 'MacroShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailServicesAddress extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailServicesAddress';
+    public static $objectApiName = 'EmailServicesAddress';
     protected $defaultFields = [
         'Id' => null,
         'IsActive' => 'bool',

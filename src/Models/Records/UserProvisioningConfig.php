@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserProvisioningConfig extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserProvisioningConfig';
+    public static $objectApiName = 'UserProvisioningConfig';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

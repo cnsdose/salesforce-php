@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LinkedArticle extends BaseRecordModel
 {
-    protected static $objectApiName = 'LinkedArticle';
+    public static $objectApiName = 'LinkedArticle';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

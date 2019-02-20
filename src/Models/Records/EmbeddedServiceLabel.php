@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmbeddedServiceLabel extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmbeddedServiceLabel';
+    public static $objectApiName = 'EmbeddedServiceLabel';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

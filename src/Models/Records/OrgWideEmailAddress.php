@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OrgWideEmailAddress extends BaseRecordModel
 {
-    protected static $objectApiName = 'OrgWideEmailAddress';
+    public static $objectApiName = 'OrgWideEmailAddress';
     protected $defaultFields = [
         'Id' => null,
         'CreatedById' => null,

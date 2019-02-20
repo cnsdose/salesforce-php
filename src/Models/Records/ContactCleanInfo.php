@@ -70,7 +70,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContactCleanInfo extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContactCleanInfo';
+    public static $objectApiName = 'ContactCleanInfo';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

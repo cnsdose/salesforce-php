@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OwnerChangeOptionInfo extends BaseRecordModel
 {
-    protected static $objectApiName = 'OwnerChangeOptionInfo';
+    public static $objectApiName = 'OwnerChangeOptionInfo';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

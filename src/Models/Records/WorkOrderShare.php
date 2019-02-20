@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WorkOrderShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'WorkOrderShare';
+    public static $objectApiName = 'WorkOrderShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

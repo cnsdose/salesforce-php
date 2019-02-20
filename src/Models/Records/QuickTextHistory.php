@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuickTextHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuickTextHistory';
+    public static $objectApiName = 'QuickTextHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

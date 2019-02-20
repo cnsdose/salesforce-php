@@ -61,7 +61,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceAppointment extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceAppointment';
+    public static $objectApiName = 'ServiceAppointment';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

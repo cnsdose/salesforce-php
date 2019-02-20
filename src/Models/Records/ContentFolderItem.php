@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentFolderItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentFolderItem';
+    public static $objectApiName = 'ContentFolderItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

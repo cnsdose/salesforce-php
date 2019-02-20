@@ -57,7 +57,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class KnowledgeArticleVersion extends BaseRecordModel
 {
-    protected static $objectApiName = 'KnowledgeArticleVersion';
+    public static $objectApiName = 'KnowledgeArticleVersion';
     protected $defaultFields = [
         'Id' => null,
         'KnowledgeArticleId' => null,

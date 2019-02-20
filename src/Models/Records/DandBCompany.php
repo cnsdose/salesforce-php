@@ -136,7 +136,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DandBCompany extends BaseRecordModel
 {
-    protected static $objectApiName = 'DandBCompany';
+    public static $objectApiName = 'DandBCompany';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

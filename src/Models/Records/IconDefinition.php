@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class IconDefinition extends BaseRecordModel
 {
-    protected static $objectApiName = 'IconDefinition';
+    public static $objectApiName = 'IconDefinition';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuoteShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuoteShare';
+    public static $objectApiName = 'QuoteShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

@@ -142,7 +142,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class %s extends BaseRecordModel
 {
-    protected static \$objectApiName = '%s';
+    public static \$objectApiName = '%s';
     protected \$defaultFields = [%s
     ];
 }

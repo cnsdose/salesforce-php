@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class StaticResource extends BaseRecordModel
 {
-    protected static $objectApiName = 'StaticResource';
+    public static $objectApiName = 'StaticResource';
     protected $defaultFields = [
         'Id' => null,
         'NamespacePrefix' => null,

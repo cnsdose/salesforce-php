@@ -35,7 +35,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentWorkspace extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentWorkspace';
+    public static $objectApiName = 'ContentWorkspace';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

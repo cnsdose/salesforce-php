@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class NamedCredential extends BaseRecordModel
 {
-    protected static $objectApiName = 'NamedCredential';
+    public static $objectApiName = 'NamedCredential';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

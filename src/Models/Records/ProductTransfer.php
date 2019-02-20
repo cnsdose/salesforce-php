@@ -49,7 +49,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductTransfer extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductTransfer';
+    public static $objectApiName = 'ProductTransfer';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

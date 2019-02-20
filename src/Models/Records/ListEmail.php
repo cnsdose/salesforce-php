@@ -39,7 +39,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ListEmail extends BaseRecordModel
 {
-    protected static $objectApiName = 'ListEmail';
+    public static $objectApiName = 'ListEmail';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

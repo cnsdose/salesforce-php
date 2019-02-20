@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Folder extends BaseRecordModel
 {
-    protected static $objectApiName = 'Folder';
+    public static $objectApiName = 'Folder';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

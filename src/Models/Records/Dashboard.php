@@ -46,7 +46,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Dashboard extends BaseRecordModel
 {
-    protected static $objectApiName = 'Dashboard';
+    public static $objectApiName = 'Dashboard';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

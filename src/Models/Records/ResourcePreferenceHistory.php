@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ResourcePreferenceHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ResourcePreferenceHistory';
+    public static $objectApiName = 'ResourcePreferenceHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

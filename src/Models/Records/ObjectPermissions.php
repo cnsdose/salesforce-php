@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ObjectPermissions extends BaseRecordModel
 {
-    protected static $objectApiName = 'ObjectPermissions';
+    public static $objectApiName = 'ObjectPermissions';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

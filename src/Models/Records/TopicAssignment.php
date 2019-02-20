@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TopicAssignment extends BaseRecordModel
 {
-    protected static $objectApiName = 'TopicAssignment';
+    public static $objectApiName = 'TopicAssignment';
     protected $defaultFields = [
         'Id' => null,
         'TopicId' => null,

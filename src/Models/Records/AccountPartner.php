@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AccountPartner extends BaseRecordModel
 {
-    protected static $objectApiName = 'AccountPartner';
+    public static $objectApiName = 'AccountPartner';
     protected $defaultFields = [
         'Id' => null,
         'AccountFromId' => null,

@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AuthConfig extends BaseRecordModel
 {
-    protected static $objectApiName = 'AuthConfig';
+    public static $objectApiName = 'AuthConfig';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

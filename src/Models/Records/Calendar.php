@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Calendar extends BaseRecordModel
 {
-    protected static $objectApiName = 'Calendar';
+    public static $objectApiName = 'Calendar';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

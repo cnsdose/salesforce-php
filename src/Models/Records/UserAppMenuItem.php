@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserAppMenuItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserAppMenuItem';
+    public static $objectApiName = 'UserAppMenuItem';
     protected $defaultFields = [
         'Id' => null,
         'AppMenuItemId' => null,

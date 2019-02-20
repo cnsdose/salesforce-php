@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceAppointmentShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceAppointmentShare';
+    public static $objectApiName = 'ServiceAppointmentShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

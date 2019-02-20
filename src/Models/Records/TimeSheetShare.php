@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TimeSheetShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'TimeSheetShare';
+    public static $objectApiName = 'TimeSheetShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

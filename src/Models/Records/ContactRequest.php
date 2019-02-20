@@ -35,7 +35,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContactRequest extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContactRequest';
+    public static $objectApiName = 'ContactRequest';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QueueSobject extends BaseRecordModel
 {
-    protected static $objectApiName = 'QueueSobject';
+    public static $objectApiName = 'QueueSobject';
     protected $defaultFields = [
         'Id' => null,
         'QueueId' => null,

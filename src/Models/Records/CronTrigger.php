@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CronTrigger extends BaseRecordModel
 {
-    protected static $objectApiName = 'CronTrigger';
+    public static $objectApiName = 'CronTrigger';
     protected $defaultFields = [
         'Id' => null,
         'CronJobDetailId' => null,

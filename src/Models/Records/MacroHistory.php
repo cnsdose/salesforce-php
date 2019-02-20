@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MacroHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'MacroHistory';
+    public static $objectApiName = 'MacroHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -43,7 +43,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContractLineItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContractLineItem';
+    public static $objectApiName = 'ContractLineItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

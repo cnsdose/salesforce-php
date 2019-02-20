@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class RecordAction extends BaseRecordModel
 {
-    protected static $objectApiName = 'RecordAction';
+    public static $objectApiName = 'RecordAction';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

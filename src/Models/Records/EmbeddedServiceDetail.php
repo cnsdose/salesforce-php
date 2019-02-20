@@ -47,7 +47,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmbeddedServiceDetail extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmbeddedServiceDetail';
+    public static $objectApiName = 'EmbeddedServiceDetail';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

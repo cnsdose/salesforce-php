@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ListEmailIndividualRecipient extends BaseRecordModel
 {
-    protected static $objectApiName = 'ListEmailIndividualRecipient';
+    public static $objectApiName = 'ListEmailIndividualRecipient';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexTestResult extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexTestResult';
+    public static $objectApiName = 'ApexTestResult';
     protected $defaultFields = [
         'Id' => null,
         'SystemModstamp' => 'datetime',

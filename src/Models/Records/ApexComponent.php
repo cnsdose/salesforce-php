@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexComponent extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexComponent';
+    public static $objectApiName = 'ApexComponent';
     protected $defaultFields = [
         'Id' => null,
         'NamespacePrefix' => null,

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningUsageByPageMetrics extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningUsageByPageMetrics';
+    public static $objectApiName = 'LightningUsageByPageMetrics';
     protected $defaultFields = [
         'Id' => null,
         'MetricsDate' => 'date',

@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class GroupMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'GroupMember';
+    public static $objectApiName = 'GroupMember';
     protected $defaultFields = [
         'Id' => null,
         'GroupId' => null,

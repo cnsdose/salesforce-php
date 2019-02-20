@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SiteIframeWhitelistUrl extends BaseRecordModel
 {
-    protected static $objectApiName = 'SiteIframeWhitelistUrl';
+    public static $objectApiName = 'SiteIframeWhitelistUrl';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

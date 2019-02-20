@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CollaborationGroupMemberRequest extends BaseRecordModel
 {
-    protected static $objectApiName = 'CollaborationGroupMemberRequest';
+    public static $objectApiName = 'CollaborationGroupMemberRequest';
     protected $defaultFields = [
         'Id' => null,
         'CollaborationGroupId' => null,

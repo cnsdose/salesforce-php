@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProcessNode extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProcessNode';
+    public static $objectApiName = 'ProcessNode';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ListViewChart extends BaseRecordModel
 {
-    protected static $objectApiName = 'ListViewChart';
+    public static $objectApiName = 'ListViewChart';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

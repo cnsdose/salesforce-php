@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityContactRole extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityContactRole';
+    public static $objectApiName = 'OpportunityContactRole';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

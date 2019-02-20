@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DataAssessmentValueMetric extends BaseRecordModel
 {
-    protected static $objectApiName = 'DataAssessmentValueMetric';
+    public static $objectApiName = 'DataAssessmentValueMetric';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

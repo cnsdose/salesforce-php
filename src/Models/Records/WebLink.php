@@ -44,7 +44,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WebLink extends BaseRecordModel
 {
-    protected static $objectApiName = 'WebLink';
+    public static $objectApiName = 'WebLink';
     protected $defaultFields = [
         'Id' => null,
         'PageOrSobjectType' => null,

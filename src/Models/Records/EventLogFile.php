@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EventLogFile extends BaseRecordModel
 {
-    protected static $objectApiName = 'EventLogFile';
+    public static $objectApiName = 'EventLogFile';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

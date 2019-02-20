@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TaskStatus extends BaseRecordModel
 {
-    protected static $objectApiName = 'TaskStatus';
+    public static $objectApiName = 'TaskStatus';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedAttachment extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedAttachment';
+    public static $objectApiName = 'FeedAttachment';
     protected $defaultFields = [
         'Id' => null,
         'FeedEntityId' => null,

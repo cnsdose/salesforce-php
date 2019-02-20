@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PartnerRole extends BaseRecordModel
 {
-    protected static $objectApiName = 'PartnerRole';
+    public static $objectApiName = 'PartnerRole';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

@@ -45,7 +45,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SamlSsoConfig extends BaseRecordModel
 {
-    protected static $objectApiName = 'SamlSsoConfig';
+    public static $objectApiName = 'SamlSsoConfig';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

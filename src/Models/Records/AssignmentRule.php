@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AssignmentRule extends BaseRecordModel
 {
-    protected static $objectApiName = 'AssignmentRule';
+    public static $objectApiName = 'AssignmentRule';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

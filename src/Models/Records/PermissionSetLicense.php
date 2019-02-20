@@ -257,7 +257,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PermissionSetLicense extends BaseRecordModel
 {
-    protected static $objectApiName = 'PermissionSetLicense';
+    public static $objectApiName = 'PermissionSetLicense';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

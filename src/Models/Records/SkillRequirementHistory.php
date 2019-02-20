@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SkillRequirementHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'SkillRequirementHistory';
+    public static $objectApiName = 'SkillRequirementHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

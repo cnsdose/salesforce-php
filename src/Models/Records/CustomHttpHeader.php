@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CustomHttpHeader extends BaseRecordModel
 {
-    protected static $objectApiName = 'CustomHttpHeader';
+    public static $objectApiName = 'CustomHttpHeader';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

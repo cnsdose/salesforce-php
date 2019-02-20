@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AppExtension extends BaseRecordModel
 {
-    protected static $objectApiName = 'AppExtension';
+    public static $objectApiName = 'AppExtension';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

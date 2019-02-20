@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LoginHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'LoginHistory';
+    public static $objectApiName = 'LoginHistory';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CaseShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'CaseShare';
+    public static $objectApiName = 'CaseShare';
     protected $defaultFields = [
         'Id' => null,
         'CaseId' => null,

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AssignedResource extends BaseRecordModel
 {
-    protected static $objectApiName = 'AssignedResource';
+    public static $objectApiName = 'AssignedResource';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

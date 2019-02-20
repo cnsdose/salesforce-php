@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PermissionSetAssignment extends BaseRecordModel
 {
-    protected static $objectApiName = 'PermissionSetAssignment';
+    public static $objectApiName = 'PermissionSetAssignment';
     protected $defaultFields = [
         'Id' => null,
         'PermissionSetId' => null,

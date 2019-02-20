@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserLogin extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserLogin';
+    public static $objectApiName = 'UserLogin';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

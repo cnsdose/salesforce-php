@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CallCenter extends BaseRecordModel
 {
-    protected static $objectApiName = 'CallCenter';
+    public static $objectApiName = 'CallCenter';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

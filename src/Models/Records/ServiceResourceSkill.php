@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceResourceSkill extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceResourceSkill';
+    public static $objectApiName = 'ServiceResourceSkill';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

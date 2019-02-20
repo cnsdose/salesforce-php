@@ -55,7 +55,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FieldServiceMobileSettings extends BaseRecordModel
 {
-    protected static $objectApiName = 'FieldServiceMobileSettings';
+    public static $objectApiName = 'FieldServiceMobileSettings';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -39,7 +39,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexTrigger extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexTrigger';
+    public static $objectApiName = 'ApexTrigger';
     protected $defaultFields = [
         'Id' => null,
         'NamespacePrefix' => null,

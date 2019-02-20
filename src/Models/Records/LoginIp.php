@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LoginIp extends BaseRecordModel
 {
-    protected static $objectApiName = 'LoginIp';
+    public static $objectApiName = 'LoginIp';
     protected $defaultFields = [
         'Id' => null,
         'UsersId' => null,

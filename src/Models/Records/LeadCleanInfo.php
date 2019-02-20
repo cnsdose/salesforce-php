@@ -94,7 +94,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LeadCleanInfo extends BaseRecordModel
 {
-    protected static $objectApiName = 'LeadCleanInfo';
+    public static $objectApiName = 'LeadCleanInfo';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

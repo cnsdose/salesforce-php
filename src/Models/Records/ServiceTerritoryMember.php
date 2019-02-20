@@ -42,7 +42,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceTerritoryMember extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceTerritoryMember';
+    public static $objectApiName = 'ServiceTerritoryMember';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

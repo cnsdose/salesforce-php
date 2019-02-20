@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MatchingRuleItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'MatchingRuleItem';
+    public static $objectApiName = 'MatchingRuleItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

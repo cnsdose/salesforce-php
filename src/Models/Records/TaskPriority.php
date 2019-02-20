@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TaskPriority extends BaseRecordModel
 {
-    protected static $objectApiName = 'TaskPriority';
+    public static $objectApiName = 'TaskPriority';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

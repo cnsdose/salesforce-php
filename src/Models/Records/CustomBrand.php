@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CustomBrand extends BaseRecordModel
 {
-    protected static $objectApiName = 'CustomBrand';
+    public static $objectApiName = 'CustomBrand';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

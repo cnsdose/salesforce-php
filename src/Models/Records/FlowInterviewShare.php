@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FlowInterviewShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'FlowInterviewShare';
+    public static $objectApiName = 'FlowInterviewShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

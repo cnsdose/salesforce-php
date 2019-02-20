@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CronJobDetail extends BaseRecordModel
 {
-    protected static $objectApiName = 'CronJobDetail';
+    public static $objectApiName = 'CronJobDetail';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

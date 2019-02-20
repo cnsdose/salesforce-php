@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EntitySubscription extends BaseRecordModel
 {
-    protected static $objectApiName = 'EntitySubscription';
+    public static $objectApiName = 'EntitySubscription';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

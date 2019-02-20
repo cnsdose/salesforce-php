@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedPollChoice extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedPollChoice';
+    public static $objectApiName = 'FeedPollChoice';
     protected $defaultFields = [
         'Id' => null,
         'FeedItemId' => null,

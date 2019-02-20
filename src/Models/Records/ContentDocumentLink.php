@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentDocumentLink extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentDocumentLink';
+    public static $objectApiName = 'ContentDocumentLink';
     protected $defaultFields = [
         'Id' => null,
         'LinkedEntityId' => null,

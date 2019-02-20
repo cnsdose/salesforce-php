@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ResourceAbsenceHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ResourceAbsenceHistory';
+    public static $objectApiName = 'ResourceAbsenceHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

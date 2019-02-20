@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class BrandTemplate extends BaseRecordModel
 {
-    protected static $objectApiName = 'BrandTemplate';
+    public static $objectApiName = 'BrandTemplate';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

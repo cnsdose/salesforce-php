@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class RecentlyViewed extends BaseRecordModel
 {
-    protected static $objectApiName = 'RecentlyViewed';
+    public static $objectApiName = 'RecentlyViewed';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

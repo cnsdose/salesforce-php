@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityCompetitor extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityCompetitor';
+    public static $objectApiName = 'OpportunityCompetitor';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

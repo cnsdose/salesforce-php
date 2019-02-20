@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SlaProcess extends BaseRecordModel
 {
-    protected static $objectApiName = 'SlaProcess';
+    public static $objectApiName = 'SlaProcess';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

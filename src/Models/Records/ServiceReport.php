@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceReport extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceReport';
+    public static $objectApiName = 'ServiceReport';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

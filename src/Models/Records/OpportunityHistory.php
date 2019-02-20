@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpportunityHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpportunityHistory';
+    public static $objectApiName = 'OpportunityHistory';
     protected $defaultFields = [
         'Id' => null,
         'OpportunityId' => null,

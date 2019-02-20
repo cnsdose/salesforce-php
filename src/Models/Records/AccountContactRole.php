@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AccountContactRole extends BaseRecordModel
 {
-    protected static $objectApiName = 'AccountContactRole';
+    public static $objectApiName = 'AccountContactRole';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

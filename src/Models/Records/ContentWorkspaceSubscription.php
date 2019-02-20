@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentWorkspaceSubscription extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentWorkspaceSubscription';
+    public static $objectApiName = 'ContentWorkspaceSubscription';
     protected $defaultFields = [
         'Id' => null,
         'UserId' => null,

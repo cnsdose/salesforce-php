@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PermissionSetTabSetting extends BaseRecordModel
 {
-    protected static $objectApiName = 'PermissionSetTabSetting';
+    public static $objectApiName = 'PermissionSetTabSetting';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AsyncApexJob extends BaseRecordModel
 {
-    protected static $objectApiName = 'AsyncApexJob';
+    public static $objectApiName = 'AsyncApexJob';
     protected $defaultFields = [
         'Id' => null,
         'CreatedDate' => 'datetime',

@@ -70,7 +70,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Order extends BaseRecordModel
 {
-    protected static $objectApiName = 'Order';
+    public static $objectApiName = 'Order';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

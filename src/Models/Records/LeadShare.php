@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LeadShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'LeadShare';
+    public static $objectApiName = 'LeadShare';
     protected $defaultFields = [
         'Id' => null,
         'LeadId' => null,

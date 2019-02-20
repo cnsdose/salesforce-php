@@ -49,7 +49,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ReturnOrder extends BaseRecordModel
 {
-    protected static $objectApiName = 'ReturnOrder';
+    public static $objectApiName = 'ReturnOrder';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

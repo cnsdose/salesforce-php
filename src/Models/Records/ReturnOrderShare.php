@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ReturnOrderShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ReturnOrderShare';
+    public static $objectApiName = 'ReturnOrderShare';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

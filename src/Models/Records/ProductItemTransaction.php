@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProductItemTransaction extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProductItemTransaction';
+    public static $objectApiName = 'ProductItemTransaction';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

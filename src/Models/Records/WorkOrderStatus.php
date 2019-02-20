@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class WorkOrderStatus extends BaseRecordModel
 {
-    protected static $objectApiName = 'WorkOrderStatus';
+    public static $objectApiName = 'WorkOrderStatus';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

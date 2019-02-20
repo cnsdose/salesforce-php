@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CollaborationInvitation extends BaseRecordModel
 {
-    protected static $objectApiName = 'CollaborationInvitation';
+    public static $objectApiName = 'CollaborationInvitation';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

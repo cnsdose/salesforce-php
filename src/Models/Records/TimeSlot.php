@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TimeSlot extends BaseRecordModel
 {
-    protected static $objectApiName = 'TimeSlot';
+    public static $objectApiName = 'TimeSlot';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

@@ -40,7 +40,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceResource extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceResource';
+    public static $objectApiName = 'ServiceResource';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

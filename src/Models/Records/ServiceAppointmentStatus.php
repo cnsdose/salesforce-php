@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceAppointmentStatus extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceAppointmentStatus';
+    public static $objectApiName = 'ServiceAppointmentStatus';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

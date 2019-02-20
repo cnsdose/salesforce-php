@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DashboardComponent extends BaseRecordModel
 {
-    protected static $objectApiName = 'DashboardComponent';
+    public static $objectApiName = 'DashboardComponent';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class BusinessProcess extends BaseRecordModel
 {
-    protected static $objectApiName = 'BusinessProcess';
+    public static $objectApiName = 'BusinessProcess';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FlowInterview extends BaseRecordModel
 {
-    protected static $objectApiName = 'FlowInterview';
+    public static $objectApiName = 'FlowInterview';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

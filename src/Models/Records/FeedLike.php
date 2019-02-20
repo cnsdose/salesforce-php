@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedLike extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedLike';
+    public static $objectApiName = 'FeedLike';
     protected $defaultFields = [
         'Id' => null,
         'FeedItemId' => null,

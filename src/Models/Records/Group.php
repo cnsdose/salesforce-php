@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Group extends BaseRecordModel
 {
-    protected static $objectApiName = 'Group';
+    public static $objectApiName = 'Group';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

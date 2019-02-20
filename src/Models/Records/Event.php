@@ -64,7 +64,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Event extends BaseRecordModel
 {
-    protected static $objectApiName = 'Event';
+    public static $objectApiName = 'Event';
     protected $defaultFields = [
         'Id' => null,
         'WhoId' => null,

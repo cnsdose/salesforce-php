@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class TestSuiteMembership extends BaseRecordModel
 {
-    protected static $objectApiName = 'TestSuiteMembership';
+    public static $objectApiName = 'TestSuiteMembership';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

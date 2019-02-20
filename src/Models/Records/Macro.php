@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Macro extends BaseRecordModel
 {
-    protected static $objectApiName = 'Macro';
+    public static $objectApiName = 'Macro';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

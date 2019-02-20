@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OrderItemHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'OrderItemHistory';
+    public static $objectApiName = 'OrderItemHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

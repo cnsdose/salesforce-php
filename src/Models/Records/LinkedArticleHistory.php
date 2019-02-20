@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LinkedArticleHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'LinkedArticleHistory';
+    public static $objectApiName = 'LinkedArticleHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

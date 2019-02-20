@@ -54,7 +54,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AppMenuItem extends BaseRecordModel
 {
-    protected static $objectApiName = 'AppMenuItem';
+    public static $objectApiName = 'AppMenuItem';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

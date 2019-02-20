@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class QuickText extends BaseRecordModel
 {
-    protected static $objectApiName = 'QuickText';
+    public static $objectApiName = 'QuickText';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

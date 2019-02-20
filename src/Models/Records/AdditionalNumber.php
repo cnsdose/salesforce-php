@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AdditionalNumber extends BaseRecordModel
 {
-    protected static $objectApiName = 'AdditionalNumber';
+    public static $objectApiName = 'AdditionalNumber';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

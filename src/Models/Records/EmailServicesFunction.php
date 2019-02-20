@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailServicesFunction extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailServicesFunction';
+    public static $objectApiName = 'EmailServicesFunction';
     protected $defaultFields = [
         'Id' => null,
         'IsActive' => 'bool',

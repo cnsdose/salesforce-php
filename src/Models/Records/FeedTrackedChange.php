@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class FeedTrackedChange extends BaseRecordModel
 {
-    protected static $objectApiName = 'FeedTrackedChange';
+    public static $objectApiName = 'FeedTrackedChange';
     protected $defaultFields = [
         'Id' => null,
         'FeedItemId' => null,

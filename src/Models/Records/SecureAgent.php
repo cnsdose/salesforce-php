@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SecureAgent extends BaseRecordModel
 {
-    protected static $objectApiName = 'SecureAgent';
+    public static $objectApiName = 'SecureAgent';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

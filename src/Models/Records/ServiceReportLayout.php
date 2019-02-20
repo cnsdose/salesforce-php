@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ServiceReportLayout extends BaseRecordModel
 {
-    protected static $objectApiName = 'ServiceReportLayout';
+    public static $objectApiName = 'ServiceReportLayout';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

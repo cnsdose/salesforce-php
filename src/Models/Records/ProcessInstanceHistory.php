@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ProcessInstanceHistory extends BaseRecordModel
 {
-    protected static $objectApiName = 'ProcessInstanceHistory';
+    public static $objectApiName = 'ProcessInstanceHistory';
     protected $defaultFields = [
         'Id' => null,
         'IsPending' => 'bool',

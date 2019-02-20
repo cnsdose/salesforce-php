@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserAppMenuCustomization extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserAppMenuCustomization';
+    public static $objectApiName = 'UserAppMenuCustomization';
     protected $defaultFields = [
         'Id' => null,
         'OwnerId' => null,

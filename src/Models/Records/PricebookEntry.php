@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PricebookEntry extends BaseRecordModel
 {
-    protected static $objectApiName = 'PricebookEntry';
+    public static $objectApiName = 'PricebookEntry';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

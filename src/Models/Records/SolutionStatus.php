@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SolutionStatus extends BaseRecordModel
 {
-    protected static $objectApiName = 'SolutionStatus';
+    public static $objectApiName = 'SolutionStatus';
     protected $defaultFields = [
         'Id' => null,
         'MasterLabel' => null,

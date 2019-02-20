@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SecurityCustomBaseline extends BaseRecordModel
 {
-    protected static $objectApiName = 'SecurityCustomBaseline';
+    public static $objectApiName = 'SecurityCustomBaseline';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

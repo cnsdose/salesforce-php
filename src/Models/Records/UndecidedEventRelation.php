@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UndecidedEventRelation extends BaseRecordModel
 {
-    protected static $objectApiName = 'UndecidedEventRelation';
+    public static $objectApiName = 'UndecidedEventRelation';
     protected $defaultFields = [
         'Id' => null,
         'RelationId' => null,

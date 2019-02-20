@@ -45,7 +45,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class PlatformAction extends BaseRecordModel
 {
-    protected static $objectApiName = 'PlatformAction';
+    public static $objectApiName = 'PlatformAction';
     protected $defaultFields = [
         'Id' => null,
         'ExternalId' => null,

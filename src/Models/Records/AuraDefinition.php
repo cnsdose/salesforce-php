@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class AuraDefinition extends BaseRecordModel
 {
-    protected static $objectApiName = 'AuraDefinition';
+    public static $objectApiName = 'AuraDefinition';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

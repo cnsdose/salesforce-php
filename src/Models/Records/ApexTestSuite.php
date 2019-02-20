@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ApexTestSuite extends BaseRecordModel
 {
-    protected static $objectApiName = 'ApexTestSuite';
+    public static $objectApiName = 'ApexTestSuite';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

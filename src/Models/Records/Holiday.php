@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Holiday extends BaseRecordModel
 {
-    protected static $objectApiName = 'Holiday';
+    public static $objectApiName = 'Holiday';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

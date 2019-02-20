@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContactShare extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContactShare';
+    public static $objectApiName = 'ContactShare';
     protected $defaultFields = [
         'Id' => null,
         'ContactId' => null,

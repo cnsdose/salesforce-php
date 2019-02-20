@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentVersionComment extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentVersionComment';
+    public static $objectApiName = 'ContentVersionComment';
     protected $defaultFields = [
         'Id' => null,
         'ContentDocumentId' => null,

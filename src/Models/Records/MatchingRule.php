@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MatchingRule extends BaseRecordModel
 {
-    protected static $objectApiName = 'MatchingRule';
+    public static $objectApiName = 'MatchingRule';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

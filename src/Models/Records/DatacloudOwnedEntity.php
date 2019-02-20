@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatacloudOwnedEntity extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatacloudOwnedEntity';
+    public static $objectApiName = 'DatacloudOwnedEntity';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

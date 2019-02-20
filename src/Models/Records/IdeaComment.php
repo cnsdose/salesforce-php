@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class IdeaComment extends BaseRecordModel
 {
-    protected static $objectApiName = 'IdeaComment';
+    public static $objectApiName = 'IdeaComment';
     protected $defaultFields = [
         'Id' => null,
         'IdeaId' => null,

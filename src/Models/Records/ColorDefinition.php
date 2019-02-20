@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ColorDefinition extends BaseRecordModel
 {
-    protected static $objectApiName = 'ColorDefinition';
+    public static $objectApiName = 'ColorDefinition';
     protected $defaultFields = [
         'Id' => null,
         'DurableId' => null,

@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class EmailDomainFilter extends BaseRecordModel
 {
-    protected static $objectApiName = 'EmailDomainFilter';
+    public static $objectApiName = 'EmailDomainFilter';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

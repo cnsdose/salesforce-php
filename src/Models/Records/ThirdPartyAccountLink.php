@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ThirdPartyAccountLink extends BaseRecordModel
 {
-    protected static $objectApiName = 'ThirdPartyAccountLink';
+    public static $objectApiName = 'ThirdPartyAccountLink';
     protected $defaultFields = [
         'Id' => null,
         'ThirdPartyAccountLinkKey' => null,

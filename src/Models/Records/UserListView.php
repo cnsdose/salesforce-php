@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserListView extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserListView';
+    public static $objectApiName = 'UserListView';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

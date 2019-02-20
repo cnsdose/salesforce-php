@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class UserRole extends BaseRecordModel
 {
-    protected static $objectApiName = 'UserRole';
+    public static $objectApiName = 'UserRole';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

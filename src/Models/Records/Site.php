@@ -51,7 +51,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Site extends BaseRecordModel
 {
-    protected static $objectApiName = 'Site';
+    public static $objectApiName = 'Site';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

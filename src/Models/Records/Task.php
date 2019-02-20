@@ -56,7 +56,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Task extends BaseRecordModel
 {
-    protected static $objectApiName = 'Task';
+    public static $objectApiName = 'Task';
     protected $defaultFields = [
         'Id' => null,
         'WhoId' => null,

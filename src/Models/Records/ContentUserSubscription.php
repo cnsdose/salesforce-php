@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class ContentUserSubscription extends BaseRecordModel
 {
-    protected static $objectApiName = 'ContentUserSubscription';
+    public static $objectApiName = 'ContentUserSubscription';
     protected $defaultFields = [
         'Id' => null,
         'SubscriberUserId' => null,

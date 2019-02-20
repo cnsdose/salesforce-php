@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class CaseComment extends BaseRecordModel
 {
-    protected static $objectApiName = 'CaseComment';
+    public static $objectApiName = 'CaseComment';
     protected $defaultFields = [
         'Id' => null,
         'ParentId' => null,

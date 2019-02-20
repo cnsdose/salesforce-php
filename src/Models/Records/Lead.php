@@ -70,7 +70,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class Lead extends BaseRecordModel
 {
-    protected static $objectApiName = 'Lead';
+    public static $objectApiName = 'Lead';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

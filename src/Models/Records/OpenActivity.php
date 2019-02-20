@@ -51,7 +51,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class OpenActivity extends BaseRecordModel
 {
-    protected static $objectApiName = 'OpenActivity';
+    public static $objectApiName = 'OpenActivity';
     protected $defaultFields = [
         'Id' => null,
         'AccountId' => null,

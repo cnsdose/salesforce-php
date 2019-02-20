@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class MilestoneType extends BaseRecordModel
 {
-    protected static $objectApiName = 'MilestoneType';
+    public static $objectApiName = 'MilestoneType';
     protected $defaultFields = [
         'Id' => null,
         'Name' => null,

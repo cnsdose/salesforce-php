@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class LightningExperienceTheme extends BaseRecordModel
 {
-    protected static $objectApiName = 'LightningExperienceTheme';
+    public static $objectApiName = 'LightningExperienceTheme';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

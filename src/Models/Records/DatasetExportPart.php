@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatasetExportPart extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatasetExportPart';
+    public static $objectApiName = 'DatasetExportPart';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

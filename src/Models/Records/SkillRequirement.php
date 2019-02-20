@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class SkillRequirement extends BaseRecordModel
 {
-    protected static $objectApiName = 'SkillRequirement';
+    public static $objectApiName = 'SkillRequirement';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',

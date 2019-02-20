@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  */
 class DatacloudPurchaseUsage extends BaseRecordModel
 {
-    protected static $objectApiName = 'DatacloudPurchaseUsage';
+    public static $objectApiName = 'DatacloudPurchaseUsage';
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',
