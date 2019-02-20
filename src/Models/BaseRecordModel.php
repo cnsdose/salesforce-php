@@ -432,6 +432,40 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @param BaseRecordModel[]|array $records
+     * @param bool $allOrNone
+     * @return mixed
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     */
+    public static function createMultiple(array $records, bool $allOrNone = false)
+    {
+        $url = sprintf(
+            '%s%s/composite/sobjects',
+            self::$API_PREFIX,
+            config('salesforce.api_version')
+        );
+        $records = array_map(function ($record) {
+            /**
+             * @var BaseRecordModel|mixed $record
+             */
+            $type = $record::$objectApiName;
+            $record = $record->encode($record->raw());
+            $record['attributes'] = [
+                'type' => $type,
+            ];
+            return $record;
+        }, $records);
+        return self::guzzleRequest('post', $url, [
+            'json' => [
+                'allOrNone' => $allOrNone,
+                'records' => $records,
+            ],
+        ]);
+    }
+
+    /**
      * @param string $externalId
      * @return mixed
      * @throws AuthorisationException
@@ -464,6 +498,40 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @param BaseRecordModel[]|array $records
+     * @param bool $allOrNone
+     * @return mixed
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     */
+    public static function upsertMultiple(array $records, bool $allOrNone = false)
+    {
+        $url = sprintf(
+            '%s%s/composite/sobjects',
+            self::$API_PREFIX,
+            config('salesforce.api_version')
+        );
+        $records = array_map(function ($record) {
+            /**
+             * @var BaseRecordModel|mixed $record
+             */
+            $type = $record::$objectApiName;
+            $record = array_intersect_key($record->encode($record->raw()), array_flip(array_unique(array_merge($record->changedFields, ['Id']))));
+            $record['attributes'] = [
+                'type' => $type,
+            ];
+            return $record;
+        }, $records);
+        return self::guzzleRequest('patch', $url, [
+            'json' => [
+                'allOrNone' => $allOrNone,
+                'records' => $records,
+            ],
+        ]);
+    }
+
+    /**
      * @return mixed|null
      * @throws AuthorisationException
      * @throws MalformedRequestException
@@ -482,6 +550,29 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             $this->Id
         );
         return self::guzzleRequest('delete', $url);
+    }
+
+    /**
+     * @param string[] $ids
+     * @param bool $allOrNone
+     * @return mixed
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     */
+    public static function deleteMultiple(array $ids, bool $allOrNone = false)
+    {
+        $url = sprintf(
+            '%s%s/composite/sobjects',
+            self::$API_PREFIX,
+            config('salesforce.api_version')
+        );
+        return self::guzzleRequest('delete', $url, [
+            'query' => [
+                'ids' => implode(',', $ids),
+                'allOrNone' => $allOrNone,
+            ],
+        ]);
     }
 
     /**
