@@ -8,6 +8,7 @@
 
 namespace CNSDose\Salesforce\Tests;
 
+use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
 use CNSDose\Salesforce\Models\Metadata\CustomObject;
@@ -169,6 +170,7 @@ class RecordTest extends TestCase
             ->select('Id')
             ->resolve(Apple::class, 'Apples__r')
             ->where('Name', 'LIKE', "'Apple%'")
+            ->orWhere('Name', "'Apple Tree'")
             ->query()[0];
         $appleNames = array_map(function (Apple $apple) {
             return $apple->Name;
@@ -176,6 +178,59 @@ class RecordTest extends TestCase
         sort($appleNames);
         $this->assertEquals($treeWithApples->Id, $treeId);
         $this->assertEquals(['Crispy Apple', 'Juicy Apple'], $appleNames);
+    }
+
+    /**
+     * @depends test_create_tree_record
+     * @param $treeId
+     * @return Tree
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_query_by_id($treeId)
+    {
+        $tree = Tree::queryById($treeId);
+        $this->assertEquals($treeId, $tree->Id);
+        return $tree;
+    }
+
+    /**
+     * @depends test_create_tree_record
+     * @param $treeId
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_query_raw($treeId)
+    {
+        $tree = Tree::build()
+            ->queryRaw('SELECT Id FROM ' . Tree::$objectApiName)[0];
+        $this->assertEquals($treeId, $tree->Id);
+    }
+
+    /**
+     * @depends test_query_by_id
+     * @param Tree $tree
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_upsert($tree)
+    {
+        $updatedTreeName = 'Updated Apple Tree';
+        $tree->Name = $updatedTreeName;
+        $result = $tree->upsert();
+        $this->assertNull($result);
+        $tree = Tree::queryById($tree->Id);
+        $this->assertEquals($updatedTreeName, $tree->Name);
+    }
+
+    public function test_wrong_object_name()
+    {
+        $this->expectException(MalformedRequestException::class);
+        BaseRecordModel::build()
+            ->queryRaw('SELECT Id FROM NonExistObject__c');
     }
 
     public function test_tear_down()
