@@ -37,5 +37,6 @@ class AuthenticationTest extends TestCase
         $this->assertNotEmpty(Authentication::getAccessToken());
         $this->assertNotEmpty(Authentication::getOrganisationId());
         config(['salesforce.auth_flow' => 'jwt']);
+        $property->setValue(null);
     }
 }
