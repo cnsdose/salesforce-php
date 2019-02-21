@@ -6,18 +6,18 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class deployRecentValidationResponse
+ * Class CancelDeploy
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $result
+ * @property ID|null $String
  */
-class deployRecentValidationResponse
+class CancelDeploy
 {
     public static $classMap = [
     ];
 
-    public function setResult(string $result)
+    public function setString(ID $String)
     {
-        $this->result = $result;
+        $this->String = $String;
     }
 }

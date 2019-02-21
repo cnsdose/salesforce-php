@@ -6,13 +6,13 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class deploy
+ * Class Deploy
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $ZipFile
  * @property DeployOptions|null $DeployOptions
  */
-class deploy
+class Deploy
 {
     public static $classMap = [
         'DeployOptions' => [

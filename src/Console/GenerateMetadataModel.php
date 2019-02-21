@@ -82,6 +82,7 @@ class GenerateMetadataModel extends Command
             if ($reader->name === 'xsd:element') $lastElementName = $reader->getAttribute('name');
             if ($reader->name !== 'xsd:simpleType' && $reader->name !== 'xsd:complexType') continue;
             $modelName = $reader->getAttribute('name') ?: $lastElementName;
+            $modelName = ucfirst($modelName);
             if (array_key_exists($modelName, $this->complexTypes) || array_key_exists($modelName, $this->enums)) continue;
             $type = $reader->name;
 

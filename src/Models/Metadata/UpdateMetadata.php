@@ -6,22 +6,22 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class listMetadataResponse
+ * Class UpdateMetadata
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property FileProperties[]|null $result
+ * @property Metadata[]|null $metadata
  */
-class listMetadataResponse
+class UpdateMetadata
 {
     public static $classMap = [
-        'result' => [
+        'metadata' => [
             'multiple' => true,
-            'type' => FileProperties::class,
+            'type' => Metadata::class,
         ],
     ];
 
-    public function setResult(array $result)
+    public function setMetadata(array $metadata)
     {
-        $this->result = $result;
+        $this->metadata = $metadata;
     }
 }

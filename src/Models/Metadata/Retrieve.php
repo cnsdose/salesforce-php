@@ -6,12 +6,12 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class retrieve
+ * Class Retrieve
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property RetrieveRequest|null $retrieveRequest
  */
-class retrieve
+class Retrieve
 {
     public static $classMap = [
         'retrieveRequest' => [

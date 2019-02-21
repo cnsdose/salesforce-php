@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class describeValueTypeResponse
+ * Class DescribeMetadataResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property DescribeValueTypeResult|null $result
+ * @property DescribeMetadataResult|null $result
  */
-class describeValueTypeResponse
+class DescribeMetadataResponse
 {
     public static $classMap = [
         'result' => [
             'multiple' => false,
-            'type' => DescribeValueTypeResult::class,
+            'type' => DescribeMetadataResult::class,
         ],
     ];
 
-    public function setResult(DescribeValueTypeResult $result)
+    public function setResult(DescribeMetadataResult $result)
     {
         $this->result = $result;
     }

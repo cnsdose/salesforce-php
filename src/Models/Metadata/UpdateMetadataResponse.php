@@ -6,22 +6,22 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class upsertMetadata
+ * Class UpdateMetadataResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property Metadata[]|null $metadata
+ * @property SaveResult[]|null $result
  */
-class upsertMetadata
+class UpdateMetadataResponse
 {
     public static $classMap = [
-        'metadata' => [
+        'result' => [
             'multiple' => true,
-            'type' => Metadata::class,
+            'type' => SaveResult::class,
         ],
     ];
 
-    public function setMetadata(array $metadata)
+    public function setResult(array $result)
     {
-        $this->metadata = $metadata;
+        $this->result = $result;
     }
 }

@@ -6,12 +6,12 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class updateMetadata
+ * Class UpsertMetadata
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property Metadata[]|null $metadata
  */
-class updateMetadata
+class UpsertMetadata
 {
     public static $classMap = [
         'metadata' => [

@@ -6,18 +6,18 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class describeMetadata
+ * Class DeployRecentValidation
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property float|null $asOfVersion
+ * @property ID|null $validationId
  */
-class describeMetadata
+class DeployRecentValidation
 {
     public static $classMap = [
     ];
 
-    public function setAsOfVersion(float $asOfVersion)
+    public function setValidationId(ID $validationId)
     {
-        $this->asOfVersion = $asOfVersion;
+        $this->validationId = $validationId;
     }
 }

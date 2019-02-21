@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class upsertMetadataResponse
+ * Class CancelDeployResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property UpsertResult[]|null $result
+ * @property CancelDeployResult|null $result
  */
-class upsertMetadataResponse
+class CancelDeployResponse
 {
     public static $classMap = [
         'result' => [
-            'multiple' => true,
-            'type' => UpsertResult::class,
+            'multiple' => false,
+            'type' => CancelDeployResult::class,
         ],
     ];
 
-    public function setResult(array $result)
+    public function setResult(CancelDeployResult $result)
     {
         $this->result = $result;
     }

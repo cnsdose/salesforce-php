@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class updateMetadataResponse
+ * Class DescribeValueTypeResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property SaveResult[]|null $result
+ * @property DescribeValueTypeResult|null $result
  */
-class updateMetadataResponse
+class DescribeValueTypeResponse
 {
     public static $classMap = [
         'result' => [
-            'multiple' => true,
-            'type' => SaveResult::class,
+            'multiple' => false,
+            'type' => DescribeValueTypeResult::class,
         ],
     ];
 
-    public function setResult(array $result)
+    public function setResult(DescribeValueTypeResult $result)
     {
         $this->result = $result;
     }

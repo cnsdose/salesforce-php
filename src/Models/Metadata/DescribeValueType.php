@@ -6,12 +6,12 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class describeValueType
+ * Class DescribeValueType
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $type
  */
-class describeValueType
+class DescribeValueType
 {
     public static $classMap = [
     ];

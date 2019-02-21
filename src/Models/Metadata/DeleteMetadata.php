@@ -6,14 +6,13 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class renameMetadata
+ * Class DeleteMetadata
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $type
- * @property string|null $oldFullName
- * @property string|null $newFullName
+ * @property string[]|null $fullNames
  */
-class renameMetadata
+class DeleteMetadata
 {
     public static $classMap = [
     ];
@@ -23,13 +22,8 @@ class renameMetadata
         $this->type = $type;
     }
 
-    public function setOldFullName(string $oldFullName)
+    public function setFullNames(array $fullNames)
     {
-        $this->oldFullName = $oldFullName;
-    }
-
-    public function setNewFullName(string $newFullName)
-    {
-        $this->newFullName = $newFullName;
+        $this->fullNames = $fullNames;
     }
 }

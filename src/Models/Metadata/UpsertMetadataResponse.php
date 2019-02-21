@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class readMetadataResponse
+ * Class UpsertMetadataResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ReadResult|null $result
+ * @property UpsertResult[]|null $result
  */
-class readMetadataResponse
+class UpsertMetadataResponse
 {
     public static $classMap = [
         'result' => [
-            'multiple' => false,
-            'type' => ReadResult::class,
+            'multiple' => true,
+            'type' => UpsertResult::class,
         ],
     ];
 
-    public function setResult(ReadResult $result)
+    public function setResult(array $result)
     {
         $this->result = $result;
     }

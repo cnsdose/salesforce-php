@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class deployResponse
+ * Class ReadMetadataResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property AsyncResult|null $result
+ * @property ReadResult|null $result
  */
-class deployResponse
+class ReadMetadataResponse
 {
     public static $classMap = [
         'result' => [
             'multiple' => false,
-            'type' => AsyncResult::class,
+            'type' => ReadResult::class,
         ],
     ];
 
-    public function setResult(AsyncResult $result)
+    public function setResult(ReadResult $result)
     {
         $this->result = $result;
     }

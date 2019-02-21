@@ -6,21 +6,21 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class deleteMetadataResponse
+ * Class RetrieveResponse
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property DeleteResult[]|null $result
+ * @property AsyncResult|null $result
  */
-class deleteMetadataResponse
+class RetrieveResponse
 {
     public static $classMap = [
         'result' => [
-            'multiple' => true,
-            'type' => DeleteResult::class,
+            'multiple' => false,
+            'type' => AsyncResult::class,
         ],
     ];
 
-    public function setResult(array $result)
+    public function setResult(AsyncResult $result)
     {
         $this->result = $result;
     }

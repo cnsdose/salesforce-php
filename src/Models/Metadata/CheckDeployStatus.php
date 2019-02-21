@@ -6,13 +6,13 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class checkRetrieveStatus
+ * Class CheckDeployStatus
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property ID|null $asyncProcessId
- * @property bool|null $includeZip
+ * @property bool|null $includeDetails
  */
-class checkRetrieveStatus
+class CheckDeployStatus
 {
     public static $classMap = [
     ];
@@ -22,8 +22,8 @@ class checkRetrieveStatus
         $this->asyncProcessId = $asyncProcessId;
     }
 
-    public function setIncludeZip(bool $includeZip)
+    public function setIncludeDetails(bool $includeDetails)
     {
-        $this->includeZip = $includeZip;
+        $this->includeDetails = $includeDetails;
     }
 }

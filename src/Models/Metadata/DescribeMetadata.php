@@ -6,25 +6,15 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class listMetadata
+ * Class DescribeMetadata
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ListMetadataQuery[]|null $queries
  * @property float|null $asOfVersion
  */
-class listMetadata
+class DescribeMetadata
 {
     public static $classMap = [
-        'queries' => [
-            'multiple' => true,
-            'type' => ListMetadataQuery::class,
-        ],
     ];
-
-    public function setQueries(array $queries)
-    {
-        $this->queries = $queries;
-    }
 
     public function setAsOfVersion(float $asOfVersion)
     {

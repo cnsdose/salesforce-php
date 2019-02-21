@@ -6,13 +6,13 @@
 namespace CNSDose\Salesforce\Models\Metadata;
 
 /**
- * Class readMetadata
+ * Class ReadMetadata
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $type
  * @property string[]|null $fullNames
  */
-class readMetadata
+class ReadMetadata
 {
     public static $classMap = [
     ];
