@@ -8,6 +8,9 @@
 
 namespace CNSDose\Salesforce\Models;
 
+use CNSDose\Salesforce\Models\Metadata\FileProperties;
+use CNSDose\Salesforce\Models\Metadata\ListMetadataQuery;
+use CNSDose\Salesforce\Models\Metadata\ListMetadataResponse;
 use CNSDose\Salesforce\Support\Authentication;
 
 /**
@@ -150,6 +153,33 @@ abstract class BaseMetadataModel
             static::getModelName(),
             self::$METADATA_SOAP_NAMESPACE);
         return self::getSoapClient()->upsertMetadata($payload);
+    }
+
+    /**
+     * @param ListMetadataQuery|ListMetadataQuery[] $queries
+     * @param float|null $asOfVersion
+     * @return ListMetadataResponse
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public static function listMetadata($queries, float $asOfVersion = null): ListMetadataResponse
+    {
+        if ($asOfVersion === null) {
+            $asOfVersion = (float)substr(config('salesforce.api_version'), 1);
+        }
+        if (!is_array($queries)) {
+            $queries = [$queries];
+        }
+        $payload = new \stdClass();
+        $payload->queries = array_map(function (ListMetadataQuery $query) {
+            return new \SoapVar(
+                $query,
+                SOAP_ENC_OBJECT,
+                'ListMetadataQuery',
+                self::$METADATA_SOAP_NAMESPACE);
+        }, $queries);
+        $payload->asOfVersion = $asOfVersion;
+        $response = self::getSoapClient()->listMetadata($payload);
+        return self::coerceObject($response, ListMetadataResponse::class);
     }
 
     /**
