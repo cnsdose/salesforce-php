@@ -13,6 +13,6 @@ sonar: report_xml
       -Dsonar.sources='src/' \
       -Dsonar.tests='tests/' \
       -Dsonar.test.exclusions='tests/report/**,tests/Models/**' \
-      -Dsonar.coverage.exclusions='config/**,examples/**,src/Console/**,src/Models/Metadata/**,src/Models/Records/**' \
+      -Dsonar.coverage.exclusions='config/**,examples/**,src/Console/**,src/Models/Metadata/**,src/Models/Records/**,src/Providers/**' \
       -Dsonar.php.tests.reportPath='tests/report/phpunit.xml' \
       -Dsonar.php.coverage.reportPaths='tests/report/phpunit.coverage.xml'
