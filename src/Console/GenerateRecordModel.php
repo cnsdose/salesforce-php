@@ -106,7 +106,7 @@ class GenerateRecordModel extends Command
             if (!$this->option('all-fields') && substr($fieldName, strlen($fieldName) - 3) === '__c') {
                 continue;
             }
-            list($phpType, $rule) = self::$typeRules[$fieldType] ?? ['mixed', null];
+            [$phpType, $rule] = self::$typeRules[$fieldType] ?? ['mixed', null];
             $properties .= sprintf(
                 "\n * @property %s \$%s",
                 $phpType,

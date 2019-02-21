@@ -276,7 +276,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             if (!empty($this->query['where']['AND'])) {
                 $soql .= '(';
                 $soql .= implode(' AND ', array_map(function (array $clause) {
-                    list($field, $operator, $value) = $clause;
+                    [$field, $operator, $value] = $clause;
                     if (is_object($value)) {
                         return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
                     }
@@ -289,7 +289,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
                     $soql .= ' OR ';
                 }
                 $soql .= implode(' OR ', array_map(function (array $clause) {
-                    list($field, $operator, $value) = $clause;
+                    [$field, $operator, $value] = $clause;
                     if (is_object($value)) {
                         return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
                     }

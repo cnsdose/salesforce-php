@@ -29,9 +29,9 @@ abstract class BaseConversion
     protected static function parseRule(string $rule): array
     {
         if (strpos($rule, ':') === false) {
-            list($name, $args) = [$rule, ''];
+            [$name, $args] = [$rule, ''];
         } else {
-            list($name, $args) = explode(':', $rule);
+            [$name, $args] = explode(':', $rule);
         }
         if (empty($args)) {
             $args = [];
@@ -58,7 +58,7 @@ abstract class BaseConversion
      */
     public static function decode(string $rule, $value)
     {
-        list($name, $class, $args) = self::parseRule($rule);
+        [, $class, $args] = self::parseRule($rule);
         /**
          * @var BaseConversion|mixed $conversion
          */
@@ -74,7 +74,7 @@ abstract class BaseConversion
      */
     public static function encode(string $rule, $value)
     {
-        list($name, $class, $args) = self::parseRule($rule);
+        [, $class, $args] = self::parseRule($rule);
         /**
          * @var BaseConversion|mixed $conversion
          */
