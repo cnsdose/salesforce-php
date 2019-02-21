@@ -8,6 +8,7 @@
 
 namespace CNSDose\Salesforce\Tests;
 
+use Carbon\Carbon;
 use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
@@ -17,6 +18,9 @@ use CNSDose\Salesforce\Models\Metadata\FieldType;
 use CNSDose\Salesforce\Models\Metadata\SharingModel;
 use CNSDose\Salesforce\Models\Records\FieldPermissions;
 use CNSDose\Salesforce\Models\Records\PermissionSet;
+use CNSDose\Salesforce\Support\Conversion\Date;
+use CNSDose\Salesforce\Support\Conversion\DateTime;
+use CNSDose\Salesforce\Support\Conversion\Time;
 use CNSDose\Salesforce\Tests\Models\Apple;
 use CNSDose\Salesforce\Tests\Models\Tree;
 
@@ -24,6 +28,10 @@ class RecordTest extends TestCase
 {
     public function test_set_up()
     {
+        $permissionSets = PermissionSet::build()
+            ->select(['Id', 'ProfileId'])
+            ->query();
+
         $tree = new CustomObject();
         $tree->setFullName('SalesforcePHPTestTree__c');
         $tree->setDeploymentStatus(DeploymentStatus::DEPLOYED());
@@ -38,6 +46,105 @@ class RecordTest extends TestCase
         $tree->setNameField($treeName);
         $result = $tree->create();
         $this->assertTrue($result->result->success);
+
+        $treeIsAlive = new CustomField();
+        $treeIsAlive->setFullName('SalesforcePHPTestTree__c.IsAlive__c');
+        $treeIsAlive->setLabel('Tree is alive');
+        $treeIsAlive->setType(FieldType::CHECKBOX());
+        $treeIsAlive->setDefaultValue('true');
+        $result = $treeIsAlive->create();
+        $this->assertTrue($result->result->success);
+        $fieldPermissionsSet = [];
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.IsAlive__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
+
+        $treePlantDate = new CustomField();
+        $treePlantDate->setFullName('SalesforcePHPTestTree__c.PlantDate__c');
+        $treePlantDate->setLabel('Tree plant date');
+        $treePlantDate->setType(FieldType::DATE());
+        $result = $treePlantDate->create();
+        $this->assertTrue($result->result->success);
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.PlantDate__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
+
+        $treePlantTime = new CustomField();
+        $treePlantTime->setFullName('SalesforcePHPTestTree__c.PlantTime__c');
+        $treePlantTime->setLabel('Tree plant time');
+        $treePlantTime->setType(FieldType::TIME());
+        $result = $treePlantTime->create();
+        $this->assertTrue($result->result->success);
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.PlantTime__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
+
+        $treePlantDateTime = new CustomField();
+        $treePlantDateTime->setFullName('SalesforcePHPTestTree__c.PlantDateTime__c');
+        $treePlantDateTime->setLabel('Tree plant date time');
+        $treePlantDateTime->setType(FieldType::DATE_TIME());
+        $result = $treePlantDateTime->create();
+        $this->assertTrue($result->result->success);
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.PlantDateTime__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
+
+        $treePrice = new CustomField();
+        $treePrice->setFullName('SalesforcePHPTestTree__c.Price__c');
+        $treePrice->setLabel('Tree price');
+        $treePrice->setType(FieldType::NUMBER());
+        $treePrice->setPrecision(10);
+        $treePrice->setScale(2);
+        $result = $treePrice->create();
+        $this->assertTrue($result->result->success);
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.Price__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
 
         $apple = new CustomObject();
         $apple->setFullName('SalesforcePHPTestApple__c');
@@ -64,9 +171,6 @@ class RecordTest extends TestCase
         $result = $treeLookup->create();
         $this->assertTrue($result->result->success);
 
-        $permissionSets = PermissionSet::build()
-            ->select(['Id', 'ProfileId'])
-            ->query();
         $fieldPermissionsSet = [];
         foreach ($permissionSets as $permissionSet) {
             if (!empty($permissionSet->ProfileId)) {
@@ -219,11 +323,20 @@ class RecordTest extends TestCase
     public function test_upsert($tree)
     {
         $updatedTreeName = 'Updated Apple Tree';
+        $plantDateTime = Carbon::now('EST');
         $tree->Name = $updatedTreeName;
+        $tree->PlantDate__c = $plantDateTime;
+        $tree->PlantDateTime__c = $plantDateTime;
+        $tree->PlantTime__c = $plantDateTime;
         $result = $tree->upsert();
         $this->assertNull($result);
         $tree = Tree::queryById($tree->Id);
         $this->assertEquals($updatedTreeName, $tree->Name);
+        $this->assertEquals((new Date())->doEncode($plantDateTime), (new Date())->doEncode($tree->PlantDate__c));
+        $plantDateTimeZeroMicro = clone $plantDateTime;
+        $plantDateTimeZeroMicro->setTime($plantDateTime->hour, $plantDateTime->minute, $plantDateTime->second, 0);
+        $this->assertEquals((new DateTime())->doEncode($plantDateTimeZeroMicro), (new DateTime())->doEncode($tree->PlantDateTime__c));
+        $this->assertEquals((new Time())->doEncode($plantDateTime), (new Time())->doEncode($tree->PlantTime__c));
     }
 
     public function test_wrong_object_name()

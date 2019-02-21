@@ -24,6 +24,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $LastActivityDate
+ * @property bool $IsAlive__c
+ * @property \Carbon\Carbon $PlantDate__c
+ * @property \Carbon\Carbon $PlantTime__c
+ * @property \Carbon\Carbon $PlantDateTime__c
+ * @property float $Price__c
  */
 class Tree extends BaseRecordModel
 {
@@ -40,5 +45,10 @@ class Tree extends BaseRecordModel
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
         'LastActivityDate' => 'date',
+        'IsAlive__c' => 'bool',
+        'PlantDate__c' => 'date',
+        'PlantTime__c' => 'time',
+        'PlantDateTime__c' => 'datetime',
+        'Price__c' => 'number:8,2',
     ];
 }
