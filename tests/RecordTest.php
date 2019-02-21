@@ -328,6 +328,7 @@ class RecordTest extends TestCase
         $tree->PlantDate__c = $plantDateTime;
         $tree->PlantDateTime__c = $plantDateTime;
         $tree->PlantTime__c = $plantDateTime;
+        $tree->Price__c = 123.12;
         $result = $tree->upsert();
         $this->assertNull($result);
         $tree = Tree::queryById($tree->Id);
@@ -337,6 +338,7 @@ class RecordTest extends TestCase
         $plantDateTimeZeroMicro->setTime($plantDateTime->hour, $plantDateTime->minute, $plantDateTime->second, 0);
         $this->assertEquals((new DateTime())->doEncode($plantDateTimeZeroMicro), (new DateTime())->doEncode($tree->PlantDateTime__c));
         $this->assertEquals((new Time())->doEncode($plantDateTime), (new Time())->doEncode($tree->PlantTime__c));
+        $this->assertEquals(123.12, $tree->Price__c);
     }
 
     public function test_wrong_object_name()
