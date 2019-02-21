@@ -11,6 +11,7 @@ report_html:
 sonar: report_xml
 	sonar-scanner ${SONAR_ARGS} \
       -Dsonar.sources='src/' \
+      -Dsonar.exclusions='src/Models/Metadata/**,src/Models/Records/**' \
       -Dsonar.tests='tests/' \
       -Dsonar.test.exclusions='tests/report/**,tests/Models/**' \
       -Dsonar.coverage.exclusions='config/**,examples/**,src/Console/**,src/Models/Metadata/**,src/Models/Records/**,src/Providers/**' \
