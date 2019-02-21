@@ -156,10 +156,7 @@ class Apple extends BaseRecordModel
 $appleTree = new Tree();
 $appleTree->Name = 'Apple Tree';
 $result = $appleTree->create();
-
-$appleTree = Tree::build()
-    ->where('Name', "'Apple Tree'")
-    ->query()[0];
+$appleTree = Tree::queryById($result['id']);
 
 $appleOnTree = new Apple();
 $appleOnTree->Name = 'Juicy Apple';
