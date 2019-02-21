@@ -8,10 +8,13 @@
 
 namespace CNSDose\Salesforce\Tests;
 
+use CNSDose\Salesforce\Models\BaseMetadataModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
 use CNSDose\Salesforce\Models\Metadata\CustomObject;
 use CNSDose\Salesforce\Models\Metadata\DeploymentStatus;
 use CNSDose\Salesforce\Models\Metadata\FieldType;
+use CNSDose\Salesforce\Models\Metadata\FileProperties;
+use CNSDose\Salesforce\Models\Metadata\ListMetadataQuery;
 use CNSDose\Salesforce\Models\Metadata\SharingModel;
 
 class MetadataTest extends TestCase
@@ -44,6 +47,22 @@ class MetadataTest extends TestCase
         $this->assertTrue($result['result']['success'] ?? false, 'Failed to create custom object');
 
         return $fullName;
+    }
+
+    /**
+     * @depends test_create_custom_object
+     * @param string $fullName
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_list_custom_object(string $fullName)
+    {
+        $query = new ListMetadataQuery();
+        $query->setType('CustomObject');
+        $customObjects = BaseMetadataModel::listMetadata($query);
+        $names = array_map(function (FileProperties $customObject) {
+            return $customObject->fullName;
+        }, $customObjects->result);
+        $this->assertContains($fullName, $names);
     }
 
     /**
