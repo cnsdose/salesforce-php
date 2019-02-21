@@ -168,12 +168,12 @@ $appleOnTree->Name = 'Crispy Apple';
 $appleOnTree->TreeId__c = $appleTree->Id;
 $result = $appleOnTree->create();
 
-$applesOnTree = Tree::build()
+$treeWithApples = Tree::build()
     ->resolve(Apple::class, 'Apples__r')
     ->where('Name', "'Apple Tree'")
     ->query()[0];
 
-foreach ($applesOnTree->Apples__r as $appleOnTree) {
+foreach ($treeWithApples->Apples__r as $appleOnTree) {
     /**
      * @var Apple $appleOnTree
      */
