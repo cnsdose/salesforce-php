@@ -207,6 +207,7 @@ class RecordTest extends TestCase
     /**
      * @depends test_create_tree_record
      * @param $treeId
+     * @return string
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
@@ -220,11 +221,13 @@ class RecordTest extends TestCase
         $result = $apple->create();
         $this->assertTrue($result['success']);
         $this->assertNotEmpty($result['id']);
+        return $result['id'];
     }
 
     /**
      * @depends test_create_tree_record
      * @param $treeId
+     * @return string
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
@@ -238,6 +241,7 @@ class RecordTest extends TestCase
         $result = $apple->create();
         $this->assertTrue($result['success']);
         $this->assertNotEmpty($result['id']);
+        return $result['id'];
     }
 
     /**
@@ -346,6 +350,61 @@ class RecordTest extends TestCase
         $this->expectException(MalformedRequestException::class);
         BaseRecordModel::build()
             ->queryRaw('SELECT Id FROM NonExistObject__c');
+    }
+
+    /**
+     * @depends test_create_juicy_apple_record
+     * @depends test_create_crispy_apple_record
+     * @param $appleId1
+     * @param $appleId2
+     * @throws MalformedRequestException
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Salesforce\Exceptions\ConversionException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_upsert_multiple($appleId1, $appleId2)
+    {
+        $apples = Apple::build()
+            ->where('Id', "'$appleId1'")
+            ->orWhere('Id', "'$appleId2'")
+            ->query();
+        foreach ($apples as $apple) {
+            $apple->Name = 'Updated ' . $apple->Name;
+        }
+        $results = BaseRecordModel::upsertMultiple($apples, true);
+        $this->assertTrue($results[0]['success']);
+        $this->assertTrue($results[1]['success']);
+    }
+
+    /**
+     * @depends test_create_tree_record
+     * @param $treeId
+     * @throws MalformedRequestException
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_delete($treeId)
+    {
+        $tree = new Tree();
+        $tree->Id = $treeId;
+        $result = $tree->delete();
+        $this->assertNull($result);
+    }
+
+    /**
+     * @depends test_create_juicy_apple_record
+     * @depends test_create_crispy_apple_record
+     * @param $appleId1
+     * @param $appleId2
+     * @throws MalformedRequestException
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_delete_multiple($appleId1, $appleId2)
+    {
+        $results = BaseRecordModel::deleteMultiple([$appleId1, $appleId2]);
+        $this->assertTrue($results[0]['success']);
+        $this->assertTrue($results[1]['success']);
     }
 
     public function test_tear_down()
