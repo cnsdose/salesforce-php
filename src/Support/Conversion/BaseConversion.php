@@ -20,6 +20,7 @@ abstract class BaseConversion
         'datetime' => DateTime::class,
         'bool' => Boolean::class,
         'boolean' => Boolean::class,
+        'multipicklist' => MultiSelectPicklist::class,
     ];
 
     /**

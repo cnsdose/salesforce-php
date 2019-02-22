@@ -10,6 +10,7 @@
 
 require_once '00_prelude.php';
 
+use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
 use CNSDose\Salesforce\Models\Metadata\CustomObject;
@@ -21,7 +22,6 @@ use CNSDose\Salesforce\Models\Metadata\ValueSet;
 use CNSDose\Salesforce\Models\Metadata\ValueSetValuesDefinition;
 use CNSDose\Salesforce\Models\Records\FieldPermissions;
 use CNSDose\Salesforce\Models\Records\PermissionSet;
-use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 
 // Create a custom object
 $customObject = new CustomObject();
@@ -95,6 +95,34 @@ var_dump(
     BaseRecordModel::createMultiple($fieldPermissionsSet)
 );
 
+// Create a custom multi-select picklist field (non-global)
+$multiPicklistField = new CustomField();
+$multiPicklistField->setType(FieldType::MULTISELECT_PICKLIST());
+$multiPicklistField->setFullName('MyCustomObject1__c.MultiSelectPicklist__c');
+$multiPicklistField->setLabel('MyCustomObject1__c MultiSelectPicklist');
+$multiPicklistField->setRequired(false);
+$multiPicklistField->setVisibleLines(4);
+$valueSet->setRestricted(false);
+$multiPicklistField->setValueSet($valueSet);
+var_dump(
+    $multiPicklistField->upsert()
+);
+$fieldPermissionsSet = [];
+foreach ($permissionSets as $permissionSet) {
+    if (!empty($permissionSet->ProfileId)) {
+        $fieldPermissions = new FieldPermissions();
+        $fieldPermissions->ParentId = $permissionSet->Id;
+        $fieldPermissions->SobjectType = 'MyCustomObject1__c';
+        $fieldPermissions->Field = 'MyCustomObject1__c.MultiSelectPicklist__c';
+        $fieldPermissions->PermissionsEdit = true;
+        $fieldPermissions->PermissionsRead = true;
+        $fieldPermissionsSet[] = $fieldPermissions;
+    }
+}
+var_dump(
+    BaseRecordModel::createMultiple($fieldPermissionsSet)
+);
+
 /**
  * Class MyCustomObject1
  *
@@ -111,10 +139,8 @@ var_dump(
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $LastActivityDate
- * @property \Carbon\Carbon $LastViewedDate
- * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Picklist__c
- * @property string $MultiselectPicklist__c
+ * @property string[] $MultiSelectPicklist__c
  */
 class MyCustomObject1 extends BaseRecordModel
 {
@@ -131,15 +157,14 @@ class MyCustomObject1 extends BaseRecordModel
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
         'LastActivityDate' => 'date',
-        'LastViewedDate' => 'datetime',
-        'LastReferencedDate' => 'datetime',
         'Picklist__c' => null,
-        'MultiselectPicklist__c' => null,
+        'MultiSelectPicklist__c' => 'multipicklist',
     ];
 }
 
 $myObject = new MyCustomObject1();
 $myObject->Picklist__c = 'Foo';
+$myObject->MultiSelectPicklist__c = ['Foo', 'Bar', 'Hello', 'World'];
 var_dump(
     $myObject->create()
 );
@@ -152,6 +177,13 @@ try {
 } catch (MalformedRequestException $e) {
     echo $e->getMessage() . "\n";
 }
+var_dump(
+    MyCustomObject1::build()
+        ->where('Picklist__c', "'Foo'")
+        ->where('MultiSelectPicklist__c', 'INCLUDES', "('Hello')")
+        ->query()[0]
+        ->MultiSelectPicklist__c
+);
 
 // clean up
 var_dump(
