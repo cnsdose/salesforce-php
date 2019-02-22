@@ -23,7 +23,7 @@ class SalesforceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '../../config/salesforce.php' => config_path('salesforce.php'),
+            __DIR__ . '/../../config/salesforce.php' => config_path('salesforce.php'),
         ]);
         if ($this->app->runningInConsole()) {
             $this->commands([
@@ -41,6 +41,6 @@ class SalesforceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '../../config/salesforce.php', 'salesforce');
+        $this->mergeConfigFrom(__DIR__ . '/../../config/salesforce.php', 'salesforce');
     }
 }
