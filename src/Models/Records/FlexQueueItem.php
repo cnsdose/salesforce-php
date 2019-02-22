@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $FlexQueueItemId
- * @property mixed $JobType
+ * @property string $JobType
  * @property string $AsyncApexJobId
  * @property mixed $JobPosition
  */

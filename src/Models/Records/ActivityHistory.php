@@ -21,17 +21,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsTask
  * @property \Carbon\Carbon $ActivityDate
  * @property string $OwnerId
- * @property mixed $Status
- * @property mixed $Priority
+ * @property string $Status
+ * @property string $Priority
  * @property bool $IsHighPriority
- * @property mixed $ActivityType
+ * @property string $ActivityType
  * @property bool $IsClosed
  * @property bool $IsAllDayEvent
  * @property bool $IsVisibleInSelfService
  * @property mixed $DurationInMinutes
  * @property string $Location
  * @property string $Description
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property bool $IsDeleted
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -39,14 +39,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property mixed $CallDurationInSeconds
- * @property mixed $CallType
+ * @property string $CallType
  * @property string $CallDisposition
  * @property string $CallObject
  * @property \Carbon\Carbon $ReminderDateTime
  * @property bool $IsReminderSet
  * @property \Carbon\Carbon $EndDateTime
  * @property \Carbon\Carbon $StartDateTime
- * @property mixed $ActivitySubtype
+ * @property string $ActivitySubtype
  * @property string $AlternateDetailId
  */
 class ActivityHistory extends BaseRecordModel

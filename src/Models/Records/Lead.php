@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $MasterRecordId
  * @property string $LastName
  * @property string $FirstName
- * @property mixed $Salutation
+ * @property string $Salutation
  * @property string $Name
  * @property string $Title
  * @property string $Company
@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property mixed $Phone
  * @property mixed $MobilePhone
@@ -38,11 +38,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Website
  * @property mixed $PhotoUrl
  * @property string $Description
- * @property mixed $LeadSource
- * @property mixed $Status
- * @property mixed $Industry
- * @property mixed $Rating
- * @property mixed $CurrencyIsoCode
+ * @property string $LeadSource
+ * @property string $Status
+ * @property string $Industry
+ * @property string $Rating
+ * @property string $CurrencyIsoCode
  * @property float $AnnualRevenue
  * @property mixed $NumberOfEmployees
  * @property string $OwnerId
@@ -62,7 +62,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Jigsaw
  * @property string $JigsawContactId
- * @property mixed $CleanStatus
+ * @property string $CleanStatus
  * @property string $CompanyDunsNumber
  * @property string $DandbCompanyId
  * @property string $EmailBouncedReason

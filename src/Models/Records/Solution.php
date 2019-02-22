@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $SolutionName
  * @property bool $IsPublished
  * @property bool $IsPublishedInPublicKb
- * @property mixed $Status
+ * @property string $Status
  * @property bool $IsReviewed
  * @property string $SolutionNote
  * @property string $OwnerId
@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property mixed $TimesUsed
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property bool $IsHtml

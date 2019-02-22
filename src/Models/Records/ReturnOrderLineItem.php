@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $ReturnOrderLineItemNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -30,14 +30,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ProductItemId
  * @property string $Product2Id
  * @property float $QuantityReturned
- * @property mixed $QuantityUnitOfMeasure
+ * @property string $QuantityUnitOfMeasure
  * @property string $SourceLocationId
  * @property string $DestinationLocationId
  * @property string $AssetId
  * @property string $Description
- * @property mixed $ReasonForReturn
- * @property mixed $ProcessingPlan
- * @property mixed $RepaymentMethod
+ * @property string $ReasonForReturn
+ * @property string $ProcessingPlan
+ * @property string $RepaymentMethod
  */
 class ReturnOrderLineItem extends BaseRecordModel
 {

@@ -16,13 +16,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $ParentId
- * @property mixed $Language
+ * @property string $Language
  * @property mixed $VersionNumber
- * @property mixed $ParentSobjectType
+ * @property string $ParentSobjectType
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
- * @property mixed $EventType
- * @property mixed $FieldName
+ * @property string $EventType
+ * @property string $FieldName
  * @property mixed $OldValue
  * @property mixed $NewValue
  * @property string $VersionId

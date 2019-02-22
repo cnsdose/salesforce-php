@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -25,13 +25,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
- * @property mixed $LocationType
+ * @property string $LocationType
  * @property float $Latitude
  * @property float $Longitude
  * @property mixed $Location
  * @property string $Description
  * @property string $DrivingDirections
- * @property mixed $TimeZone
+ * @property string $TimeZone
  * @property string $ParentLocationId
  * @property \Carbon\Carbon $PossessionDate
  * @property \Carbon\Carbon $ConstructionStartDate

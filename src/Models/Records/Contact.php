@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AccountId
  * @property string $LastName
  * @property string $FirstName
- * @property mixed $Salutation
+ * @property string $Salutation
  * @property string $Name
  * @property string $OtherStreet
  * @property string $OtherCity
@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OtherCountry
  * @property float $OtherLatitude
  * @property float $OtherLongitude
- * @property mixed $OtherGeocodeAccuracy
+ * @property string $OtherGeocodeAccuracy
  * @property mixed $OtherAddress
  * @property string $MailingStreet
  * @property string $MailingCity
@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $MailingCountry
  * @property float $MailingLatitude
  * @property float $MailingLongitude
- * @property mixed $MailingGeocodeAccuracy
+ * @property string $MailingGeocodeAccuracy
  * @property mixed $MailingAddress
  * @property mixed $Phone
  * @property mixed $Fax
@@ -50,10 +50,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Title
  * @property string $Department
  * @property string $AssistantName
- * @property mixed $LeadSource
+ * @property string $LeadSource
  * @property \Carbon\Carbon $Birthdate
  * @property string $Description
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -71,7 +71,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $PhotoUrl
  * @property string $Jigsaw
  * @property string $JigsawContactId
- * @property mixed $CleanStatus
+ * @property string $CleanStatus
  */
 class Contact extends BaseRecordModel
 {

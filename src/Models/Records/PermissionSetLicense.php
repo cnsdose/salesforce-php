@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $PermissionSetLicenseKey
  * @property mixed $TotalLicenses
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $ExpirationDate
  * @property bool $MaximumPermissionsEmailSingle
  * @property bool $MaximumPermissionsEmailMass
@@ -229,6 +229,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsUseWebLink
  * @property bool $MaximumPermissionsHasUnlimitedNBAExecutions
  * @property bool $MaximumPermissionsViewOnlyEmbeddedAppUser
+ * @property bool $MaximumPermissionsSendExternalEmailAvailable
  * @property bool $MaximumPermissionsViewAllActivities
  * @property bool $MaximumPermissionsSubscribeReportToOtherUsers
  * @property bool $MaximumPermissionsLightningConsoleAllowedForUser
@@ -474,6 +475,7 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsUseWebLink' => 'bool',
         'MaximumPermissionsHasUnlimitedNBAExecutions' => 'bool',
         'MaximumPermissionsViewOnlyEmbeddedAppUser' => 'bool',
+        'MaximumPermissionsSendExternalEmailAvailable' => 'bool',
         'MaximumPermissionsViewAllActivities' => 'bool',
         'MaximumPermissionsSubscribeReportToOtherUsers' => 'bool',
         'MaximumPermissionsLightningConsoleAllowedForUser' => 'bool',

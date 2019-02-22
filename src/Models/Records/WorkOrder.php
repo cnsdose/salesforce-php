@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $WorkOrderNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -38,15 +38,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property string $Description
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
  * @property string $Subject
  * @property string $RootWorkOrderId
- * @property mixed $Status
- * @property mixed $Priority
+ * @property string $Status
+ * @property string $Priority
  * @property float $Tax
  * @property float $Subtotal
  * @property float $TotalPrice
@@ -63,12 +63,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BusinessHoursId
  * @property string $MilestoneStatus
  * @property float $Duration
- * @property mixed $DurationType
+ * @property string $DurationType
  * @property float $DurationInMinutes
  * @property mixed $ServiceAppointmentCount
  * @property string $WorkTypeId
  * @property string $ServiceTerritoryId
- * @property mixed $StatusCategory
+ * @property string $StatusCategory
  * @property string $LocationId
  * @property string $MaintenancePlanId
  * @property \Carbon\Carbon $SuggestedMaintenanceDate
@@ -78,7 +78,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ReturnOrderLineItemId
  * @property string $ReturnOrderId
  * @property bool $IsGeneratedFromMaintenancePlan
- * @property mixed $ServiceReportLanguage
+ * @property string $ServiceReportLanguage
  */
 class WorkOrder extends BaseRecordModel
 {

@@ -17,13 +17,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OpportunityId
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
- * @property mixed $StageName
+ * @property string $StageName
  * @property float $Amount
  * @property float $ExpectedRevenue
  * @property \Carbon\Carbon $CloseDate
  * @property mixed $Probability
- * @property mixed $ForecastCategory
- * @property mixed $CurrencyIsoCode
+ * @property string $ForecastCategory
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsDeleted
  */

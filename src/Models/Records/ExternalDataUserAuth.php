@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ExternalDataSourceId
  * @property string $UserId
- * @property mixed $Protocol
+ * @property string $Protocol
  * @property string $Username
  * @property string $Password
  * @property string $AuthProviderId

@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Subdomain
  * @property string $UrlPathPrefix
  * @property string $GuestUserId
- * @property mixed $Status
+ * @property string $Status
  * @property string $AdminId
  * @property bool $OptionsEnableFeeds
  * @property bool $OptionsRequireHttps
@@ -36,8 +36,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Description
  * @property string $MasterLabel
  * @property string $AnalyticsTrackingCode
- * @property mixed $SiteType
- * @property mixed $ClickjackProtectionLevel
+ * @property string $SiteType
+ * @property string $ClickjackProtectionLevel
  * @property mixed $DailyBandwidthLimit
  * @property mixed $DailyBandwidthUsed
  * @property mixed $DailyRequestTimeLimit

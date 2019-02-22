@@ -16,11 +16,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $AccountId
  * @property string $UserOrGroupId
- * @property mixed $AccountAccessLevel
- * @property mixed $OpportunityAccessLevel
- * @property mixed $CaseAccessLevel
- * @property mixed $ContactAccessLevel
- * @property mixed $RowCause
+ * @property string $AccountAccessLevel
+ * @property string $OpportunityAccessLevel
+ * @property string $CaseAccessLevel
+ * @property string $ContactAccessLevel
+ * @property string $RowCause
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property bool $IsDeleted

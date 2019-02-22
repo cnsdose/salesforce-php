@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $ReturnOrderNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OrderId
  * @property string $SourceLocationId
  * @property string $DestinationLocationId
- * @property mixed $ShipmentType
+ * @property string $ShipmentType
  * @property string $ShipFromStreet
  * @property string $ShipFromCity
  * @property string $ShipFromState
@@ -40,12 +40,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShipFromCountry
  * @property float $ShipFromLatitude
  * @property float $ShipFromLongitude
- * @property mixed $ShipFromGeocodeAccuracy
+ * @property string $ShipFromGeocodeAccuracy
  * @property mixed $ShipFromAddress
  * @property string $ReturnedById
  * @property string $Description
  * @property \Carbon\Carbon $ExpectedArrivalDate
- * @property mixed $Status
+ * @property string $Status
  */
 class ReturnOrder extends BaseRecordModel
 {

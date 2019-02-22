@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $FeedEntityId
- * @property mixed $Type
+ * @property string $Type
  * @property string $RecordId
  * @property string $Title
  * @property string $Value

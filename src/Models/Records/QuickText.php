@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -26,8 +26,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Message
- * @property mixed $Category
- * @property mixed $Channel
+ * @property string $Category
+ * @property string $Channel
  */
 class QuickText extends BaseRecordModel
 {

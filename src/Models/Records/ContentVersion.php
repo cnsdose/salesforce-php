@@ -22,8 +22,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Title
  * @property string $Description
  * @property string $ReasonForChange
- * @property mixed $SharingOption
- * @property mixed $SharingPrivacy
+ * @property string $SharingOption
+ * @property string $SharingPrivacy
  * @property string $PathOnClient
  * @property mixed $RatingCount
  * @property bool $IsDeleted
@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $NegativeRatingCount
  * @property mixed $FeaturedContentBoost
  * @property \Carbon\Carbon $FeaturedContentDate
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
@@ -42,13 +42,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $TagCsv
  * @property string $FileType
- * @property mixed $PublishStatus
+ * @property string $PublishStatus
  * @property mixed $VersionData
  * @property mixed $ContentSize
  * @property string $FileExtension
  * @property string $FirstPublishLocationId
- * @property mixed $Origin
- * @property mixed $ContentLocation
+ * @property string $Origin
+ * @property string $ContentLocation
  * @property string $TextPreview
  * @property string $ExternalDocumentInfo1
  * @property string $ExternalDocumentInfo2

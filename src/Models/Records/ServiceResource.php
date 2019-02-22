@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $OwnerId
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $RelatedRecordId
- * @property mixed $ResourceType
+ * @property string $ResourceType
  * @property string $Description
  * @property bool $IsActive
  * @property bool $IsCapacityBased

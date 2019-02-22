@@ -28,8 +28,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ExternalEmail
  * @property string $ExternalFirstName
  * @property string $ExternalLastName
- * @property mixed $LinkState
- * @property mixed $Status
+ * @property string $LinkState
+ * @property string $Status
  */
 class UserProvAccountStaging extends BaseRecordModel
 {

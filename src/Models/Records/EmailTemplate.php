@@ -21,10 +21,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $FolderId
  * @property string $FolderName
  * @property string $BrandTemplateId
- * @property mixed $TemplateStyle
+ * @property string $TemplateStyle
  * @property bool $IsActive
- * @property mixed $TemplateType
- * @property mixed $Encoding
+ * @property string $TemplateType
+ * @property string $Encoding
  * @property string $Description
  * @property string $Subject
  * @property string $HtmlValue
@@ -38,8 +38,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property float $ApiVersion
  * @property string $Markup
- * @property mixed $UiType
- * @property mixed $RelatedEntityType
+ * @property string $UiType
+ * @property string $RelatedEntityType
  */
 class EmailTemplate extends BaseRecordModel
 {

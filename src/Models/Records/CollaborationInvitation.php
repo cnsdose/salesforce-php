@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $InviterId
  * @property string $InvitedUserEmail
  * @property mixed $InvitedUserEmailNormalized
- * @property mixed $Status
+ * @property string $Status
  * @property string $OptionalMessage
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsDeleted
  * @property string $MasterRecordId
  * @property string $Name
- * @property mixed $Type
+ * @property string $Type
  * @property string $ParentId
  * @property string $BillingStreet
  * @property string $BillingCity
@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BillingCountry
  * @property float $BillingLatitude
  * @property float $BillingLongitude
- * @property mixed $BillingGeocodeAccuracy
+ * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
  * @property string $ShippingStreet
  * @property string $ShippingCity
@@ -35,7 +35,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShippingCountry
  * @property float $ShippingLatitude
  * @property float $ShippingLongitude
- * @property mixed $ShippingGeocodeAccuracy
+ * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
  * @property mixed $Phone
  * @property mixed $Fax
@@ -43,15 +43,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Website
  * @property mixed $PhotoUrl
  * @property string $Sic
- * @property mixed $Industry
+ * @property string $Industry
  * @property float $AnnualRevenue
  * @property mixed $NumberOfEmployees
- * @property mixed $Ownership
+ * @property string $Ownership
  * @property string $TickerSymbol
  * @property string $Description
- * @property mixed $Rating
+ * @property string $Rating
  * @property string $Site
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -63,8 +63,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Jigsaw
  * @property string $JigsawCompanyId
- * @property mixed $CleanStatus
- * @property mixed $AccountSource
+ * @property string $CleanStatus
+ * @property string $AccountSource
  * @property string $DunsNumber
  * @property string $Tradestyle
  * @property string $NaicsCode

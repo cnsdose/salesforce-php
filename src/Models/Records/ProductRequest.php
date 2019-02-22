@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $ProductRequestNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -28,8 +28,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $WorkOrderId
  * @property string $WorkOrderLineItemId
  * @property \Carbon\Carbon $NeedByDate
- * @property mixed $Status
- * @property mixed $ShipmentType
+ * @property string $Status
+ * @property string $ShipmentType
  * @property string $ShipToStreet
  * @property string $ShipToCity
  * @property string $ShipToState
@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShipToCountry
  * @property float $ShipToLatitude
  * @property float $ShipToLongitude
- * @property mixed $ShipToGeocodeAccuracy
+ * @property string $ShipToGeocodeAccuracy
  * @property mixed $ShipToAddress
  * @property string $Description
  * @property string $DestinationLocationId

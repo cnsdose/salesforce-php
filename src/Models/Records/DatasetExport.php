@@ -20,10 +20,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $PublisherType
+ * @property string $PublisherType
  * @property mixed $MetadataLength
  * @property mixed $CompressedMetadataLength
- * @property mixed $Status
+ * @property string $Status
  * @property string $Owner
  * @property string $PublisherInfo
  * @property mixed $Metadata

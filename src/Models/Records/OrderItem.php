@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OriginalOrderItemId
  * @property float $AvailableQuantity
  * @property float $Quantity
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property float $UnitPrice
  * @property float $ListPrice
  * @property float $TotalPrice

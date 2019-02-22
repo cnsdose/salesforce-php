@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $ProcessDefinitionId
  * @property string $TargetObjectId
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $CompletedDate
  * @property string $LastActorId
  * @property float $ElapsedTimeInDays

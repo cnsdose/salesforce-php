@@ -20,20 +20,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsPrivate
  * @property string $Name
  * @property string $Description
- * @property mixed $StageName
+ * @property string $StageName
  * @property float $Amount
  * @property mixed $Probability
  * @property float $ExpectedRevenue
  * @property float $TotalOpportunityQuantity
  * @property \Carbon\Carbon $CloseDate
- * @property mixed $Type
+ * @property string $Type
  * @property string $NextStep
- * @property mixed $LeadSource
+ * @property string $LeadSource
  * @property bool $IsClosed
  * @property bool $IsWon
- * @property mixed $ForecastCategory
- * @property mixed $ForecastCategoryName
- * @property mixed $CurrencyIsoCode
+ * @property string $ForecastCategory
+ * @property string $ForecastCategoryName
+ * @property string $CurrencyIsoCode
  * @property string $CampaignId
  * @property bool $HasOpportunityLineItem
  * @property string $Pricebook2Id

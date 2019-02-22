@@ -15,8 +15,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $ParentId
- * @property mixed $SobjectType
- * @property mixed $Field
+ * @property string $SobjectType
+ * @property string $Field
  * @property bool $PermissionsEdit
  * @property bool $PermissionsRead
  * @property \Carbon\Carbon $SystemModstamp

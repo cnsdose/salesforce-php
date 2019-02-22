@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $PrechatBackgroundImg
  * @property string $WaitingStateBackgroundImg
  * @property string $HeaderBackgroundImg
- * @property mixed $FontSize
+ * @property string $FontSize
  * @property string $OfflineCaseBackgroundImg
  * @property bool $IsOfflineCaseEnabled
  * @property bool $IsQueuePositionEnabled

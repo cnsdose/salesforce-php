@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Title
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $RecordTypeId
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -30,8 +30,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $NumComments
  * @property float $VoteScore
  * @property float $VoteTotal
- * @property mixed $Categories
- * @property mixed $Status
+ * @property string $Categories
+ * @property string $Status
  * @property \Carbon\Carbon $LastCommentDate
  * @property string $LastCommentId
  * @property string $ParentIdeaId

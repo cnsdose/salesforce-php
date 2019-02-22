@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -24,24 +24,24 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Version
+ * @property string $Version
  * @property string $Issuer
  * @property bool $OptionsSpInitBinding
  * @property bool $OptionsUserProvisioning
  * @property string $AttributeFormat
  * @property string $AttributeName
  * @property string $Audience
- * @property mixed $IdentityMapping
- * @property mixed $IdentityLocation
+ * @property string $IdentityMapping
+ * @property string $IdentityLocation
  * @property string $SamlJitHandlerId
  * @property string $ExecutionUserId
  * @property string $LoginUrl
  * @property string $LogoutUrl
  * @property string $ErrorUrl
  * @property string $ValidationCert
- * @property mixed $RequestSignatureMethod
+ * @property string $RequestSignatureMethod
  * @property string $SingleLogoutUrl
- * @property mixed $SingleLogoutBinding
+ * @property string $SingleLogoutBinding
  */
 class SamlSsoConfig extends BaseRecordModel
 {

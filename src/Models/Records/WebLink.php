@@ -14,13 +14,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method WebLink[] query()
  *
  * @property string $Id
- * @property mixed $PageOrSobjectType
+ * @property string $PageOrSobjectType
  * @property string $Name
  * @property bool $IsProtected
  * @property string $Url
- * @property mixed $EncodingKey
- * @property mixed $LinkType
- * @property mixed $OpenType
+ * @property string $EncodingKey
+ * @property string $LinkType
+ * @property string $OpenType
  * @property mixed $Height
  * @property mixed $Width
  * @property bool $ShowsLocation
@@ -29,11 +29,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $HasMenubar
  * @property bool $ShowsStatus
  * @property bool $IsResizable
- * @property mixed $Position
+ * @property string $Position
  * @property string $ScontrolId
  * @property string $MasterLabel
  * @property string $Description
- * @property mixed $DisplayType
+ * @property string $DisplayType
  * @property bool $RequireRowSelection
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate

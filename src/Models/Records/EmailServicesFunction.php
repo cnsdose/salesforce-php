@@ -19,13 +19,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AuthorizedSenders
  * @property bool $IsAuthenticationRequired
  * @property bool $IsTlsRequired
- * @property mixed $AttachmentOption
+ * @property string $AttachmentOption
  * @property string $ApexClassId
- * @property mixed $OverLimitAction
- * @property mixed $FunctionInactiveAction
- * @property mixed $AddressInactiveAction
- * @property mixed $AuthenticationFailureAction
- * @property mixed $AuthorizationFailureAction
+ * @property string $OverLimitAction
+ * @property string $FunctionInactiveAction
+ * @property string $AddressInactiveAction
+ * @property string $AuthenticationFailureAction
+ * @property string $AuthorizationFailureAction
  * @property bool $IsErrorRoutingEnabled
  * @property mixed $ErrorRoutingAddress
  * @property bool $IsTextAttachmentsAsBinary

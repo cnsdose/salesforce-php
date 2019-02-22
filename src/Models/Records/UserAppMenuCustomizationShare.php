@@ -16,8 +16,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $ParentId
  * @property string $UserOrGroupId
- * @property mixed $AccessLevel
- * @property mixed $RowCause
+ * @property string $AccessLevel
+ * @property string $RowCause
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property bool $IsDeleted

@@ -27,13 +27,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsDeleted
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $Name
  * @property string $SerialNumber
  * @property \Carbon\Carbon $InstallDate
  * @property \Carbon\Carbon $PurchaseDate
  * @property \Carbon\Carbon $UsageEndDate
- * @property mixed $Status
+ * @property string $Status
  * @property float $Price
  * @property float $Quantity
  * @property string $Description

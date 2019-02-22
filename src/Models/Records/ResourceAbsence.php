@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $AbsenceNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $ResourceId
- * @property mixed $Type
+ * @property string $Type
  * @property string $Description
  * @property \Carbon\Carbon $Start
  * @property \Carbon\Carbon $End
@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  */
 class ResourceAbsence extends BaseRecordModel

@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $Title
- * @property mixed $PublishStatus
+ * @property string $PublishStatus
  * @property string $LatestPublishedVersionId
  * @property string $ParentId
  * @property \Carbon\Carbon $LastViewedDate
@@ -34,8 +34,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $ContentSize
  * @property string $FileType
  * @property string $FileExtension
- * @property mixed $SharingOption
- * @property mixed $SharingPrivacy
+ * @property string $SharingOption
+ * @property string $SharingPrivacy
  * @property \Carbon\Carbon $ContentModifiedDate
  * @property string $ContentAssetId
  */

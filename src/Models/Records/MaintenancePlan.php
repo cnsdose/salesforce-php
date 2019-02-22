@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $MaintenancePlanNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -28,15 +28,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $WorkTypeId
  * @property string $AccountId
  * @property string $ServiceContractId
- * @property mixed $FrequencyType
+ * @property string $FrequencyType
  * @property mixed $Frequency
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
  * @property \Carbon\Carbon $NextSuggestedMaintenanceDate
  * @property mixed $MaintenanceWindowStartDays
  * @property mixed $MaintenanceWindowEndDays
- * @property mixed $WorkOrderGenerationStatus
- * @property mixed $GenerationTimeframeType
+ * @property string $WorkOrderGenerationStatus
+ * @property string $GenerationTimeframeType
  * @property mixed $GenerationTimeframe
  * @property string $Description
  * @property string $LocationId

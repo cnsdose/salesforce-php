@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $StartTime
  * @property \Carbon\Carbon $EndTime
  * @property mixed $TestTime
- * @property mixed $Status
+ * @property string $Status
  * @property mixed $ClassesEnqueued
  * @property mixed $ClassesCompleted
  * @property mixed $MethodsEnqueued

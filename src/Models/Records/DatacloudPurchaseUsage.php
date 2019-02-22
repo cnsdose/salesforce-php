@@ -16,16 +16,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $UserId
- * @property mixed $UserType
- * @property mixed $PurchaseType
- * @property mixed $DatacloudEntityType
+ * @property string $UserType
+ * @property string $PurchaseType
+ * @property string $DatacloudEntityType
  * @property float $Usage
  * @property string $Description
  */

@@ -22,9 +22,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $Selector
  * @property string $Domain
- * @property mixed $DomainMatch
+ * @property string $DomainMatch
  * @property bool $IsActive
- * @property mixed $TxtRecordsPublishState
+ * @property string $TxtRecordsPublishState
  * @property mixed $KeySize
  * @property string $PublicKey
  * @property string $PrivateKey

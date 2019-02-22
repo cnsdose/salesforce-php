@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $KnowledgeArticleId
  * @property string $OwnerId
  * @property bool $IsDeleted
- * @property mixed $PublishStatus
+ * @property string $PublishStatus
  * @property mixed $VersionNumber
  * @property bool $IsLatestVersion
  * @property bool $IsVisibleInApp
@@ -29,10 +29,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Language
+ * @property string $Language
  * @property string $Title
  * @property string $UrlName
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $ArchivedDate
  * @property string $ArchivedById
  * @property string $Summary
@@ -44,10 +44,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $ArticleCaseAttachCount
  * @property string $ArticleCreatedById
  * @property \Carbon\Carbon $ArticleCreatedDate
- * @property mixed $ArticleMasterLanguage
+ * @property string $ArticleMasterLanguage
  * @property mixed $ArticleTotalViewCount
  * @property string $SourceId
- * @property mixed $ArticleType
+ * @property string $ArticleType
  * @property string $AssignedToId
  * @property string $AssignedById
  * @property \Carbon\Carbon $AssignmentDate

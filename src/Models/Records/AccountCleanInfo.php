@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -36,14 +36,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property mixed $Website
  * @property string $TickerSymbol
  * @property float $AnnualRevenue
  * @property mixed $NumberOfEmployees
- * @property mixed $Industry
- * @property mixed $Ownership
+ * @property string $Industry
+ * @property string $Ownership
  * @property string $DunsNumber
  * @property string $Sic
  * @property string $SicDescription
@@ -57,7 +57,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $DandBCompanyDunsNumber
  * @property string $DunsRightMatchGrade
  * @property mixed $DunsRightMatchConfidence
- * @property mixed $CompanyStatusDataDotCom
+ * @property string $CompanyStatusDataDotCom
  * @property bool $IsReviewedCompanyName
  * @property bool $IsReviewedPhone
  * @property bool $IsReviewedAddress

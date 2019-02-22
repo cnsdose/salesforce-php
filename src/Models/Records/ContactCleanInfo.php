@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -38,10 +38,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property string $Title
- * @property mixed $ContactStatusDataDotCom
+ * @property string $ContactStatusDataDotCom
  * @property bool $IsReviewedName
  * @property bool $IsReviewedEmail
  * @property bool $IsReviewedPhone

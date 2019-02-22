@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsSyncing
  * @property float $ShippingHandling
  * @property float $Tax
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $ExpirationDate
  * @property string $Description
  * @property float $Subtotal
@@ -45,7 +45,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BillingCountry
  * @property float $BillingLatitude
  * @property float $BillingLongitude
- * @property mixed $BillingGeocodeAccuracy
+ * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
  * @property string $ShippingStreet
  * @property string $ShippingCity
@@ -54,7 +54,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShippingCountry
  * @property float $ShippingLatitude
  * @property float $ShippingLongitude
- * @property mixed $ShippingGeocodeAccuracy
+ * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
  * @property string $QuoteToStreet
  * @property string $QuoteToCity
@@ -63,7 +63,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $QuoteToCountry
  * @property float $QuoteToLatitude
  * @property float $QuoteToLongitude
- * @property mixed $QuoteToGeocodeAccuracy
+ * @property string $QuoteToGeocodeAccuracy
  * @property mixed $QuoteToAddress
  * @property string $AdditionalStreet
  * @property string $AdditionalCity
@@ -72,7 +72,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AdditionalCountry
  * @property float $AdditionalLatitude
  * @property float $AdditionalLongitude
- * @property mixed $AdditionalGeocodeAccuracy
+ * @property string $AdditionalGeocodeAccuracy
  * @property mixed $AdditionalAddress
  * @property string $BillingName
  * @property string $ShippingName

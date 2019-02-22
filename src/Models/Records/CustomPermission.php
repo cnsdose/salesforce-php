@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property bool $IsProtected

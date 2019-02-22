@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $ParentId
  * @property string $SetupEntityId
- * @property mixed $SetupEntityType
+ * @property string $SetupEntityType
  * @property \Carbon\Carbon $SystemModstamp
  */
 class SetupEntityAccess extends BaseRecordModel

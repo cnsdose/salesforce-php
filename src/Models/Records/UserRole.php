@@ -17,9 +17,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $ParentRoleId
  * @property string $RollupDescription
- * @property mixed $OpportunityAccessForAccountOwner
- * @property mixed $CaseAccessForAccountOwner
- * @property mixed $ContactAccessForAccountOwner
+ * @property string $OpportunityAccessForAccountOwner
+ * @property string $CaseAccessForAccountOwner
+ * @property string $ContactAccessForAccountOwner
  * @property string $ForecastUserId
  * @property bool $MayForecastManagerShare
  * @property \Carbon\Carbon $LastModifiedDate
@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $DeveloperName
  * @property string $PortalAccountId
- * @property mixed $PortalType
+ * @property string $PortalType
  * @property string $PortalAccountOwnerId
  */
 class UserRole extends BaseRecordModel

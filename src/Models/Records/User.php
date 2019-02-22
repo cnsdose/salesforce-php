@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property mixed $Email
  * @property bool $EmailPreferencesAutoBcc
@@ -48,17 +48,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CommunityNickname
  * @property string $BadgeText
  * @property bool $IsActive
- * @property mixed $TimeZoneSidKey
+ * @property string $TimeZoneSidKey
  * @property string $UserRoleId
- * @property mixed $LocaleSidKey
+ * @property string $LocaleSidKey
  * @property bool $ReceivesInfoEmails
  * @property bool $ReceivesAdminInfoEmails
- * @property mixed $EmailEncodingKey
- * @property mixed $DefaultCurrencyIsoCode
- * @property mixed $CurrencyIsoCode
+ * @property string $EmailEncodingKey
+ * @property string $DefaultCurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $ProfileId
- * @property mixed $UserType
- * @property mixed $LanguageLocaleKey
+ * @property string $UserType
+ * @property string $LanguageLocaleKey
  * @property string $EmployeeNumber
  * @property string $DelegatedApproverId
  * @property string $ManagerId
@@ -173,8 +173,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsExtIndicatorVisible
  * @property string $OutOfOfficeMessage
  * @property mixed $MediumPhotoUrl
- * @property mixed $DigestFrequency
- * @property mixed $DefaultGroupNotificationFrequency
+ * @property string $DigestFrequency
+ * @property string $DefaultGroupNotificationFrequency
  * @property mixed $JigsawImportLimitOverride
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate

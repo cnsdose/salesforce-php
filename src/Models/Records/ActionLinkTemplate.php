@@ -22,12 +22,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ActionLinkGroupTemplateId
  * @property string $LabelKey
- * @property mixed $Method
- * @property mixed $LinkType
+ * @property string $Method
+ * @property string $LinkType
  * @property mixed $Position
  * @property bool $IsConfirmationRequired
  * @property bool $IsGroupDefault
- * @property mixed $UserVisibility
+ * @property string $UserVisibility
  * @property string $UserAlias
  * @property string $Label
  * @property string $ActionUrl

@@ -16,8 +16,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $CollaborationGroupId
  * @property string $MemberId
- * @property mixed $CollaborationRole
- * @property mixed $NotificationFrequency
+ * @property string $CollaborationRole
+ * @property string $NotificationFrequency
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate

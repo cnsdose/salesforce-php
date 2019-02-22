@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $IconUrl
  * @property mixed $InfoUrl
  * @property bool $IsUsingAdminAuthorization
- * @property mixed $MobilePlatform
+ * @property string $MobilePlatform
  * @property string $MobileMinOsVer
  * @property string $MobileDeviceType
  * @property bool $IsRegisteredDeviceOnly
@@ -43,10 +43,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $CanvasEnabled
  * @property string $CanvasReferenceId
  * @property mixed $CanvasUrl
- * @property mixed $CanvasAccessMethod
+ * @property string $CanvasAccessMethod
  * @property string $CanvasSelectedLocations
  * @property string $CanvasOptions
- * @property mixed $Type
+ * @property string $Type
  * @property string $ApplicationId
  * @property mixed $UserSortOrder
  * @property bool $IsVisible

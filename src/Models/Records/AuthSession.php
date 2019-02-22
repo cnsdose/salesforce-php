@@ -18,11 +18,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $CreatedDate
  * @property \Carbon\Carbon $LastModifiedDate
  * @property mixed $NumSecondsValid
- * @property mixed $UserType
+ * @property string $UserType
  * @property string $SourceIp
- * @property mixed $LoginType
- * @property mixed $SessionType
- * @property mixed $SessionSecurityLevel
+ * @property string $LoginType
+ * @property string $SessionType
+ * @property string $SessionSecurityLevel
  * @property string $LogoutUrl
  * @property string $ParentId
  * @property string $LoginHistoryId

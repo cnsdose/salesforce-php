@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $Name
- * @property mixed $Type
+ * @property string $Type
  * @property bool $PermissionsManageWorkspace
  * @property bool $PermissionsAddContent
  * @property bool $PermissionsAddContentOBO

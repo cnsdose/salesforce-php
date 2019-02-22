@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $FieldName
  * @property mixed $OldValue
  * @property mixed $NewValue
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $OldCurrencyIsoCode
  */
 class FeedTrackedChange extends BaseRecordModel

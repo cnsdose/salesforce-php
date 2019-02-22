@@ -15,9 +15,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsActive
- * @property mixed $SobjectSubtype
+ * @property string $SobjectSubtype
  * @property \Carbon\Carbon $LastViewedDate
  */
 class DuplicateRule extends BaseRecordModel

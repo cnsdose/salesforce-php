@@ -16,9 +16,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $UserRoleId
  * @property string $UserOrGroupId
- * @property mixed $AccessLevel
+ * @property string $AccessLevel
  * @property bool $CanSubmit
- * @property mixed $RowCause
+ * @property string $RowCause
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  */

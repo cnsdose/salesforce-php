@@ -16,15 +16,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $MacroId
- * @property mixed $Operation
- * @property mixed $Target
+ * @property string $Operation
+ * @property string $Target
  * @property string $Value
  * @property string $ValueRecord
  * @property mixed $SortOrder

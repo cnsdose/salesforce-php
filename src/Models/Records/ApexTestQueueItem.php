@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CreatedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ApexClassId
- * @property mixed $Status
+ * @property string $Status
  * @property string $ExtendedStatus
  * @property string $ParentJobId
  * @property string $TestRunResultId

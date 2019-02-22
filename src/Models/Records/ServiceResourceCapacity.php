@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $CapacityNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $EndDate
  * @property float $CapacityInHours
  * @property mixed $CapacityInWorkItems
- * @property mixed $TimePeriod
+ * @property string $TimePeriod
  */
 class ServiceResourceCapacity extends BaseRecordModel
 {

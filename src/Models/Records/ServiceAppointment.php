@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $AppointmentNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property string $Description
  * @property \Carbon\Carbon $EarliestStartTime
@@ -45,18 +45,18 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $Duration
  * @property \Carbon\Carbon $ArrivalWindowStartTime
  * @property \Carbon\Carbon $ArrivalWindowEndTime
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $SchedStartTime
  * @property \Carbon\Carbon $SchedEndTime
  * @property \Carbon\Carbon $ActualStartTime
  * @property \Carbon\Carbon $ActualEndTime
  * @property float $ActualDuration
- * @property mixed $DurationType
+ * @property string $DurationType
  * @property float $DurationInMinutes
  * @property string $ServiceTerritoryId
  * @property string $Subject
- * @property mixed $ParentRecordStatusCategory
- * @property mixed $StatusCategory
+ * @property string $ParentRecordStatusCategory
+ * @property string $StatusCategory
  * @property string $ServiceNote
  */
 class ServiceAppointment extends BaseRecordModel

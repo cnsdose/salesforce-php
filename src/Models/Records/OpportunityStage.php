@@ -20,8 +20,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $SortOrder
  * @property bool $IsClosed
  * @property bool $IsWon
- * @property mixed $ForecastCategory
- * @property mixed $ForecastCategoryName
+ * @property string $ForecastCategory
+ * @property string $ForecastCategoryName
  * @property mixed $DefaultProbability
  * @property string $Description
  * @property string $CreatedById

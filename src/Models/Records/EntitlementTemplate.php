@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $Name
  * @property string $BusinessHoursId
- * @property mixed $Type
+ * @property string $Type
  * @property string $SlaProcessId
  * @property bool $IsPerIncident
  * @property mixed $CasesPerEntitlement

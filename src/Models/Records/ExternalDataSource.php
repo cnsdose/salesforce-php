@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -24,12 +24,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Type
+ * @property string $Type
  * @property string $Endpoint
  * @property string $Repository
  * @property bool $IsWritable
- * @property mixed $PrincipalType
- * @property mixed $Protocol
+ * @property string $PrincipalType
+ * @property string $Protocol
  * @property string $AuthProviderId
  * @property string $LargeIconId
  * @property string $SmallIconId

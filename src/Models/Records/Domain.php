@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method Domain[] query()
  *
  * @property string $Id
- * @property mixed $DomainType
+ * @property string $DomainType
  * @property string $Domain
  * @property bool $OptionsExternalHttps
  * @property string $CnameTarget

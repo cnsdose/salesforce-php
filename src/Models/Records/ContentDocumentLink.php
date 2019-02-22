@@ -18,8 +18,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ContentDocumentId
  * @property bool $IsDeleted
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $ShareType
- * @property mixed $Visibility
+ * @property string $ShareType
+ * @property string $Visibility
  */
 class ContentDocumentLink extends BaseRecordModel
 {

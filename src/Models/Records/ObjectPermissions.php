@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $ParentId
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property bool $PermissionsCreate
  * @property bool $PermissionsRead
  * @property bool $PermissionsEdit

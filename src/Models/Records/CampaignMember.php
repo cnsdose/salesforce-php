@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CampaignId
  * @property string $LeadId
  * @property string $ContactId
- * @property mixed $Status
+ * @property string $Status
  * @property bool $HasResponded
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -26,8 +26,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $FirstRespondedDate
- * @property mixed $CurrencyIsoCode
- * @property mixed $Salutation
+ * @property string $CurrencyIsoCode
+ * @property string $Salutation
  * @property string $Name
  * @property string $FirstName
  * @property string $LastName
@@ -45,7 +45,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $DoNotCall
  * @property bool $HasOptedOutOfEmail
  * @property bool $HasOptedOutOfFax
- * @property mixed $LeadSource
+ * @property string $LeadSource
  * @property string $CompanyOrAccount
  * @property string $Type
  * @property string $LeadOrContactId

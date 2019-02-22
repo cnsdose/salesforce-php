@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CaseId
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
- * @property mixed $Field
+ * @property string $Field
  * @property mixed $OldValue
  * @property mixed $NewValue
  */

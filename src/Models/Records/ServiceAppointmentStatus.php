@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ApiName
  * @property mixed $SortOrder
  * @property bool $IsDefault
- * @property mixed $StatusCode
+ * @property string $StatusCode
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
  * @property string $LastModifiedById

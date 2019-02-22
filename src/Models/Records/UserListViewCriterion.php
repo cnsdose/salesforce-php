@@ -23,7 +23,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $UserListViewId
  * @property mixed $SortOrder
  * @property string $ColumnName
- * @property mixed $Operation
+ * @property string $Operation
  * @property string $Value
  */
 class UserListViewCriterion extends BaseRecordModel

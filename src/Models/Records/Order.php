@@ -22,13 +22,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $EffectiveDate
  * @property \Carbon\Carbon $EndDate
  * @property bool $IsReductionOrder
- * @property mixed $Status
+ * @property string $Status
  * @property string $Description
  * @property string $CustomerAuthorizedById
  * @property \Carbon\Carbon $CustomerAuthorizedDate
  * @property string $CompanyAuthorizedById
  * @property \Carbon\Carbon $CompanyAuthorizedDate
- * @property mixed $Type
+ * @property string $Type
  * @property string $BillingStreet
  * @property string $BillingCity
  * @property string $BillingState
@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BillingCountry
  * @property float $BillingLatitude
  * @property float $BillingLongitude
- * @property mixed $BillingGeocodeAccuracy
+ * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
  * @property string $ShippingStreet
  * @property string $ShippingCity
@@ -45,7 +45,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShippingCountry
  * @property float $ShippingLatitude
  * @property float $ShippingLongitude
- * @property mixed $ShippingGeocodeAccuracy
+ * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
  * @property string $Name
  * @property \Carbon\Carbon $PoDate
@@ -55,8 +55,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShipToContactId
  * @property \Carbon\Carbon $ActivatedDate
  * @property string $ActivatedById
- * @property mixed $StatusCode
- * @property mixed $CurrencyIsoCode
+ * @property string $StatusCode
+ * @property string $CurrencyIsoCode
  * @property string $OrderNumber
  * @property float $TotalAmount
  * @property \Carbon\Carbon $CreatedDate

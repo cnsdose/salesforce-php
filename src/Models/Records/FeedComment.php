@@ -25,12 +25,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CommentBody
  * @property bool $IsDeleted
  * @property string $InsertedById
- * @property mixed $CommentType
+ * @property string $CommentType
  * @property string $RelatedRecordId
  * @property bool $IsRichText
  * @property bool $IsVerified
  * @property bool $HasEntityLinks
- * @property mixed $Status
+ * @property string $Status
  * @property string $ThreadParentId
  * @property mixed $ThreadLevel
  * @property mixed $ThreadChildrenCount

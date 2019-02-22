@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ParentEntityId
  * @property string $ContentFolderId
  * @property bool $IsDeleted
- * @property mixed $EnableFolderStatus
+ * @property string $EnableFolderStatus
  */
 class ContentFolderLink extends BaseRecordModel
 {

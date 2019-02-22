@@ -17,9 +17,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ParentId
  * @property string $Name
  * @property string $DeveloperName
- * @property mixed $AccessType
+ * @property string $AccessType
  * @property bool $IsReadonly
- * @property mixed $Type
+ * @property string $Type
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $AssetRelationshipNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $RelatedAssetId
  * @property \Carbon\Carbon $FromDate
  * @property \Carbon\Carbon $ToDate
- * @property mixed $RelationshipType
+ * @property string $RelationshipType
  */
 class AssetRelationship extends BaseRecordModel
 {

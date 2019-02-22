@@ -20,8 +20,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsDeleted
  * @property string $FeedEntityId
  * @property mixed $Revision
- * @property mixed $Action
- * @property mixed $EditedAttribute
+ * @property string $Action
+ * @property string $EditedAttribute
  * @property string $Value
  * @property bool $IsValueRichText
  */

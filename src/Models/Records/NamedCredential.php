@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $Endpoint
- * @property mixed $PrincipalType
+ * @property string $PrincipalType
  * @property bool $CalloutOptionsGenerateAuthorizationHeader
  * @property bool $CalloutOptionsAllowMergeFieldsInHeader
  * @property bool $CalloutOptionsAllowMergeFieldsInBody

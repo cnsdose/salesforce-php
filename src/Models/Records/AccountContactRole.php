@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $AccountId
  * @property string $ContactId
- * @property mixed $Role
+ * @property string $Role
  * @property bool $IsPrimary
  */
 class AccountContactRole extends BaseRecordModel

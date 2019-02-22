@@ -17,11 +17,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsDeleted
  * @property string $Name
  * @property string $ParentId
- * @property mixed $Type
- * @property mixed $Status
+ * @property string $Type
+ * @property string $Status
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property float $ExpectedRevenue
  * @property float $BudgetedCost
  * @property float $ActualCost

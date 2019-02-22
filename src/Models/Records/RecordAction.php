@@ -15,19 +15,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $RecordId
- * @property mixed $FlowDefinition
+ * @property string $FlowDefinition
  * @property string $FlowInterviewId
  * @property mixed $Order
- * @property mixed $Status
- * @property mixed $Pinned
- * @property mixed $ActionDefinition
+ * @property string $Status
+ * @property string $Pinned
+ * @property string $ActionDefinition
  * @property bool $IsMandatory
  * @property bool $IsUiRemoveHidden
  */

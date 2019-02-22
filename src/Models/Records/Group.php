@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $DeveloperName
  * @property string $RelatedId
- * @property mixed $Type
+ * @property string $Type
  * @property mixed $Email
  * @property string $OwnerId
  * @property bool $DoesSendEmailToMembers

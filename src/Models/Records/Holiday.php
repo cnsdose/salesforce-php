@@ -28,12 +28,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsRecurrence
  * @property \Carbon\Carbon $RecurrenceStartDate
  * @property \Carbon\Carbon $RecurrenceEndDateOnly
- * @property mixed $RecurrenceType
+ * @property string $RecurrenceType
  * @property mixed $RecurrenceInterval
  * @property mixed $RecurrenceDayOfWeekMask
  * @property mixed $RecurrenceDayOfMonth
- * @property mixed $RecurrenceInstance
- * @property mixed $RecurrenceMonthOfYear
+ * @property string $RecurrenceInstance
+ * @property string $RecurrenceMonthOfYear
  */
 class Holiday extends BaseRecordModel
 {

@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $LicenseDefinitionKey
  * @property mixed $TotalLicenses
- * @property mixed $Status
+ * @property string $Status
  * @property mixed $UsedLicenses
  * @property \Carbon\Carbon $UsedLicensesLastUpdated
  * @property string $Name

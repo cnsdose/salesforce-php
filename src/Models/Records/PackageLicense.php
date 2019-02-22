@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method PackageLicense[] query()
  *
  * @property string $Id
- * @property mixed $Status
+ * @property string $Status
  * @property bool $IsProvisioned
  * @property mixed $AllowedLicenses
  * @property mixed $UsedLicenses

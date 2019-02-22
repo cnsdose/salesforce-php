@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method CurrencyType[] query()
  *
  * @property string $Id
- * @property mixed $IsoCode
+ * @property string $IsoCode
  * @property float $ConversionRate
  * @property mixed $DecimalPlaces
  * @property bool $IsActive

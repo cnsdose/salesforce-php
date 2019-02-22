@@ -27,13 +27,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Subject
  * @property string $FromName
  * @property mixed $FromAddress
- * @property mixed $ValidatedFromAddress
+ * @property string $ValidatedFromAddress
  * @property string $ToAddress
  * @property string $CcAddress
  * @property string $BccAddress
  * @property bool $Incoming
  * @property bool $HasAttachment
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $MessageDate
  * @property bool $IsDeleted
  * @property string $ReplyToEmailMessageId

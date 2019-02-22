@@ -35,6 +35,8 @@ class GenerateRecordModel extends Command
         'reference' => ['string', null],
         'boolean' => ['bool', 'bool'],
         'string' => ['string', null],
+        'picklist' => ['string', null],
+        'multipicklist' => ['string', null],
         'textarea' => ['string', null],
         'date' => ['\\Carbon\\Carbon', 'date'],
         'datetime' => ['\\Carbon\\Carbon', 'datetime'],

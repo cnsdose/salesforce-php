@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $ContractId
  * @property string $ContactId
- * @property mixed $Role
+ * @property string $Role
  * @property bool $IsPrimary
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

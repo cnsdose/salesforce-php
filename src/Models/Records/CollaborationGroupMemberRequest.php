@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CollaborationGroupId
  * @property string $RequesterId
  * @property string $ResponseMessage
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate

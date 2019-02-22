@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $CreatedDate
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsDeleted
- * @property mixed $ArticleLanguage
+ * @property string $ArticleLanguage
  * @property mixed $ArticleVersionNumber
  * @property bool $IsSharedByEmail
  */

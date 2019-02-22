@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $LineItemNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -33,7 +33,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Description
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
- * @property mixed $Status
+ * @property string $Status
  * @property string $PricebookEntryId
  * @property float $Quantity
  * @property float $UnitPrice
@@ -42,7 +42,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $Subtotal
  * @property float $TotalPrice
  * @property float $Duration
- * @property mixed $DurationType
+ * @property string $DurationType
  * @property float $DurationInMinutes
  * @property string $WorkTypeId
  * @property string $Street
@@ -52,13 +52,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property string $ServiceTerritoryId
  * @property string $Subject
- * @property mixed $StatusCategory
+ * @property string $StatusCategory
  * @property bool $IsClosed
- * @property mixed $Priority
+ * @property string $Priority
  * @property mixed $ServiceAppointmentCount
  * @property string $LocationId
  * @property mixed $MinimumCrewSize

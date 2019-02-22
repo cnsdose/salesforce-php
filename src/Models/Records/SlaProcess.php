@@ -18,8 +18,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $NameNorm
  * @property string $Description
  * @property bool $IsActive
- * @property mixed $StartDateField
- * @property mixed $SobjectType
+ * @property string $StartDateField
+ * @property string $SobjectType
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate

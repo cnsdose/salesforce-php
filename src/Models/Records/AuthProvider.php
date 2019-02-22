@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property \Carbon\Carbon $CreatedDate
- * @property mixed $ProviderType
+ * @property string $ProviderType
  * @property string $FriendlyName
  * @property string $DeveloperName
  * @property string $RegistrationHandlerId

@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
  * @property \Carbon\Carbon $ActivationDate
- * @property mixed $ApprovalStatus
+ * @property string $ApprovalStatus
  * @property string $Description
  * @property string $BillingStreet
  * @property string $BillingCity
@@ -40,7 +40,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BillingCountry
  * @property float $BillingLatitude
  * @property float $BillingLongitude
- * @property mixed $BillingGeocodeAccuracy
+ * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
  * @property string $ShippingStreet
  * @property string $ShippingCity
@@ -49,7 +49,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShippingCountry
  * @property float $ShippingLatitude
  * @property float $ShippingLongitude
- * @property mixed $ShippingGeocodeAccuracy
+ * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
  * @property string $Pricebook2Id
  * @property float $ShippingHandling
@@ -61,7 +61,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $SpecialTerms
  * @property mixed $Discount
  * @property float $GrandTotal
- * @property mixed $Status
+ * @property string $Status
  * @property string $ParentServiceContractId
  * @property string $RootServiceContractId
  */

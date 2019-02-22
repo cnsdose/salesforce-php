@@ -25,13 +25,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $SalesforceUserId
  * @property string $ExternalUserId
  * @property string $AppName
- * @property mixed $State
- * @property mixed $Operation
+ * @property string $State
+ * @property string $Operation
  * @property \Carbon\Carbon $ScheduleDate
  * @property string $ConnectedAppId
  * @property string $UserProvConfigId
  * @property string $UserProvAccountId
- * @property mixed $ApprovalStatus
+ * @property string $ApprovalStatus
  * @property string $ManagerId
  * @property mixed $RetryCount
  * @property string $ParentId

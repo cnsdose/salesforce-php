@@ -27,8 +27,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $FileExtension
  * @property mixed $ContentUrl
  * @property string $ExternalDataSourceName
- * @property mixed $ExternalDataSourceType
- * @property mixed $SharingOption
+ * @property string $ExternalDataSourceType
+ * @property string $SharingOption
  */
 class CombinedAttachment extends BaseRecordModel
 {

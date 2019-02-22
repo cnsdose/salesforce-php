@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property mixed $UserSortOrder
  * @property mixed $SortOrder
- * @property mixed $Type
+ * @property string $Type
  * @property mixed $LogoUrl
  * @property mixed $IconUrl
  * @property mixed $InfoUrl

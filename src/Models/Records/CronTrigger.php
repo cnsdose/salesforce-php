@@ -21,7 +21,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $StartTime
  * @property \Carbon\Carbon $EndTime
  * @property string $CronExpression
- * @property mixed $TimeZoneSidKey
+ * @property string $TimeZoneSidKey
  * @property string $OwnerId
  * @property string $LastModifiedById
  * @property string $CreatedById

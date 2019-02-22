@@ -21,8 +21,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $AuraDefinitionBundleId
- * @property mixed $DefType
- * @property mixed $Format
+ * @property string $DefType
+ * @property string $Format
  * @property string $Source
  */
 class AuraDefinition extends BaseRecordModel

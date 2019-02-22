@@ -22,9 +22,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $MatchingRuleId
  * @property mixed $SortOrder
- * @property mixed $Field
- * @property mixed $MatchingMethod
- * @property mixed $BlankValueBehavior
+ * @property string $Field
+ * @property string $MatchingMethod
+ * @property string $BlankValueBehavior
  */
 class MatchingRuleItem extends BaseRecordModel
 {

@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $Name
- * @property mixed $JobType
+ * @property string $JobType
  */
 class CronJobDetail extends BaseRecordModel
 {

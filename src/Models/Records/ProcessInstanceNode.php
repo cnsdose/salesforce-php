@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ProcessInstanceId
  * @property string $ProcessNodeId
- * @property mixed $NodeStatus
+ * @property string $NodeStatus
  * @property \Carbon\Carbon $CompletedDate
  * @property string $LastActorId
  * @property string $ProcessNodeName

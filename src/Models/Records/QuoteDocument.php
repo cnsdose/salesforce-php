@@ -18,7 +18,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $QuoteId
  * @property string $ContentVersionDocumentId
  * @property mixed $Document
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property float $GrandTotal
  * @property mixed $Discount
  * @property bool $IsDeleted

@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -24,11 +24,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Type
- * @property mixed $State
+ * @property string $Type
+ * @property string $State
  * @property string $ActionConfig
  * @property string $ApexPolicyId
- * @property mixed $EventType
+ * @property string $EventType
  * @property string $ResourceName
  * @property string $ExecutionUserId
  * @property string $Description

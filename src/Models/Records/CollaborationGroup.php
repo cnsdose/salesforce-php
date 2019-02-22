@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property mixed $MemberCount
  * @property string $OwnerId
- * @property mixed $CollaborationType
+ * @property string $CollaborationType
  * @property string $Description
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method DatacloudContact[] query()
  *
  * @property string $Id
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $ExternalId
  * @property string $CompanyId
  * @property string $ContactId
@@ -30,8 +30,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $State
  * @property string $Country
  * @property string $Zip
- * @property mixed $Department
- * @property mixed $Level
+ * @property string $Department
+ * @property string $Level
  * @property bool $IsOwned
  * @property \Carbon\Carbon $UpdatedDate
  * @property bool $IsInCrm

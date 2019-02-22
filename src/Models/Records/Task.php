@@ -18,12 +18,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $WhatId
  * @property mixed $Subject
  * @property \Carbon\Carbon $ActivityDate
- * @property mixed $Status
- * @property mixed $Priority
+ * @property string $Status
+ * @property string $Priority
  * @property bool $IsHighPriority
  * @property string $OwnerId
  * @property string $Description
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property bool $IsDeleted
  * @property string $AccountId
  * @property bool $IsClosed
@@ -34,7 +34,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsArchived
  * @property mixed $CallDurationInSeconds
- * @property mixed $CallType
+ * @property string $CallType
  * @property string $CallDisposition
  * @property string $CallObject
  * @property \Carbon\Carbon $ReminderDateTime
@@ -43,15 +43,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsRecurrence
  * @property \Carbon\Carbon $RecurrenceStartDateOnly
  * @property \Carbon\Carbon $RecurrenceEndDateOnly
- * @property mixed $RecurrenceTimeZoneSidKey
- * @property mixed $RecurrenceType
+ * @property string $RecurrenceTimeZoneSidKey
+ * @property string $RecurrenceType
  * @property mixed $RecurrenceInterval
  * @property mixed $RecurrenceDayOfWeekMask
  * @property mixed $RecurrenceDayOfMonth
- * @property mixed $RecurrenceInstance
- * @property mixed $RecurrenceMonthOfYear
- * @property mixed $RecurrenceRegeneratedType
- * @property mixed $TaskSubtype
+ * @property string $RecurrenceInstance
+ * @property string $RecurrenceMonthOfYear
+ * @property string $RecurrenceRegeneratedType
+ * @property string $TaskSubtype
  * @property \Carbon\Carbon $CompletedDateTime
  */
 class Task extends BaseRecordModel

@@ -217,6 +217,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsUseWebLink
  * @property bool $PermissionsHasUnlimitedNBAExecutions
  * @property bool $PermissionsViewOnlyEmbeddedAppUser
+ * @property bool $PermissionsSendExternalEmailAvailable
  * @property bool $PermissionsViewAllActivities
  * @property bool $PermissionsSubscribeReportToOtherUsers
  * @property bool $PermissionsLightningConsoleAllowedForUser
@@ -241,7 +242,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsQueryAllFiles
  * @property bool $PermissionsModifyMetadata
  * @property string $UserLicenseId
- * @property mixed $UserType
+ * @property string $UserType
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -459,6 +460,7 @@ class Profile extends BaseRecordModel
         'PermissionsUseWebLink' => 'bool',
         'PermissionsHasUnlimitedNBAExecutions' => 'bool',
         'PermissionsViewOnlyEmbeddedAppUser' => 'bool',
+        'PermissionsSendExternalEmailAvailable' => 'bool',
         'PermissionsViewAllActivities' => 'bool',
         'PermissionsSubscribeReportToOtherUsers' => 'bool',
         'PermissionsLightningConsoleAllowedForUser' => 'bool',

@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ParentId
  * @property string $MasterLabel
  * @property mixed $SortOrder
- * @property mixed $SortStyle
+ * @property string $SortStyle
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate

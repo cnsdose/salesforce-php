@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -28,9 +28,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $WhatId
  * @property string $WhoId
  * @property mixed $PreferredPhone
- * @property mixed $PreferredChannel
- * @property mixed $Status
- * @property mixed $RequestReason
+ * @property string $PreferredChannel
+ * @property string $Status
+ * @property string $RequestReason
  * @property string $RequestDescription
  */
 class ContactRequest extends BaseRecordModel

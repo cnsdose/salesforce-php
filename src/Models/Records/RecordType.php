@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $NamespacePrefix
  * @property string $Description
  * @property string $BusinessProcessId
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property bool $IsActive
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate

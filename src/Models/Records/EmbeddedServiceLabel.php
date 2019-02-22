@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $DurableId
  * @property string $EmbeddedServiceConfigDeveloperName
- * @property mixed $LabelKey
+ * @property string $LabelKey
  * @property string $CustomLabelName
  */
 class EmbeddedServiceLabel extends BaseRecordModel

@@ -23,12 +23,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Family
- * @property mixed $CurrencyIsoCode
+ * @property string $Family
+ * @property string $CurrencyIsoCode
  * @property string $ExternalDataSourceId
  * @property string $ExternalId
  * @property mixed $DisplayUrl
- * @property mixed $QuantityUnitOfMeasure
+ * @property string $QuantityUnitOfMeasure
  * @property bool $IsDeleted
  * @property bool $IsArchived
  * @property \Carbon\Carbon $LastViewedDate

@@ -16,13 +16,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $UserId
  * @property \Carbon\Carbon $LoginTime
- * @property mixed $LoginType
+ * @property string $LoginType
  * @property string $SourceIp
  * @property string $LoginUrl
  * @property string $AuthenticationServiceId
  * @property string $LoginGeoId
- * @property mixed $TlsProtocol
- * @property mixed $CipherSuite
+ * @property string $TlsProtocol
+ * @property string $CipherSuite
  * @property bool $OptionsIsGet
  * @property bool $OptionsIsPost
  * @property string $Browser

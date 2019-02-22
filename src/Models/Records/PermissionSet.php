@@ -222,6 +222,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsUseWebLink
  * @property bool $PermissionsHasUnlimitedNBAExecutions
  * @property bool $PermissionsViewOnlyEmbeddedAppUser
+ * @property bool $PermissionsSendExternalEmailAvailable
  * @property bool $PermissionsViewAllActivities
  * @property bool $PermissionsSubscribeReportToOtherUsers
  * @property bool $PermissionsLightningConsoleAllowedForUser
@@ -467,6 +468,7 @@ class PermissionSet extends BaseRecordModel
         'PermissionsUseWebLink' => 'bool',
         'PermissionsHasUnlimitedNBAExecutions' => 'bool',
         'PermissionsViewOnlyEmbeddedAppUser' => 'bool',
+        'PermissionsSendExternalEmailAvailable' => 'bool',
         'PermissionsViewAllActivities' => 'bool',
         'PermissionsSubscribeReportToOtherUsers' => 'bool',
         'PermissionsLightningConsoleAllowedForUser' => 'bool',

@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method DatedConversionRate[] query()
  *
  * @property string $Id
- * @property mixed $IsoCode
+ * @property string $IsoCode
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $NextStartDate
  * @property float $ConversionRate

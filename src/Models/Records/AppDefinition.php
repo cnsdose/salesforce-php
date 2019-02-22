@@ -21,8 +21,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $DeveloperName
  * @property mixed $LogoUrl
  * @property string $Description
- * @property mixed $UiType
- * @property mixed $NavType
+ * @property string $UiType
+ * @property string $NavType
  * @property string $UtilityBar
  * @property string $HeaderColor
  * @property bool $IsOverrideOrgTheme

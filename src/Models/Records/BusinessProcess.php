@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $NamespacePrefix
  * @property string $Description
- * @property mixed $TableEnumOrId
+ * @property string $TableEnumOrId
  * @property bool $IsActive
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate

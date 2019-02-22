@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $ParentId
- * @property mixed $Visibility
+ * @property string $Visibility
  * @property string $Name
  * @property \Carbon\Carbon $SystemModstamp
  */

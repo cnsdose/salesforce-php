@@ -17,12 +17,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $DeveloperName
  * @property string $Description
- * @property mixed $EncodingKey
+ * @property string $EncodingKey
  * @property string $HtmlWrapper
  * @property string $Filename
  * @property mixed $BodyLength
  * @property mixed $Binary
- * @property mixed $ContentSource
+ * @property string $ContentSource
  * @property bool $SupportsCaching
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate

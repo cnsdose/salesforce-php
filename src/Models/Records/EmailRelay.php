@@ -21,8 +21,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $Host
- * @property mixed $Port
- * @property mixed $TlsSetting
+ * @property string $Port
+ * @property string $TlsSetting
  * @property bool $IsRequireAuth
  * @property string $Username
  * @property mixed $Password

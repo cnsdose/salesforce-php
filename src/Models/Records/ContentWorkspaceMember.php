@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ContentWorkspaceId
  * @property string $ContentWorkspacePermissionId
  * @property string $MemberId
- * @property mixed $MemberType
+ * @property string $MemberType
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
  */

@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsPending
  * @property string $ProcessInstanceId
  * @property string $TargetObjectId
- * @property mixed $StepStatus
+ * @property string $StepStatus
  * @property string $ProcessNodeId
  * @property string $OriginalActorId
  * @property string $ActorId

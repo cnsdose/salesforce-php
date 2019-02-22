@@ -22,12 +22,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ParentRecordId
  * @property string $ActionDefinitionApiName
  * @property string $ActionDefinitionLabel
- * @property mixed $ActionType
- * @property mixed $State
+ * @property string $ActionType
+ * @property string $State
  * @property string $UserId
  * @property string $RecordActionId
  * @property \Carbon\Carbon $LoggedTime
- * @property mixed $Pinned
+ * @property string $Pinned
  * @property bool $IsMandatory
  */
 class RecordActionHistory extends BaseRecordModel

@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $MasterLabel
  * @property string $ApiName
  * @property mixed $SortOrder
- * @property mixed $ReverseRole
+ * @property string $ReverseRole
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
  * @property string $LastModifiedById

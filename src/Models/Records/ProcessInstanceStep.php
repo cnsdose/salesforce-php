@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $ProcessInstanceId
- * @property mixed $StepStatus
+ * @property string $StepStatus
  * @property string $OriginalActorId
  * @property string $ActorId
  * @property string $Comments

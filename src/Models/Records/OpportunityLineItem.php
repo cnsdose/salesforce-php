@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Product2Id
  * @property string $ProductCode
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property float $Quantity
  * @property mixed $Discount
  * @property float $TotalPrice

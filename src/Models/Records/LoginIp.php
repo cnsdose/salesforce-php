@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $CreatedDate
  * @property bool $IsAuthenticated
  * @property \Carbon\Carbon $ChallengeSentDate
- * @property mixed $ChallengeMethod
+ * @property string $ChallengeMethod
  */
 class LoginIp extends BaseRecordModel
 {

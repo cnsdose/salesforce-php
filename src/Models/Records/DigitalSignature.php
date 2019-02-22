@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DigitalSignatureNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -24,13 +24,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ParentId
  * @property string $DocumentName
- * @property mixed $DocumentContentType
+ * @property string $DocumentContentType
  * @property mixed $DocumentLength
  * @property mixed $DocumentBody
  * @property string $SignedBy
  * @property string $Place
  * @property \Carbon\Carbon $SignedDate
- * @property mixed $SignatureType
+ * @property string $SignatureType
  */
 class DigitalSignature extends BaseRecordModel
 {

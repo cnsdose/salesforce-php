@@ -15,13 +15,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $UserId
- * @property mixed $RecordId
+ * @property string $RecordId
  * @property bool $HasReadAccess
  * @property bool $HasEditAccess
  * @property bool $HasDeleteAccess
  * @property bool $HasTransferAccess
  * @property bool $HasAllAccess
- * @property mixed $MaxAccessLevel
+ * @property string $MaxAccessLevel
  */
 class UserRecordAccess extends BaseRecordModel
 {

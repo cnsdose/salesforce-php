@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $QueueId
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property string $CreatedById
  * @property \Carbon\Carbon $SystemModstamp
  */

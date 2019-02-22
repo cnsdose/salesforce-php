@@ -22,7 +22,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $FieldServiceMobileSettingsId
  * @property string $AppExtensionName
- * @property mixed $Type
+ * @property string $Type
  * @property string $LaunchValue
  * @property string $ScopedToObjectTypes
  * @property string $InstallationUrl

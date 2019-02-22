@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $Pricebook2Id
  * @property string $Product2Id
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property float $UnitPrice
  * @property bool $IsActive
  * @property bool $UseStandardPrice

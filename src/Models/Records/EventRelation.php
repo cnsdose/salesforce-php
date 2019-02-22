@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $RelationId
  * @property string $EventId
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $RespondedDate
  * @property string $Response
  * @property \Carbon\Carbon $CreatedDate

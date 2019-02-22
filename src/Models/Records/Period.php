@@ -15,13 +15,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $FiscalYearSettingsId
- * @property mixed $Type
+ * @property string $Type
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsForecastPeriod
- * @property mixed $QuarterLabel
- * @property mixed $PeriodLabel
+ * @property string $QuarterLabel
+ * @property string $PeriodLabel
  * @property mixed $Number
  * @property string $FullyQualifiedLabel
  */

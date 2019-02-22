@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -37,12 +37,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ContrastInvertedColor
  * @property bool $IsSendLocationHistory
  * @property mixed $GeoLocationMinUpdateFreqMins
- * @property mixed $GeoLocationAccuracy
+ * @property string $GeoLocationAccuracy
  * @property mixed $RecordDataCacheTimeMins
  * @property mixed $MetadataCacheTimeDays
  * @property mixed $UpdateScheduleTimeMins
  * @property bool $IsShowEditFullRecord
- * @property mixed $TimeIntervalSetupMins
+ * @property string $TimeIntervalSetupMins
  * @property string $DefaultListViewDeveloperName
  * @property string $NavbarInvertedColor
  * @property string $FeedbackSelectedColor
@@ -50,7 +50,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $PastDaysInDatePicker
  * @property bool $IsDefault
  * @property mixed $BgGeoLocationMinUpdateFreqMins
- * @property mixed $BgGeoLocationAccuracy
+ * @property string $BgGeoLocationAccuracy
  * @property bool $IsUseSalesforceMobileActions
  */
 class FieldServiceMobileSettings extends BaseRecordModel

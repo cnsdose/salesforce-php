@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsDeleted
  * @property string $ParentId
  * @property float $NormalizedScore
- * @property mixed $Channel
+ * @property string $Channel
  * @property mixed $ViewCount
  */
 class KnowledgeArticleViewStat extends BaseRecordModel

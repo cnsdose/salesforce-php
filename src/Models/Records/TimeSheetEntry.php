@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $TimeSheetEntryNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -27,8 +27,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $TimeSheetId
  * @property \Carbon\Carbon $StartTime
  * @property \Carbon\Carbon $EndTime
- * @property mixed $Status
- * @property mixed $Type
+ * @property string $Status
+ * @property string $Type
  * @property string $WorkOrderId
  * @property string $WorkOrderLineItemId
  * @property string $Description

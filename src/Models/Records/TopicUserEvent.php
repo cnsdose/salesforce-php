@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $UserId
  * @property string $TopicId
- * @property mixed $ActionEnum
+ * @property string $ActionEnum
  * @property \Carbon\Carbon $CreatedDate
  */
 class TopicUserEvent extends BaseRecordModel

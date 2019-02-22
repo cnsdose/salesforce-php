@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $EmailMessageId
  * @property string $RelationId
- * @property mixed $RelationType
+ * @property string $RelationType
  * @property string $RelationAddress
  * @property string $RelationObjectType
  * @property \Carbon\Carbon $CreatedDate

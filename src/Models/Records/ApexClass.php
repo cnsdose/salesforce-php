@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $NamespacePrefix
  * @property string $Name
  * @property float $ApiVersion
- * @property mixed $Status
+ * @property string $Status
  * @property bool $IsValid
  * @property float $BodyCrc
  * @property string $Body

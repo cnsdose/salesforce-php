@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $DeveloperName
  * @property string $NamespacePrefix
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property bool $IsSoqlCompatible
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

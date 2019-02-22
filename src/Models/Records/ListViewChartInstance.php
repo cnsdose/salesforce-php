@@ -20,7 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $DeveloperName
  * @property string $SourceEntity
  * @property string $ListViewContextId
- * @property mixed $ChartType
+ * @property string $ChartType
  * @property bool $IsLastViewed
  * @property string $DataQuery
  * @property string $DataQueryWithoutUserFilters
@@ -28,7 +28,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsDeletable
  * @property string $GroupingField
  * @property string $AggregateField
- * @property mixed $AggregateType
+ * @property string $AggregateType
  */
 class ListViewChartInstance extends BaseRecordModel
 {

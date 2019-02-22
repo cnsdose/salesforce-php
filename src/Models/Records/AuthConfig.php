@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $AuthOptionsAuthProvider
  * @property bool $AuthOptionsCertificate
  * @property bool $IsActive
- * @property mixed $Type
+ * @property string $Type
  */
 class AuthConfig extends BaseRecordModel
 {

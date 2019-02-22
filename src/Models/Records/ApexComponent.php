@@ -19,7 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $ApiVersion
  * @property string $MasterLabel
  * @property string $Description
- * @property mixed $ControllerType
+ * @property string $ControllerType
  * @property string $ControllerKey
  * @property string $Markup
  * @property \Carbon\Carbon $CreatedDate

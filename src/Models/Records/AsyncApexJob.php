@@ -16,9 +16,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
- * @property mixed $JobType
+ * @property string $JobType
  * @property string $ApexClassId
- * @property mixed $Status
+ * @property string $Status
  * @property mixed $JobItemsProcessed
  * @property mixed $TotalJobItems
  * @property mixed $NumberOfErrors

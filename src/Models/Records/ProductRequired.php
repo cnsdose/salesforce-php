@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $ProductRequiredNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Product2Id
  * @property string $ProductName
  * @property float $QuantityRequired
- * @property mixed $QuantityUnitOfMeasure
+ * @property string $QuantityUnitOfMeasure
  */
 class ProductRequired extends BaseRecordModel
 {

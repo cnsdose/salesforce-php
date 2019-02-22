@@ -16,15 +16,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $ParentId
- * @property mixed $LocationType
- * @property mixed $AddressType
+ * @property string $LocationType
+ * @property string $AddressType
  * @property string $Street
  * @property string $City
  * @property string $State
@@ -32,11 +32,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property string $Description
  * @property string $DrivingDirections
- * @property mixed $TimeZone
+ * @property string $TimeZone
  */
 class Address extends BaseRecordModel
 {

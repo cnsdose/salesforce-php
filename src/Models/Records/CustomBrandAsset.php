@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $CustomBrandId
- * @property mixed $AssetCategory
+ * @property string $AssetCategory
  * @property string $TextAsset
  * @property string $AssetSourceId
  * @property string $CreatedById

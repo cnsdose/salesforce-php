@@ -20,13 +20,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $EventType
+ * @property string $EventType
  * @property \Carbon\Carbon $LogDate
  * @property float $LogFileLength
  * @property string $LogFileContentType
  * @property float $ApiVersion
  * @property mixed $Sequence
- * @property mixed $Interval
+ * @property string $Interval
  * @property string $LogFileFieldNames
  * @property string $LogFileFieldTypes
  * @property mixed $LogFile

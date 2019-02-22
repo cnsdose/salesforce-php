@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $Name
- * @property mixed $AccessLevel
+ * @property string $AccessLevel
  * @property bool $PreferencesVisibleInCSP
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

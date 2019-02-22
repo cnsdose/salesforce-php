@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $Name
  * @property string $Description
- * @property mixed $RecurrenceType
+ * @property string $RecurrenceType
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

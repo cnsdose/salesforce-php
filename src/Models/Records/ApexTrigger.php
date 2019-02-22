@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $NamespacePrefix
  * @property string $Name
- * @property mixed $TableEnumOrId
+ * @property string $TableEnumOrId
  * @property bool $UsageBeforeInsert
  * @property bool $UsageAfterInsert
  * @property bool $UsageBeforeUpdate
@@ -26,7 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UsageIsBulk
  * @property bool $UsageAfterUndelete
  * @property float $ApiVersion
- * @property mixed $Status
+ * @property string $Status
  * @property bool $IsValid
  * @property float $BodyCrc
  * @property string $Body

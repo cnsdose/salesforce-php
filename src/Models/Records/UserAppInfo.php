@@ -15,14 +15,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $UserId
- * @property mixed $FormFactor
+ * @property string $FormFactor
  * @property string $AppDefinitionId
  */
 class UserAppInfo extends BaseRecordModel

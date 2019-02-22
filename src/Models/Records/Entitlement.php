@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $AccountId
- * @property mixed $Type
+ * @property string $Type
  * @property string $ServiceContractId
  * @property string $ContractLineItemId
  * @property string $AssetId
@@ -36,7 +36,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsPerIncident
  * @property mixed $CasesPerEntitlement
  * @property mixed $RemainingCases
- * @property mixed $Status
+ * @property string $Status
  * @property string $SvcApptBookingWindowsId
  */
 class Entitlement extends BaseRecordModel

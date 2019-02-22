@@ -25,17 +25,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $SuppliedEmail
  * @property string $SuppliedPhone
  * @property string $SuppliedCompany
- * @property mixed $Type
- * @property mixed $Status
- * @property mixed $Reason
- * @property mixed $Origin
+ * @property string $Type
+ * @property string $Status
+ * @property string $Reason
+ * @property string $Origin
  * @property string $Subject
- * @property mixed $Priority
+ * @property string $Priority
  * @property string $Description
  * @property bool $IsClosed
  * @property \Carbon\Carbon $ClosedDate
  * @property bool $IsEscalated
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

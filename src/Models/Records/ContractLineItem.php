@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $LineItemNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -37,7 +37,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $ListPrice
  * @property float $Subtotal
  * @property float $TotalPrice
- * @property mixed $Status
+ * @property string $Status
  * @property string $ParentContractLineItemId
  * @property string $RootContractLineItemId
  */

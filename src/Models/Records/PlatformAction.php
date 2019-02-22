@@ -17,20 +17,20 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ExternalId
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $Label
- * @property mixed $Type
+ * @property string $Type
  * @property string $Subtype
  * @property string $ApiName
  * @property string $ActionTarget
- * @property mixed $ActionTargetType
+ * @property string $ActionTargetType
  * @property string $ConfirmationMessage
  * @property string $GroupId
  * @property bool $IsGroupDefault
- * @property mixed $Category
- * @property mixed $InvocationStatus
+ * @property string $Category
+ * @property string $InvocationStatus
  * @property string $InvokedByUserId
  * @property string $SourceEntity
- * @property mixed $ActionListContext
- * @property mixed $DeviceFormat
+ * @property string $ActionListContext
+ * @property string $DeviceFormat
  * @property string $IconContentType
  * @property mixed $IconHeight
  * @property mixed $IconWidth
@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsMassAction
  * @property string $PrimaryColor
  * @property string $RelatedSourceEntity
- * @property mixed $Section
+ * @property string $Section
  * @property string $RelatedListRecordId
  * @property string $TargetUrl
  * @property string $TargetObject

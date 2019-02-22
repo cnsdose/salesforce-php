@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $UserId
- * @property mixed $Preference
+ * @property string $Preference
  * @property string $Value
  * @property \Carbon\Carbon $SystemModstamp
  */

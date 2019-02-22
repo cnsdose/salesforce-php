@@ -19,12 +19,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $EndDate
  * @property string $Name
  * @property bool $IsStandardYear
- * @property mixed $YearType
- * @property mixed $QuarterLabelScheme
- * @property mixed $PeriodLabelScheme
- * @property mixed $WeekLabelScheme
- * @property mixed $QuarterPrefix
- * @property mixed $PeriodPrefix
+ * @property string $YearType
+ * @property string $QuarterLabelScheme
+ * @property string $PeriodLabelScheme
+ * @property string $WeekLabelScheme
+ * @property string $QuarterPrefix
+ * @property string $PeriodPrefix
  * @property mixed $WeekStartDay
  * @property string $Description
  * @property \Carbon\Carbon $SystemModstamp

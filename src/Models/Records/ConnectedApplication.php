@@ -25,8 +25,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $OptionsHasSessionLevelPolicy
  * @property bool $OptionsIsInternal
  * @property bool $OptionsFullContentPushNotifications
- * @property mixed $MobileSessionTimeout
- * @property mixed $PinLength
+ * @property string $MobileSessionTimeout
+ * @property string $PinLength
  * @property mixed $StartUrl
  * @property mixed $MobileStartUrl
  * @property mixed $RefreshTokenValidityPeriod

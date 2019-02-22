@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AccountFromId
  * @property string $AccountToId
  * @property string $OpportunityId
- * @property mixed $Role
+ * @property string $Role
  * @property bool $IsPrimary
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

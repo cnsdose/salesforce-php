@@ -22,8 +22,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $UserId
  * @property string $ListViewId
- * @property mixed $SobjectType
- * @property mixed $LastViewedChart
+ * @property string $SobjectType
+ * @property string $LastViewedChart
  */
 class UserListView extends BaseRecordModel
 {

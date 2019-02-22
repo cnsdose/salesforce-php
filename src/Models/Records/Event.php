@@ -27,13 +27,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Description
  * @property string $AccountId
  * @property string $OwnerId
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property bool $IsPrivate
- * @property mixed $ShowAs
+ * @property string $ShowAs
  * @property bool $IsDeleted
  * @property bool $IsChild
  * @property bool $IsGroupEvent
- * @property mixed $GroupEventType
+ * @property string $GroupEventType
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -44,19 +44,19 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsRecurrence
  * @property \Carbon\Carbon $RecurrenceStartDateTime
  * @property \Carbon\Carbon $RecurrenceEndDateOnly
- * @property mixed $RecurrenceTimeZoneSidKey
- * @property mixed $RecurrenceType
+ * @property string $RecurrenceTimeZoneSidKey
+ * @property string $RecurrenceType
  * @property mixed $RecurrenceInterval
  * @property mixed $RecurrenceDayOfWeekMask
  * @property mixed $RecurrenceDayOfMonth
- * @property mixed $RecurrenceInstance
- * @property mixed $RecurrenceMonthOfYear
+ * @property string $RecurrenceInstance
+ * @property string $RecurrenceMonthOfYear
  * @property \Carbon\Carbon $ReminderDateTime
  * @property bool $IsReminderSet
- * @property mixed $EventSubtype
+ * @property string $EventSubtype
  * @property bool $IsRecurrence2Exclusion
  * @property string $Recurrence2PatternText
- * @property mixed $Recurrence2PatternVersion
+ * @property string $Recurrence2PatternVersion
  * @property bool $IsRecurrence2
  * @property bool $IsRecurrence2Exception
  * @property \Carbon\Carbon $Recurrence2PatternStartDate

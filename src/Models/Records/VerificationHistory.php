@@ -16,16 +16,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property mixed $EventGroup
  * @property \Carbon\Carbon $VerificationTime
- * @property mixed $VerificationMethod
+ * @property string $VerificationMethod
  * @property string $UserId
- * @property mixed $Activity
- * @property mixed $Status
+ * @property string $Activity
+ * @property string $Status
  * @property string $LoginHistoryId
  * @property string $SourceIp
  * @property string $LoginGeoId
  * @property string $Remarks
  * @property string $ResourceId
- * @property mixed $Policy
+ * @property string $Policy
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property string $LastModifiedById

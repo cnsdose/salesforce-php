@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $LastName
  * @property string $FirstName
- * @property mixed $Type
+ * @property string $Type
  * @property string $Alias
  * @property string $UserRoleId
  * @property string $RecordTypeId

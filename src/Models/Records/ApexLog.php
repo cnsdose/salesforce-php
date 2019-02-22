@@ -24,7 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $DurationMilliseconds
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $StartTime
- * @property mixed $Location
+ * @property string $Location
  */
 class ApexLog extends BaseRecordModel
 {

@@ -15,9 +15,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -25,11 +25,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $MatchEngine
+ * @property string $MatchEngine
  * @property string $BooleanFilter
  * @property string $Description
- * @property mixed $RuleStatus
- * @property mixed $SobjectSubtype
+ * @property string $RuleStatus
+ * @property string $SobjectSubtype
  */
 class MatchingRule extends BaseRecordModel
 {

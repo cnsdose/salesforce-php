@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $FileExtension
  * @property mixed $ContentUrl
  * @property string $ExternalDataSourceName
- * @property mixed $ExternalDataSourceType
+ * @property string $ExternalDataSourceType
  */
 class OwnedContentDocument extends BaseRecordModel
 {

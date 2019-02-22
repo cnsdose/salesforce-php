@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $ProductTransferNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -36,12 +36,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsReceived
  * @property string $ReceivedById
  * @property string $Description
- * @property mixed $QuantityUnitOfMeasure
+ * @property string $QuantityUnitOfMeasure
  * @property string $ShipmentId
  * @property \Carbon\Carbon $ExpectedPickupDate
- * @property mixed $Status
+ * @property string $Status
  * @property \Carbon\Carbon $ShipmentExpectedDeliveryDate
- * @property mixed $ShipmentStatus
+ * @property string $ShipmentStatus
  * @property string $ShipmentTrackingNumber
  * @property mixed $ShipmentTrackingUrl
  * @property string $ReturnOrderLineItemId

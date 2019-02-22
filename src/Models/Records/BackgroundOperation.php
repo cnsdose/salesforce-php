@@ -16,14 +16,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $SubmittedAt
- * @property mixed $Status
+ * @property string $Status
  * @property string $ExecutionGroup
  * @property string $SequenceGroup
  * @property mixed $SequenceNumber

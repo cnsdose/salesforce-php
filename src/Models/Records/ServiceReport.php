@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $ServiceReportNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -25,11 +25,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ParentId
  * @property string $ContentVersionDocumentId
  * @property string $DocumentName
- * @property mixed $DocumentContentType
+ * @property string $DocumentContentType
  * @property mixed $DocumentLength
  * @property mixed $DocumentBody
  * @property string $Template
- * @property mixed $ServiceReportLanguage
+ * @property string $ServiceReportLanguage
  * @property bool $IsSigned
  */
 class ServiceReport extends BaseRecordModel

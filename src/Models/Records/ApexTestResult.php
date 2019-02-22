@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $TestTimestamp
- * @property mixed $Outcome
+ * @property string $Outcome
  * @property string $ApexClassId
  * @property string $MethodName
  * @property string $Message

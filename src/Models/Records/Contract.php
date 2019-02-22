@@ -15,9 +15,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $AccountId
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $Pricebook2Id
- * @property mixed $OwnerExpirationNotice
+ * @property string $OwnerExpirationNotice
  * @property \Carbon\Carbon $StartDate
  * @property \Carbon\Carbon $EndDate
  * @property string $BillingStreet
@@ -27,11 +27,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $BillingCountry
  * @property float $BillingLatitude
  * @property float $BillingLongitude
- * @property mixed $BillingGeocodeAccuracy
+ * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
  * @property mixed $ContractTerm
  * @property string $OwnerId
- * @property mixed $Status
+ * @property string $Status
  * @property string $CompanySignedId
  * @property \Carbon\Carbon $CompanySignedDate
  * @property string $CustomerSignedId
@@ -40,7 +40,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $SpecialTerms
  * @property string $ActivatedById
  * @property \Carbon\Carbon $ActivatedDate
- * @property mixed $StatusCode
+ * @property string $StatusCode
  * @property string $Description
  * @property bool $IsDeleted
  * @property string $ContractNumber

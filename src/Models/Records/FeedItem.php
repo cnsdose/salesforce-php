@@ -15,7 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $ParentId
- * @property mixed $Type
+ * @property string $Type
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
  * @property bool $IsDeleted
@@ -38,7 +38,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $HasFeedEntity
  * @property bool $HasVerifiedComment
  * @property bool $IsClosed
- * @property mixed $Status
+ * @property string $Status
  */
 class FeedItem extends BaseRecordModel
 {

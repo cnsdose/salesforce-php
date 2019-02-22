@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Description
  * @property float $EstimatedDuration
- * @property mixed $DurationType
+ * @property string $DurationType
  * @property float $DurationInMinutes
  * @property bool $ShouldAutoCreateSvcAppt
  * @property string $ServiceReportTemplateId

@@ -23,14 +23,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Country
  * @property float $Latitude
  * @property float $Longitude
- * @property mixed $GeocodeAccuracy
+ * @property string $GeocodeAccuracy
  * @property mixed $Address
  * @property mixed $Phone
  * @property mixed $Fax
  * @property string $PrimaryContact
- * @property mixed $DefaultLocaleSidKey
- * @property mixed $TimeZoneSidKey
- * @property mixed $LanguageLocaleKey
+ * @property string $DefaultLocaleSidKey
+ * @property string $TimeZoneSidKey
+ * @property string $LanguageLocaleKey
  * @property bool $ReceivesInfoEmails
  * @property bool $ReceivesAdminInfoEmails
  * @property bool $PreferencesRequireOpportunityProducts
@@ -44,21 +44,21 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PreferencesOnlyLLPermUserAllowed
  * @property mixed $FiscalYearStartMonth
  * @property bool $UsesStartDateAsFiscalYearName
- * @property mixed $DefaultAccountAccess
- * @property mixed $DefaultContactAccess
- * @property mixed $DefaultOpportunityAccess
- * @property mixed $DefaultLeadAccess
- * @property mixed $DefaultCaseAccess
- * @property mixed $DefaultCalendarAccess
- * @property mixed $DefaultPricebookAccess
- * @property mixed $DefaultCampaignAccess
+ * @property string $DefaultAccountAccess
+ * @property string $DefaultContactAccess
+ * @property string $DefaultOpportunityAccess
+ * @property string $DefaultLeadAccess
+ * @property string $DefaultCaseAccess
+ * @property string $DefaultCalendarAccess
+ * @property string $DefaultPricebookAccess
+ * @property string $DefaultCampaignAccess
  * @property \Carbon\Carbon $SystemModstamp
  * @property mixed $ComplianceBccEmail
- * @property mixed $UiSkin
+ * @property string $UiSkin
  * @property string $SignupCountryIsoCode
  * @property \Carbon\Carbon $TrialExpirationDate
  * @property mixed $NumKnowledgeService
- * @property mixed $OrganizationType
+ * @property string $OrganizationType
  * @property string $NamespacePrefix
  * @property string $InstanceName
  * @property bool $IsSandbox

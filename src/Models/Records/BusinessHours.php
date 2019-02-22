@@ -31,7 +31,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $FridayEndTime
  * @property \Carbon\Carbon $SaturdayStartTime
  * @property \Carbon\Carbon $SaturdayEndTime
- * @property mixed $TimeZoneSidKey
+ * @property string $TimeZoneSidKey
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById

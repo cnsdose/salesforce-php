@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $CreatedDate
@@ -24,9 +24,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $ExecutionsAllowed
+ * @property string $ExecutionsAllowed
  * @property mixed $HoursUntilExpiration
- * @property mixed $Category
+ * @property string $Category
  * @property bool $IsPublished
  */
 class ActionLinkGroupTemplate extends BaseRecordModel

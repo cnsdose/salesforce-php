@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $ShipmentNumber
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -32,7 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShipFromCountry
  * @property float $ShipFromLatitude
  * @property float $ShipFromLongitude
- * @property mixed $ShipFromGeocodeAccuracy
+ * @property string $ShipFromGeocodeAccuracy
  * @property mixed $ShipFromAddress
  * @property string $ShipToStreet
  * @property string $ShipToCity
@@ -41,7 +41,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShipToCountry
  * @property float $ShipToLatitude
  * @property float $ShipToLongitude
- * @property mixed $ShipToGeocodeAccuracy
+ * @property string $ShipToGeocodeAccuracy
  * @property mixed $ShipToAddress
  * @property string $SourceLocationId
  * @property string $DestinationLocationId
@@ -49,8 +49,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $TrackingUrl
  * @property \Carbon\Carbon $ExpectedDeliveryDate
  * @property \Carbon\Carbon $ActualDeliveryDate
- * @property mixed $Provider
- * @property mixed $Status
+ * @property string $Provider
+ * @property string $Status
  * @property string $ShipToName
  * @property string $Description
  * @property string $DeliveredToId

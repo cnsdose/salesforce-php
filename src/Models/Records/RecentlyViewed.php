@@ -17,7 +17,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $LastName
  * @property string $FirstName
- * @property mixed $Type
+ * @property string $Type
  * @property string $Alias
  * @property string $UserRoleId
  * @property string $RecordTypeId
@@ -29,7 +29,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $NameOrAlias
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
- * @property mixed $Language
+ * @property string $Language
  */
 class RecentlyViewed extends BaseRecordModel
 {

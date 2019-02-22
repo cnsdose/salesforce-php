@@ -14,7 +14,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @method DatacloudCompany[] query()
  *
  * @property string $Id
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property string $ExternalId
  * @property string $CompanyId
  * @property string $Name
@@ -25,11 +25,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Street
  * @property string $City
  * @property string $State
- * @property mixed $StateCode
+ * @property string $StateCode
  * @property string $Country
- * @property mixed $CountryCode
+ * @property string $CountryCode
  * @property string $Zip
- * @property mixed $Site
+ * @property string $Site
  * @property string $Industry
  * @property mixed $NumberOfEmployees
  * @property float $AnnualRevenue

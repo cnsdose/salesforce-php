@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -30,17 +30,17 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $State
  * @property string $PostalCode
  * @property string $Country
- * @property mixed $GeocodeAccuracyStandard
+ * @property string $GeocodeAccuracyStandard
  * @property mixed $Address
  * @property mixed $Phone
  * @property mixed $Fax
  * @property string $CountryAccessCode
- * @property mixed $PublicIndicator
+ * @property string $PublicIndicator
  * @property string $StockSymbol
  * @property string $StockExchange
  * @property float $SalesVolume
  * @property mixed $URL
- * @property mixed $OutOfBusiness
+ * @property string $OutOfBusiness
  * @property float $EmployeesTotal
  * @property string $FipsMsaCode
  * @property string $FipsMsaDesc
@@ -51,7 +51,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $MailingState
  * @property string $MailingPostalCode
  * @property string $MailingCountry
- * @property mixed $MailingGeocodeAccuracy
+ * @property string $MailingGeocodeAccuracy
  * @property mixed $MailingAddress
  * @property string $Latitude
  * @property string $Longitude
@@ -79,38 +79,38 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $FifthNaicsDesc
  * @property string $SixthNaics
  * @property string $SixthNaicsDesc
- * @property mixed $OwnOrRent
+ * @property string $OwnOrRent
  * @property float $EmployeesHere
- * @property mixed $EmployeesHereReliability
- * @property mixed $SalesVolumeReliability
- * @property mixed $CurrencyCode
- * @property mixed $LegalStatus
+ * @property string $EmployeesHereReliability
+ * @property string $SalesVolumeReliability
+ * @property string $CurrencyCode
+ * @property string $LegalStatus
  * @property float $GlobalUltimateTotalEmployees
- * @property mixed $EmployeesTotalReliability
- * @property mixed $MinorityOwned
- * @property mixed $WomenOwned
- * @property mixed $SmallBusiness
- * @property mixed $MarketingSegmentationCluster
- * @property mixed $ImportExportAgent
- * @property mixed $Subsidiary
+ * @property string $EmployeesTotalReliability
+ * @property string $MinorityOwned
+ * @property string $WomenOwned
+ * @property string $SmallBusiness
+ * @property string $MarketingSegmentationCluster
+ * @property string $ImportExportAgent
+ * @property string $Subsidiary
  * @property string $TradeStyle2
  * @property string $TradeStyle3
  * @property string $TradeStyle4
  * @property string $TradeStyle5
  * @property string $NationalId
- * @property mixed $NationalIdType
+ * @property string $NationalIdType
  * @property string $UsTaxId
- * @property mixed $GeoCodeAccuracy
+ * @property string $GeoCodeAccuracy
  * @property mixed $FamilyMembers
- * @property mixed $MarketingPreScreen
+ * @property string $MarketingPreScreen
  * @property string $GlobalUltimateDunsNumber
  * @property string $GlobalUltimateBusinessName
  * @property string $ParentOrHqDunsNumber
  * @property string $ParentOrHqBusinessName
  * @property string $DomesticUltimateDunsNumber
  * @property string $DomesticUltimateBusinessName
- * @property mixed $LocationStatus
- * @property mixed $CompanyCurrencyIsoCode
+ * @property string $LocationStatus
+ * @property string $CompanyCurrencyIsoCode
  * @property string $Description
  * @property mixed $FortuneRank
  * @property string $IncludedInSnP500

@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $NamespacePrefix
  * @property \Carbon\Carbon $LastRunDate
  * @property \Carbon\Carbon $SystemModstamp
- * @property mixed $Format
+ * @property string $Format
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  */

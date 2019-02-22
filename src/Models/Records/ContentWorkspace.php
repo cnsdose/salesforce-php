@@ -16,7 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $Name
  * @property string $Description
- * @property mixed $TagModel
+ * @property string $TagModel
  * @property string $CreatedById
  * @property \Carbon\Carbon $CreatedDate
  * @property string $LastModifiedById
@@ -25,7 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $DefaultRecordTypeId
  * @property bool $IsRestrictContentTypes
  * @property bool $IsRestrictLinkedContentTypes
- * @property mixed $WorkspaceType
+ * @property string $WorkspaceType
  * @property bool $ShouldAddCreatorMembership
  * @property \Carbon\Carbon $LastWorkspaceActivityDate
  * @property string $RootContentFolderId

@@ -15,9 +15,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
- * @property mixed $SobjectType
+ * @property string $SobjectType
  * @property string $DeveloperName
- * @property mixed $Language
+ * @property string $Language
  * @property string $MasterLabel
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
@@ -25,10 +25,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $OwnerId
- * @property mixed $ChartType
- * @property mixed $GroupingField
- * @property mixed $AggregateField
- * @property mixed $AggregateType
+ * @property string $ChartType
+ * @property string $GroupingField
+ * @property string $AggregateField
+ * @property string $AggregateType
  */
 class ListViewChart extends BaseRecordModel
 {

@@ -21,9 +21,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $DeveloperName
  * @property string $NamespacePrefix
  * @property string $Description
- * @property mixed $LeftSize
- * @property mixed $MiddleSize
- * @property mixed $RightSize
+ * @property string $LeftSize
+ * @property string $MiddleSize
+ * @property string $RightSize
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -35,14 +35,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $TextColor
  * @property mixed $BackgroundStart
  * @property mixed $BackgroundEnd
- * @property mixed $BackgroundDirection
- * @property mixed $Type
+ * @property string $BackgroundDirection
+ * @property string $Type
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $DashboardResultRefreshedDate
  * @property string $DashboardResultRunningUser
- * @property mixed $ColorPalette
- * @property mixed $ChartTheme
+ * @property string $ColorPalette
+ * @property string $ChartTheme
  */
 class Dashboard extends BaseRecordModel
 {

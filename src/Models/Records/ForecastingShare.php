@@ -22,8 +22,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $SystemModstamp
  * @property string $UserOrGroupId
  * @property string $SharedForecastManagerRoleId
- * @property mixed $AccessLevel
- * @property mixed $RoleType
+ * @property string $AccessLevel
+ * @property string $RoleType
  */
 class ForecastingShare extends BaseRecordModel
 {
