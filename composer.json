@@ -39,5 +39,12 @@
             "type": "vcs",
             "url": "git@bitbucket.org:cnsd/cnsdose-standards.git"
         }
-    ]
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "CNSDose\\Salesforce\\Providers\\SalesforceProvider"
+            ]
+        }
+    }
 }
