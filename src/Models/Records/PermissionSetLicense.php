@@ -229,7 +229,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsUseWebLink
  * @property bool $MaximumPermissionsHasUnlimitedNBAExecutions
  * @property bool $MaximumPermissionsViewOnlyEmbeddedAppUser
- * @property bool $MaximumPermissionsSendExternalEmailAvailable
  * @property bool $MaximumPermissionsViewAllActivities
  * @property bool $MaximumPermissionsSubscribeReportToOtherUsers
  * @property bool $MaximumPermissionsLightningConsoleAllowedForUser
@@ -475,7 +474,6 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsUseWebLink' => 'bool',
         'MaximumPermissionsHasUnlimitedNBAExecutions' => 'bool',
         'MaximumPermissionsViewOnlyEmbeddedAppUser' => 'bool',
-        'MaximumPermissionsSendExternalEmailAvailable' => 'bool',
         'MaximumPermissionsViewAllActivities' => 'bool',
         'MaximumPermissionsSubscribeReportToOtherUsers' => 'bool',
         'MaximumPermissionsLightningConsoleAllowedForUser' => 'bool',
