@@ -13,9 +13,12 @@ use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Models\BaseRecordModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
 use CNSDose\Salesforce\Models\Metadata\CustomObject;
+use CNSDose\Salesforce\Models\Metadata\CustomValue;
 use CNSDose\Salesforce\Models\Metadata\DeploymentStatus;
 use CNSDose\Salesforce\Models\Metadata\FieldType;
 use CNSDose\Salesforce\Models\Metadata\SharingModel;
+use CNSDose\Salesforce\Models\Metadata\ValueSet;
+use CNSDose\Salesforce\Models\Metadata\ValueSetValuesDefinition;
 use CNSDose\Salesforce\Models\Records\FieldPermissions;
 use CNSDose\Salesforce\Models\Records\PermissionSet;
 use CNSDose\Salesforce\Support\Conversion\Date;
@@ -46,6 +49,40 @@ class RecordTest extends TestCase
         $tree->setNameField($treeName);
         $result = $tree->create();
         $this->assertTrue($result->result->success);
+
+        $treeHarvestSeason = new CustomField();
+        $treeHarvestSeason->setFullName('SalesforcePHPTestTree__c.Harvest__c');
+        $treeHarvestSeason->setLabel('Harvesting Season');
+        $treeHarvestSeason->setType(FieldType::MULTISELECT_PICKLIST());
+        $treeHarvestSeason->setVisibleLines(4);
+        $seasonSet = new ValueSet();
+        $seasonSet->setRestricted(true);
+        $seasonSetDef = new ValueSetValuesDefinition();
+        $seasonSetDef->setSorted(true);
+        $seasonSetDef->setValue(array_map(function (string $season) {
+            $value = new CustomValue();
+            $value->setFullName($season);
+            $value->setLabel(ucfirst($season));
+            $value->setDefault(false);
+            return $value;
+        }, ['spring', 'summer', 'autumn', 'winter']));
+        $seasonSet->setValueSetDefinition($seasonSetDef);
+        $treeHarvestSeason->setValueSet($seasonSet);
+        $result = $treeHarvestSeason->create();
+        $this->assertTrue($result->result->success);
+        $fieldPermissionsSet = [];
+        foreach ($permissionSets as $permissionSet) {
+            if (!empty($permissionSet->ProfileId)) {
+                $fieldPermissions = new FieldPermissions();
+                $fieldPermissions->ParentId = $permissionSet->Id;
+                $fieldPermissions->SobjectType = 'SalesforcePHPTestTree__c';
+                $fieldPermissions->Field = 'SalesforcePHPTestTree__c.Harvest__c';
+                $fieldPermissions->PermissionsEdit = true;
+                $fieldPermissions->PermissionsRead = true;
+                $fieldPermissionsSet[] = $fieldPermissions;
+            }
+        }
+        $result = BaseRecordModel::createMultiple($fieldPermissionsSet);
 
         $treeIsAlive = new CustomField();
         $treeIsAlive->setFullName('SalesforcePHPTestTree__c.IsAlive__c');
@@ -198,6 +235,7 @@ class RecordTest extends TestCase
     {
         $tree = new Tree();
         $tree->Name = 'Apple Tree';
+        $tree->Harvest__c = ['Summer', 'Autumn'];
         $result = $tree->create();
         $this->assertTrue($result['success']);
         $this->assertNotEmpty($result['id']);
@@ -329,6 +367,7 @@ class RecordTest extends TestCase
         $updatedTreeName = 'Updated Apple Tree';
         $plantDateTime = Carbon::now('EST');
         $tree->Name = $updatedTreeName;
+        $tree->Harvest__c = ['Autumn'];
         $tree->PlantDate__c = $plantDateTime;
         $tree->PlantDateTime__c = $plantDateTime;
         $tree->PlantTime__c = $plantDateTime;

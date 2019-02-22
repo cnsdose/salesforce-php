@@ -17,13 +17,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $OwnerId
  * @property bool $IsDeleted
  * @property string $Name
- * @property mixed $CurrencyIsoCode
+ * @property string $CurrencyIsoCode
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property \Carbon\Carbon $LastActivityDate
+ * @property string[] $Harvest__c
  * @property bool $IsAlive__c
  * @property \Carbon\Carbon $PlantDate__c
  * @property \Carbon\Carbon $PlantTime__c
@@ -45,6 +46,7 @@ class Tree extends BaseRecordModel
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
         'LastActivityDate' => 'date',
+        'Harvest__c' => 'multipicklist',
         'IsAlive__c' => 'bool',
         'PlantDate__c' => 'date',
         'PlantTime__c' => 'time',
