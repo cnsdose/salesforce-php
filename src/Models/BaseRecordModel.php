@@ -175,7 +175,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             $this->query['where']['AND'][] = $field;
         }
         if ($value === null && ($operator === null
-                || (is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
+                || ((is_string($operator) || is_int($operator) || is_float($operator)) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
         ) {
             $value = $operator;
             $operator = '=';
@@ -196,7 +196,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             $this->query['where']['OR'][] = $field;
         }
         if ($value === null && ($operator === null
-                || (is_string($operator) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
+                || ((is_string($operator) || is_int($operator) || is_float($operator)) && !in_array(strtoupper($operator), self::$COMPARISON_OPERATORS, true)))
         ) {
             $value = $operator;
             $operator = '=';
