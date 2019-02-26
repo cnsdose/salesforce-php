@@ -327,6 +327,28 @@ class RecordTest extends TestCase
     }
 
     /**
+     * @depends test_create_crispy_apple_record
+     * @depends test_create_juicy_apple_record
+     * @throws MalformedRequestException
+     * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
+     * @throws \CNSDose\Salesforce\Exceptions\ConversionException
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     */
+    public function test_query_order_by()
+    {
+        $apples = Apple::build()
+            ->orderBy('Name', false)
+            ->query();
+        $this->assertEquals($apples[0]->Name, 'Juicy Apple');
+        $this->assertEquals($apples[1]->Name, 'Crispy Apple');
+        $apples = Apple::build()
+            ->orderBy('Name')
+            ->query();
+        $this->assertEquals($apples[0]->Name, 'Crispy Apple');
+        $this->assertEquals($apples[1]->Name, 'Juicy Apple');
+    }
+
+    /**
      * @depends test_create_tree_record
      * @param $treeId
      * @return Tree

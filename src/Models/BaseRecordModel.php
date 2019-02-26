@@ -118,6 +118,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             'OR' => [],
         ],
         'resolve' => [],
+        'orderBy' => [],
     ];
     protected $rawQuery;
     protected static $COMPARISON_OPERATORS = ['=', '!=', '<', '<=', '>', '>=', 'LIKE', 'IN', 'NOT IN', 'INCLUDES', 'EXCLUDES'];
@@ -202,6 +203,25 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
             $operator = '=';
         }
         $this->query['where']['OR'][] = [$field, $operator, $value];
+        return $this;
+    }
+
+    /**
+     * @param string[]|string $fields
+     * @param bool $ascending
+     * @param bool $nullsFirst
+     * @return static
+     */
+    public function orderBy($fields, bool $ascending = true, bool $nullsFirst = true): self
+    {
+        if (is_array($fields)) {
+            $fields = implode(',', $fields);
+        }
+        $this->query['orderBy'] = [
+            'fields' => $fields,
+            'ascending' => $ascending,
+            'nullsFirst' => $nullsFirst,
+        ];
         return $this;
     }
 
@@ -296,6 +316,15 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
                     return sprintf('%s %s %s', $field, $operator, $value ?? 'NULL');
                 }, $this->query['where']['OR']));
             }
+        }
+        $soql .= ' ';
+
+        // ORDER BY
+        if (!(empty($this->query['orderBy']) || empty($this->query['orderBy']['fields']))) {
+            $soql .= 'ORDER BY '
+                . $this->query['orderBy']['fields']
+                . ($this->query['orderBy']['ascending'] ? ' ASC' : ' DESC')
+                . ($this->query['orderBy']['nullsFirst'] ? ' NULLS FIRST' : ' NULLS LAST');
         }
         $soql .= ' ';
 
