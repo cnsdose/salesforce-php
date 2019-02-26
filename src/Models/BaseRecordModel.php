@@ -300,6 +300,9 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
                     if (is_object($value)) {
                         return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
                     }
+                    if (is_bool($value)) {
+                        $value = $value ? 'true' : 'false';
+                    }
                     return sprintf('%s %s %s', $field, $operator, $value ?? 'NULL');
                 }, $this->query['where']['AND']));
                 $soql .= ')';
@@ -312,6 +315,9 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
                     [$field, $operator, $value] = $clause;
                     if (is_object($value)) {
                         return sprintf('%s %s (%s)', $field, $operator, $value->toSoql());
+                    }
+                    if (is_bool($value)) {
+                        $value = $value ? 'true' : 'false';
                     }
                     return sprintf('%s %s %s', $field, $operator, $value ?? 'NULL');
                 }, $this->query['where']['OR']));

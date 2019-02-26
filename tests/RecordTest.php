@@ -295,6 +295,7 @@ class RecordTest extends TestCase
         $tree = Tree::build()
             ->select('Id')
             ->where('Name', "'Apple Tree'")
+            ->where('IsAlive__c', true)
             ->limit(1)
             ->query()[0];
         $this->assertEquals($treeId, $tree->Id);
