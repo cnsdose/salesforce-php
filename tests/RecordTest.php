@@ -424,7 +424,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Standards\Exceptions\StandardException
      */
-    public function test_upsert_multiple($appleId1, $appleId2)
+    public function test_update_multiple($appleId1, $appleId2)
     {
         $apples = Apple::build()
             ->where('Id', "'$appleId1'")
@@ -433,7 +433,7 @@ class RecordTest extends TestCase
         foreach ($apples as $apple) {
             $apple->Name = 'Updated ' . $apple->Name;
         }
-        $results = BaseRecordModel::upsertMultiple($apples, true);
+        $results = BaseRecordModel::updateMultiple($apples, true);
         $this->assertTrue($results[0]['success']);
         $this->assertTrue($results[1]['success']);
     }

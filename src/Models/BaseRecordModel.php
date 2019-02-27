@@ -540,7 +540,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * @throws MalformedRequestException
      * @throws StandardException
      */
-    public static function upsertMultiple(array $records, bool $allOrNone = false)
+    public static function updateMultiple(array $records, bool $allOrNone = false)
     {
         $url = sprintf(
             '%s%s/composite/sobjects',
