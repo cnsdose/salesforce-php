@@ -92,6 +92,15 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
         if ($status >= 200 && $status < 300) {
             return $json;
         }
+        if ($status === 400 && isset($json['hasErrors'])) {
+            $exception = new StandardException(500, 'Failed to execute Salesforce operation');
+            foreach ($json['results'] as $result) {
+                foreach ($result['errors'] as $error) {
+                    $exception->addError(sprintf('%s error in record %s', $error['statusCode'], $result['referenceId']), $error['message']);
+                }
+            }
+            throw $exception;
+        }
         if ($status === 400) {
             throw new MalformedRequestException($json[0]['message'], $json[0]['errorCode']);
         }
@@ -467,6 +476,31 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
     }
 
     /**
+     * @return array
+     * @throws AuthorisationException
+     * @throws MalformedRequestException
+     * @throws StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\ConversionException
+     */
+    public function createTree(): array
+    {
+        $url = sprintf(
+            '%s%s/composite/tree/%s/',
+            self::$API_PREFIX,
+            config('salesforce.api_version'),
+            static::$objectApiName
+        );
+        $referenceId = 0;
+        $record = $this->encode($this->raw(), $referenceId);
+        $response = self::guzzleRequest('post', $url, [
+            'json' => [
+                'records' => [$record],
+            ],
+        ]);
+        return $response;
+    }
+
+    /**
      * @param BaseRecordModel[]|array $records
      * @param bool $allOrNone
      * @return mixed
@@ -639,15 +673,35 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
 
     /**
      * @param array $record
+     * @param int|null $referenceId
      * @return array
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
-    protected function encode(array $record): array
+    protected function encode(array $record, int &$referenceId = null): array
     {
         foreach ($record as $key => &$value) {
             if ($value !== null && !empty($this->defaultFields[$key])) {
                 $value = BaseConversion::encode($this->defaultFields[$key], $value);
+            } elseif ($referenceId !== null && is_array($value)) {
+                $records = array_map(function ($record) use (&$referenceId) {
+                    /**
+                     * @var BaseRecordModel|mixed $record
+                     */
+                    $result = $record->encode($record->raw());
+                    $result['attributes'] = [
+                        'type' => $record::$objectApiName,
+                        'referenceId' => sprintf('ref%s', $referenceId++),
+                    ];
+                    return $result;
+                }, $value);
+                $value = ['records' => $records];
             }
+        }
+        if ($referenceId !== null) {
+            $record['attributes'] = [
+                'type' => static::$objectApiName,
+                'referenceId' => sprintf('ref%s', $referenceId++),
+            ];
         }
         return $record;
     }

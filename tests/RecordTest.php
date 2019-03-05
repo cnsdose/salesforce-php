@@ -469,6 +469,17 @@ class RecordTest extends TestCase
         $this->assertTrue($results[1]['success']);
     }
 
+    public function test_create_tree()
+    {
+        $tree = new Tree();
+        $tree->Name = 'Tree API Tree';
+        $apple = new Apple();
+        $apple->Name = 'Tree API Apple';
+        $tree->Apples__r = [$apple];
+        $response = $tree->createTree();
+        $this->assertFalse($response['hasErrors']);
+    }
+
     public function test_tear_down()
     {
         $result = CustomObject::read('SalesforcePHPTestApple__c')->delete();
