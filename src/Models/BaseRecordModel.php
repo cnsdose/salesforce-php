@@ -688,20 +688,20 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
                      * @var BaseRecordModel|mixed $record
                      */
                     $result = $record->encode($record->raw());
-                    $result['attributes'] = [
-                        'type' => $record::$objectApiName,
-                        'referenceId' => sprintf('ref%s', $referenceId++),
-                    ];
+                    $result['attributes']['type'] = $record::$objectApiName;
+                    if (empty($result['attributes']['referenceId'])) {
+                        $result['attributes']['referenceId'] = sprintf('ref%s', $referenceId++);
+                    }
                     return $result;
                 }, $value);
                 $value = ['records' => $records];
             }
         }
         if ($referenceId !== null) {
-            $record['attributes'] = [
-                'type' => static::$objectApiName,
-                'referenceId' => sprintf('ref%s', $referenceId++),
-            ];
+            $record['attributes']['type'] = static::$objectApiName;
+            if (empty($record['attributes']['referenceId'])) {
+                $record['attributes']['referenceId'] = sprintf('ref%s', $referenceId++);
+            }
         }
         return $record;
     }
