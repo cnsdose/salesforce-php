@@ -10,7 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $done
- * @property ID|null $id
+ * @property string|null $id
  * @property string|null $message
  * @property string|null $state
  * @property string|null $statusCode
@@ -25,7 +25,7 @@ class AsyncResult
         $this->done = $done;
     }
 
-    public function setId(ID $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

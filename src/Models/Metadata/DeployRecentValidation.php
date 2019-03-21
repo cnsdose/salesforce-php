@@ -9,14 +9,14 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class DeployRecentValidation
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ID|null $validationId
+ * @property string|null $validationId
  */
 class DeployRecentValidation
 {
     public static $classMap = [
     ];
 
-    public function setValidationId(ID $validationId)
+    public function setValidationId(string $validationId)
     {
         $this->validationId = $validationId;
     }

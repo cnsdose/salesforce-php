@@ -111,6 +111,9 @@ class GenerateMetadataModel extends Command
                     $attrType = $reader->getAttribute('type');
                     if (strpos($attrType, 'tns:') === 0) {
                         $attrType = substr($attrType, 4);
+                        if ($attrType === 'ID') {
+                            $attrType = 'string';
+                        }
                         $fields[$attrName] = [
                             'multiple' => $attrMultiple,
                             'name' => $attrName,

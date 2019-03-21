@@ -10,7 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property CodeLocation[]|null $dmlInfo
- * @property ID|null $id
+ * @property string|null $id
  * @property CodeLocation[]|null $locationsNotCovered
  * @property CodeLocation[]|null $methodInfo
  * @property string|null $name
@@ -51,7 +51,7 @@ class CodeCoverageResult
         $this->dmlInfo = $dmlInfo;
     }
 
-    public function setId(ID $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

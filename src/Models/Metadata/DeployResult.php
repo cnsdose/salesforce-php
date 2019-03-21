@@ -20,7 +20,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $done
  * @property string|null $errorMessage
  * @property string|null $errorStatusCode
- * @property ID|null $id
+ * @property string|null $id
  * @property bool|null $ignoreWarnings
  * @property string|null $lastModifiedDate
  * @property int|null $numberComponentErrors
@@ -100,7 +100,7 @@ class DeployResult
         $this->errorStatusCode = $errorStatusCode->getValue();
     }
 
-    public function setId(ID $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

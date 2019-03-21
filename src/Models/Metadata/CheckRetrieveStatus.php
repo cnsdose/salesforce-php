@@ -9,7 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class CheckRetrieveStatus
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ID|null $asyncProcessId
+ * @property string|null $asyncProcessId
  * @property bool|null $includeZip
  */
 class CheckRetrieveStatus
@@ -17,7 +17,7 @@ class CheckRetrieveStatus
     public static $classMap = [
     ];
 
-    public function setAsyncProcessId(ID $asyncProcessId)
+    public function setAsyncProcessId(string $asyncProcessId)
     {
         $this->asyncProcessId = $asyncProcessId;
     }

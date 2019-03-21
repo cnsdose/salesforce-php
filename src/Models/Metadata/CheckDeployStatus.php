@@ -9,7 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class CheckDeployStatus
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ID|null $asyncProcessId
+ * @property string|null $asyncProcessId
  * @property bool|null $includeDetails
  */
 class CheckDeployStatus
@@ -17,7 +17,7 @@ class CheckDeployStatus
     public static $classMap = [
     ];
 
-    public function setAsyncProcessId(ID $asyncProcessId)
+    public function setAsyncProcessId(string $asyncProcessId)
     {
         $this->asyncProcessId = $asyncProcessId;
     }

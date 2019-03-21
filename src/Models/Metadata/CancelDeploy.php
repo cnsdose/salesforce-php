@@ -9,14 +9,14 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class CancelDeploy
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ID|null $String
+ * @property string|null $String
  */
 class CancelDeploy
 {
     public static $classMap = [
     ];
 
-    public function setString(ID $String)
+    public function setString(string $String)
     {
         $this->String = $String;
     }

@@ -10,7 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $done
- * @property ID|null $id
+ * @property string|null $id
  */
 class CancelDeployResult
 {
@@ -22,7 +22,7 @@ class CancelDeployResult
         $this->done = $done;
     }
 
-    public function setId(ID $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }

@@ -9,7 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class RunTestFailure
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ID|null $id
+ * @property string|null $id
  * @property string|null $message
  * @property string|null $methodName
  * @property string|null $name
@@ -25,7 +25,7 @@ class RunTestFailure
     public static $classMap = [
     ];
 
-    public function setId(ID $id)
+    public function setId(string $id)
     {
         $this->id = $id;
     }
