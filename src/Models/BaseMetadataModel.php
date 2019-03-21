@@ -8,9 +8,14 @@
 
 namespace CNSDose\Salesforce\Models;
 
-use CNSDose\Salesforce\Models\Metadata\FileProperties;
+use CNSDose\Salesforce\Models\Metadata\AsyncResult;
+use CNSDose\Salesforce\Models\Metadata\CancelDeployResult;
+use CNSDose\Salesforce\Models\Metadata\DeployOptions;
+use CNSDose\Salesforce\Models\Metadata\DeployResult;
 use CNSDose\Salesforce\Models\Metadata\ListMetadataQuery;
 use CNSDose\Salesforce\Models\Metadata\ListMetadataResponse;
+use CNSDose\Salesforce\Models\Metadata\RetrieveRequest;
+use CNSDose\Salesforce\Models\Metadata\RetrieveResult;
 use CNSDose\Salesforce\Support\Authentication;
 
 /**
@@ -194,6 +199,80 @@ abstract class BaseMetadataModel
             'fullNames' => [$this->fullName],
         ];
         return self::getSoapClient()->deleteMetadata($payload);
+    }
+
+    /**
+     * @param RetrieveRequest $retrieveRequest
+     * @return AsyncResult
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public static function retrieve(RetrieveRequest $retrieveRequest): AsyncResult
+    {
+        $payload = new \stdClass();
+        $payload->retrieveRequest = new \SoapVar($retrieveRequest, SOAP_ENC_OBJECT, 'RetrieveRequest', self::$METADATA_SOAP_NAMESPACE);
+        $response = self::getSoapClient()->retrieve($payload);
+        return self::coerceObject($response->result, AsyncResult::class);
+    }
+
+    /**
+     * @param string $id
+     * @param bool $includeZip
+     * @return RetrieveResult
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public static function checkRetrieveStatus(string $id, bool $includeZip = true): RetrieveResult
+    {
+        $payload = new \stdClass();
+        $payload->asyncProcessId = $id;
+        $payload->includeZip = $includeZip;
+        $response = self::getSoapClient()->checkRetrieveStatus($payload);
+        return self::coerceObject($response->result, RetrieveResult::class);
+    }
+
+    /**
+     * @param string $zipBase64
+     * @param DeployOptions $deployOptions
+     * @return AsyncResult
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public static function deploy(string $zipBase64, DeployOptions $deployOptions): AsyncResult
+    {
+        $payload = new \stdClass();
+        $payload->ZipFile = $zipBase64;
+        $payload->DeployOptions = new \SoapVar($deployOptions, SOAP_ENC_OBJECT, 'DeployOptions', self::$METADATA_SOAP_NAMESPACE);
+        $response = self::getSoapClient()->deploy($payload);
+        return self::coerceObject($response->result, AsyncResult::class);
+    }
+
+    /**
+     * @param string $id
+     * @param bool $includeDetails
+     * @return DeployResult
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public static function checkDeployStatus(string $id, bool $includeDetails = true): DeployResult
+    {
+        $payload = new \stdClass();
+        $payload->asyncProcessId = $id;
+        $payload->includeDetails = $includeDetails;
+        $response = self::getSoapClient()->checkDeployStatus($payload);
+        return self::coerceObject($response->result, DeployResult::class);
+    }
+
+    /**
+     * @param string $id
+     * @return CancelDeployResult
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public static function cancelDeploy(string $id): CancelDeployResult
+    {
+        $response = self::getSoapClient()->cancelDeploy($id);
+        return self::coerceObject($response->result, CancelDeployResult::class);
     }
 
     public static function getClassMap(): array

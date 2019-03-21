@@ -12,10 +12,14 @@ use CNSDose\Salesforce\Models\BaseMetadataModel;
 use CNSDose\Salesforce\Models\Metadata\CustomField;
 use CNSDose\Salesforce\Models\Metadata\CustomObject;
 use CNSDose\Salesforce\Models\Metadata\DeploymentStatus;
+use CNSDose\Salesforce\Models\Metadata\DeployOptions;
 use CNSDose\Salesforce\Models\Metadata\FieldType;
 use CNSDose\Salesforce\Models\Metadata\FileProperties;
 use CNSDose\Salesforce\Models\Metadata\ListMetadataQuery;
+use CNSDose\Salesforce\Models\Metadata\Package;
+use CNSDose\Salesforce\Models\Metadata\PackageTypeMembers;
 use CNSDose\Salesforce\Models\Metadata\SharingModel;
+use CNSDose\Salesforce\Models\Metadata\TestLevel;
 
 class MetadataTest extends TestCase
 {
@@ -47,6 +51,64 @@ class MetadataTest extends TestCase
         $this->assertTrue($result['result']['success'] ?? false, 'Failed to create custom object');
 
         return $fullName;
+    }
+
+    /**
+     * @depends test_create_custom_object
+     * @return string|null
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public function test_retrieve_meta()
+    {
+        $package = new Package();
+        $packageTypeMembers = new PackageTypeMembers();
+        $packageTypeMembers->setMembers(['SalesforcePHPTest__c']);
+        $packageTypeMembers->setName('CustomObject');
+        $package->setTypes([$packageTypeMembers]);
+        $package->setVersion('');
+        $retrieveRequest = new \CNSDose\Salesforce\Models\Metadata\RetrieveRequest();
+        $retrieveRequest->setUnpackaged($package);
+        $retrieveRequest->setApiVersion((float)substr(config('salesforce.api_version'), 1));
+        $retrieveRequest->setSinglePackage(false);
+        $asyncResult = BaseMetadataModel::retrieve($retrieveRequest);
+
+        $status = BaseMetadataModel::checkRetrieveStatus($asyncResult->id);
+        while (!$status->done) {
+            sleep(1);
+            $status = BaseMetadataModel::checkRetrieveStatus($asyncResult->id);
+        }
+        $this->assertTrue($status->success);
+        return $status->zipFile;
+    }
+
+    /**
+     * @depends test_retrieve_meta
+     * @param string $zipFile
+     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \SoapFault
+     */
+    public function test_deploy_meta(string $zipFile)
+    {
+        $zipFile = base64_encode($zipFile);
+        $deployOptions = new DeployOptions();
+        $deployOptions->setAllowMissingFiles(false);
+        $deployOptions->setAutoUpdatePackage(false);
+        $deployOptions->setCheckOnly(false);
+        $deployOptions->setIgnoreWarnings(false);
+        $deployOptions->setPerformRetrieve(false);
+        $deployOptions->setPurgeOnDelete(true);
+        $deployOptions->setRollbackOnError(true);
+        $deployOptions->setSinglePackage(false);
+        $deployOptions->setTestLevel(TestLevel::NO_TEST_RUN());
+        $asyncResult = BaseMetadataModel::deploy($zipFile, $deployOptions);
+
+        $status = BaseMetadataModel::checkDeployStatus($asyncResult->id);
+        while (!$status->done) {
+            sleep(1);
+            $status = BaseMetadataModel::checkDeployStatus($asyncResult->id);
+        }
+        $this->assertTrue($status->success);
     }
 
     /**
