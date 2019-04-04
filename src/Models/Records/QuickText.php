@@ -27,7 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Message
  * @property string $Category
- * @property string $Channel
+ * @property string[] $Channel
  */
 class QuickText extends BaseRecordModel
 {
@@ -47,6 +47,6 @@ class QuickText extends BaseRecordModel
         'LastReferencedDate' => 'datetime',
         'Message' => null,
         'Category' => null,
-        'Channel' => null,
+        'Channel' => 'multipicklist',
     ];
 }

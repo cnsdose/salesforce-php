@@ -19,6 +19,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastName
  * @property string $FirstName
  * @property string $Salutation
+ * @property string $MiddleName
+ * @property string $Suffix
  * @property string $Name
  * @property string $Title
  * @property string $Company
@@ -33,17 +35,14 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Address
  * @property mixed $Phone
  * @property mixed $MobilePhone
- * @property mixed $Fax
  * @property mixed $Email
  * @property mixed $Website
  * @property mixed $PhotoUrl
- * @property string $Description
  * @property string $LeadSource
  * @property string $Status
  * @property string $Industry
  * @property string $Rating
  * @property string $CurrencyIsoCode
- * @property float $AnnualRevenue
  * @property mixed $NumberOfEmployees
  * @property string $OwnerId
  * @property bool $IsConverted
@@ -62,9 +61,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Jigsaw
  * @property string $JigsawContactId
- * @property string $CleanStatus
- * @property string $CompanyDunsNumber
- * @property string $DandbCompanyId
  * @property string $EmailBouncedReason
  * @property \Carbon\Carbon $EmailBouncedDate
  */
@@ -78,6 +74,8 @@ class Lead extends BaseRecordModel
         'LastName' => null,
         'FirstName' => null,
         'Salutation' => null,
+        'MiddleName' => null,
+        'Suffix' => null,
         'Name' => null,
         'Title' => null,
         'Company' => null,
@@ -92,17 +90,14 @@ class Lead extends BaseRecordModel
         'Address' => null,
         'Phone' => null,
         'MobilePhone' => null,
-        'Fax' => null,
         'Email' => null,
         'Website' => null,
         'PhotoUrl' => null,
-        'Description' => null,
         'LeadSource' => null,
         'Status' => null,
         'Industry' => null,
         'Rating' => null,
         'CurrencyIsoCode' => null,
-        'AnnualRevenue' => 'number:18,0',
         'NumberOfEmployees' => null,
         'OwnerId' => null,
         'IsConverted' => 'bool',
@@ -121,9 +116,6 @@ class Lead extends BaseRecordModel
         'LastReferencedDate' => 'datetime',
         'Jigsaw' => null,
         'JigsawContactId' => null,
-        'CleanStatus' => null,
-        'CompanyDunsNumber' => null,
-        'DandbCompanyId' => null,
         'EmailBouncedReason' => null,
         'EmailBouncedDate' => 'datetime',
     ];

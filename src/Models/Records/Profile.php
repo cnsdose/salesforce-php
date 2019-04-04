@@ -28,8 +28,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsModifyAllData
  * @property bool $PermissionsManageCases
  * @property bool $PermissionsMassInlineEdit
- * @property bool $PermissionsEditKnowledge
- * @property bool $PermissionsManageKnowledge
  * @property bool $PermissionsManageSolutions
  * @property bool $PermissionsCustomizeApplication
  * @property bool $PermissionsEditReadonlyFields
@@ -52,6 +50,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsDeleteActivatedContract
  * @property bool $PermissionsChatterInviteExternalUsers
  * @property bool $PermissionsSendSitRequests
+ * @property bool $PermissionsOverrideForecasts
+ * @property bool $PermissionsViewAllForecasts
+ * @property bool $PermissionsApiUserOnly
  * @property bool $PermissionsManageRemoteAccess
  * @property bool $PermissionsCanUseNewDashboardBuilder
  * @property bool $PermissionsManageCategories
@@ -65,9 +66,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsEditOppLineItemUnitPrice
  * @property bool $PermissionsCreateMultiforce
  * @property bool $PermissionsBulkApiHardDelete
+ * @property bool $PermissionsInboundMigrationToolsUser
  * @property bool $PermissionsSolutionImport
  * @property bool $PermissionsManageCallCenters
  * @property bool $PermissionsManageSynonyms
+ * @property bool $PermissionsOutboundMigrationToolsUser
  * @property bool $PermissionsViewContent
  * @property bool $PermissionsManageEmailClientConfig
  * @property bool $PermissionsEnableNotifications
@@ -86,12 +89,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsManageContentPermissions
  * @property bool $PermissionsManageContentProperties
  * @property bool $PermissionsManageContentTypes
+ * @property bool $PermissionsScheduleJob
  * @property bool $PermissionsManageExchangeConfig
  * @property bool $PermissionsManageAnalyticSnapshots
  * @property bool $PermissionsScheduleReports
  * @property bool $PermissionsManageBusinessHourHolidays
- * @property bool $PermissionsManageEntitlements
- * @property bool $PermissionsManageDynamicDashboards
  * @property bool $PermissionsCustomSidebarOnAllPages
  * @property bool $PermissionsManageInteraction
  * @property bool $PermissionsViewMyTeamsDashboards
@@ -100,7 +102,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsFlowUFLRequired
  * @property bool $PermissionsCanInsertFeedSystemFields
  * @property bool $PermissionsActivitiesAccess
- * @property bool $PermissionsManageKnowledgeImportExport
  * @property bool $PermissionsEmailTemplateManagement
  * @property bool $PermissionsEmailAdministration
  * @property bool $PermissionsManageChatterMessages
@@ -109,8 +110,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsForceTwoFactor
  * @property bool $PermissionsViewEventLogFiles
  * @property bool $PermissionsManageNetworks
+ * @property bool $PermissionsViewCaseInteraction
  * @property bool $PermissionsManageAuthProviders
  * @property bool $PermissionsRunFlow
+ * @property bool $PermissionsManageQuotas
  * @property bool $PermissionsCreateCustomizeDashboards
  * @property bool $PermissionsCreateDashboardFolders
  * @property bool $PermissionsViewPublicDashboards
@@ -122,12 +125,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsEditMyDashboards
  * @property bool $PermissionsEditMyReports
  * @property bool $PermissionsViewAllUsers
- * @property bool $PermissionsAllowUniversalSearch
  * @property bool $PermissionsConnectOrgToEnvironmentHub
- * @property bool $PermissionsWorkCalibrationUser
  * @property bool $PermissionsCreateCustomizeFilters
- * @property bool $PermissionsCreateReductionOrder
- * @property bool $PermissionsWorkDotComUserPerm
  * @property bool $PermissionsGovernNetworks
  * @property bool $PermissionsSalesConsole
  * @property bool $PermissionsTwoFactorApi
@@ -137,9 +136,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsAssignTopics
  * @property bool $PermissionsIdentityEnabled
  * @property bool $PermissionsIdentityConnect
- * @property bool $PermissionsAllowViewKnowledge
  * @property bool $PermissionsContentWorkspaces
- * @property bool $PermissionsManageSearchPromotionRules
+ * @property bool $PermissionsCreateWorkBadgeDefinition
  * @property bool $PermissionsCustomMobileAppsAccess
  * @property bool $PermissionsViewHelpLink
  * @property bool $PermissionsManageProfilesPermissionsets
@@ -154,26 +152,16 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsCanVerifyComment
  * @property bool $PermissionsManageUnlistedGroups
  * @property bool $PermissionsStdAutomaticActivityCapture
- * @property bool $PermissionsModifySecureAgents
- * @property bool $PermissionsInsightsAppDashboardEditor
  * @property bool $PermissionsManageTwoFactor
- * @property bool $PermissionsInsightsAppUser
- * @property bool $PermissionsInsightsAppAdmin
- * @property bool $PermissionsInsightsAppEltEditor
- * @property bool $PermissionsInsightsAppUploadUser
- * @property bool $PermissionsInsightsCreateApplication
  * @property bool $PermissionsLightningExperienceUser
  * @property bool $PermissionsConfigCustomRecs
  * @property bool $PermissionsSubmitMacrosAllowed
  * @property bool $PermissionsBulkMacrosAllowed
- * @property bool $PermissionsShareInternalArticles
  * @property bool $PermissionsManageSessionPermissionSets
- * @property bool $PermissionsManageTemplatedApp
- * @property bool $PermissionsUseTemplatedApp
  * @property bool $PermissionsSendAnnouncementEmails
  * @property bool $PermissionsChatterEditOwnPost
  * @property bool $PermissionsChatterEditOwnRecordPost
- * @property bool $PermissionsWaveTabularDownload
+ * @property bool $PermissionsManageSandboxes
  * @property bool $PermissionsAutomaticActivityCapture
  * @property bool $PermissionsImportCustomObjects
  * @property bool $PermissionsDelegatedTwoFactor
@@ -190,14 +178,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsCanApproveFeedPost
  * @property bool $PermissionsAddDirectMessageMembers
  * @property bool $PermissionsAllowViewEditConvertedLeads
- * @property bool $PermissionsSocialInsightsLogoAdmin
- * @property bool $PermissionsFieldServiceAccess
- * @property bool $PermissionsFieldServiceScheduling
- * @property bool $PermissionsFieldServiceDispatcher
- * @property bool $PermissionsFieldServiceMobileApp
  * @property bool $PermissionsShowCompanyNameAsUserBadge
  * @property bool $PermissionsAccessCMC
- * @property bool $PermissionsOptOutGeoLocationTracking
  * @property bool $PermissionsViewHealthCheck
  * @property bool $PermissionsManageHealthCheck
  * @property bool $PermissionsPackaging2
@@ -208,14 +190,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsListEmailSend
  * @property bool $PermissionsFeedPinning
  * @property bool $PermissionsChangeDashboardColors
- * @property bool $PermissionsIotUser
- * @property bool $PermissionsManageRecommendationStrategies
- * @property bool $PermissionsManagePropositions
  * @property bool $PermissionsCloseConversations
  * @property bool $PermissionsSubscribeReportRolesGrps
  * @property bool $PermissionsSubscribeDashboardRolesGrps
  * @property bool $PermissionsUseWebLink
- * @property bool $PermissionsHasUnlimitedNBAExecutions
  * @property bool $PermissionsViewOnlyEmbeddedAppUser
  * @property bool $PermissionsSendExternalEmailAvailable
  * @property bool $PermissionsViewAllActivities
@@ -228,15 +206,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PermissionsTransactionalEmailSend
  * @property bool $PermissionsCreateLtngTempFolder
  * @property bool $PermissionsApexRestServices
- * @property bool $PermissionsEnableCommunityAppLauncher
  * @property bool $PermissionsGiveRecognitionBadge
  * @property bool $PermissionsLtngPromoReserved01UserPerm
- * @property bool $PermissionsCanEditDataPrepRecipe
- * @property bool $PermissionsAddAnalyticsRemoteConnections
  * @property bool $PermissionsManageSurveys
+ * @property bool $PermissionsRecordVisibilityAPI
  * @property bool $PermissionsViewRoles
  * @property bool $PermissionsEinsteinAssistantUser
- * @property bool $PermissionsCanManageMaps
  * @property bool $PermissionsModifyDataClassification
  * @property bool $PermissionsPrivacyDataAccess
  * @property bool $PermissionsQueryAllFiles
@@ -271,8 +246,6 @@ class Profile extends BaseRecordModel
         'PermissionsModifyAllData' => 'bool',
         'PermissionsManageCases' => 'bool',
         'PermissionsMassInlineEdit' => 'bool',
-        'PermissionsEditKnowledge' => 'bool',
-        'PermissionsManageKnowledge' => 'bool',
         'PermissionsManageSolutions' => 'bool',
         'PermissionsCustomizeApplication' => 'bool',
         'PermissionsEditReadonlyFields' => 'bool',
@@ -295,6 +268,9 @@ class Profile extends BaseRecordModel
         'PermissionsDeleteActivatedContract' => 'bool',
         'PermissionsChatterInviteExternalUsers' => 'bool',
         'PermissionsSendSitRequests' => 'bool',
+        'PermissionsOverrideForecasts' => 'bool',
+        'PermissionsViewAllForecasts' => 'bool',
+        'PermissionsApiUserOnly' => 'bool',
         'PermissionsManageRemoteAccess' => 'bool',
         'PermissionsCanUseNewDashboardBuilder' => 'bool',
         'PermissionsManageCategories' => 'bool',
@@ -308,9 +284,11 @@ class Profile extends BaseRecordModel
         'PermissionsEditOppLineItemUnitPrice' => 'bool',
         'PermissionsCreateMultiforce' => 'bool',
         'PermissionsBulkApiHardDelete' => 'bool',
+        'PermissionsInboundMigrationToolsUser' => 'bool',
         'PermissionsSolutionImport' => 'bool',
         'PermissionsManageCallCenters' => 'bool',
         'PermissionsManageSynonyms' => 'bool',
+        'PermissionsOutboundMigrationToolsUser' => 'bool',
         'PermissionsViewContent' => 'bool',
         'PermissionsManageEmailClientConfig' => 'bool',
         'PermissionsEnableNotifications' => 'bool',
@@ -329,12 +307,11 @@ class Profile extends BaseRecordModel
         'PermissionsManageContentPermissions' => 'bool',
         'PermissionsManageContentProperties' => 'bool',
         'PermissionsManageContentTypes' => 'bool',
+        'PermissionsScheduleJob' => 'bool',
         'PermissionsManageExchangeConfig' => 'bool',
         'PermissionsManageAnalyticSnapshots' => 'bool',
         'PermissionsScheduleReports' => 'bool',
         'PermissionsManageBusinessHourHolidays' => 'bool',
-        'PermissionsManageEntitlements' => 'bool',
-        'PermissionsManageDynamicDashboards' => 'bool',
         'PermissionsCustomSidebarOnAllPages' => 'bool',
         'PermissionsManageInteraction' => 'bool',
         'PermissionsViewMyTeamsDashboards' => 'bool',
@@ -343,7 +320,6 @@ class Profile extends BaseRecordModel
         'PermissionsFlowUFLRequired' => 'bool',
         'PermissionsCanInsertFeedSystemFields' => 'bool',
         'PermissionsActivitiesAccess' => 'bool',
-        'PermissionsManageKnowledgeImportExport' => 'bool',
         'PermissionsEmailTemplateManagement' => 'bool',
         'PermissionsEmailAdministration' => 'bool',
         'PermissionsManageChatterMessages' => 'bool',
@@ -352,8 +328,10 @@ class Profile extends BaseRecordModel
         'PermissionsForceTwoFactor' => 'bool',
         'PermissionsViewEventLogFiles' => 'bool',
         'PermissionsManageNetworks' => 'bool',
+        'PermissionsViewCaseInteraction' => 'bool',
         'PermissionsManageAuthProviders' => 'bool',
         'PermissionsRunFlow' => 'bool',
+        'PermissionsManageQuotas' => 'bool',
         'PermissionsCreateCustomizeDashboards' => 'bool',
         'PermissionsCreateDashboardFolders' => 'bool',
         'PermissionsViewPublicDashboards' => 'bool',
@@ -365,12 +343,8 @@ class Profile extends BaseRecordModel
         'PermissionsEditMyDashboards' => 'bool',
         'PermissionsEditMyReports' => 'bool',
         'PermissionsViewAllUsers' => 'bool',
-        'PermissionsAllowUniversalSearch' => 'bool',
         'PermissionsConnectOrgToEnvironmentHub' => 'bool',
-        'PermissionsWorkCalibrationUser' => 'bool',
         'PermissionsCreateCustomizeFilters' => 'bool',
-        'PermissionsCreateReductionOrder' => 'bool',
-        'PermissionsWorkDotComUserPerm' => 'bool',
         'PermissionsGovernNetworks' => 'bool',
         'PermissionsSalesConsole' => 'bool',
         'PermissionsTwoFactorApi' => 'bool',
@@ -380,9 +354,8 @@ class Profile extends BaseRecordModel
         'PermissionsAssignTopics' => 'bool',
         'PermissionsIdentityEnabled' => 'bool',
         'PermissionsIdentityConnect' => 'bool',
-        'PermissionsAllowViewKnowledge' => 'bool',
         'PermissionsContentWorkspaces' => 'bool',
-        'PermissionsManageSearchPromotionRules' => 'bool',
+        'PermissionsCreateWorkBadgeDefinition' => 'bool',
         'PermissionsCustomMobileAppsAccess' => 'bool',
         'PermissionsViewHelpLink' => 'bool',
         'PermissionsManageProfilesPermissionsets' => 'bool',
@@ -397,26 +370,16 @@ class Profile extends BaseRecordModel
         'PermissionsCanVerifyComment' => 'bool',
         'PermissionsManageUnlistedGroups' => 'bool',
         'PermissionsStdAutomaticActivityCapture' => 'bool',
-        'PermissionsModifySecureAgents' => 'bool',
-        'PermissionsInsightsAppDashboardEditor' => 'bool',
         'PermissionsManageTwoFactor' => 'bool',
-        'PermissionsInsightsAppUser' => 'bool',
-        'PermissionsInsightsAppAdmin' => 'bool',
-        'PermissionsInsightsAppEltEditor' => 'bool',
-        'PermissionsInsightsAppUploadUser' => 'bool',
-        'PermissionsInsightsCreateApplication' => 'bool',
         'PermissionsLightningExperienceUser' => 'bool',
         'PermissionsConfigCustomRecs' => 'bool',
         'PermissionsSubmitMacrosAllowed' => 'bool',
         'PermissionsBulkMacrosAllowed' => 'bool',
-        'PermissionsShareInternalArticles' => 'bool',
         'PermissionsManageSessionPermissionSets' => 'bool',
-        'PermissionsManageTemplatedApp' => 'bool',
-        'PermissionsUseTemplatedApp' => 'bool',
         'PermissionsSendAnnouncementEmails' => 'bool',
         'PermissionsChatterEditOwnPost' => 'bool',
         'PermissionsChatterEditOwnRecordPost' => 'bool',
-        'PermissionsWaveTabularDownload' => 'bool',
+        'PermissionsManageSandboxes' => 'bool',
         'PermissionsAutomaticActivityCapture' => 'bool',
         'PermissionsImportCustomObjects' => 'bool',
         'PermissionsDelegatedTwoFactor' => 'bool',
@@ -433,14 +396,8 @@ class Profile extends BaseRecordModel
         'PermissionsCanApproveFeedPost' => 'bool',
         'PermissionsAddDirectMessageMembers' => 'bool',
         'PermissionsAllowViewEditConvertedLeads' => 'bool',
-        'PermissionsSocialInsightsLogoAdmin' => 'bool',
-        'PermissionsFieldServiceAccess' => 'bool',
-        'PermissionsFieldServiceScheduling' => 'bool',
-        'PermissionsFieldServiceDispatcher' => 'bool',
-        'PermissionsFieldServiceMobileApp' => 'bool',
         'PermissionsShowCompanyNameAsUserBadge' => 'bool',
         'PermissionsAccessCMC' => 'bool',
-        'PermissionsOptOutGeoLocationTracking' => 'bool',
         'PermissionsViewHealthCheck' => 'bool',
         'PermissionsManageHealthCheck' => 'bool',
         'PermissionsPackaging2' => 'bool',
@@ -451,14 +408,10 @@ class Profile extends BaseRecordModel
         'PermissionsListEmailSend' => 'bool',
         'PermissionsFeedPinning' => 'bool',
         'PermissionsChangeDashboardColors' => 'bool',
-        'PermissionsIotUser' => 'bool',
-        'PermissionsManageRecommendationStrategies' => 'bool',
-        'PermissionsManagePropositions' => 'bool',
         'PermissionsCloseConversations' => 'bool',
         'PermissionsSubscribeReportRolesGrps' => 'bool',
         'PermissionsSubscribeDashboardRolesGrps' => 'bool',
         'PermissionsUseWebLink' => 'bool',
-        'PermissionsHasUnlimitedNBAExecutions' => 'bool',
         'PermissionsViewOnlyEmbeddedAppUser' => 'bool',
         'PermissionsSendExternalEmailAvailable' => 'bool',
         'PermissionsViewAllActivities' => 'bool',
@@ -471,15 +424,12 @@ class Profile extends BaseRecordModel
         'PermissionsTransactionalEmailSend' => 'bool',
         'PermissionsCreateLtngTempFolder' => 'bool',
         'PermissionsApexRestServices' => 'bool',
-        'PermissionsEnableCommunityAppLauncher' => 'bool',
         'PermissionsGiveRecognitionBadge' => 'bool',
         'PermissionsLtngPromoReserved01UserPerm' => 'bool',
-        'PermissionsCanEditDataPrepRecipe' => 'bool',
-        'PermissionsAddAnalyticsRemoteConnections' => 'bool',
         'PermissionsManageSurveys' => 'bool',
+        'PermissionsRecordVisibilityAPI' => 'bool',
         'PermissionsViewRoles' => 'bool',
         'PermissionsEinsteinAssistantUser' => 'bool',
-        'PermissionsCanManageMaps' => 'bool',
         'PermissionsModifyDataClassification' => 'bool',
         'PermissionsPrivacyDataAccess' => 'bool',
         'PermissionsQueryAllFiles' => 'bool',

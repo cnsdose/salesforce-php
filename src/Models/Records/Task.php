@@ -16,6 +16,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $WhoId
  * @property string $WhatId
+ * @property mixed $WhoCount
+ * @property mixed $WhatCount
  * @property mixed $Subject
  * @property \Carbon\Carbon $ActivityDate
  * @property string $Status
@@ -61,6 +63,8 @@ class Task extends BaseRecordModel
         'Id' => null,
         'WhoId' => null,
         'WhatId' => null,
+        'WhoCount' => null,
+        'WhatCount' => null,
         'Subject' => null,
         'ActivityDate' => 'date',
         'Status' => null,

@@ -17,6 +17,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Name
  * @property string $LastName
  * @property string $FirstName
+ * @property string $MiddleName
+ * @property string $Suffix
  * @property string $Type
  * @property string $Alias
  * @property string $UserRoleId
@@ -39,6 +41,8 @@ class Name extends BaseRecordModel
         'Name' => null,
         'LastName' => null,
         'FirstName' => null,
+        'MiddleName' => null,
+        'Suffix' => null,
         'Type' => null,
         'Alias' => null,
         'UserRoleId' => null,

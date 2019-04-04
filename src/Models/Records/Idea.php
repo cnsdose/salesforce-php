@@ -30,7 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $NumComments
  * @property float $VoteScore
  * @property float $VoteTotal
- * @property string $Categories
+ * @property string[] $Categories
  * @property string $Status
  * @property \Carbon\Carbon $LastCommentDate
  * @property string $LastCommentId
@@ -62,7 +62,7 @@ class Idea extends BaseRecordModel
         'NumComments' => null,
         'VoteScore' => 'number:14,4',
         'VoteTotal' => 'number:18,0',
-        'Categories' => null,
+        'Categories' => 'multipicklist',
         'Status' => null,
         'LastCommentDate' => 'datetime',
         'LastCommentId' => null,

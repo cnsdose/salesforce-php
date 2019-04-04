@@ -18,8 +18,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $CaseNumber
  * @property string $ContactId
  * @property string $AccountId
- * @property string $AssetId
- * @property string $SourceId
  * @property string $ParentId
  * @property string $SuppliedName
  * @property mixed $SuppliedEmail
@@ -59,8 +57,6 @@ class SupportCase extends BaseRecordModel
         'CaseNumber' => null,
         'ContactId' => null,
         'AccountId' => null,
-        'AssetId' => null,
-        'SourceId' => null,
         'ParentId' => null,
         'SuppliedName' => null,
         'SuppliedEmail' => null,

@@ -46,6 +46,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $IsReminderSet
  * @property \Carbon\Carbon $EndDateTime
  * @property \Carbon\Carbon $StartDateTime
+ * @property string $PrimaryWhoId
+ * @property string $PrimaryAccountId
  * @property string $ActivitySubtype
  */
 class LookedUpFromActivity extends BaseRecordModel
@@ -85,6 +87,8 @@ class LookedUpFromActivity extends BaseRecordModel
         'IsReminderSet' => 'bool',
         'EndDateTime' => 'datetime',
         'StartDateTime' => 'datetime',
+        'PrimaryWhoId' => null,
+        'PrimaryAccountId' => null,
         'ActivitySubtype' => null,
     ];
 }

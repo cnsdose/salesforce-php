@@ -38,7 +38,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $Quantity
  * @property string $Description
  * @property string $OwnerId
- * @property string $LocationId
  * @property string $AssetProvidedById
  * @property string $AssetServicedById
  * @property bool $IsInternal
@@ -76,7 +75,6 @@ class Asset extends BaseRecordModel
         'Quantity' => 'number:10,2',
         'Description' => null,
         'OwnerId' => null,
-        'LocationId' => null,
         'AssetProvidedById' => null,
         'AssetServicedById' => null,
         'IsInternal' => 'bool',

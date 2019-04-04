@@ -16,6 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $RelationId
  * @property string $EventId
+ * @property string $AccountId
  * @property \Carbon\Carbon $RespondedDate
  * @property string $Response
  * @property \Carbon\Carbon $CreatedDate
@@ -33,6 +34,7 @@ class DeclinedEventRelation extends BaseRecordModel
         'Id' => null,
         'RelationId' => null,
         'EventId' => null,
+        'AccountId' => null,
         'RespondedDate' => 'datetime',
         'Response' => null,
         'CreatedDate' => 'datetime',

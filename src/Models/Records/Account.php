@@ -38,19 +38,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
  * @property mixed $Phone
- * @property mixed $Fax
- * @property string $AccountNumber
  * @property mixed $Website
  * @property mixed $PhotoUrl
- * @property string $Sic
  * @property string $Industry
- * @property float $AnnualRevenue
  * @property mixed $NumberOfEmployees
- * @property string $Ownership
- * @property string $TickerSymbol
  * @property string $Description
- * @property string $Rating
- * @property string $Site
  * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property \Carbon\Carbon $CreatedDate
@@ -63,16 +55,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $Jigsaw
  * @property string $JigsawCompanyId
- * @property string $CleanStatus
  * @property string $AccountSource
- * @property string $DunsNumber
- * @property string $Tradestyle
- * @property string $NaicsCode
- * @property string $NaicsDesc
- * @property string $YearStarted
  * @property string $SicDesc
- * @property string $DandbCompanyId
- * @property string $OperatingHoursId
  */
 class Account extends BaseRecordModel
 {
@@ -103,19 +87,11 @@ class Account extends BaseRecordModel
         'ShippingGeocodeAccuracy' => null,
         'ShippingAddress' => null,
         'Phone' => null,
-        'Fax' => null,
-        'AccountNumber' => null,
         'Website' => null,
         'PhotoUrl' => null,
-        'Sic' => null,
         'Industry' => null,
-        'AnnualRevenue' => 'number:18,0',
         'NumberOfEmployees' => null,
-        'Ownership' => null,
-        'TickerSymbol' => null,
         'Description' => null,
-        'Rating' => null,
-        'Site' => null,
         'CurrencyIsoCode' => null,
         'OwnerId' => null,
         'CreatedDate' => 'datetime',
@@ -128,15 +104,7 @@ class Account extends BaseRecordModel
         'LastReferencedDate' => 'datetime',
         'Jigsaw' => null,
         'JigsawCompanyId' => null,
-        'CleanStatus' => null,
         'AccountSource' => null,
-        'DunsNumber' => null,
-        'Tradestyle' => null,
-        'NaicsCode' => null,
-        'NaicsDesc' => null,
-        'YearStarted' => null,
         'SicDesc' => null,
-        'DandbCompanyId' => null,
-        'OperatingHoursId' => null,
     ];
 }

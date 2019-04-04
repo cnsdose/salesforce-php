@@ -25,9 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Status
  * @property string $Description
  * @property string $CustomerAuthorizedById
- * @property \Carbon\Carbon $CustomerAuthorizedDate
  * @property string $CompanyAuthorizedById
- * @property \Carbon\Carbon $CompanyAuthorizedDate
  * @property string $Type
  * @property string $BillingStreet
  * @property string $BillingCity
@@ -47,12 +45,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $ShippingLongitude
  * @property string $ShippingGeocodeAccuracy
  * @property mixed $ShippingAddress
- * @property string $Name
- * @property \Carbon\Carbon $PoDate
- * @property string $PoNumber
- * @property string $OrderReferenceNumber
- * @property string $BillToContactId
- * @property string $ShipToContactId
  * @property \Carbon\Carbon $ActivatedDate
  * @property string $ActivatedById
  * @property string $StatusCode
@@ -84,9 +76,7 @@ class Order extends BaseRecordModel
         'Status' => null,
         'Description' => null,
         'CustomerAuthorizedById' => null,
-        'CustomerAuthorizedDate' => 'date',
         'CompanyAuthorizedById' => null,
-        'CompanyAuthorizedDate' => 'date',
         'Type' => null,
         'BillingStreet' => null,
         'BillingCity' => null,
@@ -106,12 +96,6 @@ class Order extends BaseRecordModel
         'ShippingLongitude' => 'number:3,15',
         'ShippingGeocodeAccuracy' => null,
         'ShippingAddress' => null,
-        'Name' => null,
-        'PoDate' => 'date',
-        'PoNumber' => null,
-        'OrderReferenceNumber' => null,
-        'BillToContactId' => null,
-        'ShipToContactId' => null,
         'ActivatedDate' => 'datetime',
         'ActivatedById' => null,
         'StatusCode' => null,

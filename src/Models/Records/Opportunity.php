@@ -16,15 +16,11 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $AccountId
- * @property string $RecordTypeId
- * @property bool $IsPrivate
  * @property string $Name
  * @property string $Description
  * @property string $StageName
  * @property float $Amount
  * @property mixed $Probability
- * @property float $ExpectedRevenue
- * @property float $TotalOpportunityQuantity
  * @property \Carbon\Carbon $CloseDate
  * @property string $Type
  * @property string $NextStep
@@ -50,6 +46,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $SyncedQuoteId
+ * @property string $ContractId
  * @property bool $HasOpenActivity
  * @property bool $HasOverdueTask
  */
@@ -60,15 +57,11 @@ class Opportunity extends BaseRecordModel
         'Id' => null,
         'IsDeleted' => 'bool',
         'AccountId' => null,
-        'RecordTypeId' => null,
-        'IsPrivate' => 'bool',
         'Name' => null,
         'Description' => null,
         'StageName' => null,
         'Amount' => 'number:16,2',
         'Probability' => null,
-        'ExpectedRevenue' => 'number:16,2',
-        'TotalOpportunityQuantity' => 'number:16,2',
         'CloseDate' => 'date',
         'Type' => null,
         'NextStep' => null,
@@ -94,6 +87,7 @@ class Opportunity extends BaseRecordModel
         'LastViewedDate' => 'datetime',
         'LastReferencedDate' => 'datetime',
         'SyncedQuoteId' => null,
+        'ContractId' => null,
         'HasOpenActivity' => 'bool',
         'HasOverdueTask' => 'bool',
     ];

@@ -17,6 +17,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Username
  * @property string $LastName
  * @property string $FirstName
+ * @property string $MiddleName
+ * @property string $Suffix
  * @property string $Name
  * @property string $CompanyName
  * @property string $Division
@@ -73,16 +75,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $OfflinePdaTrialExpirationDate
  * @property bool $UserPermissionsMarketingUser
  * @property bool $UserPermissionsOfflineUser
+ * @property bool $UserPermissionsAvantgoUser
  * @property bool $UserPermissionsCallCenterAutoLogin
  * @property bool $UserPermissionsMobileUser
  * @property bool $UserPermissionsSFContentUser
- * @property bool $UserPermissionsKnowledgeUser
  * @property bool $UserPermissionsInteractionUser
  * @property bool $UserPermissionsSupportUser
- * @property bool $UserPermissionsJigsawProspectingUser
- * @property bool $UserPermissionsSiteforceContributorUser
- * @property bool $UserPermissionsSiteforcePublisherUser
- * @property bool $UserPermissionsWorkDotComUserFeature
  * @property bool $ForecastEnabled
  * @property bool $UserPreferencesActivityRemindersPopup
  * @property bool $UserPreferencesEventRemindersCheckboxDefault
@@ -94,8 +92,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UserPreferencesDisableChangeCommentEmail
  * @property bool $UserPreferencesDisableLaterCommentEmail
  * @property bool $UserPreferencesDisProfPostCommentEmail
- * @property bool $UserPreferencesContentNoEmail
- * @property bool $UserPreferencesContentEmailAsAndWhen
  * @property bool $UserPreferencesApexPagesDeveloperMode
  * @property bool $UserPreferencesHideCSNGetChatterMobileTask
  * @property bool $UserPreferencesDisableMentionsPostEmail
@@ -107,7 +103,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UserPreferencesDisableLikeEmail
  * @property bool $UserPreferencesSortFeedByComment
  * @property bool $UserPreferencesDisableMessageEmail
- * @property bool $UserPreferencesJigsawListUser
  * @property bool $UserPreferencesDisableBookmarkEmail
  * @property bool $UserPreferencesDisableSharePostEmail
  * @property bool $UserPreferencesEnableAutoSubForFeeds
@@ -129,8 +124,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UserPreferencesShowStateToGuestUsers
  * @property bool $UserPreferencesShowPostalCodeToGuestUsers
  * @property bool $UserPreferencesShowCountryToGuestUsers
- * @property bool $UserPreferencesDisableFeedbackEmail
- * @property bool $UserPreferencesDisableWorkEmail
  * @property bool $UserPreferencesPipelineViewHideHelpPopover
  * @property bool $UserPreferencesHideS1BrowserUI
  * @property bool $UserPreferencesDisableEndorsementEmail
@@ -175,7 +168,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $MediumPhotoUrl
  * @property string $DigestFrequency
  * @property string $DefaultGroupNotificationFrequency
- * @property mixed $JigsawImportLimitOverride
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property mixed $BannerPhotoUrl
@@ -191,6 +183,8 @@ class User extends BaseRecordModel
         'Username' => null,
         'LastName' => null,
         'FirstName' => null,
+        'MiddleName' => null,
+        'Suffix' => null,
         'Name' => null,
         'CompanyName' => null,
         'Division' => null,
@@ -247,16 +241,12 @@ class User extends BaseRecordModel
         'OfflinePdaTrialExpirationDate' => 'datetime',
         'UserPermissionsMarketingUser' => 'bool',
         'UserPermissionsOfflineUser' => 'bool',
+        'UserPermissionsAvantgoUser' => 'bool',
         'UserPermissionsCallCenterAutoLogin' => 'bool',
         'UserPermissionsMobileUser' => 'bool',
         'UserPermissionsSFContentUser' => 'bool',
-        'UserPermissionsKnowledgeUser' => 'bool',
         'UserPermissionsInteractionUser' => 'bool',
         'UserPermissionsSupportUser' => 'bool',
-        'UserPermissionsJigsawProspectingUser' => 'bool',
-        'UserPermissionsSiteforceContributorUser' => 'bool',
-        'UserPermissionsSiteforcePublisherUser' => 'bool',
-        'UserPermissionsWorkDotComUserFeature' => 'bool',
         'ForecastEnabled' => 'bool',
         'UserPreferencesActivityRemindersPopup' => 'bool',
         'UserPreferencesEventRemindersCheckboxDefault' => 'bool',
@@ -268,8 +258,6 @@ class User extends BaseRecordModel
         'UserPreferencesDisableChangeCommentEmail' => 'bool',
         'UserPreferencesDisableLaterCommentEmail' => 'bool',
         'UserPreferencesDisProfPostCommentEmail' => 'bool',
-        'UserPreferencesContentNoEmail' => 'bool',
-        'UserPreferencesContentEmailAsAndWhen' => 'bool',
         'UserPreferencesApexPagesDeveloperMode' => 'bool',
         'UserPreferencesHideCSNGetChatterMobileTask' => 'bool',
         'UserPreferencesDisableMentionsPostEmail' => 'bool',
@@ -281,7 +269,6 @@ class User extends BaseRecordModel
         'UserPreferencesDisableLikeEmail' => 'bool',
         'UserPreferencesSortFeedByComment' => 'bool',
         'UserPreferencesDisableMessageEmail' => 'bool',
-        'UserPreferencesJigsawListUser' => 'bool',
         'UserPreferencesDisableBookmarkEmail' => 'bool',
         'UserPreferencesDisableSharePostEmail' => 'bool',
         'UserPreferencesEnableAutoSubForFeeds' => 'bool',
@@ -303,8 +290,6 @@ class User extends BaseRecordModel
         'UserPreferencesShowStateToGuestUsers' => 'bool',
         'UserPreferencesShowPostalCodeToGuestUsers' => 'bool',
         'UserPreferencesShowCountryToGuestUsers' => 'bool',
-        'UserPreferencesDisableFeedbackEmail' => 'bool',
-        'UserPreferencesDisableWorkEmail' => 'bool',
         'UserPreferencesPipelineViewHideHelpPopover' => 'bool',
         'UserPreferencesHideS1BrowserUI' => 'bool',
         'UserPreferencesDisableEndorsementEmail' => 'bool',
@@ -349,7 +334,6 @@ class User extends BaseRecordModel
         'MediumPhotoUrl' => null,
         'DigestFrequency' => null,
         'DefaultGroupNotificationFrequency' => null,
-        'JigsawImportLimitOverride' => null,
         'LastViewedDate' => 'datetime',
         'LastReferencedDate' => 'datetime',
         'BannerPhotoUrl' => null,

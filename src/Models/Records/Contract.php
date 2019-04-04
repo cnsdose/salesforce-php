@@ -29,6 +29,15 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property float $BillingLongitude
  * @property string $BillingGeocodeAccuracy
  * @property mixed $BillingAddress
+ * @property string $ShippingStreet
+ * @property string $ShippingCity
+ * @property string $ShippingState
+ * @property string $ShippingPostalCode
+ * @property string $ShippingCountry
+ * @property float $ShippingLatitude
+ * @property float $ShippingLongitude
+ * @property string $ShippingGeocodeAccuracy
+ * @property mixed $ShippingAddress
  * @property mixed $ContractTerm
  * @property string $OwnerId
  * @property string $Status
@@ -74,6 +83,15 @@ class Contract extends BaseRecordModel
         'BillingLongitude' => 'number:3,15',
         'BillingGeocodeAccuracy' => null,
         'BillingAddress' => null,
+        'ShippingStreet' => null,
+        'ShippingCity' => null,
+        'ShippingState' => null,
+        'ShippingPostalCode' => null,
+        'ShippingCountry' => null,
+        'ShippingLatitude' => 'number:3,15',
+        'ShippingLongitude' => 'number:3,15',
+        'ShippingGeocodeAccuracy' => null,
+        'ShippingAddress' => null,
         'ContractTerm' => null,
         'OwnerId' => null,
         'Status' => null,

@@ -16,6 +16,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $RelationId
  * @property string $EventId
+ * @property bool $IsWhat
+ * @property bool $IsParent
+ * @property bool $IsInvitee
+ * @property string $AccountId
  * @property string $Status
  * @property \Carbon\Carbon $RespondedDate
  * @property string $Response
@@ -33,6 +37,10 @@ class EventRelation extends BaseRecordModel
         'Id' => null,
         'RelationId' => null,
         'EventId' => null,
+        'IsWhat' => 'bool',
+        'IsParent' => 'bool',
+        'IsInvitee' => 'bool',
+        'AccountId' => null,
         'Status' => null,
         'RespondedDate' => 'datetime',
         'Response' => null,

@@ -20,16 +20,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastName
  * @property string $FirstName
  * @property string $Salutation
+ * @property string $MiddleName
+ * @property string $Suffix
  * @property string $Name
- * @property string $OtherStreet
- * @property string $OtherCity
- * @property string $OtherState
- * @property string $OtherPostalCode
- * @property string $OtherCountry
- * @property float $OtherLatitude
- * @property float $OtherLongitude
- * @property string $OtherGeocodeAccuracy
- * @property mixed $OtherAddress
  * @property string $MailingStreet
  * @property string $MailingCity
  * @property string $MailingState
@@ -42,17 +35,10 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Phone
  * @property mixed $Fax
  * @property mixed $MobilePhone
- * @property mixed $HomePhone
- * @property mixed $OtherPhone
- * @property mixed $AssistantPhone
  * @property string $ReportsToId
  * @property mixed $Email
  * @property string $Title
  * @property string $Department
- * @property string $AssistantName
- * @property string $LeadSource
- * @property \Carbon\Carbon $Birthdate
- * @property string $Description
  * @property string $CurrencyIsoCode
  * @property string $OwnerId
  * @property \Carbon\Carbon $CreatedDate
@@ -71,7 +57,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $PhotoUrl
  * @property string $Jigsaw
  * @property string $JigsawContactId
- * @property string $CleanStatus
  */
 class Contact extends BaseRecordModel
 {
@@ -84,16 +69,9 @@ class Contact extends BaseRecordModel
         'LastName' => null,
         'FirstName' => null,
         'Salutation' => null,
+        'MiddleName' => null,
+        'Suffix' => null,
         'Name' => null,
-        'OtherStreet' => null,
-        'OtherCity' => null,
-        'OtherState' => null,
-        'OtherPostalCode' => null,
-        'OtherCountry' => null,
-        'OtherLatitude' => 'number:3,15',
-        'OtherLongitude' => 'number:3,15',
-        'OtherGeocodeAccuracy' => null,
-        'OtherAddress' => null,
         'MailingStreet' => null,
         'MailingCity' => null,
         'MailingState' => null,
@@ -106,17 +84,10 @@ class Contact extends BaseRecordModel
         'Phone' => null,
         'Fax' => null,
         'MobilePhone' => null,
-        'HomePhone' => null,
-        'OtherPhone' => null,
-        'AssistantPhone' => null,
         'ReportsToId' => null,
         'Email' => null,
         'Title' => null,
         'Department' => null,
-        'AssistantName' => null,
-        'LeadSource' => null,
-        'Birthdate' => 'date',
-        'Description' => null,
         'CurrencyIsoCode' => null,
         'OwnerId' => null,
         'CreatedDate' => 'datetime',
@@ -135,6 +106,5 @@ class Contact extends BaseRecordModel
         'PhotoUrl' => null,
         'Jigsaw' => null,
         'JigsawContactId' => null,
-        'CleanStatus' => null,
     ];
 }

@@ -16,6 +16,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $WhoId
  * @property string $WhatId
+ * @property mixed $WhoCount
+ * @property mixed $WhatCount
  * @property mixed $Subject
  * @property string $Location
  * @property bool $IsAllDayEvent
@@ -28,6 +30,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AccountId
  * @property string $OwnerId
  * @property string $CurrencyIsoCode
+ * @property string $Type
  * @property bool $IsPrivate
  * @property string $ShowAs
  * @property bool $IsDeleted
@@ -69,6 +72,8 @@ class Event extends BaseRecordModel
         'Id' => null,
         'WhoId' => null,
         'WhatId' => null,
+        'WhoCount' => null,
+        'WhatCount' => null,
         'Subject' => null,
         'Location' => null,
         'IsAllDayEvent' => 'bool',
@@ -81,6 +86,7 @@ class Event extends BaseRecordModel
         'AccountId' => null,
         'OwnerId' => null,
         'CurrencyIsoCode' => null,
+        'Type' => null,
         'IsPrivate' => 'bool',
         'ShowAs' => null,
         'IsDeleted' => 'bool',
