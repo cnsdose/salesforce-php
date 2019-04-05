@@ -7,7 +7,7 @@ use Symfony\Component\Console\Output\ConsoleOutput;
 require_once __DIR__ . '/vendor/autoload.php';
 
 if (file_exists(__DIR__ . '/.env')) {
-    (new Dotenv\Dotenv(__DIR__))->load();
+    Dotenv\Dotenv::create(__DIR__)->load();
 }
 
 $app = new \Illuminate\Foundation\Application(

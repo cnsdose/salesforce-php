@@ -15,7 +15,7 @@ class TestCase extends \Orchestra\Testbench\TestCase
     protected function getEnvironmentSetUp($app)
     {
         if (file_exists(__DIR__ . '/../.env')) {
-            $dotenv = new \Dotenv\Dotenv(__DIR__ . '/..');
+            $dotenv = \Dotenv\Dotenv::create(__DIR__ . '/..');
             $dotenv->load();
         }
 
