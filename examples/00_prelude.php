@@ -11,8 +11,16 @@
 require_once __DIR__ . '/../vendor/autoload.php';
 
 if (file_exists(__DIR__ . '/../.env')) {
-    $dotenv = \Dotenv\Dotenv::create(__DIR__ . '/..');
-    $dotenv->load();
+    $dotenvVersion = array_values(array_filter(json_decode(file_get_contents(
+        __DIR__ . '/../vendor/composer/installed.json'
+    ), true), function ($package) {
+        return $package['name'] === 'vlucas/phpdotenv';
+    }))[0]['version_normalized'];
+    if ((int)$dotenvVersion[0] >= 3) {
+        \Dotenv\Dotenv::create(__DIR__ . '/..')->load();
+    } else {
+        (new \Dotenv\Dotenv(__DIR__ . '/..'))->load();
+    }
 }
 function config(string $key, $default = null)
 {
