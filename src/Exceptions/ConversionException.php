@@ -8,6 +8,6 @@
 
 namespace CNSDose\Salesforce\Exceptions;
 
-class ConversionException extends StandardException
+class ConversionException extends BaseException
 {
 }

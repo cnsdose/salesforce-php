@@ -8,7 +8,7 @@
 
 namespace CNSDose\Salesforce\Exceptions;
 
-class AuthorisationException extends StandardException
+class AuthorisationException extends BaseException
 {
     /**
      * QueryException constructor.

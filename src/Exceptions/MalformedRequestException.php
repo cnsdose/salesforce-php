@@ -8,7 +8,7 @@
 
 namespace CNSDose\Salesforce\Exceptions;
 
-class MalformedRequestException extends StandardException
+class MalformedRequestException extends BaseException
 {
     /**
      * QueryException constructor.

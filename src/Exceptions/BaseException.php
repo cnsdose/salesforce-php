@@ -8,7 +8,7 @@
 
 namespace CNSDose\Salesforce\Exceptions;
 
-class StandardException extends \Exception
+class BaseException extends \Exception
 {
     protected $errorBag = [];
 

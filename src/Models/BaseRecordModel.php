@@ -10,7 +10,7 @@ namespace CNSDose\Salesforce\Models;
 
 use CNSDose\Salesforce\Exceptions\AuthorisationException;
 use CNSDose\Salesforce\Exceptions\MalformedRequestException;
-use CNSDose\Salesforce\Exceptions\StandardException;
+use CNSDose\Salesforce\Exceptions\BaseException;
 use CNSDose\Salesforce\Support\Authentication;
 use CNSDose\Salesforce\Support\Conversion\BaseConversion;
 use GuzzleHttp\Client as GuzzleClient;
@@ -73,7 +73,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     protected static function guzzleRequest($method, $url, array $options = [])
     {
@@ -93,7 +93,7 @@ class BaseRecordModel extends BaseModel
             return $json;
         }
         if ($status === 400 && isset($json['hasErrors'])) {
-            $exception = new StandardException(500, 'Failed to execute Salesforce operation');
+            $exception = new BaseException(500, 'Failed to execute Salesforce operation');
             foreach ($json['results'] as $result) {
                 foreach ($result['errors'] as $error) {
                     $exception->addError(sprintf('%s error in record %s', $error['statusCode'], $result['referenceId']), $error['message']);
@@ -107,7 +107,7 @@ class BaseRecordModel extends BaseModel
         if ($status === 401) {
             throw new AuthorisationException($json[0]['message'], $json[0]['errorCode']);
         }
-        $exception = new StandardException(500, 'Unknown Salesforce query error');
+        $exception = new BaseException(500, 'Unknown Salesforce query error');
         foreach ($json as $error) {
             $exception->addError($error['errorCode'], $error['message']);
         }
@@ -360,7 +360,7 @@ class BaseRecordModel extends BaseModel
      * @return array
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     protected function queryFromBuilder(bool $depagination = false, string &$nextRecordsUrl = null): array
     {
@@ -391,7 +391,7 @@ class BaseRecordModel extends BaseModel
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function query(bool $depagination = true, string &$nextRecordsUrl = null): array
     {
@@ -409,7 +409,7 @@ class BaseRecordModel extends BaseModel
      * @return static[]|mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public function queryRaw(string $soql, bool $depagination = false, string &$nextRecordsUrl = null): array
     {
@@ -427,12 +427,12 @@ class BaseRecordModel extends BaseModel
      * @return static|mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public static function queryById(string $id)
     {
         if (static::class === self::class) {
-            throw new StandardException(500, 'Do not use BaseRecordModel::queryById()');
+            throw new BaseException(500, 'Do not use BaseRecordModel::queryById()');
         }
         $url = sprintf(
             '%s%s/sobjects/%s/%s',
@@ -454,7 +454,7 @@ class BaseRecordModel extends BaseModel
      * @return array
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
     public function create(): array
@@ -479,7 +479,7 @@ class BaseRecordModel extends BaseModel
      * @return array
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
     public function createTree(): array
@@ -506,7 +506,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public static function createMultiple(array $records, bool $allOrNone = false)
     {
@@ -539,7 +539,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      */
     public function upsert(string $externalId = 'Id')
@@ -572,7 +572,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public static function updateMultiple(array $records, bool $allOrNone = false)
     {
@@ -604,7 +604,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed|null
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public function delete()
     {
@@ -627,7 +627,7 @@ class BaseRecordModel extends BaseModel
      * @return mixed
      * @throws AuthorisationException
      * @throws MalformedRequestException
-     * @throws StandardException
+     * @throws BaseException
      */
     public static function deleteMultiple(array $ids, bool $allOrNone = false)
     {

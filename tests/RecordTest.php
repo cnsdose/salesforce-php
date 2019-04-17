@@ -229,7 +229,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_create_tree_record()
     {
@@ -249,7 +249,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_create_juicy_apple_record($treeId)
     {
@@ -269,7 +269,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_create_crispy_apple_record($treeId)
     {
@@ -288,7 +288,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_query_builder($treeId)
     {
@@ -309,7 +309,7 @@ class RecordTest extends TestCase
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_resolve_relationship($treeId)
     {
@@ -333,7 +333,7 @@ class RecordTest extends TestCase
      * @throws MalformedRequestException
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_query_order_by()
     {
@@ -355,7 +355,7 @@ class RecordTest extends TestCase
      * @return Tree
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_query_by_id($treeId)
     {
@@ -369,7 +369,7 @@ class RecordTest extends TestCase
      * @param $treeId
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_query_raw($treeId)
     {
@@ -383,7 +383,7 @@ class RecordTest extends TestCase
      * @param Tree $tree
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_upsert($tree)
     {
@@ -422,7 +422,7 @@ class RecordTest extends TestCase
      * @throws MalformedRequestException
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_update_multiple($appleId1, $appleId2)
     {
@@ -443,7 +443,7 @@ class RecordTest extends TestCase
      * @param $treeId
      * @throws MalformedRequestException
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_delete($treeId)
     {
@@ -460,7 +460,7 @@ class RecordTest extends TestCase
      * @param $appleId2
      * @throws MalformedRequestException
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
-     * @throws \CNSDose\Salesforce\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\BaseException
      */
     public function test_delete_multiple($appleId1, $appleId2)
     {
