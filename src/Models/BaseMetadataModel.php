@@ -38,7 +38,7 @@ abstract class BaseMetadataModel
 
     /**
      * @return \SoapClient
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      */
     public static function getSoapClient(): \SoapClient
     {
@@ -74,7 +74,7 @@ abstract class BaseMetadataModel
 
     /**
      * @return mixed
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function create()
@@ -91,7 +91,7 @@ abstract class BaseMetadataModel
     /**
      * @param $fullName
      * @return static|null
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function read($fullName)
@@ -110,7 +110,7 @@ abstract class BaseMetadataModel
     /**
      * @param $newFullName
      * @return mixed
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function rename($newFullName)
@@ -130,7 +130,7 @@ abstract class BaseMetadataModel
 
     /**
      * @return mixed
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function update()
@@ -146,7 +146,7 @@ abstract class BaseMetadataModel
 
     /**
      * @return mixed
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function upsert()
@@ -164,7 +164,7 @@ abstract class BaseMetadataModel
      * @param ListMetadataQuery|ListMetadataQuery[] $queries
      * @param float|null $asOfVersion
      * @return ListMetadataResponse
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      */
     public static function listMetadata($queries, float $asOfVersion = null): ListMetadataResponse
     {
@@ -189,7 +189,7 @@ abstract class BaseMetadataModel
 
     /**
      * @return mixed
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function delete()
@@ -204,7 +204,7 @@ abstract class BaseMetadataModel
     /**
      * @param RetrieveRequest $retrieveRequest
      * @return AsyncResult
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function retrieve(RetrieveRequest $retrieveRequest): AsyncResult
@@ -219,7 +219,7 @@ abstract class BaseMetadataModel
      * @param string $id
      * @param bool $includeZip
      * @return RetrieveResult
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function checkRetrieveStatus(string $id, bool $includeZip = true): RetrieveResult
@@ -235,7 +235,7 @@ abstract class BaseMetadataModel
      * @param string $zipBase64
      * @param DeployOptions $deployOptions
      * @return AsyncResult
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function deploy(string $zipBase64, DeployOptions $deployOptions): AsyncResult
@@ -251,7 +251,7 @@ abstract class BaseMetadataModel
      * @param string $id
      * @param bool $includeDetails
      * @return DeployResult
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function checkDeployStatus(string $id, bool $includeDetails = true): DeployResult
@@ -266,7 +266,7 @@ abstract class BaseMetadataModel
     /**
      * @param string $id
      * @return CancelDeployResult
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public static function cancelDeploy(string $id): CancelDeployResult

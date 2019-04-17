@@ -10,13 +10,13 @@ namespace CNSDose\Salesforce\Models;
 
 use CNSDose\Salesforce\Exceptions\AuthorisationException;
 use CNSDose\Salesforce\Exceptions\MalformedRequestException;
+use CNSDose\Salesforce\Exceptions\StandardException;
 use CNSDose\Salesforce\Support\Authentication;
 use CNSDose\Salesforce\Support\Conversion\BaseConversion;
-use CNSDose\Standards\Exceptions\StandardException;
 use GuzzleHttp\Client as GuzzleClient;
 use Psr\Http\Message\ResponseInterface;
 
-class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
+class BaseRecordModel extends BaseModel
 {
     protected $preserveOriginalName = true;
     /**
@@ -391,7 +391,7 @@ class BaseRecordModel extends \CNSDose\Standards\Models\BaseModel
      * @throws \CNSDose\Salesforce\Exceptions\AuthorisationException
      * @throws \CNSDose\Salesforce\Exceptions\ConversionException
      * @throws \CNSDose\Salesforce\Exceptions\MalformedRequestException
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      */
     public function query(bool $depagination = true, string &$nextRecordsUrl = null): array
     {

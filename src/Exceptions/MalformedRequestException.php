@@ -8,8 +8,6 @@
 
 namespace CNSDose\Salesforce\Exceptions;
 
-use CNSDose\Standards\Exceptions\StandardException;
-
 class MalformedRequestException extends StandardException
 {
     /**
@@ -19,7 +17,7 @@ class MalformedRequestException extends StandardException
      */
     public function __construct($message, $errorCode)
     {
-        parent::__construct(500, $message);
+        parent::__construct($message);
         $this->addError($errorCode, $message);
     }
 }

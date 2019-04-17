@@ -24,7 +24,6 @@
         "ext-json": "*",
         "ext-soap": "*",
         "ext-xmlreader": "*",
-        "cnsdose/cnsdose-standards": "dev-master",
         "guzzlehttp/guzzle": "^6.3",
         "firebase/php-jwt": "^5.0",
         "myclabs/php-enum": "^1.6"

@@ -69,7 +69,7 @@ class GenerateRecordModel extends Command
      * Execute the console command.
      *
      * @return int
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      */
     public function handle()
     {

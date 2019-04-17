@@ -25,7 +25,7 @@ class MetadataTest extends TestCase
 {
     /**
      * @return string
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_create_custom_object()
@@ -56,7 +56,7 @@ class MetadataTest extends TestCase
     /**
      * @depends test_create_custom_object
      * @return string|null
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_retrieve_meta()
@@ -85,7 +85,7 @@ class MetadataTest extends TestCase
     /**
      * @depends test_retrieve_meta
      * @param string $zipFile
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_deploy_meta(string $zipFile)
@@ -114,7 +114,7 @@ class MetadataTest extends TestCase
     /**
      * @depends test_create_custom_object
      * @param string $fullName
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      */
     public function test_list_custom_object(string $fullName)
     {
@@ -131,7 +131,7 @@ class MetadataTest extends TestCase
      * @depends test_create_custom_object
      * @param string $fullName
      * @return CustomObject|null
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_read_custom_object(string $fullName)
@@ -146,7 +146,7 @@ class MetadataTest extends TestCase
      * @depends test_read_custom_object
      * @param CustomObject $customObject
      * @return CustomObject
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_update_custom_object(CustomObject $customObject)
@@ -166,7 +166,7 @@ class MetadataTest extends TestCase
      * @depends test_update_custom_object
      * @param CustomObject $customObject
      * @return CustomObject|null
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_upsert_custom_object(CustomObject $customObject)
@@ -189,7 +189,7 @@ class MetadataTest extends TestCase
      * @depends test_update_custom_object
      * @param CustomObject $customObject
      * @return CustomObject
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_rename_custom_object(CustomObject $customObject)
@@ -209,7 +209,7 @@ class MetadataTest extends TestCase
     /**
      * @depends test_rename_custom_object
      * @param CustomObject $customObject
-     * @throws \CNSDose\Standards\Exceptions\StandardException
+     * @throws \CNSDose\Salesforce\Exceptions\StandardException
      * @throws \SoapFault
      */
     public function test_delete_custom_object(CustomObject $customObject)
