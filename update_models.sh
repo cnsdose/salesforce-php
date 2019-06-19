@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 printf 'Generating metadata models\n'
 php ./artisan salesforce:generate-metadata-model -N 'CNSDose\Salesforce\Models\Metadata'
 
@@ -839,7 +841,7 @@ declare -A salesforce_objects=(
     ["WorkTypeShare "]=""
 )
 
-model_dir="./src/Models/Records"
+model_dir="$DIR/src/Models/Records"
 
 token=""
 token_time=""
