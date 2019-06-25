@@ -33,12 +33,6 @@
         "orchestra/testbench": "^3.7",
         "vlucas/phpdotenv": "^3.3 || ^2.2"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "git@bitbucket.org:cnsd/cnsdose-standards.git"
-        }
-    ],
     "extra": {
         "laravel": {
             "providers": [
