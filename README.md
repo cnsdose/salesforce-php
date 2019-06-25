@@ -2,21 +2,7 @@
 
 ## Installation
 
-1. Merge the following configurations into your `composer.json`
-    ```json
-    {
-        "require": {
-            "cnsdose/salesforce-php": "dev-master"
-        },
-        "repositories": [
-            {
-                "type": "vcs",
-                "url": "git@bitbucket.org:cnsd/salesforce-php.git"
-            }
-        ]
-    }
-    ```
-0. `composer update`
+1. `composer require cnsdose/salesforce-php`
 0. Register service provider
     1. Laravel
         ```php
