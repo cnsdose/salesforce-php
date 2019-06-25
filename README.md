@@ -1,4 +1,4 @@
-# Salesforce PHP SDK
+# Salesforce PHP SDK [![Build Status](https://travis-ci.org/cnsdose/salesforce-php.svg?branch=master)](https://travis-ci.org/cnsdose/salesforce-php)
 
 ## Installation
 
