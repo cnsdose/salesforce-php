@@ -1,0 +1,38 @@
+language: php
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+cache:
+  directories:
+    - $HOME/.composer/cache
+    - $HOME/cache/composer
+    - $HOME/.sonar/cache
+git:
+  depth: false
+env:
+  - SONAR_SCANNER_VERSION=3.3.0.1492
+addons:
+  apt:
+    packages:
+      - unzip
+      - wget
+before_install:
+  - set -e
+  - mkdir -p /opt
+  - wget https://dl.bintray.com/sonarsource/SonarQube/org/sonarsource/scanner/cli/sonar-scanner-cli/${SONAR_SCANNER_VERSION}/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip -O /opt/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip
+  - unzip /opt/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip -d /opt
+  - rm /opt/sonar-scanner-cli-${SONAR_SCANNER_VERSION}-linux.zip
+script:
+  - set -e
+  - export PATH="/opt/sonar-scanner-${SONAR_SCANNER_VERSION}-linux/bin:${PATH}"
+  - mkdir x509
+  - echo "$SALESFORCE_PUBLIC_KEY_BASE64" | base64 -d > ./x509/cert.pem
+  - echo "$SALESFORCE_PRIVATE_KEY_BASE64" | base64 -d > ./x509/key.pem
+  - export SALESFORCE_PUBLIC_KEY="./x509/cert.pem"
+  - export SALESFORCE_PRIVATE_KEY="./x509/key.pem"
+  - composer install
+  - echo "-Dsonar.projectKey=$SONAR_PROJECT" >> .sonar
+  - echo "-Dsonar.host.url=$SONAR_URL" >> .sonar
+  - echo "-Dsonar.login=$SONAR_LOGIN" >> .sonar
+  - make sonar
