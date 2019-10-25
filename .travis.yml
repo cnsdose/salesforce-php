@@ -11,7 +11,7 @@ cache:
 git:
   depth: false
 env:
-  - SONAR_SCANNER_VERSION=3.3.0.1492
+  - SONAR_SCANNER_VERSION=4.2.0.1873
 addons:
   apt:
     packages:
