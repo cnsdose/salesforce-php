@@ -12,6 +12,7 @@ return [
 
     'auth_flow' => 'jwt',                                        // jwt or username_password
 
+    'my_domain' => env('SALESFORCE_MY_DOMAIN', 'ap19.salesforce.com'),
     'username' => env('SALESFORCE_USERNAME'),
     'password' => env('SALESFORCE_PASSWORD'),
     'security_token' => env('SALESFORCE_SECURITY_TOKEN'),

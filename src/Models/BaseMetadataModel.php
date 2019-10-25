@@ -33,7 +33,7 @@ abstract class BaseMetadataModel
      * SOAP client
      * === === === === ===
      */
-    protected static $METADATA_SERVER_URL = 'https://ap8.salesforce.com/services/Soap/m/%s/%s';
+    protected static $METADATA_SERVER_URL = 'https://%s/services/Soap/m/%s/%s';
     protected static $METADATA_SOAP_NAMESPACE = 'http://soap.sforce.com/2006/04/metadata';
 
     /**
@@ -61,6 +61,7 @@ abstract class BaseMetadataModel
         $soapClient->__setSoapHeaders($sessionHeader);
         $soapClient->__setLocation(sprintf(
             self::$METADATA_SERVER_URL,
+            config('salesforce.my_domain'),
             substr(config('salesforce.api_version'), 1),
             Authentication::getOrganisationId()
         ));

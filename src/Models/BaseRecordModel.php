@@ -9,8 +9,8 @@
 namespace CNSDose\Salesforce\Models;
 
 use CNSDose\Salesforce\Exceptions\AuthorisationException;
-use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Exceptions\BaseException;
+use CNSDose\Salesforce\Exceptions\MalformedRequestException;
 use CNSDose\Salesforce\Support\Authentication;
 use CNSDose\Salesforce\Support\Conversion\BaseConversion;
 use GuzzleHttp\Client as GuzzleClient;
@@ -64,7 +64,15 @@ class BaseRecordModel extends BaseModel
      * REST client
      * === === === === ===
      */
-    protected static $API_PREFIX = 'https://ap8.salesforce.com/services/data/';
+    protected static $API_PREFIX = 'https://%s/services/data/';
+
+    /**
+     * @return string
+     */
+    protected static function getApiPrefix(): string
+    {
+        return sprintf(static::$API_PREFIX, config('salesforce.my_domain'));
+    }
 
     /**
      * @param $method
@@ -364,7 +372,7 @@ class BaseRecordModel extends BaseModel
      */
     protected function queryFromBuilder(bool $depagination = false, string &$nextRecordsUrl = null): array
     {
-        $url = sprintf('%s%s/query/', self::$API_PREFIX, config('salesforce.api_version'));
+        $url = sprintf('%s%s/query/', static::getApiPrefix(), config('salesforce.api_version'));
         $response = self::guzzleRequest('get', $url, [
             'query' => ['q' => $this->toSoql()],
         ]);
@@ -373,7 +381,7 @@ class BaseRecordModel extends BaseModel
             'records' => [$response['records'] ?? []],
         ];
         while ($depagination && !empty($response['nextRecordsUrl'])) {
-            $url = self::$API_PREFIX
+            $url = static::getApiPrefix()
                 . config('salesforce.api_version')
                 . substr($response['nextRecordsUrl'], strpos($response['nextRecordsUrl'], '/query'));
             $response = self::guzzleRequest('get', $url);
@@ -436,7 +444,7 @@ class BaseRecordModel extends BaseModel
         }
         $url = sprintf(
             '%s%s/sobjects/%s/%s',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version'),
             static::$objectApiName,
             $id
@@ -461,7 +469,7 @@ class BaseRecordModel extends BaseModel
     {
         $url = sprintf(
             '%s%s/sobjects/%s/',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version'),
             static::$objectApiName
         );
@@ -486,7 +494,7 @@ class BaseRecordModel extends BaseModel
     {
         $url = sprintf(
             '%s%s/composite/tree/%s/',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version'),
             static::$objectApiName
         );
@@ -512,7 +520,7 @@ class BaseRecordModel extends BaseModel
     {
         $url = sprintf(
             '%s%s/composite/sobjects',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version')
         );
         $records = array_map(function ($record) {
@@ -549,7 +557,7 @@ class BaseRecordModel extends BaseModel
         }
         $url = sprintf(
             '%s%s/sobjects/%s/%s/%s',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version'),
             static::$objectApiName,
             $externalId,
@@ -578,7 +586,7 @@ class BaseRecordModel extends BaseModel
     {
         $url = sprintf(
             '%s%s/composite/sobjects',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version')
         );
         $records = array_map(function ($record) {
@@ -613,7 +621,7 @@ class BaseRecordModel extends BaseModel
         }
         $url = sprintf(
             '%s%s/sobjects/%s/%s',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version'),
             static::$objectApiName,
             $this->Id
@@ -633,7 +641,7 @@ class BaseRecordModel extends BaseModel
     {
         $url = sprintf(
             '%s%s/composite/sobjects',
-            self::$API_PREFIX,
+            static::getApiPrefix(),
             config('salesforce.api_version')
         );
         return self::guzzleRequest('delete', $url, [

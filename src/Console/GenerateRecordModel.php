@@ -84,7 +84,8 @@ class GenerateRecordModel extends Command
         $client = new Client();
         $response = $client->get(
             sprintf(
-                'https://ap8.salesforce.com/services/data/%s/sobjects/%s/describe/',
+                'https://%s/services/data/%s/sobjects/%s/describe/',
+                config('salesforce.my_domain'),
                 config('salesforce.api_version'),
                 $object
             ), [
