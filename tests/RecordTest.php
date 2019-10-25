@@ -396,7 +396,7 @@ class RecordTest extends TestCase
         $tree->PlantTime__c = $plantDateTime;
         $tree->Price__c = 123.12;
         $result = $tree->upsert();
-        $this->assertNull($result);
+        $this->assertTrue($result['success'] ?? null);
         $tree = Tree::queryById($tree->Id);
         $this->assertEquals($updatedTreeName, $tree->Name);
         $this->assertEquals((new Date())->doEncode($plantDateTime), (new Date())->doEncode($tree->PlantDate__c));
