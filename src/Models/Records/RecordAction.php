@@ -27,6 +27,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Order
  * @property string $Status
  * @property string $Pinned
+ * @property string $ActionType
  * @property string $ActionDefinition
  * @property bool $IsMandatory
  * @property bool $IsUiRemoveHidden
@@ -49,6 +50,7 @@ class RecordAction extends BaseRecordModel
         'Order' => null,
         'Status' => null,
         'Pinned' => null,
+        'ActionType' => null,
         'ActionDefinition' => null,
         'IsMandatory' => 'bool',
         'IsUiRemoveHidden' => 'bool',

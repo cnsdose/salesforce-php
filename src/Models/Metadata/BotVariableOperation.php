@@ -17,6 +17,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $quickReplyOptionTemplate
  * @property string|null $quickReplyType
  * @property string|null $quickReplyWidgetType
+ * @property string|null $sourceVariableName
+ * @property string|null $sourceVariableType
  * @property string|null $type
  */
 class BotVariableOperation
@@ -82,6 +84,16 @@ class BotVariableOperation
     public function setQuickReplyWidgetType(BotWidgetType $quickReplyWidgetType)
     {
         $this->quickReplyWidgetType = $quickReplyWidgetType->getValue();
+    }
+
+    public function setSourceVariableName(string $sourceVariableName)
+    {
+        $this->sourceVariableName = $sourceVariableName;
+    }
+
+    public function setSourceVariableType(ConversationVariableType $sourceVariableType)
+    {
+        $this->sourceVariableType = $sourceVariableType->getValue();
     }
 
     public function setType(BotVariableOperationType $type)

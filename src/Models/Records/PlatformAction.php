@@ -42,6 +42,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $RelatedListRecordId
  * @property string $TargetUrl
  * @property string $TargetObject
+ * @property string $OpenType
  */
 class PlatformAction extends BaseRecordModel
 {
@@ -76,5 +77,6 @@ class PlatformAction extends BaseRecordModel
         'RelatedListRecordId' => null,
         'TargetUrl' => null,
         'TargetObject' => null,
+        'OpenType' => null,
     ];
 }

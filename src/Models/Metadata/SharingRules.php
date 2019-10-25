@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property SharingCriteriaRule[]|null $sharingCriteriaRules
+ * @property SharingGuestRule[]|null $sharingGuestRules
  * @property SharingOwnerRule[]|null $sharingOwnerRules
  * @property SharingTerritoryRule[]|null $sharingTerritoryRules
  */
@@ -19,6 +20,10 @@ class SharingRules extends Metadata
         'sharingCriteriaRules' => [
             'multiple' => true,
             'type' => SharingCriteriaRule::class,
+        ],
+        'sharingGuestRules' => [
+            'multiple' => true,
+            'type' => SharingGuestRule::class,
         ],
         'sharingOwnerRules' => [
             'multiple' => true,
@@ -33,6 +38,11 @@ class SharingRules extends Metadata
     public function setSharingCriteriaRules(array $sharingCriteriaRules)
     {
         $this->sharingCriteriaRules = $sharingCriteriaRules;
+    }
+
+    public function setSharingGuestRules(array $sharingGuestRules)
+    {
+        $this->sharingGuestRules = $sharingGuestRules;
     }
 
     public function setSharingOwnerRules(array $sharingOwnerRules)

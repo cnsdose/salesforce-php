@@ -39,7 +39,6 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $PreferencesConsentManagementEnabled
  * @property bool $PreferencesIndividualAutoCreateEnabled
  * @property bool $PreferencesAutoSelectIndividualOnMerge
- * @property bool $PreferencesActivityAnalyticsEnabled
  * @property bool $PreferencesLightningLoginEnabled
  * @property bool $PreferencesOnlyLLPermUserAllowed
  * @property mixed $FiscalYearStartMonth
@@ -101,7 +100,6 @@ class Organization extends BaseRecordModel
         'PreferencesConsentManagementEnabled' => 'bool',
         'PreferencesIndividualAutoCreateEnabled' => 'bool',
         'PreferencesAutoSelectIndividualOnMerge' => 'bool',
-        'PreferencesActivityAnalyticsEnabled' => 'bool',
         'PreferencesLightningLoginEnabled' => 'bool',
         'PreferencesOnlyLLPermUserAllowed' => 'bool',
         'FiscalYearStartMonth' => null,

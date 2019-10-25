@@ -15,6 +15,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $developerName
  * @property string|null $label
  * @property string|null $mlIntent
+ * @property bool|null $mlIntentTrainingEnabled
  * @property bool|null $showInFooterMenu
  */
 class BotDialog
@@ -54,6 +55,11 @@ class BotDialog
     public function setMlIntent(string $mlIntent)
     {
         $this->mlIntent = $mlIntent;
+    }
+
+    public function setMlIntentTrainingEnabled(bool $mlIntentTrainingEnabled)
+    {
+        $this->mlIntentTrainingEnabled = $mlIntentTrainingEnabled;
     }
 
     public function setShowInFooterMenu(bool $showInFooterMenu)

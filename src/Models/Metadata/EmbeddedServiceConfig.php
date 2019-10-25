@@ -11,7 +11,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property bool|null $areGuestUsersAllowed
  * @property string|null $authMethod
- * @property string|null $customMinimizedComponent
+ * @property EmbeddedServiceAppointmentSettings|null $embeddedServiceAppointmentSettings
  * @property EmbeddedServiceCustomComponent[]|null $embeddedServiceCustomComponents
  * @property EmbeddedServiceCustomLabel[]|null $embeddedServiceCustomLabels
  * @property EmbeddedServiceFlowConfig|null $embeddedServiceFlowConfig
@@ -24,6 +24,10 @@ namespace CNSDose\Salesforce\Models\Metadata;
 class EmbeddedServiceConfig extends Metadata
 {
     public static $classMap = [
+        'embeddedServiceAppointmentSettings' => [
+            'multiple' => false,
+            'type' => EmbeddedServiceAppointmentSettings::class,
+        ],
         'embeddedServiceCustomComponents' => [
             'multiple' => true,
             'type' => EmbeddedServiceCustomComponent::class,
@@ -56,9 +60,9 @@ class EmbeddedServiceConfig extends Metadata
         $this->authMethod = $authMethod->getValue();
     }
 
-    public function setCustomMinimizedComponent(string $customMinimizedComponent)
+    public function setEmbeddedServiceAppointmentSettings(EmbeddedServiceAppointmentSettings $embeddedServiceAppointmentSettings)
     {
-        $this->customMinimizedComponent = $customMinimizedComponent;
+        $this->embeddedServiceAppointmentSettings = $embeddedServiceAppointmentSettings;
     }
 
     public function setEmbeddedServiceCustomComponents(array $embeddedServiceCustomComponents)

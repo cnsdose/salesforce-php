@@ -13,4 +13,6 @@ class BotStepConditionOperatorType extends Enum
     const NOT_EQUALS = 'NotEquals';
     const IS_SET = 'IsSet';
     const IS_NOT_SET = 'IsNotSet';
+    const GREATER_THAN = 'GreaterThan';
+    const LESS_THAN = 'LessThan';
 }

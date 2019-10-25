@@ -11,18 +11,22 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property string|null $audienceName
  * @property string|null $container
- * @property AudienceCriterion[]|null $criterion
+ * @property AudienceCriteria|null $criteria
  * @property string|null $description
  * @property string|null $formula
  * @property string|null $formulaFilterType
- * @property bool|null $isProtected
+ * @property PersonalizationTargetInfos|null $targets
  */
 class Audience extends Metadata
 {
     public static $classMap = [
-        'criterion' => [
-            'multiple' => true,
-            'type' => AudienceCriterion::class,
+        'criteria' => [
+            'multiple' => false,
+            'type' => AudienceCriteria::class,
+        ],
+        'targets' => [
+            'multiple' => false,
+            'type' => PersonalizationTargetInfos::class,
         ],
     ];
 
@@ -36,9 +40,9 @@ class Audience extends Metadata
         $this->container = $container;
     }
 
-    public function setCriterion(array $criterion)
+    public function setCriteria(AudienceCriteria $criteria)
     {
-        $this->criterion = $criterion;
+        $this->criteria = $criteria;
     }
 
     public function setDescription(string $description)
@@ -56,8 +60,8 @@ class Audience extends Metadata
         $this->formulaFilterType = $formulaFilterType->getValue();
     }
 
-    public function setIsProtected(bool $isProtected)
+    public function setTargets(PersonalizationTargetInfos $targets)
     {
-        $this->isProtected = $isProtected;
+        $this->targets = $targets;
     }
 }

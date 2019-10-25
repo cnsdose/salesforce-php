@@ -11,10 +11,12 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property PermissionSetApplicationVisibility[]|null $applicationVisibilities
  * @property PermissionSetApexClassAccess[]|null $classAccesses
+ * @property PermissionSetCustomMetadataTypeAccess[]|null $customMetadataTypeAccesses
  * @property PermissionSetCustomPermissions[]|null $customPermissions
  * @property string|null $description
  * @property PermissionSetExternalDataSourceAccess[]|null $externalDataSourceAccesses
  * @property PermissionSetFieldPermissions[]|null $fieldPermissions
+ * @property PermissionSetFlowAccess[]|null $flowAccesses
  * @property bool|null $hasActivationRequired
  * @property string|null $label
  * @property string|null $license
@@ -35,6 +37,10 @@ class PermissionSet extends Metadata
             'multiple' => true,
             'type' => PermissionSetApexClassAccess::class,
         ],
+        'customMetadataTypeAccesses' => [
+            'multiple' => true,
+            'type' => PermissionSetCustomMetadataTypeAccess::class,
+        ],
         'customPermissions' => [
             'multiple' => true,
             'type' => PermissionSetCustomPermissions::class,
@@ -46,6 +52,10 @@ class PermissionSet extends Metadata
         'fieldPermissions' => [
             'multiple' => true,
             'type' => PermissionSetFieldPermissions::class,
+        ],
+        'flowAccesses' => [
+            'multiple' => true,
+            'type' => PermissionSetFlowAccess::class,
         ],
         'objectPermissions' => [
             'multiple' => true,
@@ -79,6 +89,11 @@ class PermissionSet extends Metadata
         $this->classAccesses = $classAccesses;
     }
 
+    public function setCustomMetadataTypeAccesses(array $customMetadataTypeAccesses)
+    {
+        $this->customMetadataTypeAccesses = $customMetadataTypeAccesses;
+    }
+
     public function setCustomPermissions(array $customPermissions)
     {
         $this->customPermissions = $customPermissions;
@@ -97,6 +112,11 @@ class PermissionSet extends Metadata
     public function setFieldPermissions(array $fieldPermissions)
     {
         $this->fieldPermissions = $fieldPermissions;
+    }
+
+    public function setFlowAccesses(array $flowAccesses)
+    {
+        $this->flowAccesses = $flowAccesses;
     }
 
     public function setHasActivationRequired(bool $hasActivationRequired)

@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $enableLiveAgent
+ * @property bool|null $enableQuickTextEnabled
  */
 class LiveAgentSettings extends Metadata
 {
@@ -19,5 +20,10 @@ class LiveAgentSettings extends Metadata
     public function setEnableLiveAgent(bool $enableLiveAgent)
     {
         $this->enableLiveAgent = $enableLiveAgent;
+    }
+
+    public function setEnableQuickTextEnabled(bool $enableQuickTextEnabled)
+    {
+        $this->enableQuickTextEnabled = $enableQuickTextEnabled;
     }
 }

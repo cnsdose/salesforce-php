@@ -16,8 +16,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property string $DomainType
  * @property string $Domain
- * @property bool $OptionsExternalHttps
+ * @property bool $OptionsHstsHeaders
  * @property string $CnameTarget
+ * @property string $HttpsOption
  * @property \Carbon\Carbon $CreatedDate
  * @property string $CreatedById
  * @property \Carbon\Carbon $LastModifiedDate
@@ -31,8 +32,9 @@ class Domain extends BaseRecordModel
         'Id' => null,
         'DomainType' => null,
         'Domain' => null,
-        'OptionsExternalHttps' => 'bool',
+        'OptionsHstsHeaders' => 'bool',
         'CnameTarget' => null,
+        'HttpsOption' => null,
         'CreatedDate' => 'datetime',
         'CreatedById' => null,
         'LastModifiedDate' => 'datetime',

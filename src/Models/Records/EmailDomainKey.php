@@ -24,10 +24,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Domain
  * @property string $DomainMatch
  * @property bool $IsActive
+ * @property string $AlternateSelector
+ * @property string $TxtRecordName
+ * @property string $AlternateTxtRecordName
  * @property string $TxtRecordsPublishState
  * @property mixed $KeySize
  * @property string $PublicKey
- * @property string $PrivateKey
+ * @property string $AlternatePublicKey
  */
 class EmailDomainKey extends BaseRecordModel
 {
@@ -44,9 +47,12 @@ class EmailDomainKey extends BaseRecordModel
         'Domain' => null,
         'DomainMatch' => null,
         'IsActive' => 'bool',
+        'AlternateSelector' => null,
+        'TxtRecordName' => null,
+        'AlternateTxtRecordName' => null,
         'TxtRecordsPublishState' => null,
         'KeySize' => null,
         'PublicKey' => null,
-        'PrivateKey' => null,
+        'AlternatePublicKey' => null,
     ];
 }

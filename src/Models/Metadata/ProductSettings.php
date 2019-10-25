@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $enableCascadeActivateToRelatedPrices
+ * @property bool|null $enableMySettings
  * @property bool|null $enableQuantitySchedule
  * @property bool|null $enableRevenueSchedule
  */
@@ -21,6 +22,11 @@ class ProductSettings extends Metadata
     public function setEnableCascadeActivateToRelatedPrices(bool $enableCascadeActivateToRelatedPrices)
     {
         $this->enableCascadeActivateToRelatedPrices = $enableCascadeActivateToRelatedPrices;
+    }
+
+    public function setEnableMySettings(bool $enableMySettings)
+    {
+        $this->enableMySettings = $enableMySettings;
     }
 
     public function setEnableQuantitySchedule(bool $enableQuantitySchedule)

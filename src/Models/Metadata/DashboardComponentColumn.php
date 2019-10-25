@@ -16,6 +16,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property int|null $lowRangeColor
  * @property int|null $midRangeColor
  * @property string|null $reportColumn
+ * @property bool|null $showSubTotal
  * @property bool|null $showTotal
  * @property DashboardComponentColumnType|null $type
  */
@@ -57,6 +58,11 @@ class DashboardComponentColumn
     public function setReportColumn(string $reportColumn)
     {
         $this->reportColumn = $reportColumn;
+    }
+
+    public function setShowSubTotal(bool $showSubTotal)
+    {
+        $this->showSubTotal = $showSubTotal;
     }
 
     public function setShowTotal(bool $showTotal)

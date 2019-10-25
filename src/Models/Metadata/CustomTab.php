@@ -18,7 +18,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $hasSidebar
  * @property string|null $icon
  * @property string|null $label
- * @property bool|null $mobileReady
+ * @property string|null $lwcComponent
  * @property string|null $motif
  * @property string|null $page
  * @property string|null $scontrol
@@ -80,9 +80,9 @@ class CustomTab extends Metadata
         $this->label = $label;
     }
 
-    public function setMobileReady(bool $mobileReady)
+    public function setLwcComponent(string $lwcComponent)
     {
-        $this->mobileReady = $mobileReady;
+        $this->lwcComponent = $lwcComponent;
     }
 
     public function setMotif(string $motif)

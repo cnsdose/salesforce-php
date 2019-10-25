@@ -135,6 +135,9 @@ class Language extends Enum
     const KN = 'kn';
     const MR = 'mr';
     const GU = 'gu';
+    const EN_NZ = 'en_NZ';
+    const MI = 'mi';
+    const MY = 'my';
     const EO = 'eo';
     const IW_EO = 'iw_EO';
 }

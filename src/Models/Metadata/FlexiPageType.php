@@ -25,8 +25,11 @@ class FlexiPageType extends Enum
     const COMM_GLOBAL_SEARCH_RESULT_PAGE = 'CommGlobalSearchResultPage';
     const COMM_SELF_REGISTER_PAGE = 'CommSelfRegisterPage';
     const COMM_THEME_LAYOUT_PAGE = 'CommThemeLayoutPage';
-    const COMM_FLOW_PAGE = 'CommFlowPage';
     const UTILITY_BAR = 'UtilityBar';
     const RECORD_PREVIEW = 'RecordPreview';
     const EMBEDDED_SERVICE_PAGE = 'EmbeddedServicePage';
+    const COMM_CHECKOUT_PAGE = 'CommCheckoutPage';
+    const COMM_ORDER_CONFIRMATION_PAGE = 'CommOrderConfirmationPage';
+    const COMM_FLOW_PAGE = 'CommFlowPage';
+    const EMAIL_TEMPLATE_PAGE = 'EmailTemplatePage';
 }

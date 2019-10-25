@@ -37,4 +37,6 @@ class QuickActionLabel extends Enum
     const REPLY_ALL = 'ReplyAll';
     const FORWARD = 'Forward';
     const SCHEDULE_APPOINTMENT = 'ScheduleAppointment';
+    const ENROLL_IN_PROGRAM = 'EnrollInProgram';
+    const MODIFY_APPOINTMENT = 'ModifyAppointment';
 }

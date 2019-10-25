@@ -25,6 +25,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $enableDirectMessages
  * @property bool|null $enableGuestChatter
  * @property bool|null $enableGuestFileAccess
+ * @property bool|null $enableGuestMemberVisibility
  * @property bool|null $enableInvitation
  * @property bool|null $enableKnowledgeable
  * @property bool|null $enableMemberVisibility
@@ -181,6 +182,11 @@ class Network extends Metadata
     public function setEnableGuestFileAccess(bool $enableGuestFileAccess)
     {
         $this->enableGuestFileAccess = $enableGuestFileAccess;
+    }
+
+    public function setEnableGuestMemberVisibility(bool $enableGuestMemberVisibility)
+    {
+        $this->enableGuestMemberVisibility = $enableGuestMemberVisibility;
     }
 
     public function setEnableInvitation(bool $enableInvitation)

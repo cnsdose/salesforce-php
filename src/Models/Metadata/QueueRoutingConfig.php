@@ -11,6 +11,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property float|null $capacityPercentage
  * @property float|null $capacityWeight
+ * @property int|null $dropAdditionalSkillsTimeout
  * @property bool|null $isAttributeBased
  * @property string|null $label
  * @property int|null $pushTimeout
@@ -32,6 +33,11 @@ class QueueRoutingConfig extends Metadata
     public function setCapacityWeight(float $capacityWeight)
     {
         $this->capacityWeight = $capacityWeight;
+    }
+
+    public function setDropAdditionalSkillsTimeout(int $dropAdditionalSkillsTimeout)
+    {
+        $this->dropAdditionalSkillsTimeout = $dropAdditionalSkillsTimeout;
     }
 
     public function setIsAttributeBased(bool $isAttributeBased)

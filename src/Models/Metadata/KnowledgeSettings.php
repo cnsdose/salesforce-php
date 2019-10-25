@@ -16,6 +16,10 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $enableCreateEditOnArticlesTab
  * @property bool|null $enableExternalMediaContent
  * @property bool|null $enableKnowledge
+ * @property bool|null $enableKnowledgeArticleTextHighlights
+ * @property bool|null $enableKnowledgeKeywordAutoComplete
+ * @property bool|null $enableKnowledgeTitleAutoComplete
+ * @property bool|null $enableLightningKbAutoLoadRichTextField
  * @property bool|null $enableLightningKnowledge
  * @property KnowledgeLanguageSettings|null $languages
  * @property bool|null $showArticleSummariesCustomerPortal
@@ -78,6 +82,26 @@ class KnowledgeSettings extends Metadata
     public function setEnableKnowledge(bool $enableKnowledge)
     {
         $this->enableKnowledge = $enableKnowledge;
+    }
+
+    public function setEnableKnowledgeArticleTextHighlights(bool $enableKnowledgeArticleTextHighlights)
+    {
+        $this->enableKnowledgeArticleTextHighlights = $enableKnowledgeArticleTextHighlights;
+    }
+
+    public function setEnableKnowledgeKeywordAutoComplete(bool $enableKnowledgeKeywordAutoComplete)
+    {
+        $this->enableKnowledgeKeywordAutoComplete = $enableKnowledgeKeywordAutoComplete;
+    }
+
+    public function setEnableKnowledgeTitleAutoComplete(bool $enableKnowledgeTitleAutoComplete)
+    {
+        $this->enableKnowledgeTitleAutoComplete = $enableKnowledgeTitleAutoComplete;
+    }
+
+    public function setEnableLightningKbAutoLoadRichTextField(bool $enableLightningKbAutoLoadRichTextField)
+    {
+        $this->enableLightningKbAutoLoadRichTextField = $enableLightningKbAutoLoadRichTextField;
     }
 
     public function setEnableLightningKnowledge(bool $enableLightningKnowledge)

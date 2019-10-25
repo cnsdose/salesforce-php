@@ -26,6 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $DurationInMinutes
  * @property \Carbon\Carbon $StartDateTime
  * @property \Carbon\Carbon $EndDateTime
+ * @property \Carbon\Carbon $EndDate
  * @property string $Description
  * @property string $AccountId
  * @property string $OwnerId
@@ -82,6 +83,7 @@ class Event extends BaseRecordModel
         'DurationInMinutes' => null,
         'StartDateTime' => 'datetime',
         'EndDateTime' => 'datetime',
+        'EndDate' => 'date',
         'Description' => null,
         'AccountId' => null,
         'OwnerId' => null,

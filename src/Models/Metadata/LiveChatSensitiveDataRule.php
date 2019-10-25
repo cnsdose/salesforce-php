@@ -14,6 +14,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property int|null $enforceOn
  * @property bool|null $isEnabled
  * @property string|null $pattern
+ * @property int|null $priority
  * @property string|null $replacement
  */
 class LiveChatSensitiveDataRule extends Metadata
@@ -44,6 +45,11 @@ class LiveChatSensitiveDataRule extends Metadata
     public function setPattern(string $pattern)
     {
         $this->pattern = $pattern;
+    }
+
+    public function setPriority(int $priority)
+    {
+        $this->priority = $priority;
     }
 
     public function setReplacement(string $replacement)

@@ -14,6 +14,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $consumerKey
  * @property string|null $consumerSecret
  * @property ConnectedAppOauthIdToken|null $idTokenConfig
+ * @property bool|null $isAdminApproved
  * @property string[]|null $scopes
  * @property string|null $singleLogoutUrl
  */
@@ -49,6 +50,11 @@ class ConnectedAppOauthConfig
     public function setIdTokenConfig(ConnectedAppOauthIdToken $idTokenConfig)
     {
         $this->idTokenConfig = $idTokenConfig;
+    }
+
+    public function setIsAdminApproved(bool $isAdminApproved)
+    {
+        $this->isAdminApproved = $isAdminApproved;
     }
 
     public function setScopes(array $scopes)

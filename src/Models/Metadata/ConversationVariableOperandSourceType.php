@@ -15,4 +15,6 @@ class ConversationVariableOperandSourceType extends Enum
     const ML_SLOT_CLASS = 'MlSlotClass';
     const STANDARD_ML_SLOT_CLASS = 'StandardMlSlotClass';
     const VALUE = 'Value';
+    const BOT_DEFINITION = 'BotDefinition';
+    const QUEUE = 'Queue';
 }

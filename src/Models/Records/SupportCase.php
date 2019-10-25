@@ -15,6 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property bool $IsDeleted
+ * @property string $MasterRecordId
  * @property string $CaseNumber
  * @property string $ContactId
  * @property string $AccountId
@@ -24,6 +25,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $SuppliedPhone
  * @property string $SuppliedCompany
  * @property string $Type
+ * @property string $RecordTypeId
  * @property string $Status
  * @property string $Reason
  * @property string $Origin
@@ -54,6 +56,7 @@ class SupportCase extends BaseRecordModel
     protected $defaultFields = [
         'Id' => null,
         'IsDeleted' => 'bool',
+        'MasterRecordId' => null,
         'CaseNumber' => null,
         'ContactId' => null,
         'AccountId' => null,
@@ -63,6 +66,7 @@ class SupportCase extends BaseRecordModel
         'SuppliedPhone' => null,
         'SuppliedCompany' => null,
         'Type' => null,
+        'RecordTypeId' => null,
         'Status' => null,
         'Reason' => null,
         'Origin' => null,

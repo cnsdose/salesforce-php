@@ -13,10 +13,12 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property ProfileCategoryGroupVisibility[]|null $categoryGroupVisibilities
  * @property ProfileApexClassAccess[]|null $classAccesses
  * @property bool|null $custom
+ * @property ProfileCustomMetadataTypeAccess[]|null $customMetadataTypeAccesses
  * @property ProfileCustomPermissions[]|null $customPermissions
  * @property string|null $description
  * @property ProfileExternalDataSourceAccess[]|null $externalDataSourceAccesses
  * @property ProfileFieldLevelSecurity[]|null $fieldPermissions
+ * @property ProfileFlowAccess[]|null $flowAccesses
  * @property ProfileLayoutAssignment[]|null $layoutAssignments
  * @property ProfileLoginHours|null $loginHours
  * @property ProfileLoginIpRange[]|null $loginIpRanges
@@ -43,6 +45,10 @@ class Profile extends Metadata
             'multiple' => true,
             'type' => ProfileApexClassAccess::class,
         ],
+        'customMetadataTypeAccesses' => [
+            'multiple' => true,
+            'type' => ProfileCustomMetadataTypeAccess::class,
+        ],
         'customPermissions' => [
             'multiple' => true,
             'type' => ProfileCustomPermissions::class,
@@ -54,6 +60,10 @@ class Profile extends Metadata
         'fieldPermissions' => [
             'multiple' => true,
             'type' => ProfileFieldLevelSecurity::class,
+        ],
+        'flowAccesses' => [
+            'multiple' => true,
+            'type' => ProfileFlowAccess::class,
         ],
         'layoutAssignments' => [
             'multiple' => true,
@@ -113,6 +123,11 @@ class Profile extends Metadata
         $this->custom = $custom;
     }
 
+    public function setCustomMetadataTypeAccesses(array $customMetadataTypeAccesses)
+    {
+        $this->customMetadataTypeAccesses = $customMetadataTypeAccesses;
+    }
+
     public function setCustomPermissions(array $customPermissions)
     {
         $this->customPermissions = $customPermissions;
@@ -131,6 +146,11 @@ class Profile extends Metadata
     public function setFieldPermissions(array $fieldPermissions)
     {
         $this->fieldPermissions = $fieldPermissions;
+    }
+
+    public function setFlowAccesses(array $flowAccesses)
+    {
+        $this->flowAccesses = $flowAccesses;
     }
 
     public function setLayoutAssignments(array $layoutAssignments)

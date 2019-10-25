@@ -9,11 +9,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class AuthProvider
  * @package CNSDose\Salesforce\Models\Metadata
  *
+ * @property string|null $appleTeam
  * @property string|null $authorizeUrl
  * @property string|null $consumerKey
  * @property string|null $consumerSecret
  * @property string|null $customMetadataTypeRecord
  * @property string|null $defaultScopes
+ * @property string|null $ecKey
  * @property string|null $errorUrl
  * @property string|null $executionUser
  * @property string|null $friendlyName
@@ -29,6 +31,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $registrationHandler
  * @property bool|null $sendAccessTokenInHeader
  * @property bool|null $sendClientCredentialsInHeader
+ * @property bool|null $sendSecretInApis
  * @property string|null $ssoKickoffUrl
  * @property string|null $tokenUrl
  * @property string|null $userInfoUrl
@@ -37,6 +40,11 @@ class AuthProvider extends Metadata
 {
     public static $classMap = [
     ];
+
+    public function setAppleTeam(string $appleTeam)
+    {
+        $this->appleTeam = $appleTeam;
+    }
 
     public function setAuthorizeUrl(string $authorizeUrl)
     {
@@ -61,6 +69,11 @@ class AuthProvider extends Metadata
     public function setDefaultScopes(string $defaultScopes)
     {
         $this->defaultScopes = $defaultScopes;
+    }
+
+    public function setEcKey(string $ecKey)
+    {
+        $this->ecKey = $ecKey;
     }
 
     public function setErrorUrl(string $errorUrl)
@@ -136,6 +149,11 @@ class AuthProvider extends Metadata
     public function setSendClientCredentialsInHeader(bool $sendClientCredentialsInHeader)
     {
         $this->sendClientCredentialsInHeader = $sendClientCredentialsInHeader;
+    }
+
+    public function setSendSecretInApis(bool $sendSecretInApis)
+    {
+        $this->sendSecretInApis = $sendSecretInApis;
     }
 
     public function setSsoKickoffUrl(string $ssoKickoffUrl)

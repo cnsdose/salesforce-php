@@ -11,6 +11,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property string|null $defaultListViewId
  * @property string|null $label
+ * @property NavigationMenuItemBranding|null $menuItemBranding
  * @property int|null $position
  * @property bool|null $publiclyAvailable
  * @property NavigationSubMenu|null $subMenu
@@ -21,6 +22,10 @@ namespace CNSDose\Salesforce\Models\Metadata;
 class NavigationMenuItem
 {
     public static $classMap = [
+        'menuItemBranding' => [
+            'multiple' => false,
+            'type' => NavigationMenuItemBranding::class,
+        ],
         'subMenu' => [
             'multiple' => false,
             'type' => NavigationSubMenu::class,
@@ -35,6 +40,11 @@ class NavigationMenuItem
     public function setLabel(string $label)
     {
         $this->label = $label;
+    }
+
+    public function setMenuItemBranding(NavigationMenuItemBranding $menuItemBranding)
+    {
+        $this->menuItemBranding = $menuItemBranding;
     }
 
     public function setPosition(int $position)

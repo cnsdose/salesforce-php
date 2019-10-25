@@ -13,5 +13,6 @@ class ReportAggrType extends Enum
     const AVERAGE = 'Average';
     const MAXIMUM = 'Maximum';
     const MINIMUM = 'Minimum';
+    const UNIQUE = 'Unique';
     const ROW_COUNT = 'RowCount';
 }

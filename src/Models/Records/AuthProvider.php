@@ -31,10 +31,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $OptionsSendAccessTokenInHeader
  * @property bool $OptionsSendClientCredentialsInHeader
  * @property bool $OptionsIncludeOrgIdInId
+ * @property bool $OptionsSendSecretInApis
  * @property mixed $IconUrl
  * @property mixed $LogoutUrl
  * @property string $PluginId
  * @property string $CustomMetadataTypeRecord
+ * @property string $EcKey
+ * @property string $AppleTeam
  * @property mixed $SsoKickoffUrl
  * @property mixed $LinkKickoffUrl
  * @property mixed $OauthKickoffUrl
@@ -61,10 +64,13 @@ class AuthProvider extends BaseRecordModel
         'OptionsSendAccessTokenInHeader' => 'bool',
         'OptionsSendClientCredentialsInHeader' => 'bool',
         'OptionsIncludeOrgIdInId' => 'bool',
+        'OptionsSendSecretInApis' => 'bool',
         'IconUrl' => null,
         'LogoutUrl' => null,
         'PluginId' => null,
         'CustomMetadataTypeRecord' => null,
+        'EcKey' => null,
+        'AppleTeam' => null,
         'SsoKickoffUrl' => null,
         'LinkKickoffUrl' => null,
         'OauthKickoffUrl' => null,

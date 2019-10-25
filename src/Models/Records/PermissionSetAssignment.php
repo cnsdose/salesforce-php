@@ -15,6 +15,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  *
  * @property string $Id
  * @property string $PermissionSetId
+ * @property string $PermissionSetGroupId
  * @property string $AssigneeId
  * @property \Carbon\Carbon $SystemModstamp
  */
@@ -24,6 +25,7 @@ class PermissionSetAssignment extends BaseRecordModel
     protected $defaultFields = [
         'Id' => null,
         'PermissionSetId' => null,
+        'PermissionSetGroupId' => null,
         'AssigneeId' => null,
         'SystemModstamp' => 'datetime',
     ];

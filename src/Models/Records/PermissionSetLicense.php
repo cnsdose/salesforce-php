@@ -139,6 +139,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsViewAllUsers
  * @property bool $MaximumPermissionsConnectOrgToEnvironmentHub
  * @property bool $MaximumPermissionsCreateCustomizeFilters
+ * @property bool $MaximumPermissionsContentHubUser
  * @property bool $MaximumPermissionsGovernNetworks
  * @property bool $MaximumPermissionsSalesConsole
  * @property bool $MaximumPermissionsTwoFactorApi
@@ -166,6 +167,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsStdAutomaticActivityCapture
  * @property bool $MaximumPermissionsManageTwoFactor
  * @property bool $MaximumPermissionsLightningExperienceUser
+ * @property bool $MaximumPermissionsViewDataLeakageEvents
  * @property bool $MaximumPermissionsConfigCustomRecs
  * @property bool $MaximumPermissionsSubmitMacrosAllowed
  * @property bool $MaximumPermissionsBulkMacrosAllowed
@@ -173,6 +175,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsSendAnnouncementEmails
  * @property bool $MaximumPermissionsChatterEditOwnPost
  * @property bool $MaximumPermissionsChatterEditOwnRecordPost
+ * @property bool $MaximumPermissionsCreateAuditFields
+ * @property bool $MaximumPermissionsUpdateWithInactiveOwner
  * @property bool $MaximumPermissionsManageSandboxes
  * @property bool $MaximumPermissionsAutomaticActivityCapture
  * @property bool $MaximumPermissionsImportCustomObjects
@@ -202,10 +206,13 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsListEmailSend
  * @property bool $MaximumPermissionsFeedPinning
  * @property bool $MaximumPermissionsChangeDashboardColors
+ * @property bool $MaximumPermissionsManageRecommendationStrategies
+ * @property bool $MaximumPermissionsManagePropositions
  * @property bool $MaximumPermissionsCloseConversations
  * @property bool $MaximumPermissionsSubscribeReportRolesGrps
  * @property bool $MaximumPermissionsSubscribeDashboardRolesGrps
  * @property bool $MaximumPermissionsUseWebLink
+ * @property bool $MaximumPermissionsHasUnlimitedNBAExecutions
  * @property bool $MaximumPermissionsViewOnlyEmbeddedAppUser
  * @property bool $MaximumPermissionsSendExternalEmailAvailable
  * @property bool $MaximumPermissionsViewAllActivities
@@ -216,18 +223,32 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $MaximumPermissionsSubscribeDashboardToOtherUsers
  * @property bool $MaximumPermissionsCreateLtngTempInPub
  * @property bool $MaximumPermissionsTransactionalEmailSend
+ * @property bool $MaximumPermissionsViewPrivateStaticResources
  * @property bool $MaximumPermissionsCreateLtngTempFolder
  * @property bool $MaximumPermissionsApexRestServices
  * @property bool $MaximumPermissionsGiveRecognitionBadge
+ * @property bool $MaximumPermissionsUseMySearch
  * @property bool $MaximumPermissionsLtngPromoReserved01UserPerm
+ * @property bool $MaximumPermissionsManageSubscriptions
  * @property bool $MaximumPermissionsManageSurveys
+ * @property bool $MaximumPermissionsUseAssistantDialog
+ * @property bool $MaximumPermissionsUseQuerySuggestions
+ * @property bool $MaximumPermissionsPackaging2PromoteVersion
  * @property bool $MaximumPermissionsRecordVisibilityAPI
  * @property bool $MaximumPermissionsViewRoles
- * @property bool $MaximumPermissionsEinsteinAssistantUser
+ * @property bool $MaximumPermissionsLMOutboundMessagingUserPerm
  * @property bool $MaximumPermissionsModifyDataClassification
  * @property bool $MaximumPermissionsPrivacyDataAccess
  * @property bool $MaximumPermissionsQueryAllFiles
  * @property bool $MaximumPermissionsModifyMetadata
+ * @property bool $MaximumPermissionsCreateContentSpace
+ * @property bool $MaximumPermissionsSandboxTestingInCommunityApp
+ * @property bool $MaximumPermissionsViewFlowUsageAndFlowEventData
+ * @property bool $MaximumPermissionsCanEditPrompts
+ * @property bool $MaximumPermissionsManageHubConnections
+ * @property bool $MaximumPermissionsB2BMarketingAnalyticsUser
+ * @property bool $MaximumPermissionsTraceXdsQueries
+ * @property bool $MaximumPermissionsViewAllCustomSettings
  * @property mixed $UsedLicenses
  */
 class PermissionSetLicense extends BaseRecordModel
@@ -360,6 +381,7 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsViewAllUsers' => 'bool',
         'MaximumPermissionsConnectOrgToEnvironmentHub' => 'bool',
         'MaximumPermissionsCreateCustomizeFilters' => 'bool',
+        'MaximumPermissionsContentHubUser' => 'bool',
         'MaximumPermissionsGovernNetworks' => 'bool',
         'MaximumPermissionsSalesConsole' => 'bool',
         'MaximumPermissionsTwoFactorApi' => 'bool',
@@ -387,6 +409,7 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsStdAutomaticActivityCapture' => 'bool',
         'MaximumPermissionsManageTwoFactor' => 'bool',
         'MaximumPermissionsLightningExperienceUser' => 'bool',
+        'MaximumPermissionsViewDataLeakageEvents' => 'bool',
         'MaximumPermissionsConfigCustomRecs' => 'bool',
         'MaximumPermissionsSubmitMacrosAllowed' => 'bool',
         'MaximumPermissionsBulkMacrosAllowed' => 'bool',
@@ -394,6 +417,8 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsSendAnnouncementEmails' => 'bool',
         'MaximumPermissionsChatterEditOwnPost' => 'bool',
         'MaximumPermissionsChatterEditOwnRecordPost' => 'bool',
+        'MaximumPermissionsCreateAuditFields' => 'bool',
+        'MaximumPermissionsUpdateWithInactiveOwner' => 'bool',
         'MaximumPermissionsManageSandboxes' => 'bool',
         'MaximumPermissionsAutomaticActivityCapture' => 'bool',
         'MaximumPermissionsImportCustomObjects' => 'bool',
@@ -423,10 +448,13 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsListEmailSend' => 'bool',
         'MaximumPermissionsFeedPinning' => 'bool',
         'MaximumPermissionsChangeDashboardColors' => 'bool',
+        'MaximumPermissionsManageRecommendationStrategies' => 'bool',
+        'MaximumPermissionsManagePropositions' => 'bool',
         'MaximumPermissionsCloseConversations' => 'bool',
         'MaximumPermissionsSubscribeReportRolesGrps' => 'bool',
         'MaximumPermissionsSubscribeDashboardRolesGrps' => 'bool',
         'MaximumPermissionsUseWebLink' => 'bool',
+        'MaximumPermissionsHasUnlimitedNBAExecutions' => 'bool',
         'MaximumPermissionsViewOnlyEmbeddedAppUser' => 'bool',
         'MaximumPermissionsSendExternalEmailAvailable' => 'bool',
         'MaximumPermissionsViewAllActivities' => 'bool',
@@ -437,18 +465,32 @@ class PermissionSetLicense extends BaseRecordModel
         'MaximumPermissionsSubscribeDashboardToOtherUsers' => 'bool',
         'MaximumPermissionsCreateLtngTempInPub' => 'bool',
         'MaximumPermissionsTransactionalEmailSend' => 'bool',
+        'MaximumPermissionsViewPrivateStaticResources' => 'bool',
         'MaximumPermissionsCreateLtngTempFolder' => 'bool',
         'MaximumPermissionsApexRestServices' => 'bool',
         'MaximumPermissionsGiveRecognitionBadge' => 'bool',
+        'MaximumPermissionsUseMySearch' => 'bool',
         'MaximumPermissionsLtngPromoReserved01UserPerm' => 'bool',
+        'MaximumPermissionsManageSubscriptions' => 'bool',
         'MaximumPermissionsManageSurveys' => 'bool',
+        'MaximumPermissionsUseAssistantDialog' => 'bool',
+        'MaximumPermissionsUseQuerySuggestions' => 'bool',
+        'MaximumPermissionsPackaging2PromoteVersion' => 'bool',
         'MaximumPermissionsRecordVisibilityAPI' => 'bool',
         'MaximumPermissionsViewRoles' => 'bool',
-        'MaximumPermissionsEinsteinAssistantUser' => 'bool',
+        'MaximumPermissionsLMOutboundMessagingUserPerm' => 'bool',
         'MaximumPermissionsModifyDataClassification' => 'bool',
         'MaximumPermissionsPrivacyDataAccess' => 'bool',
         'MaximumPermissionsQueryAllFiles' => 'bool',
         'MaximumPermissionsModifyMetadata' => 'bool',
+        'MaximumPermissionsCreateContentSpace' => 'bool',
+        'MaximumPermissionsSandboxTestingInCommunityApp' => 'bool',
+        'MaximumPermissionsViewFlowUsageAndFlowEventData' => 'bool',
+        'MaximumPermissionsCanEditPrompts' => 'bool',
+        'MaximumPermissionsManageHubConnections' => 'bool',
+        'MaximumPermissionsB2BMarketingAnalyticsUser' => 'bool',
+        'MaximumPermissionsTraceXdsQueries' => 'bool',
+        'MaximumPermissionsViewAllCustomSettings' => 'bool',
         'UsedLicenses' => null,
     ];
 }

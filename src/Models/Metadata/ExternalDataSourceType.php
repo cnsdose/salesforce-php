@@ -9,6 +9,14 @@ use MyCLabs\Enum\Enum;
 
 class ExternalDataSourceType extends Enum
 {
+    const BCP_APP = 'bcpApp';
+    const BCP_APP_MEMBER = 'bcpAppMember';
+    const BCP_ENTITY = 'bcpEntity';
+    const BCP_FIELD = 'bcpField';
+    const BCP_MEMBER = 'bcpMember';
+    const BCP_PARTICIPANT = 'bcpParticipant';
+    const CONTENT_HUB_ITEM = 'contentHubItem';
+    const CONVERSATIONEVENTLOG = 'conversationeventlog';
     const DATACLOUD = 'Datacloud';
     const DATAJOURNEY = 'Datajourney';
     const OPEN_SEARCH = 'OpenSearch';

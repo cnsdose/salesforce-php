@@ -31,6 +31,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $cspUpgradeInsecureRequests
  * @property SiteWebAddress[]|null $customWebAddresses
  * @property string|null $description
+ * @property bool|null $enableAuraRequests
  * @property string|null $favoriteIcon
  * @property string|null $fileNotFoundPage
  * @property string|null $forgotPasswordPage
@@ -177,6 +178,11 @@ class CustomSite extends Metadata
     public function setDescription(string $description)
     {
         $this->description = $description;
+    }
+
+    public function setEnableAuraRequests(bool $enableAuraRequests)
+    {
+        $this->enableAuraRequests = $enableAuraRequests;
     }
 
     public function setFavoriteIcon(string $favoriteIcon)

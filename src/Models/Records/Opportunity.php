@@ -16,6 +16,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Id
  * @property bool $IsDeleted
  * @property string $AccountId
+ * @property string $RecordTypeId
  * @property string $Name
  * @property string $Description
  * @property string $StageName
@@ -43,6 +44,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $FiscalQuarter
  * @property mixed $FiscalYear
  * @property string $Fiscal
+ * @property string $ContactId
  * @property \Carbon\Carbon $LastViewedDate
  * @property \Carbon\Carbon $LastReferencedDate
  * @property string $SyncedQuoteId
@@ -57,6 +59,7 @@ class Opportunity extends BaseRecordModel
         'Id' => null,
         'IsDeleted' => 'bool',
         'AccountId' => null,
+        'RecordTypeId' => null,
         'Name' => null,
         'Description' => null,
         'StageName' => null,
@@ -84,6 +87,7 @@ class Opportunity extends BaseRecordModel
         'FiscalQuarter' => null,
         'FiscalYear' => null,
         'Fiscal' => null,
+        'ContactId' => null,
         'LastViewedDate' => 'datetime',
         'LastReferencedDate' => 'datetime',
         'SyncedQuoteId' => null,

@@ -9,49 +9,55 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class MobileSettings
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property ChatterMobileSettings|null $chatterMobile
  * @property DashboardMobileSettings|null $dashboardMobile
- * @property SFDCMobileSettings|null $salesforceMobile
- * @property TouchMobileSettings|null $touchMobile
+ * @property bool|null $enableImportContactFromDevice
+ * @property bool|null $enableLightningOnMobile
+ * @property bool|null $enableOfflineDraftsEnabled
+ * @property bool|null $enablePopulateNameManuallyInToday
+ * @property bool|null $enableS1EncryptedStoragePref2
+ * @property bool|null $enableS1OfflinePref
  */
 class MobileSettings extends Metadata
 {
     public static $classMap = [
-        'chatterMobile' => [
-            'multiple' => false,
-            'type' => ChatterMobileSettings::class,
-        ],
         'dashboardMobile' => [
             'multiple' => false,
             'type' => DashboardMobileSettings::class,
         ],
-        'salesforceMobile' => [
-            'multiple' => false,
-            'type' => SFDCMobileSettings::class,
-        ],
-        'touchMobile' => [
-            'multiple' => false,
-            'type' => TouchMobileSettings::class,
-        ],
     ];
-
-    public function setChatterMobile(ChatterMobileSettings $chatterMobile)
-    {
-        $this->chatterMobile = $chatterMobile;
-    }
 
     public function setDashboardMobile(DashboardMobileSettings $dashboardMobile)
     {
         $this->dashboardMobile = $dashboardMobile;
     }
 
-    public function setSalesforceMobile(SFDCMobileSettings $salesforceMobile)
+    public function setEnableImportContactFromDevice(bool $enableImportContactFromDevice)
     {
-        $this->salesforceMobile = $salesforceMobile;
+        $this->enableImportContactFromDevice = $enableImportContactFromDevice;
     }
 
-    public function setTouchMobile(TouchMobileSettings $touchMobile)
+    public function setEnableLightningOnMobile(bool $enableLightningOnMobile)
     {
-        $this->touchMobile = $touchMobile;
+        $this->enableLightningOnMobile = $enableLightningOnMobile;
+    }
+
+    public function setEnableOfflineDraftsEnabled(bool $enableOfflineDraftsEnabled)
+    {
+        $this->enableOfflineDraftsEnabled = $enableOfflineDraftsEnabled;
+    }
+
+    public function setEnablePopulateNameManuallyInToday(bool $enablePopulateNameManuallyInToday)
+    {
+        $this->enablePopulateNameManuallyInToday = $enablePopulateNameManuallyInToday;
+    }
+
+    public function setEnableS1EncryptedStoragePref2(bool $enableS1EncryptedStoragePref2)
+    {
+        $this->enableS1EncryptedStoragePref2 = $enableS1EncryptedStoragePref2;
+    }
+
+    public function setEnableS1OfflinePref(bool $enableS1OfflinePref)
+    {
+        $this->enableS1OfflinePref = $enableS1OfflinePref;
     }
 }

@@ -10,7 +10,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $avatarImg
- * @property string|null $customPrechatComponent
  * @property string|null $embeddedServiceConfig
  * @property EmbeddedServiceQuickAction[]|null $embeddedServiceQuickActions
  * @property bool|null $enabled
@@ -43,11 +42,6 @@ class EmbeddedServiceLiveAgent extends Metadata
     public function setAvatarImg(string $avatarImg)
     {
         $this->avatarImg = $avatarImg;
-    }
-
-    public function setCustomPrechatComponent(string $customPrechatComponent)
-    {
-        $this->customPrechatComponent = $customPrechatComponent;
     }
 
     public function setEmbeddedServiceConfig(string $embeddedServiceConfig)

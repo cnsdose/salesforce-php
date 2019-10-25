@@ -49,6 +49,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AuthorLabels
  * @property bool $IsVerified
  * @property mixed $InfluencerScore
+ * @property string $AvatarUrl
  */
 class SocialPersona extends BaseRecordModel
 {
@@ -90,5 +91,6 @@ class SocialPersona extends BaseRecordModel
         'AuthorLabels' => null,
         'IsVerified' => 'bool',
         'InfluencerScore' => null,
+        'AvatarUrl' => null,
     ];
 }

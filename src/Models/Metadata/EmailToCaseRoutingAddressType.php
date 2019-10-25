@@ -11,4 +11,5 @@ class EmailToCaseRoutingAddressType extends Enum
 {
     const EMAIL_TO_CASE = 'EmailToCase';
     const OUTLOOK = 'Outlook';
+    const GMAIL_OAUTH = 'GmailOAuth';
 }

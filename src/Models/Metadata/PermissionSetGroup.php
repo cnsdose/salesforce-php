@@ -11,6 +11,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property string|null $description
  * @property string|null $label
+ * @property string[]|null $mutingPermissionSets
  * @property string[]|null $permissionSets
  * @property string|null $status
  */
@@ -27,6 +28,11 @@ class PermissionSetGroup extends Metadata
     public function setLabel(string $label)
     {
         $this->label = $label;
+    }
+
+    public function setMutingPermissionSets(array $mutingPermissionSets)
+    {
+        $this->mutingPermissionSets = $mutingPermissionSets;
     }
 
     public function setPermissionSets(array $permissionSets)

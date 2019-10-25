@@ -19,4 +19,5 @@ class QuickActionType extends Enum
     const UPDATE = 'Update';
     const LIGHTNING_COMPONENT = 'LightningComponent';
     const FLOW = 'Flow';
+    const MOBILE_EXTENSION = 'MobileExtension';
 }

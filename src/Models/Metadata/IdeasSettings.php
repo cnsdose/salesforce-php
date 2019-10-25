@@ -10,8 +10,11 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $enableChatterProfile
+ * @property bool|null $enableHtmlIdea
+ * @property bool|null $enableIdeaMultipleCategory
  * @property bool|null $enableIdeaThemes
  * @property bool|null $enableIdeas
+ * @property bool|null $enableIdeasControllerExtensions
  * @property bool|null $enableIdeasReputation
  * @property float|null $halfLife
  * @property string|null $ideasProfilePage
@@ -26,6 +29,16 @@ class IdeasSettings extends Metadata
         $this->enableChatterProfile = $enableChatterProfile;
     }
 
+    public function setEnableHtmlIdea(bool $enableHtmlIdea)
+    {
+        $this->enableHtmlIdea = $enableHtmlIdea;
+    }
+
+    public function setEnableIdeaMultipleCategory(bool $enableIdeaMultipleCategory)
+    {
+        $this->enableIdeaMultipleCategory = $enableIdeaMultipleCategory;
+    }
+
     public function setEnableIdeaThemes(bool $enableIdeaThemes)
     {
         $this->enableIdeaThemes = $enableIdeaThemes;
@@ -34,6 +47,11 @@ class IdeasSettings extends Metadata
     public function setEnableIdeas(bool $enableIdeas)
     {
         $this->enableIdeas = $enableIdeas;
+    }
+
+    public function setEnableIdeasControllerExtensions(bool $enableIdeasControllerExtensions)
+    {
+        $this->enableIdeasControllerExtensions = $enableIdeasControllerExtensions;
     }
 
     public function setEnableIdeasReputation(bool $enableIdeasReputation)

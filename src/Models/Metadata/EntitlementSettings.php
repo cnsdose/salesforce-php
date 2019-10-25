@@ -15,10 +15,13 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $assetLookupLimitedToSameContact
  * @property bool|null $enableEntitlementVersioning
  * @property bool|null $enableEntitlements
+ * @property bool|null $enableMilestoneFeedItem
+ * @property bool|null $enableMilestoneStoppedTime
  * @property bool|null $entitlementLookupLimitedToActiveStatus
  * @property bool|null $entitlementLookupLimitedToSameAccount
  * @property bool|null $entitlementLookupLimitedToSameAsset
  * @property bool|null $entitlementLookupLimitedToSameContact
+ * @property bool|null $ignoreMilestoneBusinessHours
  */
 class EntitlementSettings extends Metadata
 {
@@ -55,6 +58,16 @@ class EntitlementSettings extends Metadata
         $this->enableEntitlements = $enableEntitlements;
     }
 
+    public function setEnableMilestoneFeedItem(bool $enableMilestoneFeedItem)
+    {
+        $this->enableMilestoneFeedItem = $enableMilestoneFeedItem;
+    }
+
+    public function setEnableMilestoneStoppedTime(bool $enableMilestoneStoppedTime)
+    {
+        $this->enableMilestoneStoppedTime = $enableMilestoneStoppedTime;
+    }
+
     public function setEntitlementLookupLimitedToActiveStatus(bool $entitlementLookupLimitedToActiveStatus)
     {
         $this->entitlementLookupLimitedToActiveStatus = $entitlementLookupLimitedToActiveStatus;
@@ -73,5 +86,10 @@ class EntitlementSettings extends Metadata
     public function setEntitlementLookupLimitedToSameContact(bool $entitlementLookupLimitedToSameContact)
     {
         $this->entitlementLookupLimitedToSameContact = $entitlementLookupLimitedToSameContact;
+    }
+
+    public function setIgnoreMilestoneBusinessHours(bool $ignoreMilestoneBusinessHours)
+    {
+        $this->ignoreMilestoneBusinessHours = $ignoreMilestoneBusinessHours;
     }
 }

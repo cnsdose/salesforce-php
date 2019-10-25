@@ -13,5 +13,6 @@ class ReportSummaryType extends Enum
     const AVERAGE = 'Average';
     const MAXIMUM = 'Maximum';
     const MINIMUM = 'Minimum';
+    const UNIQUE = 'Unique';
     const NONE = 'None';
 }

@@ -19,6 +19,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property FlowDynamicChoiceSet[]|null $dynamicChoiceSets
  * @property FlowFormula[]|null $formulas
  * @property string|null $interviewLabel
+ * @property bool|null $isAdditionalPermissionRequiredToRun
  * @property bool|null $isTemplate
  * @property string|null $label
  * @property FlowLoop[]|null $loops
@@ -30,6 +31,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property FlowRecordUpdate[]|null $recordUpdates
  * @property FlowScreen[]|null $screens
  * @property FlowStage[]|null $stages
+ * @property FlowStart|null $start
  * @property string|null $startElementReference
  * @property string|null $status
  * @property FlowStep[]|null $steps
@@ -105,6 +107,10 @@ class Flow extends Metadata
             'multiple' => true,
             'type' => FlowStage::class,
         ],
+        'start' => [
+            'multiple' => false,
+            'type' => FlowStart::class,
+        ],
         'steps' => [
             'multiple' => true,
             'type' => FlowStep::class,
@@ -177,6 +183,11 @@ class Flow extends Metadata
         $this->interviewLabel = $interviewLabel;
     }
 
+    public function setIsAdditionalPermissionRequiredToRun(bool $isAdditionalPermissionRequiredToRun)
+    {
+        $this->isAdditionalPermissionRequiredToRun = $isAdditionalPermissionRequiredToRun;
+    }
+
     public function setIsTemplate(bool $isTemplate)
     {
         $this->isTemplate = $isTemplate;
@@ -230,6 +241,11 @@ class Flow extends Metadata
     public function setStages(array $stages)
     {
         $this->stages = $stages;
+    }
+
+    public function setStart(FlowStart $start)
+    {
+        $this->start = $start;
     }
 
     public function setStartElementReference(string $startElementReference)

@@ -63,6 +63,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $JigsawContactId
  * @property string $EmailBouncedReason
  * @property \Carbon\Carbon $EmailBouncedDate
+ * @property string $IndividualId
  */
 class Lead extends BaseRecordModel
 {
@@ -118,5 +119,6 @@ class Lead extends BaseRecordModel
         'JigsawContactId' => null,
         'EmailBouncedReason' => null,
         'EmailBouncedDate' => 'datetime',
+        'IndividualId' => null,
     ];
 }

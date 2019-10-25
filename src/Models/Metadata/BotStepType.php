@@ -15,4 +15,6 @@ class BotStepType extends Enum
     const MESSAGE = 'Message';
     const WAIT = 'Wait';
     const GROUP = 'Group';
+    const SYSTEM_MESSAGE = 'SystemMessage';
+    const RECORD_LOOKUP = 'RecordLookup';
 }

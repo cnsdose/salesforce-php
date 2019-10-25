@@ -124,6 +124,7 @@ class EmbeddedServiceLabelKey extends Enum
     const LA_CHAT_GROUP_CHAT_AGENT_LEFT_CHAT = 'LA_Chat_Group_Chat_AgentLeftChat';
     const LA_CHAT_GROUP_CHAT_MINIMIZED_STATE_MESSAGE = 'LA_Chat_Group_Chat_MinimizedStateMessage';
     const LA_CHAT_WITH_QUEUE_POS_QUEUE_POS_TRANSFERRING_MESSAGE = 'LA_Chat_WithQueuePos_QueuePosTransferringMessage';
+    const LA_CHAT_ENDED_CHAT_END_CHATBOT = 'LA_Chat_Ended_ChatEndChatbot';
     const FS_CONTAINER_BASE_BACK = 'FS_Container_Base_Back';
     const FS_CONTAINER_AUTHENTICATION_FAILURE_TITLE = 'FS_Container_AuthenticationFailure_Title';
     const FS_CONTAINER_AUTHENTICATION_FAILURE_BODY = 'FS_Container_AuthenticationFailure_Body';
@@ -185,6 +186,8 @@ class EmbeddedServiceLabelKey extends Enum
     const FS_APPOINTMENT_HOME_BASE_MODIFY_APPOINTMENT_BUTTON = 'FS_AppointmentHome_Base_ModifyAppointmentButton';
     const FS_APPOINTMENT_HOME_BASE_ERROR_TITLE = 'FS_AppointmentHome_Base_ErrorTitle';
     const FS_SCHEDULING_BASE_TIME_PICKER_ASSISTIVE_TEXT = 'FS_Scheduling_Base_TimePickerAssistiveText';
+    const FS_RESOURCE_DETAIL_BASE_HEADER = 'FS_ResourceDetail_Base_Header';
+    const FS_APPOINTMENT_HOME_BASE_DEFAULT_CARD_HEADER_TEXT = 'FS_AppointmentHome_Base_DefaultCardHeaderText';
     const FS_ERROR_DIALOG_TITLE = 'FS_Error_Dialog_Title';
     const FS_ERROR_DIALOG_BODY = 'FS_Error_Dialog_Body';
     const FS_ERROR_DIALOG_CONFIRM_BUTTON = 'FS_Error_Dialog_Confirm_Button';

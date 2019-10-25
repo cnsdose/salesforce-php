@@ -12,15 +12,19 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $active
  * @property string|null $description
  * @property string|null $frequency
- * @property bool|null $isProtected
  * @property string|null $masterLabel
  * @property string|null $startDate
- * @property int|null $workWeekEndDay
- * @property int|null $workWeekStartDay
+ * @property TimeSheetTemplateAssignment[]|null $timeSheetTemplateAssignments
+ * @property string|null $workWeekEndDay
+ * @property string|null $workWeekStartDay
  */
 class TimeSheetTemplate extends Metadata
 {
     public static $classMap = [
+        'timeSheetTemplateAssignments' => [
+            'multiple' => true,
+            'type' => TimeSheetTemplateAssignment::class,
+        ],
     ];
 
     public function setActive(bool $active)
@@ -38,11 +42,6 @@ class TimeSheetTemplate extends Metadata
         $this->frequency = $frequency->getValue();
     }
 
-    public function setIsProtected(bool $isProtected)
-    {
-        $this->isProtected = $isProtected;
-    }
-
     public function setMasterLabel(string $masterLabel)
     {
         $this->masterLabel = $masterLabel;
@@ -53,13 +52,18 @@ class TimeSheetTemplate extends Metadata
         $this->startDate = $startDate;
     }
 
-    public function setWorkWeekEndDay(int $workWeekEndDay)
+    public function setTimeSheetTemplateAssignments(array $timeSheetTemplateAssignments)
     {
-        $this->workWeekEndDay = $workWeekEndDay;
+        $this->timeSheetTemplateAssignments = $timeSheetTemplateAssignments;
     }
 
-    public function setWorkWeekStartDay(int $workWeekStartDay)
+    public function setWorkWeekEndDay(DaysOfWeek $workWeekEndDay)
     {
-        $this->workWeekStartDay = $workWeekStartDay;
+        $this->workWeekEndDay = $workWeekEndDay->getValue();
+    }
+
+    public function setWorkWeekStartDay(DaysOfWeek $workWeekStartDay)
+    {
+        $this->workWeekStartDay = $workWeekStartDay->getValue();
     }
 }

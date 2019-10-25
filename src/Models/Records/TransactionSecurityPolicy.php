@@ -32,6 +32,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $ResourceName
  * @property string $ExecutionUserId
  * @property string $Description
+ * @property string $EventName
  */
 class TransactionSecurityPolicy extends BaseRecordModel
 {
@@ -56,5 +57,6 @@ class TransactionSecurityPolicy extends BaseRecordModel
         'ResourceName' => null,
         'ExecutionUserId' => null,
         'Description' => null,
+        'EventName' => null,
     ];
 }

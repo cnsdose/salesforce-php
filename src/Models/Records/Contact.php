@@ -57,6 +57,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $PhotoUrl
  * @property string $Jigsaw
  * @property string $JigsawContactId
+ * @property string $IndividualId
  */
 class Contact extends BaseRecordModel
 {
@@ -106,5 +107,6 @@ class Contact extends BaseRecordModel
         'PhotoUrl' => null,
         'Jigsaw' => null,
         'JigsawContactId' => null,
+        'IndividualId' => null,
     ];
 }

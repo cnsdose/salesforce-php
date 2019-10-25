@@ -18,6 +18,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $isProtected
  * @property string|null $label
  * @property string|null $lightningComponent
+ * @property string|null $mobExtDisplayMode
  * @property bool|null $optionsCreateFeedItem
  * @property string|null $page
  * @property QuickActionLayout|null $quickActionLayout
@@ -90,6 +91,11 @@ class QuickAction extends Metadata
     public function setLightningComponent(string $lightningComponent)
     {
         $this->lightningComponent = $lightningComponent;
+    }
+
+    public function setMobExtDisplayMode(MobExtDisplayMode $mobExtDisplayMode)
+    {
+        $this->mobExtDisplayMode = $mobExtDisplayMode->getValue();
     }
 
     public function setOptionsCreateFeedItem(bool $optionsCreateFeedItem)

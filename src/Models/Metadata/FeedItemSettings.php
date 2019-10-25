@@ -10,7 +10,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property int|null $characterLimit
- * @property bool|null $collapseThread
  * @property string|null $displayFormat
  * @property string|null $feedItemType
  */
@@ -22,11 +21,6 @@ class FeedItemSettings
     public function setCharacterLimit(int $characterLimit)
     {
         $this->characterLimit = $characterLimit;
-    }
-
-    public function setCollapseThread(bool $collapseThread)
-    {
-        $this->collapseThread = $collapseThread;
     }
 
     public function setDisplayFormat(FeedItemDisplayFormat $displayFormat)

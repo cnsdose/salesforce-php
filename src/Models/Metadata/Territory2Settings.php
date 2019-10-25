@@ -13,6 +13,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $defaultCaseAccessLevel
  * @property string|null $defaultContactAccessLevel
  * @property string|null $defaultOpportunityAccessLevel
+ * @property bool|null $enableTerritoryManagement2
  * @property Territory2SettingsOpportunityFilter|null $opportunityFilterSettings
  */
 class Territory2Settings extends Metadata
@@ -42,6 +43,11 @@ class Territory2Settings extends Metadata
     public function setDefaultOpportunityAccessLevel(string $defaultOpportunityAccessLevel)
     {
         $this->defaultOpportunityAccessLevel = $defaultOpportunityAccessLevel;
+    }
+
+    public function setEnableTerritoryManagement2(bool $enableTerritoryManagement2)
+    {
+        $this->enableTerritoryManagement2 = $enableTerritoryManagement2;
     }
 
     public function setOpportunityFilterSettings(Territory2SettingsOpportunityFilter $opportunityFilterSettings)

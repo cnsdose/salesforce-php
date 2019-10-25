@@ -10,6 +10,11 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $documentContentSearchEnabled
+ * @property bool|null $enableAdvancedSearchInAlohaSidebar
+ * @property bool|null $enableEinsteinSearchPersonalization
+ * @property bool|null $enableQuerySuggestionPigOn
+ * @property bool|null $enableSalesforceGeneratedSynonyms
+ * @property bool|null $enableSetupSearch
  * @property bool|null $optimizeSearchForCJKEnabled
  * @property bool|null $recentlyViewedUsersForBlankLookupEnabled
  * @property SearchSettingsByObject|null $searchSettingsByObject
@@ -31,6 +36,31 @@ class SearchSettings extends Metadata
     public function setDocumentContentSearchEnabled(bool $documentContentSearchEnabled)
     {
         $this->documentContentSearchEnabled = $documentContentSearchEnabled;
+    }
+
+    public function setEnableAdvancedSearchInAlohaSidebar(bool $enableAdvancedSearchInAlohaSidebar)
+    {
+        $this->enableAdvancedSearchInAlohaSidebar = $enableAdvancedSearchInAlohaSidebar;
+    }
+
+    public function setEnableEinsteinSearchPersonalization(bool $enableEinsteinSearchPersonalization)
+    {
+        $this->enableEinsteinSearchPersonalization = $enableEinsteinSearchPersonalization;
+    }
+
+    public function setEnableQuerySuggestionPigOn(bool $enableQuerySuggestionPigOn)
+    {
+        $this->enableQuerySuggestionPigOn = $enableQuerySuggestionPigOn;
+    }
+
+    public function setEnableSalesforceGeneratedSynonyms(bool $enableSalesforceGeneratedSynonyms)
+    {
+        $this->enableSalesforceGeneratedSynonyms = $enableSalesforceGeneratedSynonyms;
+    }
+
+    public function setEnableSetupSearch(bool $enableSetupSearch)
+    {
+        $this->enableSetupSearch = $enableSetupSearch;
     }
 
     public function setOptimizeSearchForCJKEnabled(bool $optimizeSearchForCJKEnabled)

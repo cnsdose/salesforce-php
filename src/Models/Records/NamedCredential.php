@@ -30,6 +30,12 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $CalloutOptionsAllowMergeFieldsInHeader
  * @property bool $CalloutOptionsAllowMergeFieldsInBody
  * @property string $AuthProviderId
+ * @property string $JwtIssuer
+ * @property string $JwtFormulaSubject
+ * @property string $JwtTextSubject
+ * @property mixed $JwtValidityPeriodSeconds
+ * @property string $JwtAudience
+ * @property string $AuthTokenEndpointUrl
  */
 class NamedCredential extends BaseRecordModel
 {
@@ -52,5 +58,11 @@ class NamedCredential extends BaseRecordModel
         'CalloutOptionsAllowMergeFieldsInHeader' => 'bool',
         'CalloutOptionsAllowMergeFieldsInBody' => 'bool',
         'AuthProviderId' => null,
+        'JwtIssuer' => null,
+        'JwtFormulaSubject' => null,
+        'JwtTextSubject' => null,
+        'JwtValidityPeriodSeconds' => null,
+        'JwtAudience' => null,
+        'AuthTokenEndpointUrl' => null,
     ];
 }

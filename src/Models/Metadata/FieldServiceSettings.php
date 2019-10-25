@@ -13,8 +13,11 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $doesAllowEditSaForCrew
  * @property bool|null $doesShareSaParentWoWithAr
  * @property bool|null $doesShareSaWithAr
+ * @property bool|null $enableWorkOrders
  * @property bool|null $fieldServiceNotificationsOrgPref
  * @property bool|null $fieldServiceOrgPref
+ * @property bool|null $isGeoCodeSyncEnabled
+ * @property bool|null $isLocationHistoryEnabled
  * @property int|null $serviceAppointmentsDueDateOffsetOrgValue
  * @property string[]|null $workOrderLineItemSearchFields
  * @property string[]|null $workOrderSearchFields
@@ -44,6 +47,11 @@ class FieldServiceSettings extends Metadata
         $this->doesShareSaWithAr = $doesShareSaWithAr;
     }
 
+    public function setEnableWorkOrders(bool $enableWorkOrders)
+    {
+        $this->enableWorkOrders = $enableWorkOrders;
+    }
+
     public function setFieldServiceNotificationsOrgPref(bool $fieldServiceNotificationsOrgPref)
     {
         $this->fieldServiceNotificationsOrgPref = $fieldServiceNotificationsOrgPref;
@@ -52,6 +60,16 @@ class FieldServiceSettings extends Metadata
     public function setFieldServiceOrgPref(bool $fieldServiceOrgPref)
     {
         $this->fieldServiceOrgPref = $fieldServiceOrgPref;
+    }
+
+    public function setIsGeoCodeSyncEnabled(bool $isGeoCodeSyncEnabled)
+    {
+        $this->isGeoCodeSyncEnabled = $isGeoCodeSyncEnabled;
+    }
+
+    public function setIsLocationHistoryEnabled(bool $isLocationHistoryEnabled)
+    {
+        $this->isLocationHistoryEnabled = $isLocationHistoryEnabled;
     }
 
     public function setServiceAppointmentsDueDateOffsetOrgValue(int $serviceAppointmentsDueDateOffsetOrgValue)

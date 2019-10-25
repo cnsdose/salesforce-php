@@ -21,6 +21,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $Display
  * @property string $DelegateUser
  * @property string $ResponsibleNamespacePrefix
+ * @property string $CreatedByContext
+ * @property string $CreatedByIssuer
  */
 class SetupAuditTrail extends BaseRecordModel
 {
@@ -34,5 +36,7 @@ class SetupAuditTrail extends BaseRecordModel
         'Display' => null,
         'DelegateUser' => null,
         'ResponsibleNamespacePrefix' => null,
+        'CreatedByContext' => null,
+        'CreatedByIssuer' => null,
     ];
 }

@@ -13,6 +13,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $businessOwnerUser
  * @property string|null $businessStatus
  * @property bool|null $caseSensitive
+ * @property string|null $complianceGroup
  * @property string|null $customDataType
  * @property string|null $defaultValue
  * @property string|null $deleteConstraint
@@ -101,6 +102,11 @@ class CustomField extends Metadata
     public function setCaseSensitive(bool $caseSensitive)
     {
         $this->caseSensitive = $caseSensitive;
+    }
+
+    public function setComplianceGroup(string $complianceGroup)
+    {
+        $this->complianceGroup = $complianceGroup;
     }
 
     public function setCustomDataType(string $customDataType)

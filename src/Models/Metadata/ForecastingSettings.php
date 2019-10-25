@@ -9,7 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class ForecastingSettings
  * @package CNSDose\Salesforce\Models\Metadata
  *
- * @property string|null $displayCurrency
+ * @property bool|null $defaultToPersonalCurrency
  * @property bool|null $enableForecasts
  * @property ForecastingCategoryMapping[]|null $forecastingCategoryMappings
  * @property ForecastingDisplayedFamilySettings[]|null $forecastingDisplayedFamilySettings
@@ -32,9 +32,9 @@ class ForecastingSettings extends Metadata
         ],
     ];
 
-    public function setDisplayCurrency(DisplayCurrency $displayCurrency)
+    public function setDefaultToPersonalCurrency(bool $defaultToPersonalCurrency)
     {
-        $this->displayCurrency = $displayCurrency->getValue();
+        $this->defaultToPersonalCurrency = $defaultToPersonalCurrency;
     }
 
     public function setEnableForecasts(bool $enableForecasts)

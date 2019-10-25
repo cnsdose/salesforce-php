@@ -15,4 +15,6 @@ class ManageableState extends Enum
     const INSTALLED = 'installed';
     const BETA = 'beta';
     const UNMANAGED = 'unmanaged';
+    const INSTALLED_EDITABLE = 'installedEditable';
+    const DEPRECATED_EDITABLE = 'deprecatedEditable';
 }

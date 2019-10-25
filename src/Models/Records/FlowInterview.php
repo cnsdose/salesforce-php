@@ -26,6 +26,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $InterviewLabel
  * @property string $PauseLabel
  * @property string $Guid
+ * @property bool $WasPausedFromScreen
  */
 class FlowInterview extends BaseRecordModel
 {
@@ -44,5 +45,6 @@ class FlowInterview extends BaseRecordModel
         'InterviewLabel' => null,
         'PauseLabel' => null,
         'Guid' => null,
+        'WasPausedFromScreen' => 'bool',
     ];
 }

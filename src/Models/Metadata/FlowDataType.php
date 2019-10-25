@@ -18,4 +18,5 @@ class FlowDataType extends Enum
     const DATE_TIME = 'DateTime';
     const PICKLIST = 'Picklist';
     const MULTIPICKLIST = 'Multipicklist';
+    const APEX = 'Apex';
 }

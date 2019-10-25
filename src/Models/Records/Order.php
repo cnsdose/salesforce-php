@@ -19,6 +19,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $AccountId
  * @property string $Pricebook2Id
  * @property string $OriginalOrderId
+ * @property string $OpportunityId
  * @property \Carbon\Carbon $EffectiveDate
  * @property \Carbon\Carbon $EndDate
  * @property bool $IsReductionOrder
@@ -70,6 +71,7 @@ class Order extends BaseRecordModel
         'AccountId' => null,
         'Pricebook2Id' => null,
         'OriginalOrderId' => null,
+        'OpportunityId' => null,
         'EffectiveDate' => 'date',
         'EndDate' => 'date',
         'IsReductionOrder' => 'bool',

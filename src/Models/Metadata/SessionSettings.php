@@ -9,6 +9,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class SessionSettings
  * @package CNSDose\Salesforce\Models\Metadata
  *
+ * @property bool|null $allowUserAuthenticationByCertificate
+ * @property bool|null $canConfirmEmailChangeInLightningCommunities
  * @property bool|null $disableTimeoutWarning
  * @property bool|null $enableCSPOnEmail
  * @property bool|null $enableCSRFOnGet
@@ -19,18 +21,24 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $enableClickjackNonsetupUserHeaderless
  * @property bool|null $enableClickjackSetup
  * @property bool|null $enableContentSniffingProtection
+ * @property bool|null $enableLightningLogin
+ * @property bool|null $enableLightningLoginOnlyWithUserPerm
  * @property bool|null $enablePostForSessions
  * @property bool|null $enableSMSIdentity
+ * @property bool|null $enableU2F
  * @property bool|null $enableUpgradeInsecureRequests
  * @property bool|null $enableXssProtection
  * @property bool|null $enforceIpRangesEveryRequest
  * @property bool|null $forceLogoutOnSessionTimeout
  * @property bool|null $forceRelogin
+ * @property bool|null $hasRetainedLoginHints
+ * @property bool|null $hasUserSwitching
  * @property bool|null $hstsOnForcecomSites
  * @property bool|null $identityConfirmationOnEmailChange
  * @property bool|null $identityConfirmationOnTwoFactorRegistrationEnabled
  * @property bool|null $lockSessionsToDomain
  * @property bool|null $lockSessionsToIp
+ * @property string|null $lockerServiceAPIVersion
  * @property bool|null $lockerServiceCSP
  * @property bool|null $lockerServiceFrozenRealm
  * @property string|null $logoutURL
@@ -45,6 +53,16 @@ class SessionSettings
 {
     public static $classMap = [
     ];
+
+    public function setAllowUserAuthenticationByCertificate(bool $allowUserAuthenticationByCertificate)
+    {
+        $this->allowUserAuthenticationByCertificate = $allowUserAuthenticationByCertificate;
+    }
+
+    public function setCanConfirmEmailChangeInLightningCommunities(bool $canConfirmEmailChangeInLightningCommunities)
+    {
+        $this->canConfirmEmailChangeInLightningCommunities = $canConfirmEmailChangeInLightningCommunities;
+    }
 
     public function setDisableTimeoutWarning(bool $disableTimeoutWarning)
     {
@@ -96,6 +114,16 @@ class SessionSettings
         $this->enableContentSniffingProtection = $enableContentSniffingProtection;
     }
 
+    public function setEnableLightningLogin(bool $enableLightningLogin)
+    {
+        $this->enableLightningLogin = $enableLightningLogin;
+    }
+
+    public function setEnableLightningLoginOnlyWithUserPerm(bool $enableLightningLoginOnlyWithUserPerm)
+    {
+        $this->enableLightningLoginOnlyWithUserPerm = $enableLightningLoginOnlyWithUserPerm;
+    }
+
     public function setEnablePostForSessions(bool $enablePostForSessions)
     {
         $this->enablePostForSessions = $enablePostForSessions;
@@ -104,6 +132,11 @@ class SessionSettings
     public function setEnableSMSIdentity(bool $enableSMSIdentity)
     {
         $this->enableSMSIdentity = $enableSMSIdentity;
+    }
+
+    public function setEnableU2F(bool $enableU2F)
+    {
+        $this->enableU2F = $enableU2F;
     }
 
     public function setEnableUpgradeInsecureRequests(bool $enableUpgradeInsecureRequests)
@@ -131,6 +164,16 @@ class SessionSettings
         $this->forceRelogin = $forceRelogin;
     }
 
+    public function setHasRetainedLoginHints(bool $hasRetainedLoginHints)
+    {
+        $this->hasRetainedLoginHints = $hasRetainedLoginHints;
+    }
+
+    public function setHasUserSwitching(bool $hasUserSwitching)
+    {
+        $this->hasUserSwitching = $hasUserSwitching;
+    }
+
     public function setHstsOnForcecomSites(bool $hstsOnForcecomSites)
     {
         $this->hstsOnForcecomSites = $hstsOnForcecomSites;
@@ -154,6 +197,11 @@ class SessionSettings
     public function setLockSessionsToIp(bool $lockSessionsToIp)
     {
         $this->lockSessionsToIp = $lockSessionsToIp;
+    }
+
+    public function setLockerServiceAPIVersion(string $lockerServiceAPIVersion)
+    {
+        $this->lockerServiceAPIVersion = $lockerServiceAPIVersion;
     }
 
     public function setLockerServiceCSP(bool $lockerServiceCSP)

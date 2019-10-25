@@ -14,6 +14,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property CommandActionIntent[]|null $intents
  * @property string|null $label
  * @property CommandActionParam[]|null $parameters
+ * @property CommandActionResponse[]|null $responseTemplates
  * @property string|null $target
  */
 class CommandAction extends Metadata
@@ -26,6 +27,10 @@ class CommandAction extends Metadata
         'parameters' => [
             'multiple' => true,
             'type' => CommandActionParam::class,
+        ],
+        'responseTemplates' => [
+            'multiple' => true,
+            'type' => CommandActionResponse::class,
         ],
     ];
 
@@ -52,6 +57,11 @@ class CommandAction extends Metadata
     public function setParameters(array $parameters)
     {
         $this->parameters = $parameters;
+    }
+
+    public function setResponseTemplates(array $responseTemplates)
+    {
+        $this->responseTemplates = $responseTemplates;
     }
 
     public function setTarget(string $target)

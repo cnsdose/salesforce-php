@@ -12,7 +12,6 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $customNotifTypeName
  * @property string|null $description
  * @property bool|null $desktop
- * @property bool|null $email
  * @property string|null $masterLabel
  * @property bool|null $mobile
  */
@@ -34,11 +33,6 @@ class CustomNotificationType extends Metadata
     public function setDesktop(bool $desktop)
     {
         $this->desktop = $desktop;
-    }
-
-    public function setEmail(bool $email)
-    {
-        $this->email = $email;
     }
 
     public function setMasterLabel(string $masterLabel)

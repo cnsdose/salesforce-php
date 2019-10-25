@@ -24,6 +24,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
  * @property bool $IsDeleted
+ * @property string $CurrencyIsoCode
  */
 class OpportunityContactRole extends BaseRecordModel
 {
@@ -40,5 +41,6 @@ class OpportunityContactRole extends BaseRecordModel
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
         'IsDeleted' => 'bool',
+        'CurrencyIsoCode' => null,
     ];
 }

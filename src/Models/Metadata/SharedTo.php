@@ -16,6 +16,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string[]|null $channelProgramGroups
  * @property string[]|null $group
  * @property string[]|null $groups
+ * @property string[]|null $guestUser
  * @property string[]|null $managerSubordinates
  * @property string[]|null $managers
  * @property string[]|null $portalRole
@@ -69,6 +70,11 @@ class SharedTo
     public function setGroups(array $groups)
     {
         $this->groups = $groups;
+    }
+
+    public function setGuestUser(array $guestUser)
+    {
+        $this->guestUser = $guestUser;
     }
 
     public function setManagerSubordinates(array $managerSubordinates)

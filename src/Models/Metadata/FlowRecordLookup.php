@@ -13,12 +13,14 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property FlowConnector|null $connector
  * @property FlowConnector|null $faultConnector
  * @property FlowRecordFilter[]|null $filters
+ * @property bool|null $getFirstRecordOnly
  * @property string|null $object
  * @property FlowOutputFieldAssignment[]|null $outputAssignments
  * @property string|null $outputReference
  * @property string[]|null $queriedFields
  * @property string|null $sortField
  * @property string|null $sortOrder
+ * @property bool|null $storeOutputAutomatically
  */
 class FlowRecordLookup extends FlowNode
 {
@@ -61,6 +63,11 @@ class FlowRecordLookup extends FlowNode
         $this->filters = $filters;
     }
 
+    public function setGetFirstRecordOnly(bool $getFirstRecordOnly)
+    {
+        $this->getFirstRecordOnly = $getFirstRecordOnly;
+    }
+
     public function setObject(string $object)
     {
         $this->object = $object;
@@ -89,5 +96,10 @@ class FlowRecordLookup extends FlowNode
     public function setSortOrder(SortOrder $sortOrder)
     {
         $this->sortOrder = $sortOrder->getValue();
+    }
+
+    public function setStoreOutputAutomatically(bool $storeOutputAutomatically)
+    {
+        $this->storeOutputAutomatically = $storeOutputAutomatically;
     }
 }

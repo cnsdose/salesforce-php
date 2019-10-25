@@ -55,6 +55,7 @@ class FileType extends Enum
     const JFIF = 'JFIF';
     const JPG = 'JPG';
     const JS = 'JS';
+    const JSON = 'JSON';
     const MHTM = 'MHTM';
     const MHTML = 'MHTML';
     const MP3 = 'MP3';

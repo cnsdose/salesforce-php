@@ -20,6 +20,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $Subject
  * @property bool $IsTask
  * @property \Carbon\Carbon $ActivityDate
+ * @property \Carbon\Carbon $ActivityDateTime
  * @property string $OwnerId
  * @property string $Status
  * @property string $Priority
@@ -62,6 +63,7 @@ class ActivityHistory extends BaseRecordModel
         'Subject' => null,
         'IsTask' => 'bool',
         'ActivityDate' => 'date',
+        'ActivityDateTime' => 'datetime',
         'OwnerId' => null,
         'Status' => null,
         'Priority' => null,

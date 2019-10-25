@@ -9,6 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class MlSlotClass
  * @package CNSDose\Salesforce\Models\Metadata
  *
+ * @property string|null $dataType
  * @property string|null $description
  * @property string|null $developerName
  * @property string|null $extractionRegex
@@ -24,6 +25,11 @@ class MlSlotClass
             'type' => MlSlotClassValue::class,
         ],
     ];
+
+    public function setDataType(MlSlotClassDataType $dataType)
+    {
+        $this->dataType = $dataType->getValue();
+    }
 
     public function setDescription(string $description)
     {

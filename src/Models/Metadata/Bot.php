@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property LocalMlDomain|null $botMlDomain
+ * @property string|null $botUser
  * @property BotVersion[]|null $botVersions
  * @property ConversationContextVariable[]|null $contextVariables
  * @property string|null $description
@@ -35,6 +36,11 @@ class Bot extends Metadata
     public function setBotMlDomain(LocalMlDomain $botMlDomain)
     {
         $this->botMlDomain = $botMlDomain;
+    }
+
+    public function setBotUser(string $botUser)
+    {
+        $this->botUser = $botUser;
     }
 
     public function setBotVersions(array $botVersions)

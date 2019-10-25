@@ -20,7 +20,8 @@ class FlowProcessType extends Enum
     const USER_PROVISIONING_FLOW = 'UserProvisioningFlow';
     const SURVEY = 'Survey';
     const APPOINTMENTS = 'Appointments';
-    const FORM = 'Form';
+    const FSCLENDING = 'FSCLending';
+    const DIGITAL_FORM = 'DigitalForm';
     const FIELD_SERVICE_MOBILE = 'FieldServiceMobile';
     const ORCHESTRATION_FLOW = 'OrchestrationFlow';
     const FIELD_SERVICE_WEB = 'FieldServiceWeb';
@@ -28,4 +29,9 @@ class FlowProcessType extends Enum
     const CONTACT_REQUEST_FLOW = 'ContactRequestFlow';
     const ACTION_CADENCE_FLOW = 'ActionCadenceFlow';
     const MANAGED_CONTENT_FLOW = 'ManagedContentFlow';
+    const CHECKOUT_FLOW = 'CheckoutFlow';
+    const CART_ASYNC_FLOW = 'CartAsyncFlow';
+    const SALES_ENTRY_EXPERIENCE_FLOW = 'SalesEntryExperienceFlow';
+    const DECISION_STUDIO = 'DecisionStudio';
+    const JOURNEY = 'Journey';
 }

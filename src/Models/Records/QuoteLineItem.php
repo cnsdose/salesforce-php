@@ -22,6 +22,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
+ * @property \Carbon\Carbon $LastViewedDate
+ * @property \Carbon\Carbon $LastReferencedDate
  * @property string $QuoteId
  * @property string $PricebookEntryId
  * @property string $OpportunityLineItemId
@@ -49,6 +51,8 @@ class QuoteLineItem extends BaseRecordModel
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
+        'LastViewedDate' => 'datetime',
+        'LastReferencedDate' => 'datetime',
         'QuoteId' => null,
         'PricebookEntryId' => null,
         'OpportunityLineItemId' => null,

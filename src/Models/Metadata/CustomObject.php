@@ -18,14 +18,11 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $customHelp
  * @property string|null $customHelpPage
  * @property string|null $customSettingsType
- * @property string|null $dataStewardGroup
- * @property string|null $dataStewardUser
  * @property string|null $deploymentStatus
  * @property bool|null $deprecated
  * @property string|null $description
  * @property bool|null $enableActivities
  * @property bool|null $enableBulkApi
- * @property bool|null $enableChangeDataCapture
  * @property bool|null $enableDataTranslation
  * @property bool|null $enableDivisions
  * @property bool|null $enableEnhancedLookup
@@ -51,6 +48,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property ListView[]|null $listViews
  * @property CustomField|null $nameField
  * @property string|null $pluralLabel
+ * @property ProfileSearchLayouts[]|null $profileSearchLayouts
+ * @property string|null $publishBehavior
  * @property bool|null $recordTypeTrackFeedHistory
  * @property bool|null $recordTypeTrackHistory
  * @property RecordType[]|null $recordTypes
@@ -105,6 +104,10 @@ class CustomObject extends Metadata
         'nameField' => [
             'multiple' => false,
             'type' => CustomField::class,
+        ],
+        'profileSearchLayouts' => [
+            'multiple' => true,
+            'type' => ProfileSearchLayouts::class,
         ],
         'recordTypes' => [
             'multiple' => true,
@@ -177,16 +180,6 @@ class CustomObject extends Metadata
         $this->customSettingsType = $customSettingsType->getValue();
     }
 
-    public function setDataStewardGroup(string $dataStewardGroup)
-    {
-        $this->dataStewardGroup = $dataStewardGroup;
-    }
-
-    public function setDataStewardUser(string $dataStewardUser)
-    {
-        $this->dataStewardUser = $dataStewardUser;
-    }
-
     public function setDeploymentStatus(DeploymentStatus $deploymentStatus)
     {
         $this->deploymentStatus = $deploymentStatus->getValue();
@@ -210,11 +203,6 @@ class CustomObject extends Metadata
     public function setEnableBulkApi(bool $enableBulkApi)
     {
         $this->enableBulkApi = $enableBulkApi;
-    }
-
-    public function setEnableChangeDataCapture(bool $enableChangeDataCapture)
-    {
-        $this->enableChangeDataCapture = $enableChangeDataCapture;
     }
 
     public function setEnableDataTranslation(bool $enableDataTranslation)
@@ -340,6 +328,16 @@ class CustomObject extends Metadata
     public function setPluralLabel(string $pluralLabel)
     {
         $this->pluralLabel = $pluralLabel;
+    }
+
+    public function setProfileSearchLayouts(array $profileSearchLayouts)
+    {
+        $this->profileSearchLayouts = $profileSearchLayouts;
+    }
+
+    public function setPublishBehavior(PlatformEventPublishBehavior $publishBehavior)
+    {
+        $this->publishBehavior = $publishBehavior->getValue();
     }
 
     public function setRecordTypeTrackFeedHistory(bool $recordTypeTrackFeedHistory)

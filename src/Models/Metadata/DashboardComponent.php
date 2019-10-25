@@ -30,6 +30,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property float|null $gaugeMax
  * @property float|null $gaugeMin
  * @property string[]|null $groupingColumn
+ * @property DashboardComponentGroupingSortProperties|null $groupingSortProperties
  * @property string|null $header
  * @property float|null $indicatorBreakpoint1
  * @property float|null $indicatorBreakpoint2
@@ -72,6 +73,10 @@ class DashboardComponent
         'flexComponentProperties' => [
             'multiple' => false,
             'type' => DashboardFlexTableComponentProperties::class,
+        ],
+        'groupingSortProperties' => [
+            'multiple' => false,
+            'type' => DashboardComponentGroupingSortProperties::class,
         ],
     ];
 
@@ -178,6 +183,11 @@ class DashboardComponent
     public function setGroupingColumn(array $groupingColumn)
     {
         $this->groupingColumn = $groupingColumn;
+    }
+
+    public function setGroupingSortProperties(DashboardComponentGroupingSortProperties $groupingSortProperties)
+    {
+        $this->groupingSortProperties = $groupingSortProperties;
     }
 
     public function setHeader(string $header)

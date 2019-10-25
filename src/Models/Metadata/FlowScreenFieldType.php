@@ -18,4 +18,8 @@ class FlowScreenFieldType extends Enum
     const MULTI_SELECT_CHECKBOXES = 'MultiSelectCheckboxes';
     const MULTI_SELECT_PICKLIST = 'MultiSelectPicklist';
     const COMPONENT_INSTANCE = 'ComponentInstance';
+    const COMPONENT_INPUT = 'ComponentInput';
+    const COMPONENT_CHOICE = 'ComponentChoice';
+    const COMPONENT_MULTI_CHOICE = 'ComponentMultiChoice';
+    const COMPONENT_DISPLAY = 'ComponentDisplay';
 }

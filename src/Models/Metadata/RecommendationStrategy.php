@@ -14,7 +14,10 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property string|null $description
  * @property StrategyNodeFilter[]|null $filter
  * @property StrategyNodeIf[]|null $if
+ * @property StrategyNodeInvocableAction[]|null $invocableAction
+ * @property bool|null $isTemplate
  * @property string|null $label
+ * @property StrategyNodeMap[]|null $map
  * @property StrategyNodeExclusive[]|null $mutuallyExclusive
  * @property string|null $onBehalfOfExpression
  * @property StrategyNodeRecommendationLimit[]|null $recommendationLimit
@@ -36,6 +39,14 @@ class RecommendationStrategy extends Metadata
         'if' => [
             'multiple' => true,
             'type' => StrategyNodeIf::class,
+        ],
+        'invocableAction' => [
+            'multiple' => true,
+            'type' => StrategyNodeInvocableAction::class,
+        ],
+        'map' => [
+            'multiple' => true,
+            'type' => StrategyNodeMap::class,
         ],
         'mutuallyExclusive' => [
             'multiple' => true,
@@ -84,9 +95,24 @@ class RecommendationStrategy extends Metadata
         $this->if = $if;
     }
 
+    public function setInvocableAction(array $invocableAction)
+    {
+        $this->invocableAction = $invocableAction;
+    }
+
+    public function setIsTemplate(bool $isTemplate)
+    {
+        $this->isTemplate = $isTemplate;
+    }
+
     public function setLabel(string $label)
     {
         $this->label = $label;
+    }
+
+    public function setMap(array $map)
+    {
+        $this->map = $map;
     }
 
     public function setMutuallyExclusive(array $mutuallyExclusive)

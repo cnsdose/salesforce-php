@@ -9,6 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class FlowVariable
  * @package CNSDose\Salesforce\Models\Metadata
  *
+ * @property string|null $apexClass
  * @property string|null $dataType
  * @property bool|null $isCollection
  * @property bool|null $isInput
@@ -25,6 +26,11 @@ class FlowVariable extends FlowElement
             'type' => FlowElementReferenceOrValue::class,
         ],
     ];
+
+    public function setApexClass(string $apexClass)
+    {
+        $this->apexClass = $apexClass;
+    }
 
     public function setDataType(FlowDataType $dataType)
     {

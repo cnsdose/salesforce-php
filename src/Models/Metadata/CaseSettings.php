@@ -10,17 +10,22 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property string|null $caseAssignNotificationTemplate
+ * @property bool|null $caseAutoProcUser
  * @property string|null $caseCloseNotificationTemplate
  * @property string|null $caseCommentNotificationTemplate
  * @property string|null $caseCreateNotificationTemplate
  * @property FeedItemSettings[]|null $caseFeedItemSettings
+ * @property bool|null $caseFeedReadUnreadLtng
+ * @property bool|null $caseMergeInLightning
  * @property bool|null $closeCaseThroughStatusChange
+ * @property bool|null $defaultCaseFeedLayoutOn
  * @property string|null $defaultCaseOwner
  * @property string|null $defaultCaseOwnerType
  * @property string|null $defaultCaseUser
  * @property string|null $emailActionDefaultsHandlerClass
  * @property EmailToCaseSettings|null $emailToCase
  * @property bool|null $enableCaseFeed
+ * @property bool|null $enableCollapseEmailThread
  * @property bool|null $enableDraftEmails
  * @property bool|null $enableEarlyEscalationRuleTriggers
  * @property bool|null $enableEmailActionDefaultsHandler
@@ -28,11 +33,14 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $enableSuggestedArticlesCustomerPortal
  * @property bool|null $enableSuggestedArticlesPartnerPortal
  * @property bool|null $enableSuggestedSolutions
+ * @property bool|null $escalateCaseBefore
+ * @property bool|null $genericMessageEnabled
  * @property bool|null $keepRecordTypeOnAssignmentRule
  * @property bool|null $notifyContactOnCaseComment
  * @property bool|null $notifyDefaultCaseOwner
  * @property bool|null $notifyOwnerOnCaseComment
  * @property bool|null $notifyOwnerOnCaseOwnerChange
+ * @property bool|null $predictiveSupportEnabled
  * @property bool|null $showEmailAttachmentsInCaseAttachmentsRL
  * @property bool|null $showFewerCloseActions
  * @property string|null $systemUserEmail
@@ -62,6 +70,11 @@ class CaseSettings extends Metadata
         $this->caseAssignNotificationTemplate = $caseAssignNotificationTemplate;
     }
 
+    public function setCaseAutoProcUser(bool $caseAutoProcUser)
+    {
+        $this->caseAutoProcUser = $caseAutoProcUser;
+    }
+
     public function setCaseCloseNotificationTemplate(string $caseCloseNotificationTemplate)
     {
         $this->caseCloseNotificationTemplate = $caseCloseNotificationTemplate;
@@ -82,9 +95,24 @@ class CaseSettings extends Metadata
         $this->caseFeedItemSettings = $caseFeedItemSettings;
     }
 
+    public function setCaseFeedReadUnreadLtng(bool $caseFeedReadUnreadLtng)
+    {
+        $this->caseFeedReadUnreadLtng = $caseFeedReadUnreadLtng;
+    }
+
+    public function setCaseMergeInLightning(bool $caseMergeInLightning)
+    {
+        $this->caseMergeInLightning = $caseMergeInLightning;
+    }
+
     public function setCloseCaseThroughStatusChange(bool $closeCaseThroughStatusChange)
     {
         $this->closeCaseThroughStatusChange = $closeCaseThroughStatusChange;
+    }
+
+    public function setDefaultCaseFeedLayoutOn(bool $defaultCaseFeedLayoutOn)
+    {
+        $this->defaultCaseFeedLayoutOn = $defaultCaseFeedLayoutOn;
     }
 
     public function setDefaultCaseOwner(string $defaultCaseOwner)
@@ -115,6 +143,11 @@ class CaseSettings extends Metadata
     public function setEnableCaseFeed(bool $enableCaseFeed)
     {
         $this->enableCaseFeed = $enableCaseFeed;
+    }
+
+    public function setEnableCollapseEmailThread(bool $enableCollapseEmailThread)
+    {
+        $this->enableCollapseEmailThread = $enableCollapseEmailThread;
     }
 
     public function setEnableDraftEmails(bool $enableDraftEmails)
@@ -152,6 +185,16 @@ class CaseSettings extends Metadata
         $this->enableSuggestedSolutions = $enableSuggestedSolutions;
     }
 
+    public function setEscalateCaseBefore(bool $escalateCaseBefore)
+    {
+        $this->escalateCaseBefore = $escalateCaseBefore;
+    }
+
+    public function setGenericMessageEnabled(bool $genericMessageEnabled)
+    {
+        $this->genericMessageEnabled = $genericMessageEnabled;
+    }
+
     public function setKeepRecordTypeOnAssignmentRule(bool $keepRecordTypeOnAssignmentRule)
     {
         $this->keepRecordTypeOnAssignmentRule = $keepRecordTypeOnAssignmentRule;
@@ -175,6 +218,11 @@ class CaseSettings extends Metadata
     public function setNotifyOwnerOnCaseOwnerChange(bool $notifyOwnerOnCaseOwnerChange)
     {
         $this->notifyOwnerOnCaseOwnerChange = $notifyOwnerOnCaseOwnerChange;
+    }
+
+    public function setPredictiveSupportEnabled(bool $predictiveSupportEnabled)
+    {
+        $this->predictiveSupportEnabled = $predictiveSupportEnabled;
     }
 
     public function setShowEmailAttachmentsInCaseAttachmentsRL(bool $showEmailAttachmentsInCaseAttachmentsRL)

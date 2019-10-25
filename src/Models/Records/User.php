@@ -71,6 +71,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property \Carbon\Carbon $LastModifiedDate
  * @property string $LastModifiedById
  * @property \Carbon\Carbon $SystemModstamp
+ * @property mixed $NumberOfFailedLogins
  * @property \Carbon\Carbon $OfflineTrialExpirationDate
  * @property \Carbon\Carbon $OfflinePdaTrialExpirationDate
  * @property bool $UserPermissionsMarketingUser
@@ -93,6 +94,8 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UserPreferencesDisableLaterCommentEmail
  * @property bool $UserPreferencesDisProfPostCommentEmail
  * @property bool $UserPreferencesApexPagesDeveloperMode
+ * @property bool $UserPreferencesReceiveNoNotificationsAsApprover
+ * @property bool $UserPreferencesReceiveNotificationsAsDelegatedApprover
  * @property bool $UserPreferencesHideCSNGetChatterMobileTask
  * @property bool $UserPreferencesDisableMentionsPostEmail
  * @property bool $UserPreferencesDisMentionsCommentEmail
@@ -154,7 +157,9 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property bool $UserPreferencesPreviewCustomTheme
  * @property bool $UserPreferencesHasCelebrationBadge
  * @property bool $UserPreferencesUserDebugModePref
+ * @property bool $UserPreferencesSRHOverrideActivities
  * @property bool $UserPreferencesNewLightningReportRunPageEnabled
+ * @property bool $UserPreferencesNativeEmailClient
  * @property string $ContactId
  * @property string $AccountId
  * @property string $CallCenterId
@@ -174,6 +179,7 @@ use CNSDose\Salesforce\Models\BaseRecordModel;
  * @property mixed $SmallBannerPhotoUrl
  * @property mixed $MediumBannerPhotoUrl
  * @property bool $IsProfilePhotoActive
+ * @property string $IndividualId
  */
 class User extends BaseRecordModel
 {
@@ -237,6 +243,7 @@ class User extends BaseRecordModel
         'LastModifiedDate' => 'datetime',
         'LastModifiedById' => null,
         'SystemModstamp' => 'datetime',
+        'NumberOfFailedLogins' => null,
         'OfflineTrialExpirationDate' => 'datetime',
         'OfflinePdaTrialExpirationDate' => 'datetime',
         'UserPermissionsMarketingUser' => 'bool',
@@ -259,6 +266,8 @@ class User extends BaseRecordModel
         'UserPreferencesDisableLaterCommentEmail' => 'bool',
         'UserPreferencesDisProfPostCommentEmail' => 'bool',
         'UserPreferencesApexPagesDeveloperMode' => 'bool',
+        'UserPreferencesReceiveNoNotificationsAsApprover' => 'bool',
+        'UserPreferencesReceiveNotificationsAsDelegatedApprover' => 'bool',
         'UserPreferencesHideCSNGetChatterMobileTask' => 'bool',
         'UserPreferencesDisableMentionsPostEmail' => 'bool',
         'UserPreferencesDisMentionsCommentEmail' => 'bool',
@@ -320,7 +329,9 @@ class User extends BaseRecordModel
         'UserPreferencesPreviewCustomTheme' => 'bool',
         'UserPreferencesHasCelebrationBadge' => 'bool',
         'UserPreferencesUserDebugModePref' => 'bool',
+        'UserPreferencesSRHOverrideActivities' => 'bool',
         'UserPreferencesNewLightningReportRunPageEnabled' => 'bool',
+        'UserPreferencesNativeEmailClient' => 'bool',
         'ContactId' => null,
         'AccountId' => null,
         'CallCenterId' => null,
@@ -340,5 +351,6 @@ class User extends BaseRecordModel
         'SmallBannerPhotoUrl' => null,
         'MediumBannerPhotoUrl' => null,
         'IsProfilePhotoActive' => 'bool',
+        'IndividualId' => null,
     ];
 }

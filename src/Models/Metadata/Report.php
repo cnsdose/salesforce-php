@@ -18,12 +18,14 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property ReportColumn[]|null $columns
  * @property ReportCrossFilter[]|null $crossFilters
  * @property string|null $currency
+ * @property ReportCustomDetailFormula[]|null $customDetailFormulas
  * @property ReportDataCategoryFilter[]|null $dataCategoryFilters
  * @property string|null $description
  * @property string|null $division
  * @property ReportFilter|null $filter
  * @property string|null $folderName
  * @property string|null $format
+ * @property ReportFormattingRule[]|null $formattingRules
  * @property ReportGrouping[]|null $groupingsAcross
  * @property ReportGrouping[]|null $groupingsDown
  * @property ReportHistoricalSelector|null $historicalSelector
@@ -79,6 +81,10 @@ class Report extends Metadata
             'multiple' => true,
             'type' => ReportCrossFilter::class,
         ],
+        'customDetailFormulas' => [
+            'multiple' => true,
+            'type' => ReportCustomDetailFormula::class,
+        ],
         'dataCategoryFilters' => [
             'multiple' => true,
             'type' => ReportDataCategoryFilter::class,
@@ -86,6 +92,10 @@ class Report extends Metadata
         'filter' => [
             'multiple' => false,
             'type' => ReportFilter::class,
+        ],
+        'formattingRules' => [
+            'multiple' => true,
+            'type' => ReportFormattingRule::class,
         ],
         'groupingsAcross' => [
             'multiple' => true,
@@ -154,6 +164,11 @@ class Report extends Metadata
         $this->currency = $currency->getValue();
     }
 
+    public function setCustomDetailFormulas(array $customDetailFormulas)
+    {
+        $this->customDetailFormulas = $customDetailFormulas;
+    }
+
     public function setDataCategoryFilters(array $dataCategoryFilters)
     {
         $this->dataCategoryFilters = $dataCategoryFilters;
@@ -182,6 +197,11 @@ class Report extends Metadata
     public function setFormat(ReportFormat $format)
     {
         $this->format = $format->getValue();
+    }
+
+    public function setFormattingRules(array $formattingRules)
+    {
+        $this->formattingRules = $formattingRules;
     }
 
     public function setGroupingsAcross(array $groupingsAcross)

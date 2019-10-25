@@ -10,7 +10,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $enableIoT
- * @property bool|null $iotInsights
+ * @property bool|null $enableIoTInsightsPilot
+ * @property bool|null $enableIoTUsageEmail
  */
 class IoTSettings extends Metadata
 {
@@ -22,8 +23,13 @@ class IoTSettings extends Metadata
         $this->enableIoT = $enableIoT;
     }
 
-    public function setIotInsights(bool $iotInsights)
+    public function setEnableIoTInsightsPilot(bool $enableIoTInsightsPilot)
     {
-        $this->iotInsights = $iotInsights;
+        $this->enableIoTInsightsPilot = $enableIoTInsightsPilot;
+    }
+
+    public function setEnableIoTUsageEmail(bool $enableIoTUsageEmail)
+    {
+        $this->enableIoTUsageEmail = $enableIoTUsageEmail;
     }
 }

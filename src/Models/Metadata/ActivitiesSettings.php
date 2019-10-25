@@ -21,9 +21,11 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $enableMultidayEvents
  * @property bool|null $enableRecurringEvents
  * @property bool|null $enableRecurringTasks
+ * @property bool|null $enableRollUpActivToContactsAcct
  * @property bool|null $enableSidebarCalendarShortcut
  * @property bool|null $enableSimpleTaskCreateUI
  * @property bool|null $enableUNSTaskDelegatedToNotifications
+ * @property bool|null $enableUserListViewCalendars
  * @property string|null $meetingRequestsLogo
  * @property bool|null $showCustomLogoMeetingRequests
  * @property bool|null $showEventDetailsMultiUserCalendar
@@ -95,6 +97,11 @@ class ActivitiesSettings extends Metadata
         $this->enableRecurringTasks = $enableRecurringTasks;
     }
 
+    public function setEnableRollUpActivToContactsAcct(bool $enableRollUpActivToContactsAcct)
+    {
+        $this->enableRollUpActivToContactsAcct = $enableRollUpActivToContactsAcct;
+    }
+
     public function setEnableSidebarCalendarShortcut(bool $enableSidebarCalendarShortcut)
     {
         $this->enableSidebarCalendarShortcut = $enableSidebarCalendarShortcut;
@@ -108,6 +115,11 @@ class ActivitiesSettings extends Metadata
     public function setEnableUNSTaskDelegatedToNotifications(bool $enableUNSTaskDelegatedToNotifications)
     {
         $this->enableUNSTaskDelegatedToNotifications = $enableUNSTaskDelegatedToNotifications;
+    }
+
+    public function setEnableUserListViewCalendars(bool $enableUserListViewCalendars)
+    {
+        $this->enableUserListViewCalendars = $enableUserListViewCalendars;
     }
 
     public function setMeetingRequestsLogo(string $meetingRequestsLogo)

@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property ConnectedAppAttribute[]|null $attributes
+ * @property CanvasMetadata|null $canvas
  * @property ConnectedAppCanvasConfig|null $canvasConfig
  * @property string|null $contactEmail
  * @property string|null $contactPhone
@@ -22,7 +23,10 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property ConnectedAppMobileDetailConfig|null $mobileAppConfig
  * @property string|null $mobileStartUrl
  * @property ConnectedAppOauthConfig|null $oauthConfig
+ * @property string[]|null $permissionSetName
  * @property string|null $plugin
+ * @property string|null $pluginExecutionUser
+ * @property string[]|null $profileName
  * @property ConnectedAppSamlConfig|null $samlConfig
  * @property string|null $startUrl
  */
@@ -32,6 +36,10 @@ class ConnectedApp extends Metadata
         'attributes' => [
             'multiple' => true,
             'type' => ConnectedAppAttribute::class,
+        ],
+        'canvas' => [
+            'multiple' => false,
+            'type' => CanvasMetadata::class,
         ],
         'canvasConfig' => [
             'multiple' => false,
@@ -58,6 +66,11 @@ class ConnectedApp extends Metadata
     public function setAttributes(array $attributes)
     {
         $this->attributes = $attributes;
+    }
+
+    public function setCanvas(CanvasMetadata $canvas)
+    {
+        $this->canvas = $canvas;
     }
 
     public function setCanvasConfig(ConnectedAppCanvasConfig $canvasConfig)
@@ -120,9 +133,24 @@ class ConnectedApp extends Metadata
         $this->oauthConfig = $oauthConfig;
     }
 
+    public function setPermissionSetName(array $permissionSetName)
+    {
+        $this->permissionSetName = $permissionSetName;
+    }
+
     public function setPlugin(string $plugin)
     {
         $this->plugin = $plugin;
+    }
+
+    public function setPluginExecutionUser(string $pluginExecutionUser)
+    {
+        $this->pluginExecutionUser = $pluginExecutionUser;
+    }
+
+    public function setProfileName(array $profileName)
+    {
+        $this->profileName = $profileName;
     }
 
     public function setSamlConfig(ConnectedAppSamlConfig $samlConfig)

@@ -11,6 +11,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  *
  * @property string|null $apiOnlyUserHomePageURL
  * @property string|null $complexity
+ * @property bool|null $enableSetPasswordInApi
  * @property string|null $expiration
  * @property string|null $historyRestriction
  * @property string|null $lockoutInterval
@@ -35,6 +36,11 @@ class PasswordPolicies
     public function setComplexity(Complexity $complexity)
     {
         $this->complexity = $complexity->getValue();
+    }
+
+    public function setEnableSetPasswordInApi(bool $enableSetPasswordInApi)
+    {
+        $this->enableSetPasswordInApi = $enableSetPasswordInApi;
     }
 
     public function setExpiration(Expiration $expiration)

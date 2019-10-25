@@ -15,6 +15,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $isExposed
  * @property LwcResources|null $lwcResources
  * @property string|null $masterLabel
+ * @property string|null $runtimeNamespace
  * @property string|null $targetConfigs
  * @property Targets|null $targets
  */
@@ -59,6 +60,11 @@ class LightningComponentBundle extends Metadata
     public function setMasterLabel(string $masterLabel)
     {
         $this->masterLabel = $masterLabel;
+    }
+
+    public function setRuntimeNamespace(string $runtimeNamespace)
+    {
+        $this->runtimeNamespace = $runtimeNamespace;
     }
 
     public function setTargetConfigs(string $targetConfigs)

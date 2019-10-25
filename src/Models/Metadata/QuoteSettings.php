@@ -10,6 +10,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @package CNSDose\Salesforce\Models\Metadata
  *
  * @property bool|null $enableQuote
+ * @property bool|null $enableQuotesWithoutOppEnabled
  */
 class QuoteSettings extends Metadata
 {
@@ -19,5 +20,10 @@ class QuoteSettings extends Metadata
     public function setEnableQuote(bool $enableQuote)
     {
         $this->enableQuote = $enableQuote;
+    }
+
+    public function setEnableQuotesWithoutOppEnabled(bool $enableQuotesWithoutOppEnabled)
+    {
+        $this->enableQuotesWithoutOppEnabled = $enableQuotesWithoutOppEnabled;
     }
 }

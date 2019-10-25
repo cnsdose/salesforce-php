@@ -9,6 +9,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * Class EmailToCaseSettings
  * @package CNSDose\Salesforce\Models\Metadata
  *
+ * @property bool|null $enableE2CAttachmentAsFile
  * @property bool|null $enableE2CSourceTracking
  * @property bool|null $enableEmailToCase
  * @property bool|null $enableHtmlEmail
@@ -29,6 +30,11 @@ class EmailToCaseSettings
             'type' => EmailToCaseRoutingAddress::class,
         ],
     ];
+
+    public function setEnableE2CAttachmentAsFile(bool $enableE2CAttachmentAsFile)
+    {
+        $this->enableE2CAttachmentAsFile = $enableE2CAttachmentAsFile;
+    }
 
     public function setEnableE2CSourceTracking(bool $enableE2CSourceTracking)
     {

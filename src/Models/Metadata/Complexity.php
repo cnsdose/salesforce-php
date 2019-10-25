@@ -14,4 +14,5 @@ class Complexity extends Enum
     const SPECIAL_CHARACTERS = 'SpecialCharacters';
     const UPPER_LOWER_CASE_NUMERIC = 'UpperLowerCaseNumeric';
     const UPPER_LOWER_CASE_NUMERIC_SPECIAL_CHARACTERS = 'UpperLowerCaseNumericSpecialCharacters';
+    const ANY3_UPPER_LOWER_CASE_NUMERIC_SPECIAL_CHARACTERS = 'Any3UpperLowerCaseNumericSpecialCharacters';
 }

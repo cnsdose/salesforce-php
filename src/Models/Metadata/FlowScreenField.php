@@ -22,7 +22,9 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $isVisible
  * @property FlowScreenFieldOutputParameter[]|null $outputParameters
  * @property int|null $scale
+ * @property bool|null $storeOutputAutomatically
  * @property FlowInputValidationRule|null $validationRule
+ * @property FlowVisibilityRule|null $visibilityRule
  */
 class FlowScreenField extends FlowElement
 {
@@ -42,6 +44,10 @@ class FlowScreenField extends FlowElement
         'validationRule' => [
             'multiple' => false,
             'type' => FlowInputValidationRule::class,
+        ],
+        'visibilityRule' => [
+            'multiple' => false,
+            'type' => FlowVisibilityRule::class,
         ],
     ];
 
@@ -110,8 +116,18 @@ class FlowScreenField extends FlowElement
         $this->scale = $scale;
     }
 
+    public function setStoreOutputAutomatically(bool $storeOutputAutomatically)
+    {
+        $this->storeOutputAutomatically = $storeOutputAutomatically;
+    }
+
     public function setValidationRule(FlowInputValidationRule $validationRule)
     {
         $this->validationRule = $validationRule;
+    }
+
+    public function setVisibilityRule(FlowVisibilityRule $visibilityRule)
+    {
+        $this->visibilityRule = $visibilityRule;
     }
 }

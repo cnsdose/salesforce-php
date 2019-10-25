@@ -13,6 +13,7 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property bool|null $calculatePercent
  * @property string|null $column
  * @property int|null $decimalPlaces
+ * @property bool|null $showSubTotal
  * @property bool|null $showTotal
  * @property string|null $sortBy
  */
@@ -39,6 +40,11 @@ class DashboardTableColumn
     public function setDecimalPlaces(int $decimalPlaces)
     {
         $this->decimalPlaces = $decimalPlaces;
+    }
+
+    public function setShowSubTotal(bool $showSubTotal)
+    {
+        $this->showSubTotal = $showSubTotal;
     }
 
     public function setShowTotal(bool $showTotal)

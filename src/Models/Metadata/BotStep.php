@@ -16,6 +16,8 @@ namespace CNSDose\Salesforce\Models\Metadata;
  * @property BotStepCondition[]|null $botStepConditions
  * @property BotStep[]|null $botSteps
  * @property BotVariableOperation|null $botVariableOperation
+ * @property ConversationRecordLookup|null $conversationRecordLookup
+ * @property ConversationSystemMessage|null $conversationSystemMessage
  * @property string|null $type
  */
 class BotStep
@@ -44,6 +46,14 @@ class BotStep
         'botVariableOperation' => [
             'multiple' => false,
             'type' => BotVariableOperation::class,
+        ],
+        'conversationRecordLookup' => [
+            'multiple' => false,
+            'type' => ConversationRecordLookup::class,
+        ],
+        'conversationSystemMessage' => [
+            'multiple' => false,
+            'type' => ConversationSystemMessage::class,
         ],
     ];
 
@@ -80,6 +90,16 @@ class BotStep
     public function setBotVariableOperation(BotVariableOperation $botVariableOperation)
     {
         $this->botVariableOperation = $botVariableOperation;
+    }
+
+    public function setConversationRecordLookup(ConversationRecordLookup $conversationRecordLookup)
+    {
+        $this->conversationRecordLookup = $conversationRecordLookup;
+    }
+
+    public function setConversationSystemMessage(ConversationSystemMessage $conversationSystemMessage)
+    {
+        $this->conversationSystemMessage = $conversationSystemMessage;
     }
 
     public function setType(BotStepType $type)

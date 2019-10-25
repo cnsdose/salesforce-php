@@ -18,4 +18,6 @@ class MessageType extends Enum
     const APPLE_BUSINESS_CHAT = 'AppleBusinessChat';
     const WE_CHAT = 'WeChat';
     const WEB_CHAT = 'WebChat';
+    const WHATS_APP = 'WhatsApp';
+    const PHONE = 'Phone';
 }
